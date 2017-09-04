@@ -9,8 +9,8 @@
 ![](../../common/images/mobile/long/mcsgs_dt_015_mobile_bkend.png)
 
 
-### 오늘 운동에 대하여 ###
-이 연습에서는 충성도 관리 및 모바일 클라이언트 용 API를 지원하는 &quot;Cafe Supremo&quot;라는 모바일 응용 프로그램 용 MBE를 만듭니다. 이를 통해 Cafe Supremo 모바일 응용 프로그램은 생성 된 MBE와 상호 작용하여 제안 푸시, 쿼리 제공 세부 정보를 얻고 제안을 수락 또는 거부합니다. 
+### 오늘 Practice에 대하여 ###
+이 연습에서는 Loyalty 관리 및 모바일 클라이언트 용 API를 지원하는 &quot;Cafe Supremo&quot;라는 모바일 응용 프로그램 용 MBE를 만듭니다. 이를 통해 Cafe Supremo 모바일 응용 프로그램은 생성 된 MBE와 상호 작용하여 제안 푸시, 쿼리 제공 세부 정보를 얻고 제안을 수락 또는 거부합니다. 
 
 ### 선수 과목 ###
 

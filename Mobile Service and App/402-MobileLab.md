@@ -44,8 +44,15 @@
 
 5. 정보 제공 : 이제 충성도 관리 사용자 정의 API에 대한 모든 엔드 포인트를 정의했습니다. 아래는 참조 용 엔드 포인트 목록입니다. 
 
-| 리소스 경로 | 표시 이름 | 방법 | 요청 유형 | 응답 미디어 유형 | | ----------------- | --------------------- | ------ | ---------------- | ------------------- | | 제안 / {id} / qr | 쿠폰 QR 코드 | GET | N / A | 이미지 / png | | 제안 | 행사 | GET | N / A | 응용 프로그램 / json | | 제안 / {id} / 동의 | 제안 수락 | POST | 응용 프로그램 / json | 응용 프로그램 / json | | 제안 / {id} / 거부 | 쿠폰을 거절 | POST | 응용 프로그램 / json | 응용 프로그램 / json | | 제안 / 통보 | noti를 보냅니다. 제공의 | POST | 응용 프로그램 / json | 응용 프로그램 / json | | 제안 / {id} | 혜택 정보 얻기 | GET | N / A | 응용 프로그램 / json | 
-
+    | Resource Path     | Display Name          | Method | Request Type     | Response Media Type |
+    | ----------------- | --------------------- | ------ | ---------------- | ------------------- |
+    | offer/{id}/qr	    | Offer QR code         | GET    | N/A	        | image/png           |
+    | offer	            | Offers	            | GET    | N/A	        | application/json    |
+    | offer/{id}/accept | Accept an offer       | POST   | application/json | application/json    |
+    | offer/{id}/reject | Reject an offer       | POST   | application/json | application/json    |
+    | offer/notify      | Send noti. of offer   | POST   | application/json | application/json    |
+    | offer/{id}        | Get Offer Details     | GET    | N/A	        | application/json    |
+    
 6. 사용자 W 역할이이 API에 액세스 할 수 있도록 보안 정책을 정의 할 수 있습니다. 이 실습에서는이 API에 대한 익명 액세스를 허용합니다. &#39;보안&#39;탭으로 전환하여 &#39;로그인 필요&#39;옵션이 해제되어 API에서 익명 액세스를 허용하는지 확인하십시오. 
 
 ! [](../common/images/mobile/402-API_Verify_Security.png) 

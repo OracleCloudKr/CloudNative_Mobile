@@ -43,7 +43,7 @@
 
 &quot;. 이름`AAAA14t0nbs를 붙여 넣습니다 APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX`을로&quot;(사용자에게 할당 된 접미사, 예를 변화`0X` 03)`FCM0X`를 입력 6. 같은 API 키 &quot;와 &#39;925757644219`을 발신자 ID로 사용하고&#39;Google 메시징 (GCM 또는 FCM) &#39;을&#39;알림 서비스 &#39;로,&#39;XMPP &#39;를&#39;전송 방법 &#39;으로 유지하고&#39;생성 &#39;을 클릭합니다 (생성 된 키입니다. Google의 
 
-! [](../common/images/mobile/403-Create_New_Profile.png) 
+![](../common/images/mobile/403-Create_New_Profile.png) 
 
 7. 알림 프로필이 만들어져 클라이언트 &quot;MyAndroidClient0X&quot;와 연결되었습니다. 탐색 바의 &quot;&lt;LoyaltyMgmt_MBE0X&quot;링크를 클릭하여 모바일 백엔드로 돌아갑니다. 
 
@@ -88,56 +88,56 @@
 
 7. 휴대 기기에서 &#39;Cafe Supremo&#39;앱을 엽니 다. 
 
-! [](../common/images/mobile/03.mobile.app.png) 
+![](../common/images/mobile/03.mobile.app.png) 
 
 8. **로그인하지 마십시오.**왼쪽 상단 모서리에있는 햄버거 메뉴를 클릭하고 &quot;설정&quot;을 클릭하십시오. 
 
-! [](../common/images/mobile/05.mobile.settings.png) 
+![](../common/images/mobile/05.mobile.settings.png) 
 
 9. 설정 페이지가 열리면 가운데에있는 QRCode에서 설정 읽기 버튼을 클릭하십시오. 
 
-! [](../common/images/mobile/06.mobile.qr.png) 
+![](../common/images/mobile/06.mobile.qr.png) 
 
 10. QR 스캐너가 실행 중일 때 6 단계에서 작성한 QR 코드 이미지를 향해 모바일 장치를 향하게하십시오. 스캐너 카메라가 QR 이미지를 인식 할 때까지 모바일 장치와 화면 사이의 거리를 조정해야 할 수 있습니다. 
 
-! [](../common/images/mobile/07.mobile.cam.png) 
+![](../common/images/mobile/07.mobile.cam.png) 
 
 11. 성공적인 QR 코드 스캔에서 JSON 파일의 모든 설정이 아래와 같이 모바일 앱 설정 페이지에 자동으로 채워집니다. `Save settings and logout` 버튼을 클릭하십시오. 그런 다음 홈 화면으로 돌아갑니다. 
 
-! [](../common/images/mobile/08.mobile.qr.result.png) 
+![](../common/images/mobile/08.mobile.qr.result.png) 
 
 12. 로그인 양식의 &quot;Username&quot;과 &quot;Password&quot;는 JSON 파일의 설정으로 미리 채워져 있습니다. 사용자 이름과 암호가 맞으면 &#39;로그인&#39;버튼을 클릭하여 로그인하십시오. 그렇지 않으면 수동으로 사용자 이름과 암호를 입력 할 수 있습니다. 
 
-! [](../common/images/mobile/09.mobile.login.png) 
+![](../common/images/mobile/09.mobile.login.png) 
 
 13. 로그인이 완료되면 시작 페이지가 표시됩니다. 휴대 기기에서 캠페인 쿠폰에 대한 푸시 알림을받을 준비가되었습니다. 
 
-! [](../common/images/mobile/10.mobile.welcome.png) 
+![](../common/images/mobile/10.mobile.welcome.png) 
 
 ---
 #### 테스트 알림 1. 모바일 백엔드에서 &quot;알림&quot;탭으로 전환하고 &quot;4 테스트&quot;아래의 아이콘을 클릭하십시오. 
 
-! [](../common/images/mobile/403-Navigate_To_Notification.png) 
+![](../common/images/mobile/403-Navigate_To_Notification.png) 
 
 2. &quot;장치 관리&quot;를 클릭하십시오. 
 
-! [](../common/images/mobile/403-Test_Manage_Devices.png) 
+![](../common/images/mobile/403-Test_Manage_Devices.png) 
 
 3. 이 모바일 백엔드에 등록 된 장치를 확인해야합니다. &quot;닫기&quot;를 클릭하고 &quot;테스트&quot;화면으로 돌아갑니다. 
 
-! [](../common/images/mobile/403-Manage_Devices.png) 
+![](../common/images/mobile/403-Manage_Devices.png) 
 
 4. 알림을 보내기 전에 Android 스마트 폰의**배경 화면**에서 &quot;Cafe Supremo&quot;모바일 앱이 실행되고 있는지 확인하십시오. 
 
 5. 알림을 입력하십시오. &#39;포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`을 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
 
-! [](../common/images/mobile/403-Notification_Test_Screen.png) 
+![](../common/images/mobile/403-Notification_Test_Screen.png) 
 
 6. 하나 이상의 장치가 등록되어 있으면 페이지 상단에 성공 메시지 팝업이 표시되고 장치의 알림 영역에 알림이 표시됩니다. 
 
-! [](../common/images/mobile/403-Notification_Sent.png) 
+![](../common/images/mobile/403-Notification_Sent.png) 
 
-! [](../common/images/mobile/401-MobileApp_Notification_Result.png) 
+![](../common/images/mobile/401-MobileApp_Notification_Result.png) 
 
 [Procced to Next - 404: Track customer behaviors (Optional)](404-MobileLab.md) 
 

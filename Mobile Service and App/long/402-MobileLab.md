@@ -16,53 +16,53 @@
 ![](../../common/images/mobile/long/402-Connectors_Mechanism.png)
 
 
-### 오늘 운동에 대하여 ###
+### 오늘 Practice에 대하여 ###
 이 랩에서 액세스해야하는 ACCS (응용 프로그램 컨테이너 클라우드 서비스) 및 ICS (통합 클라우드 서비스)와 같은 외부 시스템에서 제공 정보 쿼리, QR 코드 생성 및 제공 결과 (예 : 거부 또는 수락) 업데이트를위한 3 가지 커넥터 API가 있습니다. 
 
 위의 3 가지 Connector API를 작성하려면 다음을 수행하십시오. 
-- ACCS 마이크로 서비스를 사용하여 오퍼 정보를 얻기위한 &quot;제품 관리&quot;API 커넥터 생성 
-- ACCS 마이크로 서비스를 사용하여 QR 코드를 생성하는 &quot;QR 코드&quot;API 커넥터 생성 
-- ICS 마이크로 서비스를 사용하여 오퍼 결과를 업데이트하는 &quot;Process Offer&quot;API 커넥터를 만듭니다. 
+- ACCS 마이크로 서비스를 사용하여 오퍼 정보를 얻기위한 "제품 관리"API 커넥터 생성 
+- ACCS 마이크로 서비스를 사용하여 QR 코드를 생성하는 "QR 코드"API 커넥터 생성 
+- ICS 마이크로 서비스를 사용하여 오퍼 결과를 업데이트하는 "Process Offer"API 커넥터를 만듭니다. 
 
 ### 선수 과목 ###
 
 - 충성도 관리 MBE는 이전 Lab에서 만들었습니다. 
 
-#### 제안 정보를 얻기 위해 &quot;제품 관리&quot;API 커넥터 만들기이 랩에서는 제안 정보를 위해 ACCS 마이크로 서비스를 통합하는 커넥터 API를 만들 것입니다.**[주]**커넥터 API는 사용자 정의 API 용입니다. 이는 커넥터 API가 모바일 응용 프로그램과 직접 상호 작용하지 않음을 의미합니다. 모바일 응용 프로그램은 사용자 지정 API와 만 상호 작용하며 사용자 지정 API는 커넥터 API를 사용하여 외부 서비스 및 시스템과 상호 작용합니다. 
+#### 제안 정보를 얻기 위해 "제품 관리"API 커넥터 만들기이 랩에서는 제안 정보를 위해 ACCS 마이크로 서비스를 통합하는 커넥터 API를 만들 것입니다.**[주]**커넥터 API는 사용자 정의 API 용입니다. 이는 커넥터 API가 모바일 응용 프로그램과 직접 상호 작용하지 않음을 의미합니다. 모바일 응용 프로그램은 사용자 지정 API와 만 상호 작용하며 사용자 지정 API는 커넥터 API를 사용하여 외부 서비스 및 시스템과 상호 작용합니다. 
 
-1. 탐색 창에서 &quot;응용 프로그램&quot;-> &quot;커넥터&quot;를 선택하십시오. &quot;+ 새 커넥터&quot;녹색 버튼을 클릭하고 드롭 다운 목록에서 &quot;REST&quot;를 선택하십시오. 
+1. 탐색 창에서 "응용 프로그램"-> "커넥터"를 선택하십시오. "+ 새 커넥터"녹색 버튼을 클릭하고 드롭 다운 목록에서 "REST"를 선택하십시오. 
 ![](../../common/images/mobile/long/402-New_Connector.png)
 
 
-2. &#39;Test Drive ACCS PtMgt Connector API 0X&#39;를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01).이 커넥터의 이름과 간단한 설명으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. &quot;API 이름&quot;은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 &quot;만들기&quot;를 클릭하십시오. 
+2. &#39;Test Drive ACCS PtMgt Connector API 0X&#39;를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01).이 커넥터의 이름과 간단한 설명으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-New_Connector_Info.png)
 
 
-3. 일반 화면의 이름 / 설명을 검토하고 다음 단계로 이동하려면 &quot;다음 단계&quot;단추 (오른쪽 상단의 &quot;>&quot;)를 클릭하십시오. 
+3. 일반 화면의 이름 / 설명을 검토하고 다음 단계로 이동하려면 "다음 단계"단추 (오른쪽 상단의 ">")를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-Connector_Info_Review.png)
 
 
-4. URL을 입력하십시오 (예 :`https : // offer- <YOUR_ACCS_DOMAIN_NAME> .apaas.em3.oraclecloud.com`. 이것은 Microservice Lab.에서 생성 한 끝점입니다.) REST API에서 &quot;Remote URL&quot;텍스트 상자에 입력하십시오. &quot;다음 단계&quot;를 클릭하십시오. 
+4. URL을 입력하십시오 (예 :`https://offer-<YOUR_ACCS_DOMAIN_NAME>.apaas.em3.oraclecloud.com`. 이것은 Microservice Lab.에서 생성 한 끝점입니다.) REST API에서 "Remote URL"텍스트 상자에 입력하십시오. "다음 단계"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-Connector_URL_Setting.png)
 
 
-5. 여기서 규칙을 설정하지 않으므로 &quot;다음 단계&quot;를 클릭하십시오. 
+5. 여기서 규칙을 설정하지 않으므로 "다음 단계"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-Connector_Rule_Setting.png)
 
 
-6. MCS는 다양한 보안 정책을 지원합니다. Lab에서는 간단하게하기 위해 보안 정책 설정이 필요하지 않습니다. &quot;다음 단계&quot;를 클릭하기 만하면됩니다. 
+6. MCS는 다양한 보안 정책을 지원합니다. Lab에서는 간단하게하기 위해 보안 정책 설정이 필요하지 않습니다. "다음 단계"를 클릭하기 만하면됩니다. 
 ![](../../common/images/mobile/long/402-Connector_Security_Setting.png)
 
 
-7. 확인을 묻는 메시지가 나타나면 &quot;저장&quot;을 클릭하십시오. 
+7. 확인을 묻는 메시지가 나타나면 "저장"을 클릭하십시오. 
 ![](../../common/images/mobile/long/402-Connector_Save.png)
 
 
-8. 이제 커넥터가 준비되었으며이를 테스트 할 수 있습니다. HTTP 메소드로`GET`을 선택하고, &quot;Local URI&quot;뒤에 &quot;Local resource name&quot;에`/ ptmgt / v1 / offers / 10001`을 입력하십시오. 
+8. 이제 커넥터가 준비되었으며이를 테스트 할 수 있습니다. HTTP 메소드로`GET`을 선택하고, "Local URI"뒤에 "Local resource name"에`/ptmgt/v1/offers/10001`을 입력하십시오. 
 ![](../../common/images/mobile/long/402-Connector_Test.png)
 
 
-9. &quot;인증&quot;섹션의 드롭 다운 목록에서 만든 MBE (예 : LoyaltyMgmt_MBE01)를 선택하면 &quot;원격 URL&quot;필드의 끝에 실제로 호출되는 실제 URL을 찾을 수 있습니다. &quot;Test Endpoint&quot;를 클릭하십시오. 
+9. "인증"섹션의 드롭 다운 목록에서 만든 MBE (예 : LoyaltyMgmt_MBE01)를 선택하면 "원격 URL"필드의 끝에 실제로 호출되는 실제 URL을 찾을 수 있습니다. "Test Endpoint"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-Connector_Test_EndPoint.png)
 
 
@@ -71,41 +71,41 @@
 
 
 ---
-#### QR 코드를 생성하는 &quot;QR 코드&quot;API 커넥터 만들기이 실습에서는 QR 코드 생성을 위해 ACCS 마이크로 서비스를 통합하는 커넥터 API를 만듭니다. 전체 과정은 위와 거의 같습니다. 
+#### QR 코드를 생성하는 "QR 코드"API 커넥터 만들기이 실습에서는 QR 코드 생성을 위해 ACCS 마이크로 서비스를 통합하는 커넥터 API를 만듭니다. 전체 과정은 위와 거의 같습니다. 
 
-1. 탐색 창에서 &quot;응용 프로그램&quot;-> &quot;커넥터&quot;를 선택하십시오. &quot;+ 새 커넥터&quot;녹색 버튼을 클릭하고 드롭 다운 목록에서 &quot;REST&quot;를 선택하십시오. 
+1. 탐색 창에서 "응용 프로그램"-> "커넥터"를 선택하십시오. "+ 새 커넥터"녹색 버튼을 클릭하고 드롭 다운 목록에서 "REST"를 선택하십시오. 
 ![](../../common/images/mobile/long/402-New_Connector.png)
 
 
-2. &#39;Test Drive ACCS CtdQR ConnectorAPI 0X&#39;를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01). 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. &quot;API 이름&quot;은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 &quot;만들기&quot;를 클릭하십시오. 
+2. &#39;Test Drive ACCS CtdQR ConnectorAPI 0X&#39;를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01). 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-QRCode_Connector_API.png)
 
 
-3. 일반 화면의 이름 / 설명을 검토하고 다음 단계로 이동하려면 &quot;다음 단계&quot;단추 (오른쪽 상단의 &quot;>&quot;)를 클릭하십시오. 
+3. 일반 화면의 이름 / 설명을 검토하고 다음 단계로 이동하려면 "다음 단계"단추 (오른쪽 상단의 ">")를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-QRCode_Connector_API_Review.png)
 
 
-4. URL을 입력하십시오 (예 :`https : // qrcodegenerator- <YOUR_ACCS_DOMAIN_NAME> .apaas.em3.oraclecloud.com`. 이것은 Microservice Lab.에서 생성 한 끝점입니다.) REST API에서 &quot;Remote URL&quot;텍스트 상자에 입력하십시오. &quot;다음 단계&quot;를 클릭하십시오. 
+4. URL을 입력하십시오 (예 :`https://qrcodegenerator-<YOUR_ACCS_DOMAIN_NAME> .apaas.em3.oraclecloud.com`. 이것은 Microservice Lab.에서 생성 한 끝점입니다.) REST API에서 "Remote URL"텍스트 상자에 입력하십시오. "다음 단계"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-QRCode_Connector_URL_Setting.png)
 
 
-5. 여기서 규칙을 설정하지 않으므로 &quot;다음 단계&quot;를 클릭하십시오. 
+5. 여기서 규칙을 설정하지 않으므로 "다음 단계"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-QRCdoe_Connector_Rule_Setting.png)
 
 
-6. MCS는 다양한 보안 정책을 지원합니다. Lab에서는 간단하게하기 위해 보안 정책 설정이 필요하지 않습니다. &quot;다음 단계&quot;를 클릭하기 만하면됩니다. 
+6. MCS는 다양한 보안 정책을 지원합니다. Lab에서는 간단하게하기 위해 보안 정책 설정이 필요하지 않습니다. "다음 단계"를 클릭하기 만하면됩니다. 
 ![](../../common/images/mobile/long/402-QRCdoe_Connector_Security_Setting.png)
 
 
-7. 확인을 묻는 메시지가 나타나면 &quot;저장&quot;을 클릭하십시오. 
+7. 확인을 묻는 메시지가 나타나면 "저장"을 클릭하십시오. 
 ![](../../common/images/mobile/long/402-Connector_Save.png)
 
 
-8. 이제 커넥터가 준비되었으며이를 테스트 할 수 있습니다. HTTP 메소드로 GET을 선택하고, &quot;Local URI&quot;다음에 &quot;Local resource name&quot;에`/ ctdqr / v1 / offer / 10001`을 입력하십시오. 
+8. 이제 커넥터가 준비되었으며이를 테스트 할 수 있습니다. HTTP 메소드로 GET을 선택하고, "Local URI"다음에 "Local resource name"에`/ctdqr/v1/offer/10001`을 입력하십시오. 
 ![](../../common/images/mobile/long/402-QRCode_Connector_Test.png)
 
 
-9. &quot;인증&quot;섹션의 드롭 다운 목록에서 만든 MBE (예 :`LoyaltyMgmt_MBE01`)를 선택하면 &quot;원격 URL&quot;필드의 끝에 실제로 호출되는 실제 URL을 찾을 수 있습니다. &quot;Test Endpoint&quot;를 클릭하십시오. 
+9. "인증"섹션의 드롭 다운 목록에서 만든 MBE (예 :`LoyaltyMgmt_MBE01`)를 선택하면 "원격 URL"필드의 끝에 실제로 호출되는 실제 URL을 찾을 수 있습니다. "Test Endpoint"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-QRCode_Connector_Test_EndPoint.png)
 
 
@@ -116,29 +116,29 @@
 
 
 ----
-#### 제안 결과를 업데이트하기 위해 &quot;Process Offer&quot;Connector API 만들기이 실습에서는 제안 결과를 업데이트하기 위해 ICS 마이크로 서비스를 통합하는 커넥터 API를 만듭니다. 전체 과정은 위와 거의 같습니다. 
+#### 제안 결과를 업데이트하기 위해 "Process Offer"Connector API 만들기이 실습에서는 제안 결과를 업데이트하기 위해 ICS 마이크로 서비스를 통합하는 커넥터 API를 만듭니다. 전체 과정은 위와 거의 같습니다. 
 
-1. 탐색 창에서 &quot;응용 프로그램&quot;-> &quot;커넥터&quot;를 선택하십시오. &quot;+ 새 커넥터&quot;녹색 버튼을 클릭하고 드롭 다운 목록에서 &quot;REST&quot;를 선택하십시오. 
+1. 탐색 창에서 "응용 프로그램"-> "커넥터"를 선택하십시오. "+ 새 커넥터"녹색 버튼을 클릭하고 드롭 다운 목록에서 "REST"를 선택하십시오. 
 ![](../../common/images/mobile/long/402-New_Connector.png)
 
 
-2. &#39;Test Drive ICS Connector API 0X&#39;(0X는 강사가 지정한 일련 번호 - 예 : 01)를이 커넥터의 이름으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. &quot;API 이름&quot;은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 &quot;만들기&quot;를 클릭하십시오. 
+2. &#39;Test Drive ICS Connector API 0X&#39;(0X는 강사가 지정한 일련 번호 - 예 : 01)를이 커넥터의 이름으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-ICS_Connector_API.png)
 
 
-3. 일반 화면의 이름 / 설명을 검토하고 다음 단계로 이동하려면 &quot;다음 단계&quot;단추 (오른쪽 상단의 &quot;>&quot;)를 클릭하십시오. 
+3. 일반 화면의 이름 / 설명을 검토하고 다음 단계로 이동하려면 "다음 단계"단추 (오른쪽 상단의 ">")를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-ICS_Connector_API_Review.png)
 
 
-4. URL을 입력하십시오 (예 :`https : // integration- <YOUR_ICS_DOMAIN_NAME> .integration.us2.oraclecloud.com / integration / flowapi / rest / <YOUR_INTEGRATION_NAME> / v01 / processoffer`. 이것은 Integrations Lab.에서 작성한 엔드 포인트입니다.) REST API에서 &quot;Remote URL&quot;텍스트 상자로 이동하십시오. &quot;다음 단계&quot;를 클릭하십시오. 
+4. URL을 입력하십시오 (예 :`https : // integration- <YOUR_ICS_DOMAIN_NAME> .integration.us2.oraclecloud.com / integration / flowapi / rest / <YOUR_INTEGRATION_NAME> / v01 / processoffer`. 이것은 Integrations Lab.에서 작성한 엔드 포인트입니다.) REST API에서 "Remote URL"텍스트 상자로 이동하십시오. "다음 단계"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-ICS_Connector_URL_Setting.png)
 
 
-5. 여기서 규칙을 설정하지 않으므로 &quot;다음 단계&quot;를 클릭하십시오. 
+5. 여기서 규칙을 설정하지 않으므로 "다음 단계"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-ICS_Connector_Rule_Setting.png)
 
 
-6. MCS는 다양한 보안 정책을 지원합니다. Lab에서는 보안 정책 설정에 http 기본 인증을 사용합니다. 왼쪽의 &quot;사용 가능한 정책&quot;에서 &quot;oracle /http_basic_auth_over_ssl_client_policy&quot;를 선택하고 중간에있는 &quot;>&quot;단추를 사용하여 오른쪽의 &quot;선택한 정책&quot;으로 이동하십시오. 
+6. MCS는 다양한 보안 정책을 지원합니다. Lab에서는 보안 정책 설정에 http 기본 인증을 사용합니다. 왼쪽의 "사용 가능한 정책"에서 "oracle /http_basic_auth_over_ssl_client_policy"를 선택하고 중간에있는 ">"단추를 사용하여 오른쪽의 "선택한 정책"으로 이동하십시오. 
 ![](../../common/images/mobile/long/402-ICS_Connector_Security_Setting.png)
 
 
@@ -146,24 +146,24 @@
 ![](../../common/images/mobile/long/402-Open_CSF_Key_Dialog.png)
 
 
-8. CSF-Key 추가 : 팝업창에서 &quot;Add&quot;를 클릭하고 자신 만의 csf-key를 생성하고, 고유 한 값을 입력하십시오 (예 :`ICS_GSE 0X`, 0X는 강사가 지정한 일련 번호입니다.) - 예 : 01 )를 &quot;키 이름&quot;으로 사용하십시오. &quot;사용자 이름&quot;과 &quot;비밀번호&quot;를 입력하십시오. (Thery는 액세스 문서 또는 강사가 제공함) &quot;저장&quot;을 클릭하십시오. 
+8. CSF-Key 추가 : 팝업창에서 "Add"를 클릭하고 자신 만의 csf-key를 생성하고, 고유 한 값을 입력하십시오 (예 :`ICS_GSE 0X`, 0X는 강사가 지정한 일련 번호입니다.) - 예 : 01 )를 "키 이름"으로 사용하십시오. "사용자 이름"과 "비밀번호"를 입력하십시오. (Thery는 액세스 문서 또는 강사가 제공함) "저장"을 클릭하십시오. 
 
 ![](../../common/images/mobile/long/402-ICS_Add_CSF_Key.png)
 
 
-9. 작성한 CSF-Key를 선택하십시오 : &quot;Select&quot;를 클릭하면 메인 화면으로 돌아갑니다. 
+9. 작성한 CSF-Key를 선택하십시오 : "Select"를 클릭하면 메인 화면으로 돌아갑니다. 
 ![](../../common/images/mobile/long/402-ICS_Select_CSF_Key.png)
 
 
-10. 새로 생성 된 csf-key가 csf-key 텍스트 상자에 나타납니다. &quot;다음 단계&quot;를 클릭하여 다음 단계로 넘어갑니다. 
+10. 새로 생성 된 csf-key가 csf-key 텍스트 상자에 나타납니다. "다음 단계"를 클릭하여 다음 단계로 넘어갑니다. 
 ![](../../common/images/mobile/long/402-ICS_CSF_Key_NextStep.png)
 
 
-11. 확인을 묻는 메시지가 나타나면 &quot;저장&quot;을 클릭하십시오. 
+11. 확인을 묻는 메시지가 나타나면 "저장"을 클릭하십시오. 
 ![](../../common/images/mobile/long/402-Connector_Save.png)
 
 
-12. 이제 커넥터가 준비되었으며이를 테스트 할 수 있습니다. HTTP 메소드로`POST`를 선택하고, &quot;HTTP Body&quot;에`{ &quot;customerid&quot;: 66890169, &quot;offerid&quot;: 10001, &quot;productid&quot;: 20001, &quot;accepted&quot;: false}`를 입력하십시오. &quot;인증&quot;섹션의 드롭 다운 목록에서 만든 모바일 백엔드 (예 :`LoyaltyMgmt_MBE01`)를 선택하고 &quot;엔드 포인트 테스트&quot;를 클릭하십시오. 
+12. 이제 커넥터가 준비되었으며 이를 테스트 할 수 있습니다. HTTP 메소드로`POST`를 선택하고, "HTTP Body"에`{"customerid": 66890169,  "offerid": 10001,  "productid": 20001,  "accepted": false}`를 입력하십시오. "인증"섹션의 드롭 다운 목록에서 만든 모바일 백엔드 (예 :`LoyaltyMgmt_MBE01`)를 선택하고 "엔드 포인트 테스트"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-ICS_Connector_Test.png)
 
 
