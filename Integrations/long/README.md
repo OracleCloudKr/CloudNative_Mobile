@@ -48,7 +48,7 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 
 
-# 실험실 연습 : #
+# Lab 연습 : #
 
 
 ## 301 : Oracle Integration Cloud Service 탐색 ##

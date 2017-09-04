@@ -10,7 +10,7 @@
 ### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
 - 로열티 관리 시스템을위한 새로운 개발자 클라우드 서비스 프로젝트 만들기 
-충성도 관리 Java 응용 프로그램 소스 코드를 저장할 새로운 Developer Cloud Service Git 저장소 만들기 
+로열티 관리 Java 응용 프로그램 소스 코드를 저장할 새로운 Developer Cloud Service Git 저장소 만들기 
 - Gitub에 저장된 외부 Git 저장소를 위에서 작성한 Developer Cloud Service Git 저장소에 복제합니다. 
 
 ### 선수 과목 ###

@@ -8,7 +8,7 @@
 
 ### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
-- 마케팅 관리자 및 최종 고객의 역할에 따라 충성도 관리 응용 프로그램 및 `Cafe Supremo`모바일 앱을 각각 테스트합니다. 
+- 마케팅 관리자 및 최종 고객의 역할에 따라 로열티 관리 응용 프로그램 및 `Cafe Supremo`모바일 앱을 각각 테스트합니다. 
 - 오늘날의 모든 랩 연습에서 사용되는 구성 요소 전반의 메시지 흐름 파악 및 모니터링 
 
 ### 선수 과목 ###
@@ -40,7 +40,7 @@
 ![](images/502/04.offer.sent.png)
 
 
-**이전 Lab에서 : [501: Update Source Code for Sending Push Notification from JEE Application to Mobile Cloud Service](501-PuttingAllTogetherLab.md)에서 개발자와 Java Cloud Service를 활용 한 충성도 관리 JEE 애플리케이션에서*confirm.jsp*의 일부 코드를 수정하여 애플리케이션이 모바일 클라우드 서비스 푸시 알림 REST API를 호출 할 수 있도록했습니다. 이어서 MCS가 Google Firebase와 교환하여 등록 된 Android 기기에 푸시 알림을 전달합니다. 
+**이전 Lab에서 : [501: Update Source Code for Sending Push Notification from JEE Application to Mobile Cloud Service](501-PuttingAllTogetherLab.md)에서 개발자와 Java Cloud Service를 활용 한 로열티 관리 JEE 애플리케이션에서*confirm.jsp*의 일부 코드를 수정하여 애플리케이션이 모바일 클라우드 서비스 푸시 알림 REST API를 호출 할 수 있도록했습니다. 이어서 MCS가 Google Firebase와 교환하여 등록 된 Android 기기에 푸시 알림을 전달합니다. 
 
 ![](images/502/jcs2mcs.png)
 

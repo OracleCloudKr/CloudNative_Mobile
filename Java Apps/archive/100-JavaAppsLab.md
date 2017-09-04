@@ -5,7 +5,7 @@
 
 ### 소개 ###
 이 튜토리얼에서는 다음 작업을 수행하는 방법을 보여줍니다. 
-- 나중에 JEE 응용 프로그램에서 관련 테이블을 사용할 WebLogic Server에 충성도 관리 데이터베이스 연결을 생성합니다. 
+- 나중에 JEE 응용 프로그램에서 관련 테이블을 사용할 WebLogic Server에 로열티 관리 데이터베이스 연결을 생성합니다. 
 
 ### 선수 과목 ###
 
@@ -74,8 +74,8 @@
 + **데이터베이스 이름**:`PDB1. <Your Identity Domain> .oraclecloud.internal` 
 + **호스트 이름**: 응용 프로그램을 실행할 데이터베이스 클라우드 서비스, 즉`apacctddb.compute- <Your Identity Domain> .oraclecloud.internal` 또는 (강사가 제공 한)` 
 + **포트**: 기본값 1521 남기기 
-+ **데이터베이스 사용자 이름**: 충성도 
-+ **비밀번호**: 데이터베이스 사용자의 `충성도`비밀번호, 즉 Welcome_1 또는 (intructor가 제공 한) 
++ **데이터베이스 사용자 이름**: 로열티 
++ **비밀번호**: 데이터베이스 사용자의 `로열티`비밀번호, 즉 Welcome_1 또는 (intructor가 제공 한) 
 + **oracle.jdbc.DRCPConnectionClass**: 비워 두십시오. 
 
 12. 다음을 클릭하십시오. 
