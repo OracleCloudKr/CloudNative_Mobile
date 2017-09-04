@@ -1,102 +1,65 @@
+### 선수 과목 ###
 
-# ORACLE Cloud Test Drive #
+- 안드로이드 전화 가져와. 
+- 강사로부터 MBE 패키지 파일 &quot;package-LoyaltyMgmt_MBE0X.zip&quot;을 받았는지 확인하십시오. 파일 이름의 &quot;0X&quot;는 액세스 문서에서 사용자에게 지정된 접미사와 일치해야합니다. MBE 패키지 파일이 없거나 파일 이름이 할당 된 접미사와 일치하지 않으면 강사에게 문의하여 올바른 파일을 얻으십시오. 
+-이 실습의 끝에서 직접 만든 MBE로 작동하도록 모바일 애플리케이션을 구성 할 것입니다. &quot;Mobile_App_Settings_Sample.json&quot;파일에서 모든 설정을 수집합니다. [this link](../common/assets/mobile/Mobile_App_Settings_Sample.json) and select "Save link as...". Once you collect all the settings in this file, you will create a QR code to represent the settings by using the [online QR code generator](http://www.qr-code-generator.com/)을 오른쪽 클릭하여이 파일의 예를 다운로드 할 수 있습니다. 
 
-## Introduction ##
-We have huge reliance on mobile services for our daily life. Due to this trend, enterprises are eager to build more and more mobile applications for better customer experiences, operational excellences and higher business values in their businesses. Therefore, we can say that Mobile is the key of Digital Transformation. And mobile application development in businesses is much more of a reality – Let's see what challenges of mobile application development in terms of business and technical view are.
+- Android 스마트 폰에 &quot;Cafe Supremo&quot;모바일 응용 프로그램을 설치하십시오. QR 코드 스캐너를 휴대 전화에 설치 한 경우 휴대 전화에서 다음 QR 코드를 스캔하여 모바일 응용 프로그램을 설치하십시오. 
 
-### Technical Challenges in Mobile ###
-As well as Business Challenges, enterprises have some of difficulties in developing mobile applications. To develop mobile applications, we need to have the expertise in:
-+ Developing to and supporting multiple platforms (Android, iOS, Windows, etc.)
-+ Prepare environments for dev, test and production
-+ How to monitor and analyze mobile services
-+ Security and identity protocols and policies to different backends
-+ Integration with a variety of backends
-+ What tools do you use to build them?
-![](../common/images/mobile/Technical_Challenges_in_Mobile.PNG)
+! [](../common/images/mobile/400-Install_App_QRcode.png) 
 
-## Oracle Mobile Solution Strategy ##
-To overcome the above challenges, Oracle encourages developers to use any of the popular tools available – whether it’s native development with iOS and Android, to 3rd party and open frameworks like Ionic, Angular, Sencha, and Xamarin. We call it "Mobile Client Agnostic". Oracle also incorporate mobile services that offer data sync, storage, location services, messaging, access to local services like camera, contacts, GPS, etc. There’s a trend towards low code, no code development - Oracle supports this trendy tool called MAX (Mobile Application Accelerator) as part of Mobile Cloud Service (MCS).
-![](../common/images/mobile/Oracle_Mobile_Solution_Strategy.PNG)
+그렇지 않으면 [this link](../common/assets/mobile/Cafe_Supremo.apk?raw=true)를 마우스 오른쪽 버튼으로 클릭하여 앱 파일을 다운로드하십시오. 다운로드하려면 &quot;다른 이름으로 링크 저장 ...&quot;을 선택하십시오. 아래 지침에 따라 모바일 응용 프로그램을 설치하십시오. 
 
-In summary, Oracle provides end to end solution to give you overcoming notable business and technical challenges.
+1. 장치를 컴퓨터에 연결하고 &quot;Cafe_Supremo.apk&quot;라는 Android APK 파일을 장치의 SD 카드 또는 내부 저장소로 복사합니다. 
 
-### Oracle Mobile Services ###
-Here you can see which mobile services are ready for you through just accessing Oracle MCS (Mobile Cloud Service) as below:
-+ Out of the box mobile services (Platform APIs): We are providing prebuilt, tested and optimized mobile services like analytics, push notification, offline data synchronization, location, object storage, database, app polices, API management, integration management, security and user management, and more features like intelligent bot are coming.
-+ In addition to the Platform APIs, you can develop custom APIs and code to extend your mobile services. (e.g.: SNS integration, Google Map integration, external system integration, etc.) In other words, mobile applications can call custom APIs as wells as platform APIs to interact various data sources.
-+ For client IDEs to develop mobile applications, we can support any IDE as well as mobile frameworks like Oracle MAX (Low code development), JET (JavaScript-based Hybrid App Dev.) and MAF (Java-based Hybrid App Dev.)
+! [](../common/images/mobile/401-Install_App_1.png) 
 
-![](../common/images/mobile/Oracle_Mobile_Services.PNG)
+2. Android 기기에서 알 수없는 소스 사용 : &quot;설정&quot;>> &quot;보안&quot;>> &quot;알 수없는 소스&quot;상자를 선택하십시오. (참고로 Android 버전에 따라 메뉴가 약간 다를 수 있습니다.) 
 
-If you want to know about more details on the above mobile services, please refer to [the following link](https://docs.oracle.com/en/cloud/paas/mobile-cloud/index.html).
+! [](../common/images/mobile/401-Install_App_2.png) 
 
-### About the Exercise Today ###
-The hard part of mobile development is integration and managing all server-side services. In this exercise, you will see how easily you can enable/develop mobile services like push notification, API creation and integrations with external services to implement a mobile application called "Cafe Supremo" for loyalty management using Oracle MCS (Mobile Cloud Service).
+3. Android 기기에서 파일 관리자를 엽니 다. 
 
-For the loyalty management mobile application, you can make it all work and play nicely together using platform APIs (out of box mobile services) and custom APIs for external integrations by doing the below jobs through this lab.
-- Import MBE (Mobile BackEnd) package and configure connectors to integrate external services, including the microservices on ACCS to query offers and generate QR code, and the service on ICS to accept or reject offer and update the existing CRM.
-- Verify the endpoints and the implementation of the custom API. The custom API is imported in the MBE package, and leverage the connectors to interact with the external services.
-- Set up Push Notification, and configure the Cafe Supremo mobile app to work with the MBE imported.
-- Track customer behaviors like "Offer Accept by users" using custom analytics report. **[Note]** this section is optional. You can skip this section first, and come back after you complete all the other sections.
+! [](../common/images/mobile/401-Install_App_3.png) 
 
-![](../common/images/mobile/CTD_About_Lab_Mobile.PNG)
+4. &quot;Cafe_Supremo.apk&quot;파일을 넣은 위치로 이동하여 설치할 파일을 클릭하십시오. 아래 이미지는 Android APK 파일을 &#39;다운로드&#39;라는 폴더에 넣은 경우를 보여줍니다. 
 
+! [](../common/images/mobile/401-Install_App_4.png) 
 
-### Prerequisites ###
-- Bring your Android phone.
-- Make sure you receive the MBE package file "package-LoyaltyMgmt_MBE0X.zip" from the instructor. "0X" in the file name should matches the postfix assigned to you in the access document. If you don't have the MBE package file or the file name doesn't match the postfix assigned to you, please contact the instructor to get the right file.
-- In the end of this lab, you will configure your mobile application to work with the MBE created by yourself. You will collect all the settings in a file "Mobile_App_Settings_Sample.json". You can download an example of this file by right clicking on [this link](../common/assets/mobile/Mobile_App_Settings_Sample.json) and select "Save link as...". Once you collect all the settings in this file, you will create a QR code to represent the settings by using the [online QR code generator](http://www.qr-code-generator.com/).
-- Install "Cafe Supremo" mobile application on you Android phone. If you have QR code scanner installed on your phone, install the mobile application by scanning the following QR code from your phone.
+5. &quot;설치&quot;버튼을 누릅니다. 
 
-   ![](../common/images/mobile/400-Install_App_QRcode.png)
+! [](../common/images/mobile/401-Install_App_5.png) 
 
-Otherwise, download the app file by right clicking on [this link](../common/assets/mobile/Cafe_Supremo.apk?raw=true). Select "Save link as..." to download it. Follow below instructions to install the mobile application.
+6. &quot;확인&quot;버튼을 클릭하여 &quot;Café Supremo&quot;모바일 애플리케이션에 필요한 모든 권한을 허용하십시오. 이제 모바일 응용 프로그램의 설치가 완료되었습니다. 
 
-1. Connect your device to your computer and copy an Android APK file called “Cafe_Supremo.apk” to SD card or internal storage of your device.
-
-   ![](../common/images/mobile/401-Install_App_1.png)
-
-2. Enable Unknown Sources in your Android device: Go to "Settings" >>" Security ">> Check the box "Unknown sources". (FYI, the menu will be slightly different by Android versions.)
-
-   ![](../common/images/mobile/401-Install_App_2.png)
-
-3. Open a file manager on your Android device. 
-
-   ![](../common/images/mobile/401-Install_App_3.png)
-
-4. Go to the same location where you put the “Cafe_Supremo.apk” file and Click the file to install. The below image shows Android APK files in case you put them in the folder called “Download”.
-
-   ![](../common/images/mobile/401-Install_App_4.png)
-
-5. Press “Install” button.
-
-   ![](../common/images/mobile/401-Install_App_5.png)
-
-6. Allow all permissions the “Café Supremo” mobile application requires by clicking “CONFIRM” button. Now you have finished the installation of the mobile application.
-
-   ![](../common/images/mobile/401-Install_App_6.png)
+! [](../common/images/mobile/401-Install_App_6.png) 
 
 
 ---
-# Lab Exercise: #
-Let's explore the Mobile Service and Application Lab. Please click the below link to start your lab.
+# 실험실 연습 : #
+모바일 서비스 및 응용 프로그램 랩을 살펴 보겠습니다. Lab을 시작하려면 아래 링크를 클릭하십시오. 
 
-## 401: Import MBE package and configure connectors for external services ##
+## 401 : MBE 패키지 가져 오기 및 외부 서비스 용 커넥터 구성
 
-[Click Here.](401-MobileLab.md)
 
-## 402: Verify and test custom APIs and implementation ##
+[Click Here.](401-MobileLab.md) 
 
-[Click Here.](402-MobileLab.md)
+## 402 : 사용자 지정 API 및 구현 확인 및 테스트 ## <br>
 
-## 403: Set up Push Notification and configure the mobile app ##
 
-[Click Here.](403-MobileLab.md)
+[Click Here.](402-MobileLab.md) 
 
-## 404: Track customer behaviors [Optional] ##
+## 403 : 푸시 알림 설정 및 모바일 앱 구성 ## <br>
 
-[Click Here.](404-MobileLab.md)
 
-or
+[Click Here.](403-MobileLab.md) 
 
-[Back to Cloud Test Drive Home](../README.md)
+## 404 : 고객 행동 추적 [선택 사항] ## <br>
+
+
+[Click Here.](404-MobileLab.md) 
+
+또는 
+
+[Back to Cloud Test Drive Home](../README.md) 
+

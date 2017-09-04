@@ -1,120 +1,149 @@
 
-# ORACLE Cloud Test Drive #
------
-## 401: Import MBE package and configure connectors for external services ##
 
-### Introduction ###
+# 오라클 클라우드 테스트 드라이브 #
+-----
+## 401 : MBE 패키지 가져 오기 및 외부 서비스 용 커넥터 구성
+
+
+### 소개 ###
 ![](../common/images/mobile/402-Connectors_Overview.png)
 
-Connectors allow you to declaratively create APIs that simplify access to and standardize use of backend systems (such as enterprise middleware) and web services. Oracle MCS provides different types of connectors to simplify integration with different types of backend systems, including REST connector, SOAP connector, Oracle Integration Cloud Service (ICS) connector, and Oracle Fusion Application connector. In this lab, you will use the REST connector to integrate with the three REST services that are created in the microservices and integration labs.
 
-Once connectors have been created, they can be used in custom APIs (e.g. the Loyalty Mgmt APi that you will create later), and exposed to mobile applications.
+커넥터를 사용하면 백엔드 시스템 (예 : 엔터프라이즈 미들웨어) 및 웹 서비스에 대한 액세스 및 표준화 사용을 단순화하는 API를 선언적으로 작성할 수 있습니다. Oracle MCS는 다양한 유형의 커넥터를 제공하여 REST 커넥터, SOAP 커넥터, ICS (Oracle Integration Cloud Service) 커넥터 및 Oracle Fusion Application 커넥터를 비롯한 여러 유형의 백엔드 시스템과의 통합을 단순화합니다. 이 실습에서는 REST 커넥터를 사용하여 마이크로 서비스 및 통합 실습실에서 생성 된 세 가지 REST 서비스와 통합합니다. 
+
+일단 커넥터가 생성되면 사용자 정의 API (예 : 나중에 작성할 Loyalty Mgmt APi)에서 사용할 수 있으며 모바일 응용 프로그램에 노출 될 수 있습니다. 
 
 ![](../common/images/mobile/402-Connectors_Mechanism.png)
 
-### About the Exercise Today ###
-There are 3 connectors to be created in this lab, 2 of them integrate with the microservices on ACCS to query offers and generate QR code, while the last connector integrates with the service on ICS to accept or reject offer and update the existing CRM.
 
-To create the above 3 Connectors, you will:
-- Import the MBE package, which include the 3 connectors, together with the custom API and mobile backend that you will verify and configure later.
-- Configure the connectors to use the correct URLs and credential to integrate with the backend services.
-- Take "Process Offer" connector as an example, test and verify the result of the connector
+### 오늘 운동에 대하여 ###
+이 실습실에는 3 개의 커넥터가 있으며, 그 중 2 개는 ACCS의 마이크로 서비스와 통합되어 QS 코드를 생성하고 QR 코드를 생성하며, 마지막 커넥터는 ICS의 서비스와 통합되어 제안을 수락하거나 거절하고 기존 CRM을 업데이트합니다. 
 
-### Prerequisites ###
-- Completed 'microservices' and 'integration' labs to expose services on ACCS and ICS respectively.
+위의 3 커넥터를 만들려면 다음을 수행하십시오. 
+- 나중에 확인하고 구성 할 사용자 정의 API 및 모바일 백엔드와 함께 3 커넥터를 포함하는 MBE 패키지를 가져옵니다. 
+- 백엔드 서비스와 통합하기 위해 올 Y 른 URL W 권한 정보를 사용하도록 커넥터를 구성하십시오. 
+- &quot;Process Offer&quot;커넥터를 예로 들어 커넥터의 결과를 테스트하고 검증하십시오 
 
-#### Import the MBE package ####
+### 선수 과목 ###
 
-1. Sign in to Mobile Cloud Service by using the **Mobile Cloud Service \(MCS\)** identity domain Id and credential in the Access Document. You should use the **Admin User** to sign to the Mobile Cloud Service, and use the **Mobile User** to sign to the Cafe Supremo Mobile App.
+- ACCS 및 ICS에서 각각 서비스를 제공하기 위해 &#39;마이크로 서비스&#39;및 &#39;통합&#39;연구소를 완료했습니다. 
 
-2. In the dashboard screen, click on "Mobile Environment Service".
+#### MBE 패키지 가져 오기 
+
+1. 액세스 문서의**모바일 클라우드 서비스 \ (MCS \)**ID 도메인 ID 및 자격 증명을 사용하여 모바일 클라우드 서비스에 로그인합니다.**관리자**를 사용하여 모바일 클라우드 서비스에 로그인하고**모바일 사용자**를 사용하여 Cafe Supremo 모바일 앱에 로그인해야합니다. 
+
+2. 대시 보드 화면에서 &quot;모바일 환경 서비스&quot;를 클릭하십시오. 
 ![](../common/images/mobile/400-MobileEnvService.png)
 
-3. In the service details screen, click on the link of "Service Instance URL" to access the MCS Portal.
+
+3. 서비스 세부 정보 화면에서 &quot;서비스 인스턴스 URL&quot;링크를 클릭하여 MCS 포털에 액세스합니다. 
 ![](../common/images/mobile/400-MCS_ServiceInstanceURL.png)
 
-4. In MCS Portal, click on the hamburger icon located at the left top corner of the service introduction page. From the navigation pane, select “Applications” -> “Packages”, and click on the “New Import” green button.
+
+4. MCS Portal에서 서비스 소개 페이지의 왼쪽 상단 모서리에있는 햄버거 아이콘을 클릭하십시오. 탐색 창에서 &quot;Applications&quot;-> &quot;Packages&quot;를 선택하고 &quot;New Import&quot;녹색 버튼을 클릭하십시오. 
 ![](../common/images/mobile/401-New_Import_Package.png)
 
-5. Click on "Choose a package file " and select the MBE package file "package-LoyaltyMgmt_MBE0X.zip" with the correct postfix assigned to you.
+
+5. &quot;패키지 파일 선택&quot;을 클릭하고 정확한 접미사가 할당 된 MBE 패키지 파일 &quot;package-LoyaltyMgmt_MBE0X.zip&quot;을 선택하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_File.png)
 
-6. Once the file has been uploaded, click 'Next'.
+
+6. 파일이 업로드되면 &#39;다음&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_File_Validated.png)
 
-7. On the 'confirm' step, the contents of the package are shown. The package should include Mobile Backend 'LoyaltyMgmt_MBE0X', Client 'MyAndroidClient0X', API 'LoyaltyMgmt0X', API implementation 'LoyaltyMgmt03', and 3 connectors 'GenerateQRCode0X', 'ProcessOffer0X', and 'QueryOffers03'. Make sure the postfix is correct in each object to be imported. Click 'Next'
+
+7. &#39;확인&#39;단계에서 패키지 내용이 표시됩니다. 패키지에는 모바일 백엔드 &#39;LoyaltyMgmt_MBE0X&#39;, 클라이언트 &#39;MyAndroidClient0X&#39;, API &#39;LoyaltyMgmt0X&#39;, API 구현 &#39;LoyaltyMgmt03&#39;및 3 개의 커넥터 &#39;GenerateQRCode0X&#39;, &#39;ProcessOffer0X&#39;및 &#39;QueryOffers03&#39;이 포함되어야합니다. 가져올 각 개체에서 접미사가 올바른지 확인하십시오. &#39;다음&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Confirm.png)
 
-8. On the 'Import Results' step, verify all objects have been imported successfully, except the user realm 'Default' which already exists. Click 'Next'.
+
+8. &#39;결과 가져 오기&#39;단계에서 이미 존재하는 사용자 영역 &#39;기본값&#39;을 제외한 모든 객체가 성공적으로 가져 오기되었는지 확인하십시오. &#39;다음&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Results.png)
 
-9. On the 'Policies' step, select the policy '*.connector/GenerateQRCode0X(1.0).Connector_Endpoint' and click on 'Edit'.
+
+9. &#39;정책&#39;단계에서 &#39;*.connector / GenerateQRCode0X (1.0) .Connector_Endpoint&#39;정책을 선택하고 &#39;편집&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_GenerateQRCode_Endpoint.png)
 
-10. Set a custom value as the Host URL of the QR code service deployed on ACCS, e.g. `https://qrcodegenerator-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com`. Click 'Save'.
+
+10. ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https : // qrcodegenerator- <ACCS_DOMAIN_NAME> .apaas. <DATACENTER> .oraclecloud.com`. &#39;저장&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_GenerateQRCode_Endpoint.png)
 
-11. Back in the 'Policies' step, select the policy '*.connector/QueryOffers0X(1.0).Connector_Endpoint' and click on 'Edit'.
+
+11. &#39;Policies&#39;단계로 돌아가서 &#39;*.connector / QueryOffers0X (1.0) .Connector_Endpoint&#39;정책을 선택하고 &#39;Edit&#39;를 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_QueryOffers_Endpoint.png)
 
-12. Set a custom value as the Host URL of the offer service deployed on ACCS, e.g. `https://offer-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com`. Click 'Save'.
+
+12. ACCS에 배포 된 오퍼 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https : // offer- <ACCS_DOMAIN_NAME> .apaas. <DATACENTER> .oraclecloud.com`. &#39;저장&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_QueryOffers_Endpoint.png)
 
-13. Back in the 'Policies' step, select the policy '*.connector/ProcessOffer0X(1.0).Connector_Endpoint' and click on 'Edit'.
+
+13. &#39;정책&#39;단계로 돌아가서 &#39;*.connector / ProcessOffer0X (1.0) .Connector_Endpoint&#39;정책을 선택하고 &#39;편집&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_ProcessOffer_Endpoint.png)
 
-14. Set a custom value as the full service URL of the 'Process Offer' service deployed on ICS, e.g. `https://integration-<ICS_DOMAIN_NAME>.integration.<DATACENTER>.oraclecloud.com/integration/flowapi/rest/C0X_ICS_INTMGT/v01/processoffer`. Click 'Save'.
+
+14. ICS에 배포 된 &#39;Process Offer&#39;서비스의 전체 서비스 URL로 사용자 정의 값을 설정하십시오 (예 :`https : // integration- <ICS_DOMAIN_NAME> .완성. <DATACENTER> .oraclecloud.com / integration / flowapi / rest / C0X_ICS_INTMGT / v01 / processoffer`를 참조하십시오. &#39;저장&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_ProcessOffer_Endpoint.png)
 
-15. Back in the 'Policies' step, verify that you have successfully set new values for all three connector endpoint policies, and click 'Update' to complete importing the package.
+
+15. &#39;정책&#39;단계로 돌아가서 세 가지 커넥터 끝점 정책에 대한 새 값을 성공적으로 설정했는지 확인하고 &#39;업데이트&#39;를 클릭하여 패키지 가져 오기를 완료합니다. 
 ![](../common/images/mobile/401-Import_Package_Complete_Update_Policies.png)
 
 
-#### Configure credential to access 'Process Offer' service on ICS ####
-The 'Process Offer' service deployed on ICS is configured to use 'Basic Authentication' in the 'integrations' lab. To integrate with the 'Process Offer' service, you should configure the ICS credential on MCS so that the connector on MCS is authorized to access the 'Process Offer' on ICS.
 
-1. From the navigation pane, click on “Administration” to open the "Administration" page. Scroll down to the bottom and click on "Keys & Certificates" to open the "CSF Keys & Certificates" box.
+#### ICS에서 &#39;Process Offer&#39;서비스에 액세스하기위한 자격 증명 구성 ICS에 배포 된 &#39;Process Offer&#39;서비스는 &#39;통합&#39;Lab에서 &#39;기본 인증&#39;을 사용하도록 구성됩니다. &#39;Process Offer&#39;서비스와 통합하려면 MCS의 커넥터가 ICS의 &#39;Process Offer&#39;에 액세스 할 수 있도록 MCS의 ICS 자격 증명을 구성해야합니다. 
+
+1. 탐색 창에서 &quot;관리&quot;를 클릭하여 &quot;관리&quot;페이지를 엽니 다. 아래로 스크롤하여 &quot;키 및 인증서&quot;를 클릭하여 &quot;CSF 키 및 인증서&quot;상자를 엽니 다. 
 ![](../common/images/mobile/401-CSF_Navigate_To_CSF.png)
 
-2. In the "CSF Keys & Certificates" box, under tab "CSF Keys", select the key "ICS0X" (0X is the postfix assigned to you), set "Short Description" to be "ICS0X" (0X is the postfix assigned to you), and set the user name and password to be the credential of the ICS domain, that you use in the "integrations" lab. Click "Save and Close" button.
+
+2. &quot;CSF 키 및 인증서&quot;상자의 &quot;CSF 키&quot;탭에서 &quot;ICS0X&quot;키 (0X가 사용자에게 지정된 접미사)를 선택하고 &quot;간단한 설명&quot;을 &quot;ICS0X&quot;로 설정하십시오 (0X는 접미사입니다 할당 된 사용자 이름과 암호를 &quot;통합&quot;Lab에서 사용하는 ICS 도메인의 자격 증명으로 설정하십시오. &quot;저장 후 닫기&quot;버튼을 클릭하십시오. 
 ![](../common/images/mobile/401-CSF_Update_CSF.png)
 
-#### Test the connector 'Process Offer' ####
 
-Once the connectors have been imported and configured completely, you can test the connector. In this lab, you will test the connector 'Process Offer'.
+#### 커넥터 &#39;Process Offer&#39;테스트 
 
-1. On the navigation pane, select “Applications” -> “Connectors”. Enter "0X" (0X is the postfix assigned to you) to search for the connectors created by you. Select "Process Offer 0X" (0X is the postfix assigned to you) and click on "Open".
+커넥터를 가져 와서 완전히 구성한 후에는 커넥터를 테스트 할 수 있습니다. 이 실습에서는 커넥터 &#39;프로세스 제안&#39;을 테스트합니다. 
+
+1. 탐색 창에서 &quot;응용 프로그램&quot;-> &quot;커넥터&quot;를 선택하십시오. 작성한 커넥터를 검색하려면 &quot;0X&quot;(0X가 사용자에게 지정된 접미사 임)를 입력하십시오. &quot;Process Offer 0X&quot;(0X는 당신에게 할당 된 접미사 임)를 선택하고 &quot;Open&quot;을 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_Open_ProcessOffer.png)
 
-2. In 'General' step, make sure that the 'API Name' is set as 'ProcessOffer0X' (0X is the postfix assigned to you), and click 'Next'.
+
+2. &#39;일반&#39;단계에서 &#39;API 이름&#39;이 &#39;ProcessOffer0X&#39;(0X가 귀하에게 지정된 접미사)로 설정되어 있는지 확인하고 &#39;다음&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_General.png)
 
-3. In 'Descriptor' step, make sure that the 'Remote URL' is set to the full service URL of the 'Process Offer' service on ICS, e.g. `https://integration-<ICS_DOMAIN_NAME>.integration.us2.oraclecloud.com/integration/flowapi/rest/C0X_ICS_INTMGT/v01/processoffer`. Click 'Next'.
+
+3. &#39;Descriptor&#39;단계에서 &#39;원격 URL&#39;이 ICS의 &#39;Process Offer&#39;서비스의 전체 서비스 URL로 설정되어 있는지 확인하십시오 (예 :`https : // integration- <ICS_DOMAIN_NAME> .integration.us2.oraclecloud.com / integration / flowapi / rest / C0X_ICS_INTMGT / v01 / processoffer`를 참조하십시오. &#39;다음&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Descriptor.png)
 
-4. In 'Rules' step, click 'Next' as no rule is used. 
 
-5. In 'Security' step, make sure that security policy "oracle/http_basic_auth_over_ssl_client_policy" is selected, and the csf-key is set to 'ICS0X' (0X is the postfix assigned to you). Click 'Next'.
+4. &#39;규칙&#39;단계에서 아무 규칙도 사용되지 않으므로 &#39;다음&#39;을 클릭하십시오. 
+
+5. &#39;보안&#39;단계에서 보안 정책 &quot;oracle /http_basic_auth_over_ssl_client_policy&quot;가 선택되고 csf-key가 &#39;ICS0X&#39;(0X가 사용자에게 지정된 접미사)로 설정되어 있는지 확인하십시오. &#39;다음&#39;을 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Security.png)
 
-6. Click 'Yes' to save.
 
-   ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Save.png)
+6. &#39;예&#39;를 클릭하여 저장하십시오. 
 
-7. In 'Test' step, select `POST` as the HTTP method, enter `{"customerid": 66890169,  "offerid": 10001,  "productid": 20001,  "accepted": false}` into the "HTTP Body".
+! [](../common/images/mobile/401-Test_Connector_ProcessOffer_Save.png) 
+
+7. &#39;Test&#39;단계에서 HTTP 메소드로 &#39;POST&#39;를 선택하고 HTTP Body로 &#39;{ &quot;customerid&quot;: 66890169, &quot;offerid&quot;: 10001, &quot;productid&quot;: 20001, &quot;accepted&quot;: false} &quot;. 
+
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Test_1.png)
 
-8. Select your mobile backend (e.g.: `LoyaltyMgmt_MBE0X`) you created from the dropdown list in the “Authentication” section, and click on “Test Endpoint”.
+
+8. &quot;인증&quot;섹션의 드롭 다운 목록에서 만든 모바일 백엔드 (예 :`LoyaltyMgmt_MBE0X`)를 선택하고 &quot;엔드 포인트 테스트&quot;를 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Test_2.png)
 
-9. You shall see an HTTP 200 OK response at the bottom of the page and it is all set.
+
+9. 페이지 하단에 HTTP 200 OK 응답이 표시되고 모든 설정이 완료됩니다. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Test_Result.png)
 
 
-You have finished this lab successfully.
 
-[Procced to Next - 402: Verify and test custom APIs and implementation](402-MobileLab.md)
+이 Lab을 성공적으로 마쳤습니다. 
 
-or
+[Procced to Next - 402: Verify and test custom APIs and implementation](402-MobileLab.md) 
 
-[Back to Mobile Service and Application Home](README.md)
+또는 
+
+[Back to Mobile Service and Application Home](README.md) 
+

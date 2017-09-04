@@ -1,120 +1,139 @@
-# ORACLE Cloud Test Drive #
+# 오라클 클라우드 테스트 드라이브 #
 -----
-## 103: Continuous Integration & Delivery (CICD): Using Brackets, Commit and Push Code Change to Oracle Developer Cloud Service ##
+## 103 : CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 괄호 사용, 코드 변경 및 푸시 코드 변경 ##
 
-### Introduction ###
-You can access Oracle Developer Cloud Service projects from Integrated Development Environments (IDEs) or text editors such as Brackets, Oracle Enterprise Pack for Eclipse (OEPE), Oracle JDeveloper, and NetBeans IDE. The Brackets can connect and exchange with Oracle Developer Cloud Service, which conveniently exposes the most common cloud development tasks from within the editor. 
 
-This tutorial demonstrates how to:
-- Perform a simple continuous integration and delivery using Oracle Developer Cloud Service with Brackets
+### 소개 ###
+Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Environments) 또는 Eclipse 용 Oracle Enterprise Pack (OEPE), Oracle JDeveloper 및 NetBeans IDE와 같은 텍스트 편집기에서 액세스 할 수 있습니다. 브래킷은 Oracle Developer Cloud Service와 연결하여 교환 할 수 있습니다.이 서비스는 편집기에서 가장 일반적인 클라우드 개발 태스크를 편리하게 제공합니다. 
 
-### About the Exercise Today ###
-In this exercise, we will:
-- Connect Oracle Developer Cloud Service from Brackets, checkout and update project source code
-- Commit and push updated source code from Brackets back to Developer Cloud Service
-- Review the continuous integration and delivery result made by Developer Cloud Service
+이 자습서에서는 다음 작업을 수행하는 방법을 보여줍니다. 
+- Oracle Developer Cloud Service (대괄호 포함)를 사용하여 간단하게 지속적인 통합 및 전달 수행 
 
-### Prerequisites ###
+### 오늘 운동에 대하여 ###
+이 연습에서는 다음을 수행합니다. 
+- Brackets에서 Oracle Developer Cloud Service를 연결하고 프로젝트 소스 코드를 체크 아웃 및 업데이트합니다. 
+- 업데이트 된 소스 코드를 대괄호에서 개발자 클라우드 서비스로 다시 보냅니다. 
+- 개발자 클라우드 서비스의 지속적인 통합 및 제공 결과 검토 
+
+### 선수 과목 ###
 + [Create Oracle Developer Cloud Service project for Loyalty Management JEE application and deployed to Java Cloud Service WebLogic Server Container](102-JavaAppsLab.md)
 + [Installed Brackets and Git extension](brackets.md)
 
 ----
 
-#### Connect and Obtain Source Code from Developer Cloud Service ####
 
-1. Start the Brackets Text Editor, in the `File` pull-down menu, choose `Open Folder`.
+#### 개발자 클라우드 서비스에서 소스 코드 연결 및 가져 오기 
+
+1. 대괄호 텍스트 편집기를 시작하고, &#39;파일&#39;풀다운 메뉴에서 &#39;폴더 열기&#39;를 선택하십시오. 
 
 ![](images/103/02.openfolder.png)
 
-2. Navigate to select target destination directory to store JEE source code, for example: `D:\oracle`
-   Create a `New Folder`, then name the new folder as `LoyaltyManagement`.  
-   Keep the `LoyaltyManagement` folder selected and click `Select Folder` button at bottom.
+
+2. JEE 소스 코드를 저장할 대상 디렉토리를 선택하십시오 (예 :`D : \ oracle`). 새 폴더를 작성한 후 새 폴더의 이름을 LoyaltyManagement로 지정하십시오. `LoyaltyManagement` 폴더를 선택한 상태에서 &#39;Select Folder` 버튼을 클릭하십시오. 
 
 ![](images/103/03.selectfolder.png)
 
-3. Back in Developer Cloud Service dashboard, in your **LoyaltyManagement** Git Repository. Click HTTP to display the Git HTTP URL, click the square `Copy` button on the right to copy the URL.
+
+3. 개발자 클라우드 서비스 대시 보드로 돌아가서**LoyaltyManagement**Git 저장소에 있습니다. HTTP를 클릭하여 Git HTTP URL을 표시하고 오른쪽에있는 &#39;Copy&#39;버튼을 클릭하여 URL을 복사하십시오. 
 
 ![](images/103/04.devcs.git.png)
 
-4. Back in the Bracket editor, click on GIT icon on the right hand side of the editor.
+
+4. 브라켓 편집기로 돌아가서 편집기의 오른쪽에있는 GIT 아이콘을 클릭하십시오. 
 
 ![](images/103/05.brackets.git.png)
 
-5. In the Git panel, click `Clone`.
+
+5. Git 패널에서 Clone을 클릭하십시오. 
 
 ![](images/103/06.brackets.clone.png)
 
-6. Paste the GIT URL that you copied from Developer Cloud Service. Username should be populated automatically. Enter the password and select `Save credentials to remote url`.  
-Click `OK` button at the bottom.
+
+6. 개발자 클라우드 서비스에서 복사 한 GIT URL을 붙여 넣습니다. 사용자 이름은 자동으로 채워 져야합니다. 비밀번호를 입력하고 &#39;원격 URL에 자격증 명 저장&#39;을 선택하십시오. 하단의 &#39;확인&#39;버튼을 클릭하십시오. 
 
 ![](images/103/07.brackets.clone1.png)
 
-7. Wait for Brackets to clone your remote project to local folder.
+
+7. 브래킷이 원격 프로젝트를 로컬 폴더에 복제 할 때까지 기다립니다. 
 
 ![](images/103/08.brackets.clone2.png)
 
-8. You now have a local copy of the Git Repository.
+
+8. 이제 Git 저장소의 로컬 사본이 있습니다. 
 
 ![](images/103/09.brackets.clone3.png)
 
-#### Commit and Push Code Changes ####
 
-9. Expand the left nagivation tree and open `welcome.jsp` file (Under loyalty->src->main->webapp->jsp).  
-On the main window, locate line 73 of welcome.jsp source code.
+#### 코드 변경 사항 적용 및 푸시 
+
+9. 좌측 존속 트리를 확장하고`welcome.jsp` 파일을 엽니 다 (충성도 -> src-> main-> webapp-> jsp). 기본 창에서 welcome.jsp 소스 코드 73 행을 찾으십시오. 
 
 ![](images/103/10.brackets.change.png)
 
-14. Modify the following part:
+
+14. 다음 부분을 수정하십시오. 
 
   	<h2>Welcome to the Loyalty Manager !!</h2>
 
-To what you would like to see on the page. For example:
+
+당신이 페이지에서보고 싶은 것. 예 : 
 
 	<h2><font color="red">APAC Test Drive</font> - Welcome to the Loyalty Manager !!</h2>
 
+
 ![](images/103/11.brackets.change1.png)
 
-15. Save the file. (Press `Ctrl-S` or choose from pull-down menu `File` > `Save`)
+
+15. 파일을 저장하십시오. ( &#39;Ctrl-S&#39;누르거나 &#39;File`>`Save` 풀다운 메뉴에서 선택하십시오) 
 
 ![](images/103/12.brackets.save.png)
 
-16. Check the box next to Commit to select all modified files - this means the checkbox below (welcome.jsp) will automatically be checked.  
-Click `Commit` button.
+
+16. Commit 옆에있는 상자를 선택하여 수정 된 모든 파일을 선택하십시오. 이는 아래의 체크 박스 (welcome.jsp)가 자동으로 선택되었음을 의미합니다. `Commit` 버튼을 클릭하십시오. 
 
 ![](images/103/13.brackets.commit.png)
 
-17. In the pop-up enter the comment: `Changed header` and then click `OK` button. This will commit the changes to your LOCAL GIT REPOSITORY.
+
+17. 팝업창에 &#39;변경된 헤더&#39;를 입력하고 &#39;확인&#39;버튼을 클릭하십시오. 이것은 귀하의 LOCAL GIT REPOSITORY에 변경 사항을 적용합니다. 
 
 ![](images/103/14.brackets.commit1.png)
 
-18. Click `Git Push` icon.
+
+18. &#39;Git Push&#39;아이콘을 클릭하십시오. 
 
 ![](images/103/15.brackets.commit2.png)
 
-19. In the pop-up window, leave all defaults and click `OK` button at the bottom.
+
+19. 팝업 창에서 기본값을 모두 그대로두고 하단의 &#39;확인&#39;버튼을 누릅니다. 
 
 ![](images/103/15.brackets.commit3.png)
 
-20. Once Git Push completes, click `OK` button.
+
+20. Git Push가 완료되면 &#39;OK&#39;버튼을 클릭하십시오. 
 
 ![](images/103/16.brackets.done.png)
 
-#### Continuous Integration & Delivery (CICD) ####
 
-18. Now change back to the browser and check the Build page in the Oracle Developer Cloud Service project. You should see that a new build (in our case: *LoyaltyManagementBuild*) has been fired by the Git changes.
+#### CICD (Continuous Integration &amp; Delivery) 
+
+18. 이제 브라우저로 돌아가서 Oracle Developer Cloud Service 프로젝트의 Build 페이지를 확인하십시오. 새로운 빌드 (우리의 경우 :*LoyaltyManagementBuild*)가 Git 변경에 의해 해고되었음을 알 수 있습니다. 
 
 ![](images/103/21.png)
 
-19. Once the job is done change to the tab to Deploy and you can see that a new deployment has been started too. If you remember the Deployment was configured to redeploy every time when a new successful build artifact is ready.
+
+19. 작업이 완료되면 배포 탭으로 변경하여 새 배포가 시작되었는지 확인할 수 있습니다. 새로운 성공적인 빌드 이슈가 준비 될 때마다 배포가 다시 배포되도록 구성되었습니다. 
 
 ![](images/103/22.png)
 
-20. Now check the changes of the home page of the Loyalty Management application. You should see the changes (red text) on the application's home page.  
-    The Loyalty Management application URL should be in the format of:  
+
+20. 이제 로열티 관리 응용 프로그램의 홈 페이지 변경 사항을 확인하십시오. 응용 프로그램의 홈 페이지에서 변경 사항 (빨간색 텍스트)을 확인해야합니다. 로열티 관리 애플리케이션 URL은 다음 형식이어야합니다. 
 	`https://**<JCS WLS instance IP Adress>**/loyalty/jsp/welcome.jsp`, the JCS WLS instance IP address is the same as **Deploy to JCS** target in DevCS.
+
 
 ![](images/103/23.png)
 
-You have finished this lab section.
 
-[Back to JavaAppsLab Home](README.md)
+이 Lab 섹션을 마쳤습니다. 
+
+[Back to JavaAppsLab Home](README.md) 
+

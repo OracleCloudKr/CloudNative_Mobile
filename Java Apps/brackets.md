@@ -1,69 +1,83 @@
-# ORACLE Cloud Test Drive #
+# 오라클 클라우드 테스트 드라이브 #
 -----
-## Installation of Brackets for Cloud Test Drive ##
+## 클라우드 테스트 드라이브 용 브래킷 설치 ##
 
-Brackets is a modern text editor that makes it easy to design in the browser with focused visual tools and preprocessor support. It's crafted from the ground up for web designers and front-end developers. Brackets is an open-source project, supported by an active and passionate community. For detail, you can go to [Brackets.io](http://brackets.io/)
+
+대괄호는 현대적인 텍스트 편집기로, 집중적 인 시각 도구 및 전처리 지원을 통해 브라우저에서 쉽게 디자인 할 수 있습니다. 웹 디자이너와 프런트 엔드 개발자를 위해 처음부터 만들어졌습니다. 대괄호는 적극적이고 열정적 인 커뮤니티가 지원하는 오픈 소스 프로젝트입니다. 자세한 내용은 [Brackets.io](http://brackets.io/)을 참조하십시오. 
 
 ![](images/brackets/hero.png)
 
-### Prerequisites ###
-This lab guide assumes the following:
-- Internet access available (to download installer or copy from instructor)
 
-#### Installation of Brackets ####
+### 선수 과목 ###
+이 실습 안내서는 다음을 전제로합니다. 
+- 인터넷 액세스 가능 (설치 프로그램 다운로드 또는 강사로부터 복사) 
 
-1. Go to [Brackets Home Page](http://brackets.io/) and click `Download Brackets 1.10` button at the middle.
+#### 브래킷 설치 
+
+1. [Brackets Home Page](http://brackets.io/)로 가서 가운데에있는 &#39;Brackets 1.10 다운로드&#39;버튼을 클릭하십시오. 
 
 ![](images/brackets/00.brackets.download.png)
 
-2. This guideline assumes **Microsoft Windows hosts** as example, but it should be similar on other OS.  
-Select to save the installer executable on your harddisk destination.
+
+2. 이 지침은**Microsoft Windows 호스트**를 예로 가정하지만 다른 OS에서도 비슷해야합니다. 설치 프로그램 실행 파일을 하드 디스크 대상에 저장하려면 선택하십시오. 
 
 ![](images/brackets/01.brackets.save.png)
 
-3. On your harddisk diretory where `Brackets.Release.1.10.msi` is saved, open to execute the installer.  
-Select your target Brackets Destination Folder, and then click `Next` button.
+
+3. `Brackets.Release.1.10.msi`가 저장된 곳의 하드 디스크 디렉토리에서 열고 설치 프로그램을 실행하십시오. 대상 대괄호 대상 폴더를 선택하고 &#39;다음&#39;버튼을 클릭하십시오. 
 
 ![](images/brackets/02.brackets.install.png)
 
-4. Click `Install` button to proceed the installation.
+
+4. &#39;설치&#39;버튼을 클릭하여 설치를 진행하십시오. 
 
 ![](images/brackets/03.brackets.install1.png)
 
-5. The Brackets installation should be done in a minute, click `Finish` button to finish installation.
+
+5. 브래킷 설치는 1 분 안에 완료해야합니다. &#39;마침&#39;버튼을 클릭하여 설치를 완료하십시오. 
 
 ![](images/brackets/04.brackets.install2.png)
 
-6. From the Brackets installed location or *Search Windows* (on Win10), run the `Brackets.exe`.
+
+6. 브라켓 설치 위치 또는*Windows*검색 (Win10)에서 Brackets.exe를 실행하십시오. 
 
 ![](images/brackets/05.brackets.start.png)
 
-7. The Brackets should be started like below.
+
+7. 브래킷은 다음과 같이 시작해야합니다. 
 
 ![](images/brackets/06.brackets.started.png)
 
-8. At the upper right corner, click on the `Extension Manager` icon.
+
+8. 오른쪽 상단의 &#39;Extension Manager&#39;아이콘을 클릭하십시오. 
 
 ![](images/brackets/07.brackets.extension.png)
 
-9. Enter `git` in the search area, then scroll to locate `Brackets Git` and click `Install` button on the right.
+
+9. 검색 영역에`git`을 입력하고 스크롤하여`Brackets Git`을 찾은 다음 오른쪽에있는`Install` 버튼을 클릭하십시오. 
 
 ![](images/brackets/08.brackets.extension1.png)
 
-10. Simply click `Save` to accept default **Git Settings...**.
+
+10. 간단히`저장 &#39;을 클릭하여 기본**힘내 설정 ...**을 수락하십시오. 
 
 ![](images/brackets/09.brackets.git.png)
 
-11. Click `OK` button to proceed restart, and the Brackets should be restarted by itself.
+
+11. &#39;OK&#39;버튼을 클릭하여 다시 시작하면 대괄호가 단독으로 다시 시작됩니다. 
 
 ![](images/brackets/10.brackets.restart.png)
 
-11. On restart done, click `Close` button to close the **ChangeLog** diaglog window.
+
+11. 재시작이 끝나면 &#39;닫기&#39;버튼을 클릭하여**로그 변경 대화 상자를 닫습니다. 
 
 ![](images/brackets/11.brackets.restart1.png)
 
-12. You have successfully installed Brackets with Git exchange capability.
+
+12. Git 교환 기능으로 대괄호를 성공적으로 설치했습니다. 
 
 ![](images/brackets/12.brackets.done.png)
 
-[Back to JavaAppLab Home](README.md)
+
+[Back to JavaAppLab Home](README.md) 
+

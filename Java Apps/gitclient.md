@@ -1,62 +1,77 @@
-# ORACLE Cloud Test Drive #
+# 오라클 클라우드 테스트 드라이브 #
 -----
-## Installation of Git Client for Cloud Test Drive ##
+## 클라우드 테스트 드라이브 용 Git 클라이언트 설치 ##
 
-Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source code management in software development,[8] but it can be used to keep track of changes in any set of files.
 
-#### Installation of Git Client ####
+Git은 컴퓨터 파일의 변경 사항을 추적하고 여러 사람 사이의 파일에 대한 작업을 조정하는 버전 제어 시스템입니다. 주로 소프트웨어 개발의 소스 코드 관리에 사용되지만 [8], 모든 파일 세트의 변경 내용을 추적하는 데 사용할 수 있습니다. 
 
-1. Double click the Git client you've downloaded or copied from the instructor
+#### Git 클라이언트 설치 
+
+1. 강사가 다운로드하거나 복사 한 Git 클라이언트를 두 번 클릭하십시오. 
 
 ![](images/gitclient/00.png)
 
-2. Click [Yes] to proceed to install
+
+2. [예]를 클릭하여 설치를 계속합니다. 
 
 ![](images/gitclient/01.png)
 
-3. Click [Next] to accept the license
+
+3. 라이센스를 수락하려면 [다음]을 클릭하십시오. 
 
 ![](images/gitclient/02.png)
 
-4. Provide the destination folder for the installation - **default is recommended** and click [Next]
+
+4. 설치를위한 대상 폴더를 제공하십시오 - **기본값이 권장됩니다**그리고 [다음]을 클릭하십시오. 
 
 ![](images/gitclient/03.png)
 
-5. You can select the components to be installed - just keep **default** and click [Next]
+
+5. 설치할 구성 요소를 선택할 수 있습니다.**기본**을 유지하고 [다음]을 클릭하십시오. 
 
 ![](images/gitclient/04.png)
 
-6. You can provide a Start Menu folder name - just keep **default** and lick [Next]
+
+6. 시작 메뉴 폴더 이름을 제공 할 수 있습니다.**기본**을 유지하고 [다음] 
 
 ![](images/gitclient/05.png)
 
-7. Select **Use Git from the Windows Command Prompt** and click [Next]
+
+7. Windows 명령 프롬프트에서**Use Git을 선택하고 [다음]을 클릭하십시오. 
 
 ![](images/gitclient/06.png)
 
-8. Select the desired SSL library - keep **default** and click [Next]
+
+8. 원하는 SSL 라이브러리를 선택하십시오 - **기본값**을 유지하고 [다음] 
 
 ![](images/gitclient/07.png)
 
-9. Keep **default** for the CRLF style and click [Next]
+
+9. CRLF 스타일에 대해**기본값**을 유지하고 [다음] 
 
 ![](images/gitclient/08.png)
 
-10. Keep **default** for terminal emulator and click [Next]
+
+10. 터미널 에뮬레이터의**기본**을 유지하고 [다음] 
 
 ![](images/gitclient/09.png)
 
-11. Keep **default** for extra options and click [Install]
+
+11. 추가 옵션을 보려면**기본**을 유지하고 [설치] 
 
 ![](images/gitclient/10.png)
 
-12. Wait for the installation to finish
+
+12. 설치가 완료 될 때까지 기다립니다. 
 
 ![](images/gitclient/11.png)
 
-13. Click [Finish] when done
+
+13. 완료되면 [마침]을 클릭하십시오. 
 
 ![](images/gitclient/12.png)
 
 
-[Back to JavaAppLab Home](README.md)
+
+[Back to JavaAppLab Home](README.md) 
+

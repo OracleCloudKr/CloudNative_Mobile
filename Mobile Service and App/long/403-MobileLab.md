@@ -1,49 +1,55 @@
-# ORACLE Cloud Test Drive #
+# 오라클 클라우드 테스트 드라이브 #
 -----
-## 403: Develop Custom APIs and Custom Code to extend mobile services ##
+## 403 : 모바일 서비스를 확장하기 위해 맞춤 API 및 맞춤 코드 개발 ##
 
-### Introduction ###
+
+### 소개 ###
 ![](../../common/images/mobile/long/mcsgs_dt_003_customapi.png)
 
-You can create custom REST APIs to build up a library of services that can be used by your mobile applications. Custom APIs are particularly useful for aggregating data from other sources, adding any relevant business logic, and returning results in a mobile-friendly way for mobile applications.
+
+사용자 정의 REST API를 만들어 모바일 응용 프로그램에서 사용할 수있는 서비스 라이브러리를 구축 할 수 있습니다. 맞춤 API는 특히 다른 소스의 데이터를 집계하고 관련 비즈니스 로직을 추가하며 결과를 모바일 애플리케이션에 모바일 친화적 인 방식으로 반환하는 데 유용합니다. 
 ![](../../common/images/mobile/long/mcsgc_dt_004_api.png)
 
-### About the Exercise Today ###
-In the previous lab, we've created 3 connector APIs to integrate with external services for offer information query, QR code creation and offer result update. As you might remember, those connector APIs are not directly exposed to mobile applications. Once you create connector APIs to access the services, you can use them in custom APIs (e.g. Loyalty Management API), which you can then call from your mobile applications or external systems using standard REST calls. So, in this lab, we will create a custom API for 3 connector APIs.
 
-In this exercise, we will:
-- Create the custom API and define its endpoints for loyalty management. We need the custom API with several endpoints for offer information query, QR code creation and offer result (e.g. reject or accept) update.
-- Implement the custom API: In this lab, we will provide code snippets for API implementation. Just follow the instructions and you can make it.
-- Set up Security for the custom API
-- Associate the APIs with the loyalty management MBE.
-- Test the Custom API for loyalty management
+### 오늘 운동에 대하여 ###
+이전 연구실에서는 제안 정보 쿼리, QR 코드 작성 및 제안 결과 업데이트를 위해 외부 서비스와 통합 할 수 있도록 3 개의 커넥터 API를 만들었습니다. 기억할 수 있듯이 이러한 커넥터 API는 모바일 응용 프로그램에 직접 노출되지 않습니다. 서비스에 액세스하기 위해 커넥터 API를 작성한 후에는 사용자 정의 API (예 : Loyalty Management API)에서이 API를 사용하여 표준 REST 호출을 사용하여 모바일 애플리케이션 또는 외부 시스템에서 호출 할 수 있습니다. 이 실습에서는 세 개의 커넥터 API에 대한 사용자 지정 API를 만듭니다. 
 
-### Prerequisites ###
-- Loyalty management MBE created in the previous lab. (401 lab)
-- 3 Connector APIs we created in the previous lab (402 lab)
-- A RAML file for the custom API with some of endpoints for your use. It can be downloaded by right clicking on [this link](https://raw.githubusercontent.com/APACTestDrive/CloudNative_Mobile/MobileLab-short-delta-only/common/assets/mobile/loyaltymanagementapi.raml) and select "Save link as..." for your use in the lab.
-- Chrome Postman to test custom APIs
-- Any text file editor
+이 연습에서는 다음을 수행합니다. 
+- 커스텀 API를 생성하고 충성도 관리를위한 엔드 포인트를 정의하십시오. 쿠폰 정보 쿼리, QR 코드 생성 및 제안 결과 (예 : 거부 또는 수락) 업데이트를 위해 여러 끝점이있는 사용자 지정 API가 필요합니다. 
+- 맞춤 API 구현 :이 실습에서는 API 구현을위한 코드 스 니펫을 제공합니다. 지침을 따르기 만하면됩니다. 
+- 맞춤 API에 대한 보안 설정 
+- API를 충성도 관리 MBE와 연결합니다. 
+충성도 관리를위한 맞춤 API 테스트 
+
+### 선수 과목 ###
+
+- 충성도 관리 MBE는 이전 Lab에서 만들었습니다. (401 Lab) 
+- 이전 연구실에서 만든 3 개의 커넥터 API (402 Lab) 
+- 사용할 엔드 포인트가있는 사용자 정의 API 용 RAML 파일. [this link](https://raw.githubusercontent.com/APACTestDrive/CloudNative_Mobile/MobileLab-short-delta-only/common/assets/mobile/loyaltymanagementapi.raml)을 마우스 오른쪽 버튼으로 클릭하고 &quot;다른 이름으로 링크 저장 ...&quot;을 선택하여 랩에서 사용할 수 있습니다. 
+
+- Chrome Postman이 맞춤 API를 테스트합니다. 
+- 모든 텍스트 파일 편집기 
 
 ----
-#### Create the custom API and define its endpoints for loyalty management ####
-In this lab, you will create a custom API for loyalty management. In fact, we need to define several endpoints for the custom API for offer information query, QR code creation and offer result update. Creating endpoints are the same jobs. For your convenience, we will create our own custom API using a RAML file for other endpoints and then manually create one additional endpoint. So, here you will create one endpoint for the query of the specific offer information.
+#### 맞춤 API 생성 및 충성도 관리를위한 끝점 정의이 실습에서는 충성도 관리를위한 맞춤 API를 작성합니다. 사실, 오퍼 정보 조회, QR 코드 작성 및 오퍼 결과 갱신을 위해 사용자 정의 API에 대해 여러 엔드 포인트를 정의해야합니다. 엔드 포인트 작성은 동일한 작업입니다. 사용자 편의를 위해 다른 엔드 포인트 용 RAML 파일을 사용하여 자체 사용자 정의 API를 작성한 후 하나의 추가 엔드 포인트를 수동으로 작성합니다. 여기에서 특정 오퍼 정보에 대한 쿼리를위한 하나의 엔드 포인트를 생성합니다. 
 
-1. From the navigation pane, select “Applications” -> “APIs”, click on “+ New API” and select “API” from the dropdown list.
+1. 탐색 창에서 &quot;Applications&quot;-> &quot;APIs&quot;를 선택하고 &quot;+ New API&quot;를 클릭 한 다음 드롭 다운 목록에서 &quot;API&quot;를 선택하십시오. 
 ![](../../common/images/mobile/long/403-New_API.png)
 
-2. Click on “Upload a RAML document” link and choose the RAML file (`loyaltymanagementapi.raml`) you downloaded in the Prerequisites section.
+
+2. &quot;RAML 문서 업로드&quot;링크를 클릭하고 선행 조건 섹션에서 다운로드 한 RAML 파일 (`loyaltymanagementapi.raml`)을 선택하십시오. 
 ![](../../common/images/mobile/long/403-RAML_upload.png)
 
-3. When uploaded successfully, enter name and description and click on “Create” as below:
-    + **API Display Name**: `Loyalty Management API 0X` (0X is the sequence number assigned to you by instructor. - e.g.: 01)
-    + **API Name**: `LoyaltyManagementAPI0X`
-    + **API Short Description**: `Custom API for Loyalty Management API 0X`
-Click on “Create” on the bottom right.
+
+3. 성공적으로 업로드되면 이름과 설명을 입력하고 아래와 같이 &quot;만들기&quot;를 클릭하십시오 : 
++ **API 표시 이름**: &#39;충성도 관리 API 0X&#39;(0X는 강사가 지정한 일련 번호입니다. 예 : 01) 
++ **API 이름**: &#39;LoyaltyManagementAPI0X` 
++ **API 짧은 설명**:`로열티 관리 API 0X 용 맞춤 API &#39;오른쪽 하단의&#39;만들기 &#39;를 클릭하십시오. 
 
 ![](../../common/images/mobile/long/403-Create_Custom_API_with_RAML.png)
 
-4. **Copy the values of "API Name" and replace the value of properties called "API" in the "Mobile_App_Settings_Sample.json" file from Lab 401.**  Save the JSON file for later use.
+
+4. **&quot;API Name&quot;의 값을 복사하고 Lab 401의 &quot;Mobile_App_Settings_Sample.json&quot;파일에서 &quot;API&quot;라는 속성 값을 바꿉니다.**나중에 사용할 수 있도록 JSON 파일을 저장하십시오. 
 
 ```
 {
@@ -53,38 +59,16 @@ Click on “Create” on the bottom right.
       "anonymousToken": "R1NFMDAwMTE2NzhfTUNTX01PQklMRV9BTk9OWU1PVVNfQVBQSUQ6Smk3cXBld3lrczlfbmI=",
       "API":"LoyaltyManagementAPI0X",
             --> Replace the value inside double quotes with the value of "API Name" in previous step.
-      "senderID":"925757644219"
-}
-
 ```
 
 5. Define additional endpoint for the Loyalty Management API
    - Now the custom API just created is automatically open for you. Switch to the “Endpoints” tab to define the additional endpoint.
 ![](../../common/images/mobile/long/403-Define_Additional_Endpoint.png)
-
-   - Adding resource: Click on “+ New Resource”.
 ![](../../common/images/mobile/long/403-Endpoint_Add_Resource.png)
-
-   - The new resource is added to the bottom of the existing endpoints page. Scroll down to the end.
 ![](../../common/images/mobile/long/403-Locate_Added_Endpoint.png)
-
-   - Enter `offer/{id}` as the “Resource Path” and `Offer` as the “Display Name” and click on “Methods”. This endpoint (a URI resource) is for getting the specific offer information by offer ID.
 ![](../../common/images/mobile/long/403-New_Resource.png)
-
-   - Adding method: you can see that {id} entered in previous step has be recognized as a URI Resource Path Parameter “id”. Click on “+ Add Method” and select “GET”.
 ![](../../common/images/mobile/long/403-Adding_Method.png)
-
-   - Enter `Get offer details` as the “Description” and `Get offer details` as the “Display Name” for the method. Click on “Responses” link at the bottom.
 ![](../../common/images/mobile/long/403-Adding_Method_Info.png)
-
-   - Adding response: Click on "Add Response".
-   ![](../../common/images/mobile/long/403-Adding_Response_Add.png)
-
-    - Adding response media type: Click on "Add Media Type".
-   ![](../../common/images/mobile/long/403-Adding_Response_Add_Media_Type.png)
-
-    - Adding sample response: MCS will to create a mockup implementation for this endpoint method using the sample body when provided. This is the one of good features to enable parallel development of mobile application without external services. Make sure the "Media Type" dropdown is set to "application/json" and then in the "Example" text area, paste the following code:
-   
    ```
 	{
 		"id": 10001,
@@ -117,97 +101,22 @@ Click on “Create” on the bottom right.
 
 
 ----
-#### Implement the custom API for the Loyalty Management ####
-Now that you have the API defined, it's time to implement the API with JavaScript code. You can get started by downloading a scaffold that provides stubs for the functions that you need to implement for each endpoint, as well as some sample code.
-
-1. Download prebuilt implementation: We've provided a prebuilt implementation package for you which you can download by right clicking [loyaltymanagementapi_1.0.zip](https://github.com/APACTestDrive/CloudNative_Mobile/blob/MobileLab-short-delta-only/common/assets/mobile/loyaltymanagementapi_1.0.zip?raw=true) and select "Save link as...".
-
-2. Unzip the package. Edit `/loyaltymanagementapi/package.json` to add your postfix (e.g.: 01) into the "name", the "TestDriveICSConnectorAPI", "TestDriveACCSPtMgtConnectorAPI", "TestDriveACCSCtdQRConnectorAPI" to match your custom API name and the connector API names as shown in the below diagram.
-
 ![](../../common/images/mobile/long/403-Editing_Package_Json.png)
-
-
-3. Edit the implementation.
-   - Open `/loyaltymanagementapi/loyaltymanagementapi.js` with your text editor, replace the whole content with the source code below:
-
-   - Change the endpoint url to match your own API: Search for `/mobile/custom/LoyaltyManagementAPI` and replace all occurrences with `/mobile/custom/LoyaltyManagementAPI0X`(0X is your own postfix, e.g.: 01).
-
-   - Change the Product Management connector references in the code
-     - Search for `TestDriveACCSPtMgtConnectorAPI` and replace all occurrences with `TestDriveACCSPtMgtConnectorAPI0X` (0X is your own postfix, e.g.: 01).
-     
-   - Change the QR Code connector references in the code
-     - Search for `TestDriveACCSCtdQRConnectorAPI` and replace all occurrences with `TestDriveACCSCtdQRConnectorAPI0X` (0X is your own postfix, e.g.: 01).
-     
-   - Change the Process Offer connector references in the code
-     - Search for `TestDriveICSConnectorAPI` and replace all occurrences with `TestDriveICSConnectorAPI0X` (0X is your own postfix, e.g.: 01).
-
-
-4. Repack and upload: Put `package.json` file and `loyaltymanagementapi.js` file back into the original zip pack, navigate to the 'Implementation' tab of the current custom API, then click on “Upload an implementation archive” and select the updated zip pack `loyaltymanagementapi_1.0.zip`.
-
 ![](../../common/images/mobile/long/403-Upload_Impl_Pack.png)
-
-6. When successfully done, you shall get a screen like the following:
 ![](../../common/images/mobile/long/403-Impl_Upload_Pack_Success.png)
-
-
 ----
-#### Allow anonymous access to the custom API for the Loyalty Management ####
-You need to change the security policy to allow anonymous access to the API. Before that, the API is not accessible by anyone. On page level navigation pane, select “Security”. Switch off the 'Login Required' option to allow anonymous access and click “Save”.
 ![](../../common/images/mobile/long/403-API_Security_Settings.png)
-
 ---
-#### Associate the APIs with the loyalty management MBE ####
-Before you can deploy the custom API, it has to be associated with the mobile backend (e.g.: `LoyaltyMgmt_MBE01`) you created in the previous lab. The mobile backend provides the security context for accessing the API, including the users that have permissions. In this lab, we will assign the complete custom API for "LoyaltyManagementAPI" that we provide.
-
-1. Navigate to the MBE (e.g.: `LoyaltyMgmt_MBE01`) you created, and turn to the “APIs” tab. Click “Select APIs”.
 ![](../../common/images/mobile/long/403-Select_API_MBE.png)
-
-
-2. Enter `LoyaltymanagementAPI0X`(replace **“0X”** with your own postfix)  and click the  “+” icon to select the API.
 ![](../../common/images/mobile/long/403-Select_Your_API.png)
-
-
-3. You will see it got added to the right.
 ![](../../common/images/mobile/long/403-Added_API_ToMBE.png)
-
-
-4. Please see the result as below:
 ![](../../common/images/mobile/long/403-API_AddToMBE_Result.png)
-
-
 ---
-#### Test the Custom API for loyalty management ####
-
-Now you can test your custom API.
-
-1. Finding your base URI and endpoint URI(e.g.: `https://mcs-<YOUR_MCS_DOMAIN_NAME>.mobileenv.us2.oraclecloud.com/mobile/custom/LoyaltyManagementAPI01/offer`), let’s take `Get offer details` endpoint as an example.
 ![](../../common/images/mobile/long/403-Test_Get_URL.png)
-
-2. [Install Postman and use Chrome to access.](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop) and launch Postman to test `Get offer details` API.
 ![](../../common/images/mobile/long/403-Test_Postman_UI.png)
-
-3. Change the endpoint URI parameter placeholder with `10001`, as is shown below then choose `Basic Auth` from Authorization type dropdown list.
 ![](../../common/images/mobile/long/403-Test_Postman_Setting.png)
-
-4. Enter MCS username and password (MCS credential in the Access Document), and click on “Update Request”.
 ![](../../common/images/mobile/long/403-Test_MCS_Credential.png)
-
-5. Click on “Headers” and you can see the “Authorization” header has been generated for you based on your settings in the “Authorization” tab.
 ![](../../common/images/mobile/long/403-Test_Authorization_Header.png)
-
-6. Add 2 headers, one is `Oracle-Mobile-Backend-ID`, value is the actual MBE id that you can find in the settings tab of your MBE. The other one is `Accept`:`application/json`.
 ![](../../common/images/mobile/long/403-MBE_Settings_ID.png)
-
 ![](../../common/images/mobile/long/403-Test_Adding_2Headers.png)
-
-7. Click on “Send” and you shall see the response at the bottom of the page as below.
 ![](../../common/images/mobile/long/403-Test_Result.png)
-
-
-You have finished this lab successfully.
-
-[Procced to Next - 404: Set up Push Notification and Test Push Notification to mobile app](404-MobileLab.md)
-
-or
-
-[Back to Mobile Service and Application Home](README.md)

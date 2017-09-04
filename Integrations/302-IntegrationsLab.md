@@ -1,136 +1,156 @@
-# ORACLE Cloud Test Drive #
+# 오라클 클라우드 테스트 드라이브 #
 -----
-## 302: Import and Define Connections for CRM Customer Activity Service and REST Service Exposure ##
+## 302 : CRM 고객 활동 서비스 및 REST 서비스 노출에 대한 연결 가져 오기 및 정의 ##
 
-### Introduction ###
-This tutorial demonstrates how to:
-- Import and define ICS connections for a REST trigger service exposure and invoke an external SOAP service
 
-### About the Exercise Today ###
-In this exercise, we will:
-- Using the web-based click and configure techniques to import and define ICS connection resources: **SOAP** and **REST** respectively.
+### 소개 ###
+이 자습서에서는 다음 작업을 수행하는 방법을 보여줍니다. 
+- REST 트리거 서비스 노출에 대한 ICS 연결 가져 오기 및 정의 및 외부 SOAP 서비스 호출 
 
-### Prerequisites ###
-- Oracle Public Cloud Service account including Integration Cloud Service
-- An Integration Archive File (IAR) name as `XXX_ICS_INTMGT_01_lab.iar` distributed by instructor
+### 오늘 운동에 대하여 ###
+이 연습에서는 다음을 수행합니다. 
+- 웹 기반 클릭 및 구성 기술을 사용하여 ICS 연결 리소스를 가져오고 정의합니다.**SOAP**및**REST**. 
 
-#### Import Integration Cloud Service Project Artifact ####
+### 선수 과목 ###
 
-1. Go to **Integrations** Summary Page by click on the `Integrations` blue icon.
+- 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 
+- 강사가 배포 한 &#39;XXX_ICS_INTMGT_01_lab.iar&#39;의 통합 아카이브 파일 (IAR) 이름 
+
+#### 가져 오기 통합 클라우드 서비스 프로젝트 아티팩트 
+
+1. &#39;Integrations` 파란색 아이콘을 클릭하여**Integrations**Summary 페이지로 이동하십시오. 
 
 ![](images/302/01.home_integrate.png)
 
-Alternatively, you can go to **Integrations** Summary Page by click the hamburger icon at the top left corner, click `Designer` and then `Integrations`.
+
+또는 왼쪽 상단 모서리에있는 햄버거 아이콘을 클릭하고 &#39;디자이너&#39;를 클릭 한 다음 &#39;통합&#39;을 클릭하여**통합**요약 페이지로 이동할 수 있습니다. 
 
 ![](images/302/02.home_hamburger.png)
 
+
 ![](images/302/03.home_hamburger_designer.png)
+
 
 ![](images/302/01.home_hamburger_integrate.png)
 
-2. Click `Import` on the top right corner, the **Import Integration?** dialog window appears. Click `Browse` button.
+
+2. 오른쪽 상단의 &#39;가져 오기&#39;를 클릭하면**가져 오기 통합?**대화 상자 창이 나타납니다. `찾아보기 &#39;버튼을 클릭하십시오. 
 
 ![](images/302/02.integration_import.png)
 
-3. Browse and open your machine local directory to select the *IAR* file provided by instructor previously, then click `Import` button.
+
+3. 컴퓨터 로컬 디렉토리를 찾아서 열어 이전에 강사가 제공 한*IAR*파일을 선택한 다음`가져 오기 &#39;버튼을 클릭하십시오. 
 
 ![](images/302/02.integration_import1.png)
 
-4. You should find a green dialog text area about **Integration was imported successfully** and the newly imported entity named **XXX_ICS_INTMGT (1.0)** shown on the integration list.
+
+4. 통합 목록에**통합이 성공적으로 가져 오기**및 새로 가져온 엔티티**XXX_ICS_INTMGT (1.0)**에 대한 녹색 대화 상자 텍스트 영역이 있어야합니다. 
 
 ![](images/302/02.integration_import2.png)
 
-You have successfully imported a set of partial pre-built artifacts. We will walk-thru what has been built and complete the remaining part.  
 
-#### Define SOAP Connection for CRM Customer Activity Service ####
+부분적으로 사전 빌드 된 아티팩트 세트를 가져 왔습니다. 우리는 건설 된 것을 걷고 나머지 부분을 완성 할 것입니다. 
 
-5. Go to **Connections** Summary Page by click the hamburger icon at the top left corner, click `Designer` and then `Connections`.
+#### CRM 고객 활동 서비스를위한 SOAP 연결 정의 
+
+5. 왼쪽 상단 모서리에있는 햄버거 아이콘을 클릭하여**연결**요약 페이지로 이동하여 &#39;디자이너&#39;와 &#39;연결&#39;을 차례로 클릭하십시오. 
 
 ![](images/302/04.home_hamburger_connections.png)
 
-6. In the home page of **Connections**, you should be able to locate the newly imported connection entities named as **XXX_CRM_CustomerService** and **XXX_ICSINTMGT_ProcessOffer** respectively.
+
+6. **Connections**홈 페이지에서**XXX_CRM_CustomerService**및**XXX_ICSINTMGT_ProcessOffer**라는 새로 가져온 연결 엔터티를 각각 찾을 수 있어야합니다. 
 
 ![](images/302/05.connection_import.png)
 
-7. Next, on the row of **XXX_CRM_CustomerService** Connection, click the hamburger menu icon at the right side and select `Edit` like below.
+
+7. 그런 다음**XXX_CRM_CustomerService**Connection 행에서 오른쪽에있는 햄버거 메뉴 아이콘을 클릭하고 아래의 &#39;편집&#39;을 선택하십시오. 
 
 ![](images/302/05.connection_import1.png)
 
-8. The **XXX_CRM_CustomerService** Connection detail page is shown. As stated, this is a *SOAP* protocol based connection which will *Invoke* a service endpoint. We are going to define this connection detail.
+
+8. **XXX_CRM_CustomerService**연결 세부 사항 페이지가 표시됩니다. 명시된 바와 같이, 이것은*서비스 엔드 포인트를 호출*SOAP*프로토콜 기반 연결입니다. 이 연결 세부 사항을 정의 할 것입니다. 
 
 ![](images/302/07.connection_initial.png)
 
-9. Scroll down to **Connection Properties** section, click `Configure Connectivity` button.
+
+9. 아래로 스크롤하여**연결 속성**섹션을 열고 &#39;연결 구성&#39;버튼을 클릭하십시오. 
 
 ![](images/302/05.connection_import2.png)
 
-10. The **Connection Properties** dialog window is shown. Fill in the **WSDL URL** by providing **Property Value** in the format of:
-    * **http://\<Your Java Cloud Service Instance IP Address\>/crm/CustomerServicePort?WSDL**  
+
+10. **연결 등록 정보**대화 상자 창이 표시됩니다.**WSDL URL**에**Property Value**를 다음 형식으로 제공하여 채 웁니다.***http : // \ <Your Java Cloud Service Instance IP Address\> / crm / CustomerServicePort? WSDL**
 	*\*If you forget your JCS instance IP address, [Click Here!](../../Java%20Apps/java.cloud.md)*  
 	Leave other properties **empty** as they are optional and not required in this lab exercise.
 	
 ![](images/302/08.connection_properties.png)
 
-11. Leave other property settings unchanged. Click `OK` button to save changes made.  
-Notice that `No Security Policy` is selected as this is required by the endpoint interface.  
 
-12. From the top of **SOAP Connection** page, click `Test` from top right corner, the test **Confirmation** dialog window is shown.  
+11. 다른 속성 설정은 변경하지 마십시오. 변경 사항을 저장하려면 &#39;확인&#39;버튼을 클릭하십시오. 엔드 포인트 인터페이스에서 필요하기 때문에 &#39;보안 정책 없음&#39;이 선택됩니다. 
+
+12. **SOAP Connection**페이지의 맨 위에서 오른쪽 상단의 &#39;테스트&#39;를 클릭하면 테스트**확인**대화 상자 창이 표시됩니다. 
 	Click `Validate and Test` button.
+
 
 ![](images/302/10.connection_test.png)
 
-13. You should find a green dialog text area about **Connection was tested successfully**.
+
+13. **연결 테스트가 성공적으로 완료되었음을 나타내는 녹색 대화 상자 텍스트 영역을 찾아야합니다**. 
 
 ![](images/302/11.connection_testresult.png)
 
-14. Next, click `Save` from top right corner.
+
+14. 그런 다음 오른쪽 상단에서 &#39;저장&#39;을 클릭하십시오. 
 
 ![](images/302/12.connection_save.png)
 
-15. The **Save Changes?** dialog window appears to warn about reactivating integrations, just click `Save` to confirm and close the dialog.
+
+15. **변경 사항을 저장 하시겠습니까?**대화 상자 창이 나타납니다. 대화 상자를 닫으려면 대화 상자를 닫고 &#39;저장&#39;을 클릭하십시오. 
 
 ![](images/302/12.connection_save1.png)
 
-16. You should find a green dialog text area about **Connection was saved successfully**.  
-    Click `Close` to exit and back to **Connection** Summary Page.
+
+16. **연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. &#39;닫기&#39;를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
 
 ![](images/302/13.connection_saveresult.png)
 
-17. A *SOAP Connection* to CRM Customer Service was updated and ready to be \*invoked\*.  
 
-#### Define REST Connection for ICS Service Exposure ####
+17. CRM 고객 서비스에 대한*SOAP 연결이 업데이트되었고 \*호출 할 준비가되었습니다*. 
 
-18. Now we are going to update the **XXX_ICSINTMGT_ProcessOffer** connection.  
-    However, this time the *Connection* is **NOT** to \*invoke\* any endpoint service, but instead it is a *\*trigger\** which is being called by a front client, i.e. A mobile client *triggers* to this *REST* connection service.  
+#### ICS 서비스 노출에 대한 REST 연결 정의 
+
+18. 이제 우리는**XXX_ICSINTMGT_ProcessOffer**연결을 업데이트 할 것입니다. 그러나 이번에*Connection*은 모든 엔드 포인트 서비스를 \*invoke \**하는 것이 아니라 대신 프론트 클라이언트, 즉 모바일 클라이언트에 의해 호출되는*\*트리거 \**입니다. 이*REST*연결 서비스로*트리거합니다. 
 	
 	Make sure you are still on **Connections** Summary Page. If not, follow step 1 previously.  
 	On the row of **XXX_ICSINTMGT_ProcessOffer** Connection, click the hamburger menu icon at the right side and select `Edit` like below.
 	
 ![](images/302/14.connection_rest.png)
 
-19. This time, the **XXX_ICSINTMGT_ProcessOffer** Connection detail page is shown and is more simpler due to the *REST Trigger* type connection.
+
+19. 이번에**XXX_ICSINTMGT_ProcessOffer**연결 세부 정보 페이지가 표시되며*REST 트리거*유형 연결로 인해 더 간단합니다. 
 
 ![](images/302/16.connection_initial1.png)
 
-20. From **REST Connection** page, click `Test` from top right corner.  
-    You should find a green dialog text area about **Connection was tested successfully**.
+
+20. **REST Connection**페이지에서 오른쪽 상단 모서리에있는 &#39;Test&#39;를 클릭하십시오.**연결 테스트가 성공적으로 완료되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. 
 
 ![](images/302/18.connection_test1.png)
 
-21. Next, click `Save` from top right corner.  
-Similarly, the **Save Changes?** dialog window appears to warn about reactivating integrations, click `Save` to confirm and close the dialog again.
+
+21. 그런 다음 오른쪽 상단에서 &#39;저장&#39;을 클릭하십시오. 마찬가지로**변경 사항 저장?**대화 상자가 나타나 통합을 다시 활성화하는 방법에 대해 경고하고 &#39;저장&#39;을 클릭하여 확인한 다음 대화 상자를 다시 닫습니다. 
 
 ![](images/302/20.connection_save2.png)
 
-22. You should find a green dialog text area about **Connection was saved successfully**.  
-    Click `Close` to exit and back to **Connection** Summary Page.
+
+22. **연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. &#39;닫기&#39;를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
 
 ![](images/302/19.connection_save1.png)
 
-23. Two *Connections* are just made ready, the **SOAP Connection - \*Invoke\* to CRM Customer Service** and **REST Connection - \*Trigger\* to ICS for Process Offer** respectively.
 
-[Procced to Next - 303: Complete an Integration - An Orchestration Integration Flow](303-IntegrationsLab.md)
+23. 두 개의*연결*이 준비됩니다.**SOAP 연결 - \*CRM 고객 서비스로의***및**REST 연결 - \*트리거**에서 프로세스 제안**에 대한 ICS로 각각 연결됩니다. 
 
-or
+[Back to Integrations Lab Home](README.md) 
 
-[Back to Integrations Lab Home](README.md)
+또는 
+
+AAAA0 
+
