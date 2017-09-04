@@ -17,7 +17,7 @@
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 
 - 이미 구성된 ICS의 SOAP 및 REST 연결 (302- 통합 라이브러리 .md) 
 
-#### `오케스트레이션`통합 만들기 
+#### '오케스트레이션' 통합 만들기 
 
 1. 탐색 창을 사용하여 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭하여 탐색 창을 표시 한 다음 `통합`을 클릭하십시오. 
 
@@ -34,7 +34,7 @@
 ![](images/303/03.integration_orchestration.png)
 
 
-4. 새 대화 상자 창**새 통합 작성**이 표시되면 다음 정보를 입력하여 통합*을 작성하십시오.***이 통합을 트리거하는 것은 무엇입니까?**기본 선택 유지*응용 프로그램 이벤트 또는 비즈니스 오브젝트*.***당신의 통합을 무엇이라고 부릅니까?**독특하고 쉽게 식별 된*통합*이름을 제공하십시오. <Your Short Name> \ _ <System_Name> \ _ <Service_Name> . 이 예에서는**KD_ICS_INTMGT**이며,*KD*는 Kelvin Durant*의 약식 이름입니다. 
+4. 새 대화 상자 창**새 통합 작성**이 표시되면 다음 정보를 입력하여 통합*을 작성하십시오.***이 통합을 트리거하는 것은 무엇입니까?**기본 선택 유지*응용 프로그램 이벤트 또는 비즈니스 오브젝트*.***당신의 통합을 무엇이라고 부릅니까?**독특하고 쉽게 식별 된*통합*이름을 제공하십시오. <Your Short Name>\_<System_Name>\_<Service_Name> . 이 예에서는**KD_ICS_INTMGT**이며,*KD*는 Kelvin Durant*의 약식 이름입니다. 
 	* **Identifier** The **Identifier** will be automatically filled-in while you type the **Name** above, however you can provide another unique identifier, suggest include your short name as prefix.
 	* **Version** Select Keep the default value. (Change only if you are going to create a new *versioned* integration)
 	* **What does this integration do? (Optional)** You can leave it empty or enter any meaningful text to describe this *Integration*.
@@ -42,7 +42,7 @@
 	
 ![](images/303/04.integration_new.png)
 	
-5. `생성`버튼을 클릭하면 통합 오케스트레이션 편집기가 나타납니다. 
+5. '생성'버튼을 클릭하면 통합 오케스트레이션 편집기가 나타납니다. 
 
 ![](images/303/05.integration_editor.png)
 
