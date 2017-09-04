@@ -7,12 +7,12 @@
 Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Environments) 또는 Eclipse 용 Oracle Enterprise Pack (OEPE), Oracle JDeveloper 및 NetBeans IDE와 같은 텍스트 편집기에서 액세스 할 수 있습니다. 브래킷은 Oracle Developer Cloud Service와 연결하여 교환 할 수 있습니다.이 서비스는 편집기에서 가장 일반적인 클라우드 개발 태스크를 편리하게 제공합니다. 
 
 이 자습서에서는 다음 작업을 수행하는 방법을 보여줍니다. 
-- Oracle Developer Cloud Service (대괄호 포함)를 사용하여 간단하게 지속적인 통합 및 전달 수행 
+- Oracle Developer Cloud Service (Brackets 포함)를 사용하여 간단하게 지속적인 통합 및 전달 수행 
 
 ### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
 - Brackets에서 Oracle Developer Cloud Service를 연결하고 프로젝트 소스 코드를 체크 아웃 및 업데이트합니다. 
-- 업데이트 된 소스 코드를 대괄호에서 개발자 클라우드 서비스로 다시 보냅니다. 
+- 업데이트 된 소스 코드를 Brackets에서 개발자 클라우드 서비스로 다시 보냅니다. 
 - 개발자 클라우드 서비스의 지속적인 통합 및 제공 결과 검토 
 
 ### 선수 과목 ###
@@ -24,7 +24,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 
 #### 개발자 클라우드 서비스에서 소스 코드 연결 및 가져 오기 
 
-1. 대괄호 텍스트 편집기를 시작하고, `파일`풀다운 메뉴에서 `폴더 열기`를 선택하십시오. 
+1. Brackets 텍스트 편집기를 시작하고, `파일`풀다운 메뉴에서 `폴더 열기`를 선택하십시오. 
 
 ![](images/103/02.openfolder.png)
 

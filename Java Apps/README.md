@@ -49,7 +49,7 @@ Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Ora
 
 - Oracle Developer Cloud Service의 `Build`및 `Deploy`구성의 지속적인 통합 정의 
 
-- CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 대괄호 사용, 코드 변경 및 푸시 코드 변경 
+- CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 Brackets 사용, 코드 변경 및 푸시 코드 변경 
 
 ### 선수 과목 ### <br>
 
