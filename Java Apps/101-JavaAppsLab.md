@@ -87,7 +87,7 @@
 
 13. 새 저장소 이름에 대해 다음 정보를 입력하십시오 :`LoyaltyManagement` 
 	 Initial content: select `Import existing repository`   
-&quot;https : // github.com / APACTestDrive / LoyaltyManagement.git&quot;를 저장소 주소로 입력하거나 복사하십시오. [**만들기**] 버튼을 클릭하십시오. 
+`https://github.com/APACTestDrive/LoyaltyManagement.git`를 저장소 주소로 입력하거나 복사하십시오. [**만들기**] 버튼을 클릭하십시오. 
 
 ![](images/101/07.repoinfo.png)
 
