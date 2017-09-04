@@ -277,7 +277,7 @@
 - **이름 :** `QRCodeMicroservice` 
 - **설명 :** `제안 QR 코드를 생성하는 마이크로 서비스. QR 코드에는 실제 제공되는 URL이 포함됩니다 .` 
 - **초기 내용 :** `기존 저장소 가져 오기` 
-- **URL을 입력하십시오 :** `https : // github.com / APACTestDrive / QRCodeMicroservice.git` 
+- **URL을 입력하십시오 :** `https://github.com/APACTestDrive/QRCodeMicroservice.git` 
 
 ```diff
 -Please BE CAREFUL that you have not added extra white space before or after the information when copy-n-paste
@@ -483,7 +483,7 @@
 ![](images/151.requestdetails.png)
 
 
-2. 요청이로드되면**파일 변경**탭을 선택하십시오. 변경 사항을 검토하십시오. 요청을 승인하기 전에 의견을 추가 할 수 있습니다. 
+2. 요청이 로드되면 **파일 변경** 탭을 선택하십시오. 변경 사항을 검토하십시오. 요청을 승인하기 전에 의견을 추가 할 수 있습니다. 
 
 ![](images/152.changedfiles.png)
 
@@ -493,17 +493,17 @@
 ![](images/153.approve.png)
 
 
-4. &#39;승인 됨&#39;과 같은 몇 가지 설명을 입력하고**확인**을 클릭하십시오. 
+4. `승인 됨` 과 같은 몇 가지 설명을 입력하고 **확인**을 클릭하십시오. 
 
 ![](images/154.approvmsg.png)
 
 
-5. 요청이 검토 자에게 승인되었음을 알 수 있습니다. 병합을 진행하려면**병합**버튼을 클릭하십시오. 
+5. 요청이 검토 자에게 승인되었음을 알 수 있습니다. 병합을 진행하려면 **병합**버튼을 클릭하십시오. 
 
 ![](images/155.clickmerge.png)
 
 
-6. 기본값을 그대로 사용하거나 원하는 설명을 입력하십시오.**지점 삭제**를 선택하면 병합 후 ChangeURL 지점이 삭제됩니다.**Merge Commit**버튼을 클릭하십시오. 
+6. 기본값을 그대로 사용하거나 원하는 설명을 입력하십시오. **지점 삭제**를 선택하면 병합 후 ChangeURL 지점이 삭제됩니다.**Merge Commit**버튼을 클릭하십시오. 
 
 ![](images/156.commitmerge.png)
 

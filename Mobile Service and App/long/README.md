@@ -34,7 +34,7 @@
 
 위의 모바일 서비스에 대한 자세한 내용은 [the following link](https://docs.oracle.com/en/cloud/paas/mobile-cloud/index.html)을 참조하십시오. 
 
-### 오늘 운동에 대하여 ###
+### 오늘 운동에 대하여 ### <br>
 모바일 개발의 어려운 부분은 모든 서버 측 서비스를 통합하고 관리하는 것입니다. 이 연습에서는 푸시 알림, API 작성 및 외부 서비스와의 통합과 같은 모바일 서비스를 사용 / 개발하여 Oracle MCS (모바일 클라우드 서비스)를 사용하여 충성도 관리를위한 &quot;Cafe Supremo&quot;모바일 응용 프로그램을 구현하는 방법을 쉽게 알 수 있습니다. 
 
 충성도 관리 모바일 응용 프로그램의 경우이 랩을 통해 아래 작업을 수행하여 플랫폼 API (외부 모바일 서비스) 및 외부 통합을위한 사용자 지정 API를 사용하여 모든 작업을 원활하게 진행할 수 있습니다. 
@@ -52,14 +52,14 @@
 ### 선수 과목 ###
 
 - 안드로이드 전화 가져와. 
--이 실습에서는 만들려는 키 값을 JSON 파일에 붙여 넣어야합니다. &quot;Mobile_App_Settings_Sample.json&quot;이라는 JSON 파일을 다운로드하십시오. [](../../common/images/mobile/long/401-Install_App_QRcode.png)를 오른쪽 클릭하여 다운로드 할 수 있습니다. 지금은 로컬 PC에 저장하십시오. 
+-이 실습에서는 만들려는 키 값을 JSON 파일에 붙여 넣어야합니다. &quot;Mobile_App_Settings_Sample.json&quot;이라는 JSON 파일을 다운로드하십시오. [this link](../../common/assets/mobile/Mobile_App_Settings_Sample.json) and select "Save link as..." for your use in the lab. When you fill out all the information like "baseUrl", "applicationKey", "backendId" and "anonymousToken", you will create a QR code using [a QR code generator](http://www.qr-code-generator.com/)를 오른쪽 클릭하여 다운로드 할 수 있습니다. 지금은 로컬 PC에 저장하십시오. 
 
 - Android 스마트 폰에서 &quot;Cafe_Supremo.apk&quot;라는 모바일 애플리케이션. 
 
-AAAA0를 오른쪽 클릭하여 다운로드 할 수 있습니다. &quot;다른 이름으로 링크 저장 ...&quot;을 선택하여 로컬 PC에 다운로드하여 저장하십시오. 
+[this link](../../common/assets/mobile/Cafe_Supremo.apk?raw=true)을 오른쪽 클릭하여 다운로드 할 수 있습니다. &quot;다른 이름으로 링크 저장 ...&quot;을 선택하여 로컬 PC에 다운로드하여 저장하십시오. 
 휴대 전화에 QR 코드 스캐너가있는 경우 Android 휴대 전화에서 다음 QRcode를 스캔하여 모바일 응용 프로그램을 설치할 수 있습니다. 
 
-! AAAA0 
+! [](../../common/images/mobile/long/401-Install_App_QRcode.png) 
 
 또는 아래 지침에 따라 모바일 응용 프로그램을 설치하십시오. 
 
@@ -105,26 +105,27 @@ AAAA0를 오른쪽 클릭하여 다운로드 할 수 있습니다. &quot;다른 
 
 [Click Here.](401-MobileLab.md) 
 
-## 402 : 외부 서비스 용 커넥터 만들기 ##
+## 402 : 외부 서비스 용 커넥터 만들기 ## <br>
 
 
 [Click Here.](402-MobileLab.md) 
 
-## 403 : 모바일 서비스를 확장하기 위해 맞춤 API 및 맞춤 코드 개발 ##
+## 403 : 모바일 서비스를 확장하기 위해 맞춤 API 및 맞춤 코드 개발 ## <br>
 
 
 [Click Here.](403-MobileLab.md) 
 
-## 404 : 푸시 알림 설정 및 모바일 앱에 푸시 알림 테스트 ##
+## 404 : 푸시 알림 설정 및 모바일 앱에 푸시 알림 테스트 ## <br>
 
 
 [Click Here.](404-MobileLab.md) 
 
-## 405 : 고객 행동 추적 [선택 사항] ##
+## 405 : 고객 행동 추적 [선택 사항] ## <br>
 
 
-[Click Here.](405-MobileLab.md)
+[Click Here.](405-MobileLab.md) 
 
-or
+또는 
 
-[Back to Cloud Test Drive Home](../../README.md)
+[Back to Cloud Test Drive Home](../../README.md) 
+
