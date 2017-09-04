@@ -19,12 +19,12 @@
 
 #### Complete an 'Orchestration' 통합 ####
 
-1. 탐색 창을 사용하여 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭하여 탐색 창을 표시 한 다음 &#39;통합&#39;을 클릭하십시오. 
+1. 탐색 창을 사용하여 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭하여 탐색 창을 표시 한 다음 `통합`을 클릭하십시오. 
 
 ![](images/303/01.home_hamburger_integrations.png)
 
 
-2. **통합**요약 페이지가 표시됩니다. 목록에서**XXX_ICS_INTMGT (1.0)**항목을 찾은 다음 오른쪽에있는 햄버거 메뉴 아이콘을 클릭하고 &#39;편집&#39;을 선택하십시오. 
+2. **통합**요약 페이지가 표시됩니다. 목록에서**XXX_ICS_INTMGT (1.0)**항목을 찾은 다음 오른쪽에있는 햄버거 메뉴 아이콘을 클릭하고 `편집`을 선택하십시오. 
 
 ![](images/303/02.integration_edit.png)
 
@@ -34,7 +34,7 @@
 ![](images/303/03.integration_existing.png)
 
 
-4. 변경하기 전에 가져 오기 중에 사전 빌드 된 내용을 검토 합니다.**ProcessOrder**라는 첫 번째 노드를 클릭하여 선택하고 팝업 메뉴에서 &#39;편집&#39; &#39;펜&#39;버튼을 클릭하십시오. 
+4. 변경하기 전에 가져 오기 중에 사전 빌드 된 내용을 검토 합니다.**ProcessOrder**라는 첫 번째 노드를 클릭하여 선택하고 팝업 메뉴에서 `편집` `펜`버튼을 클릭하십시오. 
 
 ![](images/303/04.integration.processoffer.png)
 
@@ -54,7 +54,7 @@
 ![](images/303/05.integration.rest.response.payload1.png)
 
 
-8. 오른쪽 상단의 &#39;&lt;뒤로&#39;버튼을 클릭하여 나머지 세부 사항을 검토하십시오. 
+8. 오른쪽 상단의 `&lt;뒤로`버튼을 클릭하여 나머지 세부 사항을 검토하십시오. 
 
 ![](images/303/05.integration.rest.response.png)
 
@@ -66,17 +66,17 @@
 ![](images/303/05.integration.rest.request.png)
 
 
-10. 마지막으로,**Oracle REST Endpoint Configuration Wizard 시작 페이지**가 표시되며이 REST Endpoint 인터페이스의 전체 설정을 요약합니다. 아무 것도 변경하지 않고 오른쪽 상단의 &#39;취소&#39;버튼을 클릭하여 오케스트레이션 흐름을 반환하십시오. 
+10. 마지막으로,**Oracle REST Endpoint Configuration Wizard 시작 페이지**가 표시되며이 REST Endpoint 인터페이스의 전체 설정을 요약합니다. 아무 것도 변경하지 않고 오른쪽 상단의 `취소`버튼을 클릭하여 오케스트레이션 흐름을 반환하십시오. 
 
 ![](images/303/05.integration.rest.endpoint.png)
 
 
-11. **CustomerService ...로 맵핑 된 두 번째 노드를 클릭 한 다음, 팝업 메뉴에서 &#39;편집&#39; &#39;펜&#39;단추를 클릭하십시오. 
+11. **CustomerService ...로 맵핑 된 두 번째 노드를 클릭 한 다음, 팝업 메뉴에서 `편집` `펜`단추를 클릭하십시오. 
 
 ![](images/303/06.integration.map.png)
 
 
-12. **CustomerServiceActivity**맵 페이지가 표시됩니다. 왼쪽에있는 **Source**트리의 일부 필드와 오른쪽에있는 **Target**트리의 일부 필드에는 녹색 틱 라디오 버튼이 있습니다. 이는 매핑이 구성되어 이러한 원본에서 대상 필드 엔터티 사이에서 사용됨을 의미합니다. (이미 가져 오기 중에 완료) 예를 들어**Target**트리 아래의 CustomerId는**Source**트리에서 같은 이름 필드 엔터티`customerId`로 매핑되었습니다. 이제**Target**아래의 두 번째 필드 인`activityName`을 살펴보고 아래의**Mapping**열 아래에서 &#39;f (x), offerid, acceptance, accepted&#39;라는 텍스트를 클릭하겠습니다. 
+12. **CustomerServiceActivity**맵 페이지가 표시됩니다. 왼쪽에있는 **Source**트리의 일부 필드와 오른쪽에있는 **Target**트리의 일부 필드에는 녹색 틱 라디오 버튼이 있습니다. 이는 매핑이 구성되어 이러한 원본에서 대상 필드 엔터티 사이에서 사용됨을 의미합니다. (이미 가져 오기 중에 완료) 예를 들어**Target**트리 아래의 CustomerId는**Source**트리에서 같은 이름 필드 엔터티`customerId`로 매핑되었습니다. 이제**Target**아래의 두 번째 필드 인`activityName`을 살펴보고 아래의**Mapping**열 아래에서 `f (x), offerid, acceptance, accepted`라는 텍스트를 클릭하겠습니다. 
 
 ![](images/303/06.integration.map1.png)
 <html>
@@ -84,12 +84,12 @@
 13. **Build Mappings**대화 상자 창이 나타납니다. 매핑은 다음 매핑으로 가져 와서 완료되었습니다.`![](images/303/06.integration.map2.png)
 
 
-14. **CustomerServiceActivity**페이지로 돌아 가기 화면에서 아래의**매핑**열 아래에있는 &#39;f (x), productid`라는 텍스트를 클릭하십시오. 
+14. **CustomerServiceActivity**페이지로 돌아 가기 화면에서 아래의**매핑**열 아래에있는 `f (x), productid`라는 텍스트를 클릭하십시오. 
 
 ![](images/303/06.integration.map3a.png)
 
 
-15. **Build Mappings**대화 상자 창에 가져온 매핑이 표시됩니다 : <xsl:value-of select = 'concat("Offer for product ID: ", /nssrcmpr:execute/nsmpr0:request-wrapper/nsmpr0:productid)'> 일단 검토가 끝나면 오른쪽 하단에있는 &#39;닫기&#39;버튼을 클릭하십시오. 
+15. **Build Mappings**대화 상자 창에 가져온 매핑이 표시됩니다 : <xsl:value-of select = 'concat("Offer for product ID: ", /nssrcmpr:execute/nsmpr0:request-wrapper/nsmpr0:productid)'> 일단 검토가 끝나면 오른쪽 하단에있는 `닫기`버튼을 클릭하십시오. 
 
 ![](images/303/06.integration.map3.png)
 
@@ -99,32 +99,32 @@
 ![](images/303/06.integration.map4a.png)
 
 
-17. 가져 오기 매핑과 함께**Build Mappings**대화 상자 창이 나타납니다 : <xsl:value-of select = 'fn:current-data()'> `이것은 통합 클라우드 서비스가 제공하는 즉시 사용할 수있는 기능으로, 왼쪽 하단의**매핑 구성 요소**트리를 확장하여이 기능 (기능 -> 날짜 범주 아래) 및 기타 많은 기능을 자유롭게 찾을 수 있습니다 모서리. 검토가 완료되면 오른쪽 하단에있는 &#39;닫기&#39;버튼을 클릭하십시오. 
+17. 가져 오기 매핑과 함께**Build Mappings**대화 상자 창이 나타납니다 : <xsl:value-of select = 'fn:current-data()'> `이것은 통합 클라우드 서비스가 제공하는 즉시 사용할 수있는 기능으로, 왼쪽 하단의**매핑 구성 요소**트리를 확장하여이 기능 (기능 -> 날짜 범주 아래) 및 기타 많은 기능을 자유롭게 찾을 수 있습니다 모서리. 검토가 완료되면 오른쪽 하단에있는 `닫기`버튼을 클릭하십시오. 
 
 ![](images/303/06.integration.map4.png)
 
 
-18. **CustomerServiceActivity**페이지 화면으로 돌아가서 오른쪽 상단에있는 &#39;닫기&#39;버튼을 클릭하십시오. 
+18. **CustomerServiceActivity**페이지 화면으로 돌아가서 오른쪽 상단에있는 `닫기`버튼을 클릭하십시오. 
 
 ![](images/303/06.integration.map5.png)
 
 
-19. 오케스트레이션 흐름으로 돌아가서**CustomerServiceActivity**라는 세 번째 노드를 선택하고 팝업 메뉴에서 &#39;편집&#39; &#39;펜&#39;단추를 클릭하십시오. 
+19. 오케스트레이션 흐름으로 돌아가서**CustomerServiceActivity**라는 세 번째 노드를 선택하고 팝업 메뉴에서 `편집` `펜`단추를 클릭하십시오. 
 
 ![](images/303/07.integration.soap.png)
 
 
-20. **SOAP 엔드 포인트 구성 대화 상자가 표시됩니다. SOAP 기반 인터페이스의 특성으로 인해 구성 할 수있는 추가 페이지가 없습니다. 이 페이지를 검토하고 오른쪽 상단의 &#39;취소&#39;버튼을 클릭하기 만하면됩니다. 
+20. **SOAP 엔드 포인트 구성 대화 상자가 표시됩니다. SOAP 기반 인터페이스의 특성으로 인해 구성 할 수있는 추가 페이지가 없습니다. 이 페이지를 검토하고 오른쪽 상단의 `취소`버튼을 클릭하기 만하면됩니다. 
 
 ![](images/303/07.integration.soap1.png)
 
 
-21. 오케스트레이션 흐름으로 돌아가서**IF Accept Offer**라는 네 번째 노드를 선택하고 팝업 메뉴에서 &#39;편집&#39; &#39;펜&#39;단추를 클릭하십시오. 
+21. 오케스트레이션 흐름으로 돌아가서**IF Accept Offer**라는 네 번째 노드를 선택하고 팝업 메뉴에서 `편집` `펜`단추를 클릭하십시오. 
 
 ![](images/303/08.integration.if.png)
 
 
-22. **제안 수락**페이지가 표시됩니다. 텍스트 영역에 &#39;lower-case (accepted) = &quot;true&quot;라는 논리 결정이 내려졌고 왼쪽의**Source**아래에있는`accepted` 필드 옆에 녹색 체크 표시가 있습니다. 이 함수는 &#39;accepted&#39;의 소문자 문자열 값에 따라 true 또는 false 결과를 반환하도록 평가합니다. 여기서 결과는**IF**또는**ELSE**경로를 향한 메시지 흐름을 결정하는 데 사용됩니다. 검토가 끝나면 오른쪽 상단의 &#39;닫기&#39;를 클릭하십시오. 
+22. **제안 수락**페이지가 표시됩니다. 텍스트 영역에 `lower-case (accepted) = &quot;true&quot;라는 논리 결정이 내려졌고 왼쪽의**Source**아래에있는`accepted` 필드 옆에 녹색 체크 표시가 있습니다. 이 함수는 `accepted`의 소문자 문자열 값에 따라 true 또는 false 결과를 반환하도록 평가합니다. 여기서 결과는**IF**또는**ELSE**경로를 향한 메시지 흐름을 결정하는 데 사용됩니다. 검토가 끝나면 오른쪽 상단의 `닫기`를 클릭하십시오. 
 
 ![](images/303/08.integration.logic.png)
 
@@ -142,7 +142,7 @@
 ![](images/303/35.integration.if.add2.png)
 
 
-25. &#39;Map&#39;이 제대로 삭제되면**Data Mapping**대화 상자 창이 열립니다. 왼쪽 창에서**Source**를 확장하고`$ CustomerServiceActivity` ->`addCustomerActivityResponse` 아래에`return` 필드를 드래그하고 오른쪽 창에있는`activityid`에 놓습니다. 
+25. `Map`이 제대로 삭제되면**Data Mapping**대화 상자 창이 열립니다. 왼쪽 창에서**Source**를 확장하고`$ CustomerServiceActivity` ->`addCustomerActivityResponse` 아래에`return` 필드를 드래그하고 오른쪽 창에있는`activityid`에 놓습니다. 
 	Click `imgurl` to proceed advance data mapping.
 
 ![](images/303/36.integration.if.map.png)
@@ -154,14 +154,14 @@
 ![](images/303/37.integration.if.map1.png)
 
 
-27. `string1`을 클릭하고, &#39;&#39;sign, ie`'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'` 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. ( &#39;Microservices&#39;랩에서 얻은 호스트 이름) 다음으로, 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2`에 놓습니다. 문자열이 자동으로 삽입됩니다. \ ( &#39;offerid&#39;\의 XSLT 변수 표현입니다.) 
+27. `string1`을 클릭하고, ``sign, ie`'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'` 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. ( `Microservices`랩에서 얻은 호스트 이름) 다음으로, 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2`에 놓습니다. 문자열이 자동으로 삽입됩니다. \ ( `offerid`\의 XSLT 변수 표현입니다.) 
 	Click `Save`, and then click `Close` button at the bottom to return previous screen.
 
 
 ![](images/303/38.integration.if.map2.png)
 
 
-28. *데이터 맵핑*은 아래와 같아야합니다. &#39;확인&#39;을 클릭 한 다음 &#39;닫기&#39;를 클릭하십시오. 
+28. *데이터 맵핑*은 아래와 같아야합니다. `확인`을 클릭 한 다음 `닫기`를 클릭하십시오. 
 
 ![](images/303/39.integration.if.map3.png)
 

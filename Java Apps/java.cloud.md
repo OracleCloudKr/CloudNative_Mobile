@@ -13,7 +13,7 @@
 ![](images/jcs/01.png)
 
 
-3. JCS WebLogic IP 주소는 아래의 &#39;자원&#39;섹션 -> &#39;공개 IP :&#39;에 표시됩니다. 
+3. JCS WebLogic IP 주소는 아래의 `자원`섹션 -> `공개 IP :`에 표시됩니다. 
 
 ![](images/jcs/02.png)
 

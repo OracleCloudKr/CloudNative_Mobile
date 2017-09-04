@@ -27,7 +27,7 @@
 ![cloud.oracle.com](images/sign-in/sign.01.cloud.oracle.com.png)
 
 
-2. 기존 클라우드 계정을 선택한 다음 환경의 데이터 센터에 따라 &#39;Public Cloud Service - EMEA` 또는&#39;Public Cloud Servce - US &#39;를 선택하십시오.**내 서비스**버튼을 클릭하십시오. 
+2. 기존 클라우드 계정을 선택한 다음 환경의 데이터 센터에 따라 `Public Cloud Service - EMEA` 또는`Public Cloud Servce - US `를 선택하십시오.**내 서비스**버튼을 클릭하십시오. 
 ![](images/sign-in/sign.02.select.datacenter1.png)
 
 

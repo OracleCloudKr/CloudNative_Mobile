@@ -22,7 +22,7 @@
 ![](images/302/01.home_conn.png)
 
 
-또는 왼쪽 상단의 햄버거 아이콘을 클릭하고 &#39;디자이너&#39;, &#39;연결&#39;을 차례로 클릭하여**연결**요약 페이지로 이동할 수 있습니다. 
+또는 왼쪽 상단의 햄버거 아이콘을 클릭하고 `디자이너`, `연결`을 차례로 클릭하여**연결**요약 페이지로 이동할 수 있습니다. 
 
 ![](images/302/02.home_hamburger.png)
 
@@ -33,7 +33,7 @@
 ![](images/302/04.home_hamburger_connections.png)
 
 
-2. **Connections**홈페이지에서 왼쪽 상단의 Create 버튼을 클릭하면**Create Connection - Select Adapter**대화 상자가 나타납니다.*Sales Cloud, E-Business Suite, Twitter, Salesforce 등과 같은 다양한 종류의 연결 어댑터를 사용할 수 있습니다. 그러나 이번 실습에서는 CRM 고객 활동 서비스 인터페이스에 연결하기 위해 간단한*SOAP*연결을 생성 할 것입니다. 이제 검색 텍스트 상자에 &#39;SOAP&#39;을 입력하여 검색을 수행 한 다음 아래 SOAP**어댑터 연결 상자에서 &#39;선택&#39;버튼을 클릭하십시오. 
+2. **Connections**홈페이지에서 왼쪽 상단의 Create 버튼을 클릭하면**Create Connection - Select Adapter**대화 상자가 나타납니다.*Sales Cloud, E-Business Suite, Twitter, Salesforce 등과 같은 다양한 종류의 연결 어댑터를 사용할 수 있습니다. 그러나 이번 실습에서는 CRM 고객 활동 서비스 인터페이스에 연결하기 위해 간단한*SOAP*연결을 생성 할 것입니다. 이제 검색 텍스트 상자에 `SOAP`을 입력하여 검색을 수행 한 다음 아래 SOAP**어댑터 연결 상자에서 `선택`버튼을 클릭하십시오. 
 
 ![](images/302/05.connection_create.png)
 
@@ -47,24 +47,24 @@
 ![](images/302/06.connection_new.png)
 
 
-4. &#39;생성&#39;버튼을 클릭하면 제공된**Name**이있는**SOAP Connection**페이지가 표시됩니다. 
+4. `생성`버튼을 클릭하면 제공된**Name**이있는**SOAP Connection**페이지가 표시됩니다. 
 
 ![](images/302/07.connection_initial.png)
 
 
-5. **연결 속성**섹션으로 스크롤하고 &#39;연결 구성&#39;버튼을 클릭하면**연결 속성**대화 상자 창이 표시됩니다.**WSDL URL**에**Property Value**를 다음 형식으로 제공하여 채 웁니다.***http : // \ <Your Java Cloud Service Instance IP Address\> / crm / CustomerServicePort? WSDL**
+5. **연결 속성**섹션으로 스크롤하고 `연결 구성`버튼을 클릭하면**연결 속성**대화 상자 창이 표시됩니다.**WSDL URL**에**Property Value**를 다음 형식으로 제공하여 채 웁니다.***http : // \ <Your Java Cloud Service Instance IP Address\> / crm / CustomerServicePort? WSDL**
 	*\*If you forget your JCS instance IP address, [Click Here!](../Java%20Apps/java.cloud.md)*  
 	Leave other properties **empty** as they are optional and not required in this lab exercise.
 	
 ![](images/302/08.connection_properties.png)
 
 
-6. &#39;확인&#39;버튼을 클릭하여 변경 사항을 저장하십시오.**보안**섹션으로 스크롤하고 &#39;보안 구성&#39;버튼을 클릭하면**자격 증명**대화 상자 창이 표시됩니다.**보안 정책**에서 드롭 다운 목록에서 &#39;보안 정책 없음&#39;을 선택하십시오.*Basic Authentication*및*Username Password Token*이 지원되지만 실습에서 사용되는 보안 정책은 사용하지 않습니다. 
+6. `확인`버튼을 클릭하여 변경 사항을 저장하십시오.**보안**섹션으로 스크롤하고 `보안 구성`버튼을 클릭하면**자격 증명**대화 상자 창이 표시됩니다.**보안 정책**에서 드롭 다운 목록에서 `보안 정책 없음`을 선택하십시오.*Basic Authentication*및*Username Password Token*이 지원되지만 실습에서 사용되는 보안 정책은 사용하지 않습니다. 
 
 ![](images/302/09.connection_security.png)
 
 
-7. &#39;확인&#39;버튼을 클릭하여 변경 사항을 저장하십시오.**SOAP Connection**페이지에서 오른쪽 상단의 &#39;Test&#39;를 클릭하면 테스트**확인**대화 상자 창이 표시됩니다. 
+7. `확인`버튼을 클릭하여 변경 사항을 저장하십시오.**SOAP Connection**페이지에서 오른쪽 상단의 `Test`를 클릭하면 테스트**확인**대화 상자 창이 표시됩니다. 
 	Click `Validate and Test` button.
 
 
@@ -76,12 +76,12 @@
 ![](images/302/11.connection_testresult.png)
 
 
-9. 그런 다음 오른쪽 상단에서 &#39;저장&#39;을 클릭하십시오. 
+9. 그런 다음 오른쪽 상단에서 `저장`을 클릭하십시오. 
 
 ![](images/302/12.connection_save.png)
 
 
-10. 마찬가지로**연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. &#39;닫기&#39;를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
+10. 마찬가지로**연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. `닫기`를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
 
 ![](images/302/13.connection_saveresult.png)
 
@@ -109,23 +109,23 @@
 ![](images/302/15.connection_new1.png)
 
 
-13. &#39;생성&#39;버튼을 클릭하면 제공된**이름**이있는**REST 연결**페이지가 표시됩니다. 이번에는*Trigger*유형 연결로 인해 페이지가 더 간단 해졌습니다. 
+13. `생성`버튼을 클릭하면 제공된**이름**이있는**REST 연결**페이지가 표시됩니다. 이번에는*Trigger*유형 연결로 인해 페이지가 더 간단 해졌습니다. 
 
 ![](images/302/16.connection_initial1.png)
 
 
-14. **보안**섹션에서 &#39;보안 구성&#39;버튼을 클릭하면**자격 증명**대화 상자 창이 열립니다.**보안 정책**에서 기본 옵션은 드롭 다운 목록에서 &#39;기본 인증&#39;입니다. 이것은 ICS가 요구하는 최소한의 보안 정책입니다. 
+14. **보안**섹션에서 `보안 구성`버튼을 클릭하면**자격 증명**대화 상자 창이 열립니다.**보안 정책**에서 기본 옵션은 드롭 다운 목록에서 `기본 인증`입니다. 이것은 ICS가 요구하는 최소한의 보안 정책입니다. 
 	Click `OK` button to save changes made.
 
 ![](images/302/17.connection_security1.png)
 
 
-15. **REST 연결**페이지에서 오른쪽 상단 모서리에있는 &#39;테스트&#39;를 클릭하십시오.**연결 테스트가 성공적으로 완료되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. 
+15. **REST 연결**페이지에서 오른쪽 상단 모서리에있는 `테스트`를 클릭하십시오.**연결 테스트가 성공적으로 완료되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. 
 
 ![](images/302/18.connection_test1.png)
 
 
-16. 그런 다음 오른쪽 상단에서 &#39;저장&#39;을 클릭하십시오.**연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. &#39;닫기&#39;를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
+16. 그런 다음 오른쪽 상단에서 `저장`을 클릭하십시오.**연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. `닫기`를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
 
 [Back to Integrations Lab Home](README.md) 
 

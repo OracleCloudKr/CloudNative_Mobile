@@ -15,7 +15,7 @@
 
 + DevOps Tooling의 배경 - DevOps의 비즈니스 가치, CI / CD와 같은 DevOps 툴용 DevCS (개발자 CS)는 무엇입니까? 
 + 초기 GitHub 저장소를 사용하여 Oracle 개발자 클라우드 서비스 (DevCS) 로열티 관리 애플리케이션 프로젝트를 생성합니다. 
-+ Oracle Developer Cloud Service의 &#39;Build&#39;및 &#39;Deploy&#39;구성을 지속적으로 정의하십시오. 
++ Oracle Developer Cloud Service의 `Build`및 `Deploy`구성을 지속적으로 정의하십시오. 
 + CICD (Continuous Integration &amp; Delivery) : Eclipse IDE를 사용하여 코드 변경을 Oracle Developer Cloud Service에 적용 및 푸시합니다. 
 
 ## 마이크로 서비스 ##
@@ -41,7 +41,7 @@
 + 제안 정보 쿼리, QR 코드 생성 등을 위해 외부 서비스와 통합 할 커넥터를 만듭니다. 
 + 맞춤형 API 및 맞춤 코드를 만들어 외부 서비스와 통합하십시오. 
 + 푸시 알림 설정 및 알림을 모바일 앱에 보냅니다. 
-+ 사용자 별 애널리틱스 보고서를 작성하여 &#39;사용자 별 완료 제안&#39;을 추적합니다.이 Lab이 끝나면 완료 한 모든 Lab을 기반으로 충성도 관리에 대한 엔드 투 엔드 데모를 제공합니다. 
++ 사용자 별 애널리틱스 보고서를 작성하여 `사용자 별 완료 제안`을 추적합니다.이 Lab이 끝나면 완료 한 모든 Lab을 기반으로 충성도 관리에 대한 엔드 투 엔드 데모를 제공합니다. 
 
 ## 모두 합치면 ##
 [Putting All Together lab](./Putting%20All%20Together)은 전선에 관한 최종 Lab이며 모든 기본 클라우드 및 모바일 구성 요소를 엔드 투 엔드로 테스트합니다. 이 섹션에서는 모바일 클라우드 서비스 푸시 알림 API를 통해 모바일과 상호 작용하고 워크샵 시나리오를 통해 테스트하는 방법에 대해 설명합니다. 이 Lab은 다음과 같이 구성됩니다. 

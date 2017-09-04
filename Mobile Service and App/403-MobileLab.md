@@ -41,7 +41,7 @@
 ![](../common/images/mobile/403-Begin_New_Profile.png)
 
 
-&quot;. 이름`AAAA14t0nbs를 붙여 넣습니다 APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX`을로&quot;(사용자에게 할당 된 접미사, 예를 변화`0X` 03)`FCM0X`를 입력 6. 같은 API 키 &quot;와 &#39;925757644219`을 발신자 ID로 사용하고&#39;Google 메시징 (GCM 또는 FCM) &#39;을&#39;알림 서비스 &#39;로,&#39;XMPP &#39;를&#39;전송 방법 &#39;으로 유지하고&#39;생성 &#39;을 클릭합니다 (생성 된 키입니다. Google의 
+&quot;. 이름`AAAA14t0nbs를 붙여 넣습니다 APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX`을로&quot;(사용자에게 할당 된 접미사, 예를 변화`0X` 03)`FCM0X`를 입력 6. 같은 API 키 &quot;와 `925757644219`을 발신자 ID로 사용하고`Google 메시징 (GCM 또는 FCM) `을`알림 서비스 `로,`XMPP `를`전송 방법 `으로 유지하고`생성 `을 클릭합니다 (생성 된 키입니다. Google의 
 
 ![](../common/images/mobile/403-Create_New_Profile.png) 
 
@@ -78,7 +78,7 @@
 
 4. Cafe Supremo 모바일 앱을 사용하면 QR 코드를 스캔하여 새로운 설정을 읽을 수 있습니다. &quot;Mobile_App_Settings_Sample.json&quot;파일의 설정으로 QR 코드를 생성하고 모바일 앱에서 QR 코드를 스캔합니다. 
 
-5. 웹 브라우저에서`http : // www.qr-code-generator.com /`로 가서 &#39;텍스트&#39;버튼을 클릭하면**자유 텍스트**텍스트 영역이 나타납니다. 
+5. 웹 브라우저에서`http : // www.qr-code-generator.com /`로 가서 `텍스트`버튼을 클릭하면**자유 텍스트**텍스트 영역이 나타납니다. 
 ![](../common/images/mobile/01.qr.site.png)
 
 
@@ -86,7 +86,7 @@
 ![](../common/images/mobile/02.qr.result.png)
 
 
-7. 휴대 기기에서 &#39;Cafe Supremo&#39;앱을 엽니 다. 
+7. 휴대 기기에서 `Cafe Supremo`앱을 엽니 다. 
 
 ![](../common/images/mobile/03.mobile.app.png) 
 
@@ -106,7 +106,7 @@
 
 ![](../common/images/mobile/08.mobile.qr.result.png) 
 
-12. 로그인 양식의 &quot;Username&quot;과 &quot;Password&quot;는 JSON 파일의 설정으로 미리 채워져 있습니다. 사용자 이름과 암호가 맞으면 &#39;로그인&#39;버튼을 클릭하여 로그인하십시오. 그렇지 않으면 수동으로 사용자 이름과 암호를 입력 할 수 있습니다. 
+12. 로그인 양식의 &quot;Username&quot;과 &quot;Password&quot;는 JSON 파일의 설정으로 미리 채워져 있습니다. 사용자 이름과 암호가 맞으면 `로그인`버튼을 클릭하여 로그인하십시오. 그렇지 않으면 수동으로 사용자 이름과 암호를 입력 할 수 있습니다. 
 
 ![](../common/images/mobile/09.mobile.login.png) 
 
@@ -129,7 +129,7 @@
 
 4. 알림을 보내기 전에 Android 스마트 폰의**배경 화면**에서 &quot;Cafe Supremo&quot;모바일 앱이 실행되고 있는지 확인하십시오. 
 
-5. 알림을 입력하십시오. &#39;포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`을 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
+5. 알림을 입력하십시오. `포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`을 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
 
 ![](../common/images/mobile/403-Notification_Test_Screen.png) 
 

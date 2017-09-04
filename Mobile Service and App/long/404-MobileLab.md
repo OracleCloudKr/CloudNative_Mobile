@@ -68,7 +68,7 @@
 ```
 우리는 곧 그것을 사용할 것입니다. 
 
-2. 웹 브라우저에서`http : // www.qr-code-generator.com /`로 가서 &#39;텍스트&#39;버튼을 클릭하면**자유 텍스트**텍스트 영역이 나타납니다. 
+2. 웹 브라우저에서`http : // www.qr-code-generator.com /`로 가서 `텍스트`버튼을 클릭하면**자유 텍스트**텍스트 영역이 나타납니다. 
 
 ![](../../common/images/mobile/long/01.qr.site.png)
 
@@ -81,7 +81,7 @@
 
 이 브라우저를 열어 두거나 나중에 사용할 수 있도록 이미지를 저장할 수 있습니다. 
 
-4. 휴대 기기에서 &#39;Cafe Supremo&#39;앱을 엽니 다. 
+4. 휴대 기기에서 `Cafe Supremo`앱을 엽니 다. 
 
 ![](../../common/images/mobile/long/03.mobile.app.png)
 
@@ -91,7 +91,7 @@
 ![](../../common/images/mobile/long/04.mobile.menu.png)
 
 
-6. 확장 메뉴에서 &#39;설정&#39;을 클릭하십시오. 
+6. 확장 메뉴에서 `설정`을 클릭하십시오. 
 
 ![](../../common/images/mobile/long/05.mobile.settings.png)
 
@@ -113,7 +113,7 @@
 
 `Save settings and logout` 버튼을 클릭하십시오. 그런 다음 홈 화면으로 돌아갑니다. 
 
-10. 강사가 제공 한 모바일 앱**사용자 이름**및**비밀번호**를 입력하고 &#39;로그인&#39;버튼을 클릭하십시오. 
+10. 강사가 제공 한 모바일 앱**사용자 이름**및**비밀번호**를 입력하고 `로그인`버튼을 클릭하십시오. 
 
 ![](../../common/images/mobile/long/09.mobile.login.png)
 
@@ -142,7 +142,7 @@
 
 
 
-4. 알림을 입력하십시오. &#39;귀하는 포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`을 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
+4. 알림을 입력하십시오. `귀하는 포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`을 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
 
 ![](../../common/images/mobile/long/401-Notification_Test_Screen.png)
 

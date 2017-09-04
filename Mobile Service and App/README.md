@@ -22,7 +22,7 @@
 
 ![](../common/images/mobile/401-Install_App_3.png) 
 
-4. &quot;Cafe_Supremo.apk&quot;파일을 넣은 위치로 이동하여 설치할 파일을 클릭하십시오. 아래 이미지는 Android APK 파일을 &#39;다운로드&#39;라는 폴더에 넣은 경우를 보여줍니다. 
+4. &quot;Cafe_Supremo.apk&quot;파일을 넣은 위치로 이동하여 설치할 파일을 클릭하십시오. 아래 이미지는 Android APK 파일을 `다운로드`라는 폴더에 넣은 경우를 보여줍니다. 
 
 ![](../common/images/mobile/401-Install_App_4.png) 
 

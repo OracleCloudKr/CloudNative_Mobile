@@ -14,7 +14,7 @@ brackets는 현대적인 텍스트 편집기로, 집중적 인 시각 도구 및
 
 #### 브래킷 설치 
 
-1. [Brackets Home Page](http://brackets.io/)로 가서 가운데에있는 &#39;Brackets 1.10 다운로드&#39;버튼을 클릭하십시오. 
+1. [Brackets Home Page](http://brackets.io/)로 가서 가운데에있는 `Brackets 1.10 다운로드`버튼을 클릭하십시오. 
 
 ![](images/brackets/00.brackets.download.png)
 
@@ -24,17 +24,17 @@ brackets는 현대적인 텍스트 편집기로, 집중적 인 시각 도구 및
 ![](images/brackets/01.brackets.save.png)
 
 
-3. `Brackets.Release.1.10.msi`가 저장된 곳의 하드 디스크 디렉토리에서 열고 설치 프로그램을 실행하십시오. 대상 brackets 대상 폴더를 선택하고 &#39;다음&#39;버튼을 클릭하십시오. 
+3. `Brackets.Release.1.10.msi`가 저장된 곳의 하드 디스크 디렉토리에서 열고 설치 프로그램을 실행하십시오. 대상 brackets 대상 폴더를 선택하고 `다음`버튼을 클릭하십시오. 
 
 ![](images/brackets/02.brackets.install.png)
 
 
-4. &#39;설치&#39;버튼을 클릭하여 설치를 진행하십시오. 
+4. `설치`버튼을 클릭하여 설치를 진행하십시오. 
 
 ![](images/brackets/03.brackets.install1.png)
 
 
-5. 브래킷 설치는 1 분 안에 완료해야합니다. &#39;마침&#39;버튼을 클릭하여 설치를 완료하십시오. 
+5. 브래킷 설치는 1 분 안에 완료해야합니다. `마침`버튼을 클릭하여 설치를 완료하십시오. 
 
 ![](images/brackets/04.brackets.install2.png)
 
@@ -49,7 +49,7 @@ brackets는 현대적인 텍스트 편집기로, 집중적 인 시각 도구 및
 ![](images/brackets/06.brackets.started.png)
 
 
-8. 오른쪽 상단의 &#39;Extension Manager&#39;아이콘을 클릭하십시오. 
+8. 오른쪽 상단의 `Extension Manager`아이콘을 클릭하십시오. 
 
 ![](images/brackets/07.brackets.extension.png)
 
@@ -59,17 +59,17 @@ brackets는 현대적인 텍스트 편집기로, 집중적 인 시각 도구 및
 ![](images/brackets/08.brackets.extension1.png)
 
 
-10. 간단히`저장 &#39;을 클릭하여 기본**힘내 설정 ...**을 수락하십시오. 
+10. 간단히`저장 `을 클릭하여 기본 **Bracket 설정 ...**을 수락하십시오. 
 
 ![](images/brackets/09.brackets.git.png)
 
 
-11. &#39;OK&#39;버튼을 클릭하여 다시 시작하면 brackets가 단독으로 다시 시작됩니다. 
+11. `OK`버튼을 클릭하여 다시 시작하면 brackets가 단독으로 다시 시작됩니다. 
 
 ![](images/brackets/10.brackets.restart.png)
 
 
-11. 재시작이 끝나면 &#39;닫기&#39;버튼을 클릭하여**로그 변경 대화 상자를 닫습니다. 
+11. 재시작이 끝나면 `닫기`버튼을 클릭하여**로그 변경 대화 상자를 닫습니다. 
 
 ![](images/brackets/11.brackets.restart1.png)
 

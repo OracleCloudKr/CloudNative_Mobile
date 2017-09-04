@@ -17,9 +17,9 @@
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 
 - 이미 구성된 ICS의 SOAP 및 REST 연결 (302- 통합 라이브러리 .md) 
 
-#### &#39;오케스트레이션&#39;통합 만들기 
+#### `오케스트레이션`통합 만들기 
 
-1. 탐색 창을 사용하여 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭하여 탐색 창을 표시 한 다음 &#39;통합&#39;을 클릭하십시오. 
+1. 탐색 창을 사용하여 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭하여 탐색 창을 표시 한 다음 `통합`을 클릭하십시오. 
 
 ![](images/303/01.home_hamburger_integrations.png)
 
@@ -29,7 +29,7 @@
 ![](images/303/02.integration_create.png)
 
 
-3. 통합 작성 - 스타일 선택 \ / 패턴**대화 상자 창이 표시됩니다. 오케스트레이션,지도 데이터, ICS에 게시 및 ICS에 가입*과 같은 다양한 통합 유형을 사용할 수 있습니다. 그러나이 실습에서 우리는*Orchestration*통합을 만들 것입니다.*Orchestration*상자에서 &#39;선택&#39;버튼을 클릭하십시오. 
+3. 통합 작성 - 스타일 선택 \ / 패턴**대화 상자 창이 표시됩니다. 오케스트레이션,지도 데이터, ICS에 게시 및 ICS에 가입*과 같은 다양한 통합 유형을 사용할 수 있습니다. 그러나이 실습에서 우리는*Orchestration*통합을 만들 것입니다.*Orchestration*상자에서 `선택`버튼을 클릭하십시오. 
 
 ![](images/303/03.integration_orchestration.png)
 
@@ -42,12 +42,12 @@
 	
 ![](images/303/04.integration_new.png)
 	
-5. &#39;생성&#39;버튼을 클릭하면 통합 오케스트레이션 편집기가 나타납니다. 
+5. `생성`버튼을 클릭하면 통합 오케스트레이션 편집기가 나타납니다. 
 
 ![](images/303/05.integration_editor.png)
 
 
-6. 먼저,**Trigger**를 설정하여이 통합 플로우가 클라이언트 고객에게 노출되는 방법을 정의 할 것입니다. 이제 오른쪽 사이드 바에서 &#39;트리거&#39;를 클릭하면 오른쪽의 팔레트 제목이**트리거**로 변경됩니다. &#39;REST`를 선택하면 사용 가능한*REST 트리거 연결*목록이 표시됩니다. 새롭게 생성 된*트리거 연결*(예 : &#39;KD_ICSINTMGT_ProcessOffer&#39;)을*START*아래의 큰*원 안의 흐름 다이어그램의 &quot;+&quot;아이콘으로 끌어 놓습니다. 
+6. 먼저,**Trigger**를 설정하여이 통합 플로우가 클라이언트 고객에게 노출되는 방법을 정의 할 것입니다. 이제 오른쪽 사이드 바에서 `트리거`를 클릭하면 오른쪽의 팔레트 제목이**트리거**로 변경됩니다. `REST`를 선택하면 사용 가능한*REST 트리거 연결*목록이 표시됩니다. 새롭게 생성 된*트리거 연결*(예 : `KD_ICSINTMGT_ProcessOffer`)을*START*아래의 큰*원 안의 흐름 다이어그램의 &quot;+&quot;아이콘으로 끌어 놓습니다. 
 
 ![](images/303/06.integration_start.png)
 
@@ -73,12 +73,12 @@
 ![](images/303/08.integration_rest_request.png)
 
 
-9. **Request Sample Json Payload**페이지가 표시됩니다.**이 텍스트를**JSON 입력**아래의 텍스트 영역에`{ &quot;customerid&quot;: 21767684, &quot;offerid&quot;: 49531393, &quot;productid&quot;: 28916305, &quot;accepted&quot;: true}`복사하십시오. 하단의 &#39;확인&#39;버튼을 클릭하십시오. 
+9. **Request Sample Json Payload**페이지가 표시됩니다.**이 텍스트를**JSON 입력**아래의 텍스트 영역에`{ &quot;customerid&quot;: 21767684, &quot;offerid&quot;: 49531393, &quot;productid&quot;: 28916305, &quot;accepted&quot;: true}`복사하십시오. 하단의 `확인`버튼을 클릭하십시오. 
 
 ![](images/303/09.integration_request_json.png)
 
 
-10. &#39;다음&#39;버튼을 클릭하여 다음으로 진행합니다.**응답 페이로드 구성**페이지에서 다음을 확인합니다.***응답 페이로드 파일 선택**&#39;JSON Sample` 
+10. `다음`버튼을 클릭하여 다음으로 진행합니다.**응답 페이로드 구성**페이지에서 다음을 확인합니다.***응답 페이로드 파일 선택**`JSON Sample` 
 	* **Select the type of payload with which you want the endpoint to reply** `JSON`
 	
 	Click `<<< inline >>>` link next to **--OR-- enter sample JSON**
@@ -87,35 +87,35 @@
 ![](images/303/10.integration_rest_response.png)
 
 
-11. **Response Sample Json Payload**페이지가 표시됩니다. 이 텍스트를`**&quot;activityid&quot;: &quot;10001-43513-v1.0&quot;, &quot;imgurl&quot;: &quot;tmptext&quot;}`**JSON 입력 샘플**아래의 텍스트 영역에 복사하십시오. 하단의 &#39;확인&#39;버튼을 클릭하십시오. 
+11. **Response Sample Json Payload**페이지가 표시됩니다. 이 텍스트를`**&quot;activityid&quot;: &quot;10001-43513-v1.0&quot;, &quot;imgurl&quot;: &quot;tmptext&quot;}`**JSON 입력 샘플**아래의 텍스트 영역에 복사하십시오. 하단의 `확인`버튼을 클릭하십시오. 
 
 ![](images/303/11.integration_response_json.png)
 
 
-12. 다음,**Oracle REST Endpoint Configuration Summary**페이지로 가려면 &#39;다음&#39;버튼을 클릭하십시오. 설정은 아래와 같으며, &#39;완료&#39;버튼을 클릭하십시오. 이 통합 플로우를 클라이언트 고객에게 공개하기 위해 REST**트리거**정의를 마무리합니다. 
+12. 다음,**Oracle REST Endpoint Configuration Summary**페이지로 가려면 `다음`버튼을 클릭하십시오. 설정은 아래와 같으며, `완료`버튼을 클릭하십시오. 이 통합 플로우를 클라이언트 고객에게 공개하기 위해 REST**트리거**정의를 마무리합니다. 
 	
 ![](images/303/12.integration_rest_done.png)
 
 
-13. 통합 오케스트레이션 편집기*로 돌아가서 다음을 수행 할 수 있습니다.*끌어서 놓기를 통해 통합 오케스트레이션 흐름의 각 노드를 다른 위치로 재배치합니다.*왼쪽 위 모서리에있는 &#39;-&#39;또는 &#39;+&#39;버튼을 클릭하여 화면 해상도에 맞게 흐름도의 크기를 조정하십시오. 
+13. 통합 오케스트레이션 편집기*로 돌아가서 다음을 수행 할 수 있습니다.*끌어서 놓기를 통해 통합 오케스트레이션 흐름의 각 노드를 다른 위치로 재배치합니다.*왼쪽 위 모서리에있는 `-`또는 `+`버튼을 클릭하여 화면 해상도에 맞게 흐름도의 크기를 조정하십시오. 
 	* As best practice, regularly click `Save` button at the top left corner to store your work from time to time.
 	
 ![](images/303/13.integration_half.png)
 
 
-14. 다음으로**Invoke**종점 서비스 - CRM 고객 서비스에 서비스 콜 아웃을 정의합니다. 이제 오른쪽 사이드 바에서`Invokes`를 클릭하면 오른쪽 팔레트 제목이**Invokes**로 변경됩니다. &#39;SOAP&#39;을 선택하면 사용 가능한*SOAP Invoke Connection*목록이 표시됩니다. 새로 생성 된*Invoke Connection*(여기서는 &#39;KD_CRM_CustomerService&#39;)을 통합 흐름의 중간에**ProcessOffer**와**Map to ProcessOffer**활동 사이에 끌어다 놓습니다. 
+14. 다음으로**Invoke**종점 서비스 - CRM 고객 서비스에 서비스 콜 아웃을 정의합니다. 이제 오른쪽 사이드 바에서`Invokes`를 클릭하면 오른쪽 팔레트 제목이**Invokes**로 변경됩니다. `SOAP`을 선택하면 사용 가능한*SOAP Invoke Connection*목록이 표시됩니다. 새로 생성 된*Invoke Connection*(여기서는 `KD_CRM_CustomerService`)을 통합 흐름의 중간에**ProcessOffer**와**Map to ProcessOffer**활동 사이에 끌어다 놓습니다. 
 
 ![](images/303/14.integration.invoke.png)
 
 
-15. **SOAP 엔드 포인트 구성 대화 상자가 표시됩니다. 다음 정보를 제공하십시오.***엔드 포인트를 어떻게 호출 하시겠습니까?**&#39;CustomerServiceActivity`를 입력하십시오. 
+15. **SOAP 엔드 포인트 구성 대화 상자가 표시됩니다. 다음 정보를 제공하십시오.***엔드 포인트를 어떻게 호출 하시겠습니까?**`CustomerServiceActivity`를 입력하십시오. 
 	* **What does this endpoint do?** Optional
 	* **Do you want to configure this as a callback invoke?** Select `No`
 
 
 ![](images/303/15.integration.invoke.setup.png)
 	
-16. 다른 값을 바꾸지 말고, &#39;다음&#39;-> &#39;다음&#39;-> &#39;다음&#39;그리고 마지막으로 &#39;완료&#39;버튼을 클릭하십시오. 다음과 같은 통합 플로우가 있어야합니다. CRM 고객 서비스 SOAP 끝점을 호출하려면**Invoke**정의를 마무리하면됩니다. 
+16. 다른 값을 바꾸지 말고, `다음`-> `다음`-> `다음`그리고 마지막으로 `완료`버튼을 클릭하십시오. 다음과 같은 통합 플로우가 있어야합니다. CRM 고객 서비스 SOAP 끝점을 호출하려면**Invoke**정의를 마무리하면됩니다. 
 	
 	Now, we are going to define how different data fields are being passed incoming from **Trigger** to outgoing **Invoke*.  
 	Click the **Map to CustomerServiceActivty** node and then further click on the `pencil` icon to enter data mapper screen.
@@ -129,32 +129,32 @@
 ![](images/303/17.integration.map.cust.png)
 
 
-18. 소스 및 대상 고객 ID를 연결하는 &#39;그린&#39;라인이 생성됩니다. 
+18. 소스 및 대상 고객 ID를 연결하는 `그린`라인이 생성됩니다. 
 
 ![](images/303/18.integration.map.custpost.png)
 
 
-다음으로, 우리는*addCustomerActivity*target의`activityName` 필드에 텍스트 데이터를 보내고 싶습니다 :`Offer ID : &lt; &#39;offerid&#39;Source from source> of acceptance &lt; &#39;accepted&#39;from Source>` . 설정하려면**Target***addCustomerActivity*창에서`activityName` 필드를 직접 클릭하십시오.**Build Mappings**대화 상자 창이 표시됩니다. 
+다음으로, 우리는*addCustomerActivity*target의`activityName` 필드에 텍스트 데이터를 보내고 싶습니다 :`Offer ID : &lt; `offerid`Source from source> of acceptance &lt; `accepted`from Source>` . 설정하려면**Target***addCustomerActivity*창에서`activityName` 필드를 직접 클릭하십시오.**Build Mappings**대화 상자 창이 표시됩니다. 
 
 ![](images/303/19.integration.map.activityname.png)
 
 
-왼쪽 된 창에서`Mapping Components`를 확장 한 다음`Functions` ->`String`을 확장하십시오. 왼쪽 창의 &#39;f (x) concat`을`- 드래그 앤 드롭 또는 여기에 값 입력 ...&#39;의 위치로 드래그하십시오. <activityName> 오른쪽 창에. 
+왼쪽 된 창에서`Mapping Components`를 확장 한 다음`Functions` ->`String`을 확장하십시오. 왼쪽 창의 `f (x) concat`을`- 드래그 앤 드롭 또는 여기에 값 입력 ...`의 위치로 드래그하십시오. <activityName> 오른쪽 창에. 
 
 ![](images/303/20.integration.activityname.concat.png)
 
 
-21. `string1`을 클릭하고, &#39;Offer ID :&#39;`를 입력 한 다음,**Enter**를 입력하십시오. (\*주의 :** ` &#39;&#39;`**를 쓰십시오. 즉, 작은 따옴표로`Offer ID` 문자열을 묶으십시오) 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2 `. 문자열이 자동으로 삽입됩니다. \ ( &#39;offerid&#39;\의 XSLT 변수 표현입니다.) 
+21. `string1`을 클릭하고, `Offer ID :``를 입력 한 다음,**Enter**를 입력하십시오. (\*주의 :** ` ```**를 쓰십시오. 즉, 작은 따옴표로`Offer ID` 문자열을 묶으십시오) 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2 `. 문자열이 자동으로 삽입됩니다. \ ( `offerid`\의 XSLT 변수 표현입니다.) 
 
 ![](images/303/21.integration.activityname.concat1.png)
 
 
-22. 연결 문자열 목록의 마지막 항목을 선택하고 마우스 오른쪽 버튼을 클릭하고 &#39;다음에 형제 추가&#39;를 선택하십시오. 
+22. 연결 문자열 목록의 마지막 항목을 선택하고 마우스 오른쪽 버튼을 클릭하고 `다음에 형제 추가`를 선택하십시오. 
 
 ![](images/303/22.integration.activityname.concat2.png)
 
 
-23. 새로 추가 된 항목`- 드래그 앤 드롭 또는 따옴표로 묶인 값 입력 ... &#39;을 클릭하고&#39;수용 &#39;,&#39;**입력**&#39;을 입력하십시오. 마지막 단계 22를 반복하여 &#39;Insert Sibling After&#39;에 의해 항목을 하나 더 추가하십시오. 
+23. 새로 추가 된 항목`- 드래그 앤 드롭 또는 따옴표로 묶인 값 입력 ... `을 클릭하고`수용 `,`**입력**`을 입력하십시오. 마지막 단계 22를 반복하여 `Insert Sibling After`에 의해 항목을 하나 더 추가하십시오. 
 	Expand `Source` from the left pane, drag the `accepted` field and drop it on the last entry `-- Drag and Drop or Type value surrounded with quotes here...`. A string is automatically inserted. \(This is the XSLT variable representation of 'accepted'\)  
 	Click `Save` on the top right corner to save your work, then click `Close` at the bottom to exit the **Build Mappings** window.
 
@@ -162,29 +162,29 @@
 ![](images/303/23.integration.activityname.concat3.png)
 
 
-24. &#39;activityName&#39;필드는**매핑**`f (x), offerid, acceptance, accepted`로 정의됩니다. 다음으로, &#39;activityDetail` 링크를 클릭하여이 필드를 설정하십시오. 
+24. `activityName`필드는**매핑**`f (x), offerid, acceptance, accepted`로 정의됩니다. 다음으로, `activityDetail` 링크를 클릭하여이 필드를 설정하십시오. 
 
 ![](images/303/24.integration.activityname.concat4.png)
 
 
-25. &#39;(간단한 도전)**&#39;activityName &#39;필드를 설정하기 위해했던 것과 같은 단계를 따르고,&#39;activityDetail` 필드를 다음 형식으로 설정하십시오 :``제품 ID 제공 : &#39;+ <productid> `저장 &#39;을 클릭하여 작업을 저장하고, 하단의&#39;닫기 &#39;를 클릭하여**Build Mappings**대화 상자 창을 종료하십시오. 
+25. `(간단한 도전)**`activityName `필드를 설정하기 위해했던 것과 같은 단계를 따르고,`activityDetail` 필드를 다음 형식으로 설정하십시오 :``제품 ID 제공 : `+ <productid> `저장 `을 클릭하여 작업을 저장하고, 하단의`닫기 `를 클릭하여**Build Mappings**대화 상자 창을 종료하십시오. 
 
 ![](images/303/25.integration.activitydetail.png)
 
 
-26. &#39;activityDetail` 필드는**매핑**`f (x), productid`로 정의됩니다. 마지막으로,`activityDate` 필드를 클릭하여이 필드를 설정하십시오. 
+26. `activityDetail` 필드는**매핑**`f (x), productid`로 정의됩니다. 마지막으로,`activityDate` 필드를 클릭하여이 필드를 설정하십시오. 
 
 ![](images/303/26.integration.activityDate.png)
 
 
-27. **Build Mappings**대화 상자 창이 나타납니다. 왼쪽 된 창에서`Mapping Components`를 확장 한 다음`Date`를 확장하십시오. 왼쪽 창에서`f (x) current-date`를`- 드래그 앤 드롭 또는 타입 값 here ... &#39;의 위치로 드래그하십시오. <activityDate> 오른쪽 창에. 
+27. **Build Mappings**대화 상자 창이 나타납니다. 왼쪽 된 창에서`Mapping Components`를 확장 한 다음`Date`를 확장하십시오. 왼쪽 창에서`f (x) current-date`를`- 드래그 앤 드롭 또는 타입 값 here ... `의 위치로 드래그하십시오. <activityDate> 오른쪽 창에. 
 	Click `Save` to save your work and then click `Close` to exit the **Build Mappings** dialog window.
 
 
 ![](images/303/27.integration.activityDate1.png)
 
 
-28. *CustomerService 활동*에 대한*데이터 맵핑*이 완료되었습니다. &#39;확인&#39;을 클릭하면 녹색 배너 &#39;매핑이 유효하고 사용 준비가되었습니다.&#39;가 상단에 나타납니다. 
+28. *CustomerService 활동*에 대한*데이터 맵핑*이 완료되었습니다. `확인`을 클릭하면 녹색 배너 `매핑이 유효하고 사용 준비가되었습니다.`가 상단에 나타납니다. 
 	(Optional) You can test the data mapping by click `Test` button on the right. Try it!  
 	Click `Close` to return integration flow editor and click `Save` again to save your work.
 
@@ -196,7 +196,7 @@
 	- If **true**, means customer accepted the offer, then return the CRM logged *activityId* and the QR code image URL, which is generated based on *offerId*.
 	- If **false**, means customer denied the offer, then return the CRM logged *activityId* (still required as a 'denied' customer action) and an empty QR code image URL, i.e. no QR code image will be displayed.  
 	
-이렇게하려면 오른쪽 창에서`Actions`를 클릭 한 다음 &#39;Switch&#39;를 드래그하여**CustomerServiceActivity**노드와**ProcessOffer**노드 사이의 통합 플로우로 드롭하십시오. 
+이렇게하려면 오른쪽 창에서`Actions`를 클릭 한 다음 `Switch`를 드래그하여**CustomerServiceActivity**노드와**ProcessOffer**노드 사이의 통합 플로우로 드롭하십시오. 
 	
 ![](images/303/29.integration.switch.before.png)
 	
@@ -205,7 +205,7 @@
 ![](images/303/30.integration.switch.after.png)
 
 
-31. 새로 추가 된 스위치 노드 - &#39;정의되지 않음&#39;을 클릭하고 &#39;편집&#39;을 클릭하십시오. 
+31. 새로 추가 된 스위치 노드 - `정의되지 않음`을 클릭하고 `편집`을 클릭하십시오. 
 
 ![](images/303/31.integration.switch.undefined.png)
 
@@ -222,7 +222,7 @@
 ![](images/303/32.integration.expression.true.png)
 
 
-33. **Expression**및**Expression Summary**의 내용을 확인하고 왼쪽 상단의 &#39;Validate&#39;를 클릭하십시오. 녹색 배너 &#39;표현이 유효하고 사용할 준비가되었습니다&#39;라는 메시지가 표시됩니다. 통합 흐름 편집기를 되 돌리려면`닫기 &#39;를 클릭하십시오. 
+33. **Expression**및**Expression Summary**의 내용을 확인하고 왼쪽 상단의 `Validate`를 클릭하십시오. 녹색 배너 `표현이 유효하고 사용할 준비가되었습니다`라는 메시지가 표시됩니다. 통합 흐름 편집기를 되 돌리려면`닫기 `를 클릭하십시오. 
 
 ![](images/303/33.integration.expression.validate.png)
 
@@ -250,19 +250,19 @@
 ![](images/303/37.integration.if.map1.png)
 
 
-38. &#39;string1`을 클릭하고,&#39; &#39;sign, ie`https : // qrcodegenerator-&#39;를 포함하는 쿠폰 ID없이 QR 코드 URL을 입력하십시오. <Your Application Container Cloud Identity Domain Hostname> / ctdqr / v1 / offer / &#39;`(&#39;Microservices &#39;랩에서 얻은 호스트 이름) 다음으로 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2`에 놓습니다. 문자열이 자동으로 삽입됩니다. \ ( &#39;offerid&#39;\의 XSLT 변수 표현입니다.) 
+38. `string1`을 클릭하고,` `sign, ie`https : // qrcodegenerator-`를 포함하는 쿠폰 ID없이 QR 코드 URL을 입력하십시오. <Your Application Container Cloud Identity Domain Hostname> / ctdqr / v1 / offer / ``(`Microservices `랩에서 얻은 호스트 이름) 다음으로 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2`에 놓습니다. 문자열이 자동으로 삽입됩니다. \ ( `offerid`\의 XSLT 변수 표현입니다.) 
 	Click `Save`, and then click `Close` button at the bottom to return previous screen.
 
 
 ![](images/303/38.integration.if.map2.png)
 
 
-39. *데이터 맵핑*은 아래와 같아야합니다. &#39;확인&#39;을 클릭 한 다음 &#39;닫기&#39;를 클릭하십시오. 
+39. *데이터 맵핑*은 아래와 같아야합니다. `확인`을 클릭 한 다음 `닫기`를 클릭하십시오. 
 
 ![](images/303/39.integration.if.map3.png)
 
 
-40. **(Simple Challenge)**&#39;otherwise` 경로에서`ProcessOffer에 맵핑&#39;을 완료하십시오. 유일한 차이점은 다음과 같습니다. 
+40. **(Simple Challenge)**`otherwise` 경로에서`ProcessOffer에 맵핑`을 완료하십시오. 유일한 차이점은 다음과 같습니다. 
 	Enter **''** for `imgurl`, i.e. 2 X single quote, such that an empty string will be returned. (Instead of *'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname\>/ctdqr/v1/offer/'* at the `IF Accept Offer` path)  
 	The result should be the same as below.  
 **(\*힌트 : 35 ~ 39 단계를 반복하십시오. 강사가 필요한 경우 여기에서 간단한 데모를 제공합니다)**
@@ -292,7 +292,7 @@
 ![](images/303/43.integration.tracking.identifier.png)
 
 
-44. **Integrations**Summary 페이지에서, 새로 생성 된`integration`의**Switch**버튼을 클릭하면,`Activate Integration? &#39;대화 상자가 나타납니다. 프로덕션 트래픽 처리를 사용하도록 설정하는 것은 좋지 않지만 나중에 테스트 할 수 있도록 &#39;추적 사용&#39;및 &#39;페이로드 포함&#39;을 선택하십시오. 
+44. **Integrations**Summary 페이지에서, 새로 생성 된`integration`의**Switch**버튼을 클릭하면,`Activate Integration? `대화 상자가 나타납니다. 프로덕션 트래픽 처리를 사용하도록 설정하는 것은 좋지 않지만 나중에 테스트 할 수 있도록 `추적 사용`및 `페이로드 포함`을 선택하십시오. 
 	Click `Activate` button at the bottom.
 
 

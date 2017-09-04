@@ -42,9 +42,9 @@
 
 
 3. 성공적으로 업로드되면 이름과 설명을 입력하고 아래와 같이 &quot;만들기&quot;를 클릭하십시오 : 
-+ **API 표시 이름**: &#39;충성도 관리 API 0X&#39;(0X는 강사가 지정한 일련 번호입니다. 예 : 01) 
-+ **API 이름**: &#39;LoyaltyManagementAPI0X` 
-+ **API 짧은 설명**:`로열티 관리 API 0X 용 맞춤 API &#39;오른쪽 하단의&#39;만들기 &#39;를 클릭하십시오. 
++ **API 표시 이름**: `충성도 관리 API 0X`(0X는 강사가 지정한 일련 번호입니다. 예 : 01) 
++ **API 이름**: `LoyaltyManagementAPI0X` 
++ **API 짧은 설명**:`로열티 관리 API 0X 용 맞춤 API `오른쪽 하단의`만들기 `를 클릭하십시오. 
 
 ![](../../common/images/mobile/long/403-Create_Custom_API_with_RAML.png)
 

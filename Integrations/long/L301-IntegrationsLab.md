@@ -18,12 +18,12 @@
 #### Oracle Integration Cloud Service 탐색 
 
 1. [Sign in](sign.in.to.oracle.cloud.md) to [https://cloud.oracle.com/sign-in](https://cloud.oracle.com/sign-in). First select your datacenter then provide the identity domain and credential of **Integration Cloud Service (ICS)**. 
-(**\*Notice**:이 Integrations Lab의 신원 도메인과 자격은**이전에 JavaApps Lab 및 Microservices Lab에서 사용하고 있던**다른**과 다를 수 있습니다. 강사가 제공 한 세부 정보를 확인하십시오.) 로그인 성공 후 대시 보드가 나타납니다.**통합**서비스 타일을 찾아 햄버거 아이콘을 클릭하십시오. 드롭 다운 메뉴에서 &#39;서비스 콘솔 열기&#39;를 클릭하십시오. 
+(**\*Notice**:이 Integrations Lab의 신원 도메인과 자격은**이전에 JavaApps Lab 및 Microservices Lab에서 사용하고 있던**다른**과 다를 수 있습니다. 강사가 제공 한 세부 정보를 확인하십시오.) 로그인 성공 후 대시 보드가 나타납니다.**통합**서비스 타일을 찾아 햄버거 아이콘을 클릭하십시오. 드롭 다운 메뉴에서 `서비스 콘솔 열기`를 클릭하십시오. 
 
 ![](images/301/01.dashboard.png)
 
 
-2. **통합**서비스 타일을 찾을 수 없으면 브라우저의 오른쪽 상단에있는 &#39;대시 보드 사용자 정의&#39;버튼을 클릭 한 다음**대시 보드 사용자 정의 대화 상자**의 통합 섹션에서 &#39;표시&#39;버튼을 클릭하십시오. 
+2. **통합**서비스 타일을 찾을 수 없으면 브라우저의 오른쪽 상단에있는 `대시 보드 사용자 정의`버튼을 클릭 한 다음**대시 보드 사용자 정의 대화 상자**의 통합 섹션에서 `표시`버튼을 클릭하십시오. 
 
 ![](images/301/02.dashboard.png)
 
@@ -33,7 +33,7 @@
 ![](images/301/03.home.png)
 
 
-\*맨 아래의 &#39;찾았습니다!&#39;버튼을 클릭하면**가이드 미**퀵 투어를 닫을 수 있습니다. 실습 중에는 필요하지 않습니다. 
+\*맨 아래의 `찾았습니다!`버튼을 클릭하면**가이드 미**퀵 투어를 닫을 수 있습니다. 실습 중에는 필요하지 않습니다. 
 
 ![](images/301/04.ics_overlays.png)
 

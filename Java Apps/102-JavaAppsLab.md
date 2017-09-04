@@ -1,6 +1,6 @@
 # 오라클 클라우드 테스트 드라이브 #
 -----
-## 102 : Oracle Developer Cloud Service에서 지속적인 통합 &#39;빌드&#39;및 &#39;배포&#39;구성 정의 ##
+## 102 : Oracle Developer Cloud Service에서 지속적인 통합 `빌드`및 `배포`구성 정의 ##
 
 
 ### 소개 ###
@@ -74,7 +74,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 - **구성 이름**: 배포 구성을 식별하는 모든 이름 - 우리는 **loyalty**를 사용합니다. 
 - **응용 프로그램 이름**: JCS의 응용 프로그램 이름입니다. 애플리케이션의 URL 컨텍스트 경로가 결정되므로**loyalty**를 사용합니다. 
 - **Deployment Target**:** New**를 클릭하고 Java Cloud Service를 선택하고**Version**,**Protocol**,**Host**,**HTTPS Port**및**신임장**. [(Find out the Java Cloud Service Host and HTTPS Port.)](java.cloud.md). 
-Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각각 &#39;weblogic&#39;및 &#39;Welcome_1&#39;) 또는 강사가 별도로 제공합니다. 
+Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각각 `weblogic`및 `Welcome_1`) 또는 강사가 별도로 제공합니다. 
 - **유형**:** 자동**을 선택합니다. 이는 빌드 작업의 성공적인 실행 후 자동 배치를 의미합니다. 이전에 작성한 작업 및 이슈를 선택하여 배치하십시오. 
 - **Job**:** LoyaltyManagementBuild**빌드 단계는이 랩의 초기 단계에서 정의됩니다. 
 - **Arifact**:** loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수있는 유일한 옵션입니다. 
@@ -86,7 +86,7 @@ Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각
 
 
 ![alt text](images/102/13.cert.png "Certificate Warning")   
-인증서 경고가 표시되면**&#39;이 JCS 인스턴스에 연결할 때이 인증서 수락&#39;을 선택하고 [**확인**]을 클릭하십시오. 
+인증서 경고가 표시되면**`이 JCS 인스턴스에 연결할 때이 인증서 수락`을 선택하고 [**확인**]을 클릭하십시오. 
 
 ![alt text](images/102/13.cluster.png "deploy to cluster")   
 ****ctdCluster`를 확인하고 [**OK**]를 클릭하여 Java Cloud Service 클러스터에 응용 프로그램을 배포하십시오 

@@ -24,17 +24,17 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 
 #### 개발자 클라우드 서비스에서 소스 코드 연결 및 가져 오기 
 
-1. 대괄호 텍스트 편집기를 시작하고, &#39;파일&#39;풀다운 메뉴에서 &#39;폴더 열기&#39;를 선택하십시오. 
+1. 대괄호 텍스트 편집기를 시작하고, `파일`풀다운 메뉴에서 `폴더 열기`를 선택하십시오. 
 
 ![](images/103/02.openfolder.png)
 
 
-2. JEE 소스 코드를 저장할 대상 디렉토리를 선택하십시오 (예 :`D:\oracle`). 새 폴더를 작성한 후 새 폴더의 이름을 LoyaltyManagement로 지정하십시오. `LoyaltyManagement` 폴더를 선택한 상태에서 &#39;Select Folder` 버튼을 클릭하십시오. 
+2. JEE 소스 코드를 저장할 대상 디렉토리를 선택하십시오 (예 :`D:\oracle`). 새 폴더를 작성한 후 새 폴더의 이름을 LoyaltyManagement로 지정하십시오. `LoyaltyManagement` 폴더를 선택한 상태에서 `Select Folder` 버튼을 클릭하십시오. 
 
 ![](images/103/03.selectfolder.png)
 
 
-3. 개발자 클라우드 서비스 대시 보드로 돌아가서**LoyaltyManagement**Git 저장소에 있습니다. HTTP를 클릭하여 Git HTTP URL을 표시하고 오른쪽에있는 &#39;Copy&#39;버튼을 클릭하여 URL을 복사하십시오. 
+3. 개발자 클라우드 서비스 대시 보드로 돌아가서**LoyaltyManagement**Git 저장소에 있습니다. HTTP를 클릭하여 Git HTTP URL을 표시하고 오른쪽에있는 `Copy`버튼을 클릭하여 URL을 복사하십시오. 
 
 ![](images/103/04.devcs.git.png)
 
@@ -49,7 +49,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 ![](images/103/06.brackets.clone.png)
 
 
-6. 개발자 클라우드 서비스에서 복사 한 GIT URL을 붙여 넣습니다. 사용자 이름은 자동으로 채워 져야합니다. 비밀번호를 입력하고 &#39;원격 URL에 자격증 명 저장&#39;을 선택하십시오. 하단의 &#39;확인&#39;버튼을 클릭하십시오. 
+6. 개발자 클라우드 서비스에서 복사 한 GIT URL을 붙여 넣습니다. 사용자 이름은 자동으로 채워 져야합니다. 비밀번호를 입력하고 `원격 URL에 자격증 명 저장`을 선택하십시오. 하단의 `확인`버튼을 클릭하십시오. 
 
 ![](images/103/07.brackets.clone1.png)
 
@@ -84,7 +84,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 ![](images/103/11.brackets.change1.png)
 
 
-15. 파일을 저장하십시오. ( &#39;Ctrl-S&#39;누르거나 &#39;File`>`Save` 풀다운 메뉴에서 선택하십시오) 
+15. 파일을 저장하십시오. ( `Ctrl-S`누르거나 `File`>`Save` 풀다운 메뉴에서 선택하십시오) 
 
 ![](images/103/12.brackets.save.png)
 
@@ -94,22 +94,22 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 ![](images/103/13.brackets.commit.png)
 
 
-17. 팝업창에 &#39;변경된 헤더&#39;를 입력하고 &#39;확인&#39;버튼을 클릭하십시오. 이것은 귀하의 LOCAL GIT REPOSITORY에 변경 사항을 적용합니다. 
+17. 팝업창에 `변경된 헤더`를 입력하고 `확인`버튼을 클릭하십시오. 이것은 귀하의 LOCAL GIT REPOSITORY에 변경 사항을 적용합니다. 
 
 ![](images/103/14.brackets.commit1.png)
 
 
-18. &#39;Git Push&#39;아이콘을 클릭하십시오. 
+18. `Git Push`아이콘을 클릭하십시오. 
 
 ![](images/103/15.brackets.commit2.png)
 
 
-19. 팝업 창에서 기본값을 모두 그대로두고 하단의 &#39;확인&#39;버튼을 누릅니다. 
+19. 팝업 창에서 기본값을 모두 그대로두고 하단의 `확인`버튼을 누릅니다. 
 
 ![](images/103/15.brackets.commit3.png)
 
 
-20. Git Push가 완료되면 &#39;OK&#39;버튼을 클릭하십시오. 
+20. Git Push가 완료되면 `OK`버튼을 클릭하십시오. 
 
 ![](images/103/16.brackets.done.png)
 

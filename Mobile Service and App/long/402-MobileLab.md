@@ -34,7 +34,7 @@
 ![](../../common/images/mobile/long/402-New_Connector.png)
 
 
-2. &#39;Test Drive ACCS PtMgt Connector API 0X&#39;를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01).이 커넥터의 이름과 간단한 설명으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
+2. `Test Drive ACCS PtMgt Connector API 0X`를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01).이 커넥터의 이름과 간단한 설명으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-New_Connector_Info.png)
 
 
@@ -77,7 +77,7 @@
 ![](../../common/images/mobile/long/402-New_Connector.png)
 
 
-2. &#39;Test Drive ACCS CtdQR ConnectorAPI 0X&#39;를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01). 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
+2. `Test Drive ACCS CtdQR ConnectorAPI 0X`를 입력하십시오 (0X는 강사가 지정한 일련 번호 - 예 : 01). 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-QRCode_Connector_API.png)
 
 
@@ -122,7 +122,7 @@
 ![](../../common/images/mobile/long/402-New_Connector.png)
 
 
-2. &#39;Test Drive ICS Connector API 0X&#39;(0X는 강사가 지정한 일련 번호 - 예 : 01)를이 커넥터의 이름으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
+2. `Test Drive ICS Connector API 0X`(0X는 강사가 지정한 일련 번호 - 예 : 01)를이 커넥터의 이름으로 입력하십시오. 표시 API 이름을 입력하는 동안 API 이름이 자동으로 생성됩니다. "API 이름"은 맞춤 API 구현 코딩에 사용되므로 JavaScript 변수 명명 표준을 충족해야합니다. 완료되면 오른쪽 하단의 "만들기"를 클릭하십시오. 
 ![](../../common/images/mobile/long/402-ICS_Connector_API.png)
 
 

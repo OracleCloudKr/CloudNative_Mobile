@@ -26,7 +26,7 @@ VirtualBox는 교차 플랫폼 가상화 응용 프로그램입니다. 그게 �
 ![](images/virtualbox/01.virtualbox.download1.png)
 
 
-3. 팝업 창에서 &#39;파일 저장&#39;및 &#39;확인&#39;을 클릭하여 VirtualBox 설치 프로그램을 대상 위치에 저장합니다. 
+3. 팝업 창에서 `파일 저장`및 `확인`을 클릭하여 VirtualBox 설치 프로그램을 대상 위치에 저장합니다. 
 
 ![](images/virtualbox/02.virtualbox.save.png)
 
@@ -36,22 +36,22 @@ VirtualBox는 교차 플랫폼 가상화 응용 프로그램입니다. 그게 �
 ![](images/virtualbox/03.virtualbox.installer.png)
 
 
-5. 설치 프로그램이 시작되면 &#39;다음&#39;을 클릭하십시오. 
+5. 설치 프로그램이 시작되면 `다음`을 클릭하십시오. 
 
 ![](images/virtualbox/04.virtualbox.installer1.png)
 
 
-6. **사용자 정의 설치**페이지에서 브라우저를 선택하고 설치를위한 VirtualBox 대상 폴더를 선택한 다음, &#39;다음&#39;을 클릭하십시오. 
+6. **사용자 정의 설치**페이지에서 브라우저를 선택하고 설치를위한 VirtualBox 대상 폴더를 선택한 다음, `다음`을 클릭하십시오. 
 
 ![](images/virtualbox/05.virtualbox.installer2.png)
 
 
-7. 필요한 옵션을 선택하고 &#39;다음&#39;을 클릭하십시오. 
+7. 필요한 옵션을 선택하고 `다음`을 클릭하십시오. 
 
 ![](images/virtualbox/06.virtualbox.installer3.png)
 
 
-8. &#39;경고 : 네트워크 인터페이스&#39;페이지에서 &#39;다음&#39;을 클릭하십시오. 
+8. `경고 : 네트워크 인터페이스`페이지에서 `다음`을 클릭하십시오. 
 
 ![](images/virtualbox/07.virtualbox.installer4.png)
 
@@ -66,7 +66,7 @@ VirtualBox는 교차 플랫폼 가상화 응용 프로그램입니다. 그게 �
 ![](images/virtualbox/09.virtualbox.installer6.png)
 
 
-11. &#39;설치 후 Oracle VM VirtualBox XXXX 시작&#39;옵션을 선택하고 마침을 클릭하십시오. 
+11. `설치 후 Oracle VM VirtualBox XXXX 시작`옵션을 선택하고 마침을 클릭하십시오. 
 
 ![](images/virtualbox/10.virtualbox.installer7.png)
 
@@ -78,7 +78,7 @@ VirtualBox는 교차 플랫폼 가상화 응용 프로그램입니다. 그게 �
 
 #### Oracle VM VirtualBox 사용 
 
-13. 상단 메뉴 바에서`File`을 클릭하고`Import Appliance ... &#39;를 선택하십시오. 
+13. 상단 메뉴 바에서`File`을 클릭하고`Import Appliance ... `를 선택하십시오. 
 
 ![](images/virtualbox/12.virtualbox.file.png)
 
@@ -93,7 +93,7 @@ VirtualBox는 교차 플랫폼 가상화 응용 프로그램입니다. 그게 �
 ![](images/virtualbox/13.virtualbox.import1.png)
 
 
-16. 어플라이언스 설정에서 기본값을 유지하고 &#39;가져 오기&#39;를 클릭하십시오. 
+16. 어플라이언스 설정에서 기본값을 유지하고 `가져 오기`를 클릭하십시오. 
 
 ![](images/virtualbox/14.virtualbox.import2.png)
 
@@ -108,7 +108,7 @@ VirtualBox는 교차 플랫폼 가상화 응용 프로그램입니다. 그게 �
 ![](images/virtualbox/16.virtualbox.import4.png)
 
 
-19. [VirtualBox Download Page](https://www.virtualbox.org/wiki/Downloads)으로 돌아가서**VirtualBox XXXX Oracle VM VirtualBox 확장 팩 옆의`지원되는 모든 플랫폼 &#39;링크를 클릭하십시오. 
+19. [VirtualBox Download Page](https://www.virtualbox.org/wiki/Downloads)으로 돌아가서**VirtualBox XXXX Oracle VM VirtualBox 확장 팩 옆의`지원되는 모든 플랫폼 `링크를 클릭하십시오. 
 
 ![](images/virtualbox/17.virtualbox.extension.png)
 
@@ -133,12 +133,12 @@ VirtualBox는 교차 플랫폼 가상화 응용 프로그램입니다. 그게 �
 ![](images/virtualbox/21.virtualbox.extension4.png)
 
 
-24. **Oracle VM VirtualBox Extension Pack**설치가 완료되면 &#39;확인&#39;을 클릭하십시오. 
+24. **Oracle VM VirtualBox Extension Pack**설치가 완료되면 `확인`을 클릭하십시오. 
 
 ![](images/virtualbox/22.virtualbox.extension5.png)
 
 
-25. 이제 VM 실행에 필요한 모든 준비가 완료되었습니다. 새 VM**DevOpsWorkshopV3.04**를 선택하고 &#39;시작&#39;버튼을 클릭하십시오. 
+25. 이제 VM 실행에 필요한 모든 준비가 완료되었습니다. 새 VM**DevOpsWorkshopV3.04**를 선택하고 `시작`버튼을 클릭하십시오. 
 
 ![](images/virtualbox/23.virtualbox.extension6.png)
 
