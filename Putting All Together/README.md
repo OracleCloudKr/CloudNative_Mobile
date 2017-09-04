@@ -46,7 +46,7 @@
 
 [Click Here.](501-PuttingAllTogetherLab.md) 
 
-## 502 : 종단 간 테스트 ## <br>
+## 502 : End-to-End 테스트 ## <br>
 
 
 [Click Here.](502-PuttingAllTogetherLab.md) 
