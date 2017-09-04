@@ -37,13 +37,13 @@ Oracle Developer Cloud Service의 주요 기능은 다음과 같습니다.
 + Maven으로 응용 프로그램 종속성 및 라이브러리 저장 
 + Hudson과의 지속적인 빌드 통합 
 + 문서 공동 작업을위한 Wiki 
-+ 과제 추적 시스템으로 작업, 결함 및 기능 추적 
++ 작업, 결함 및 기능 추적을 위한 이슈 추적 시스템
 + 코드 검토 후 저장소 분기 병합 
 + Oracle Java Cloud Service 로의 배포 - SaaS 확장, Oracle Java Cloud Service 및 Oracle Application Container Cloud Service 
 
-Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Oracle Enterprise Pack (OEPE), Oracle JDeveloper 및 NetBeans IDE와 같은 통합 개발 환경 (IDE)에서 액세스 할 수있는 웹 인터페이스로 사용할 수 있습니다. DevCS는 Git, Hudson, Maven, 브라우저 기반 IDE, 이슈 트래커, 위키, 스 니펫, 코드 리뷰 등 다양한 구성 요소로 구성됩니다. 모든 구성 요소는 Oracle Developer Cloud Service에서 제공하는 기능 및 서비스 모음 인 프로젝트에서 사용할 수 있습니다. 
+Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Oracle Enterprise Pack (OEPE), Oracle JDeveloper 및 NetBeans IDE와 같은 통합 개발 환경 (IDE)에서 액세스 할 수있는 웹 인터페이스로 사용할 수 있습니다. DevCS는 Git, Hudson, Maven, 브라우저 기반 IDE, 이슈 트래커, 위키, 스니펫, 코드 리뷰 등 다양한 구성 요소로 구성됩니다. 모든 구성 요소는 Oracle Developer Cloud Service에서 제공하는 기능 및 서비스 모음인 프로젝트에서 사용할 수 있습니다. 
 
-### 이 자습서에서는 다음을 수행하는 방법을 보여줍니다. ###
+### 이 튜토리얼에서는 다음을 수행하는 방법을 보여줍니다. ###
 
 - 초기 [GitHub](https://github.com) 저장소를 사용하여 Oracle Developer Cloud Service (DevCS) 로열티 관리 애플리케이션 프로젝트 생성 
 
@@ -51,7 +51,7 @@ Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Ora
 
 - CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 Brackets 사용, 코드 변경 및 푸시 코드 변경 
 
-### 선수 과목 ### <br>
+### 선수 과목 ### 
 
 
 - 다음 실습에서는 강사가 제공 할 Oracle Public Cloud 계정이 필요합니다. 
@@ -63,7 +63,7 @@ Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Ora
 
 -*[Click HERE for Git installation details](gitclient.md)*
 
-# 실험실 연습 : # <br>
+# 실험실 연습 : # 
 
 
 ## 101 : 초기 GitHub 저장소를 사용하여 Oracle Developer Cloud Service 로열티 관리 애플리케이션 프로젝트 생성 ##
@@ -71,12 +71,12 @@ Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Ora
 
 [Click Here.](101-JavaAppsLab.md) 
 
-## 102 : Oracle Developer Cloud Service에서 지속적인 통합 `빌드`및 `배포`구성 정의 ## <br>
+## 102 : Oracle Developer Cloud Service에서 지속적인 통합 `빌드`및 `배포`구성 정의 ## 
 
 
 [Click Here.](102-JavaAppsLab.md) 
 
-## 103 : CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 괄호 사용, 코드 변경 및 푸시 코드 변경 ## <br>
+## 103 : CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 괄호 사용, 코드 변경 및 푸시 코드 변경 ## 
 
 
 [Click Here.](103-JavaAppsLab.md) 

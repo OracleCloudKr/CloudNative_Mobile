@@ -44,17 +44,17 @@
 
 [Click Here.](401-MobileLab.md) 
 
-## 402 : 사용자 지정 API 및 구현 확인 및 테스트 ## <br>
+## 402 : 사용자 지정 API 및 구현 확인 및 테스트 ## 
 
 
 [Click Here.](402-MobileLab.md) 
 
-## 403 : 푸시 알림 설정 및 모바일 앱 구성 ## <br>
+## 403 : 푸시 알림 설정 및 모바일 앱 구성 ## 
 
 
 [Click Here.](403-MobileLab.md) 
 
-## 404 : 고객 행동 추적 [선택 사항] ## <br>
+## 404 : 고객 행동 추적 [선택 사항] ## 
 
 
 [Click Here.](404-MobileLab.md) 

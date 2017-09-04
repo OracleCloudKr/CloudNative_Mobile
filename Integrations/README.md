@@ -5,7 +5,7 @@
 
 **\*길이가 45 ~ 60 분인 단순화 된 Lab 버전입니다. 관심이 있으시면 [HERE](long/README.md) 전체 버전을 살펴보십시오. 
 
-### 소개 ### <br>
+### 소개 ### 
 이 랩은 APAC 클라우드 테스트 드라이브의 일부로 CRM 응용 프로그램을 빠르게 연결하고 통합하는 세 번째 연구소입니다. 이 섹션에서는 웹 기반 대시 보드를 사용하여 Oracle Integration Cloud Service를 통한 애플리케이션 통합에 대해 설명합니다. 
 
 #### 오늘 Practice에 관하여 
@@ -32,7 +32,7 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 2.**디자인**
 - 직관적 인 비주얼 디자이너 및 모바일 지원 - 풍부한 포인트 앤 클릭 브라우저 기반 디자이너로 컴퓨터 또는 원하는 태블릿에서 어디에서나 통합을 구축 할 수 있습니다. 
 - Oracle Recommended ™ - Smart Data Mapper는 Oracle Recommends ™를 사용하여 정확한 권장 사항을 제공합니다. 
-- 비즈니스 사용자 친화적 - 사용하기 쉬운 비디오 및 자습서와 결합 된 비즈니스 친화적 용어 
+- 비즈니스 사용자 친화적 - 사용하기 쉬운 비디오 및 튜토리얼와 결합 된 비즈니스 친화적 용어 
 - API- 준비 - 외부 소비를위한 API로 통합을 게시합니다 3.**모니터 및 관리**
 - End to End Visibility - 간단하고 강력한 검색으로 관심있는 거래에 집중할 수 있습니다. 상세한 감사 및 분석을위한 포괄적 인 드릴 다운 기능 
 - KPI 모니터링 - 고성능 시각적 대시 보드의 핵심 성과 지표에 대한 실시간 통찰력 
@@ -40,7 +40,7 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 - 사전 구축 된 통합 - 비즈니스 요구 사항에 대한 즉각적인 사용 또는 사용자 정의가 가능한 사전 구축 된 통합 포트폴리오 
 - Cloud Marketplace - Oracle 및 Oracle 파트너가 게시 한 사전 구축 된 어댑터 및 통합 
 
-### 이 자습서에서는 다음을 수행하는 방법을 보여줍니다. ###
+### 이 튜토리얼에서는 다음을 수행하는 방법을 보여줍니다. ###
 
 - SOAP (Simple Object Access Protocol) 기반 CRM (Customer Relationship Management) 서비스에 정의 된 연결을 구성하고 REST (Representational State Transfer) 기반 서비스에 노출 
 - 서비스 엔드 포인트를 상호 연결하고 요청 및 응답 데이터 속성을 매핑하며 결정 논리를 조율하는 통합 플로우를 구성합니다. 
@@ -58,17 +58,17 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 
 [Click Here.](301-IntegrationsLab.md) 
 
-## 302 : CRM 고객 활동 서비스 및 REST 서비스 노출에 대한 연결 가져 오기 및 정의 ## <br>
+## 302 : CRM 고객 활동 서비스 및 REST 서비스 노출에 대한 연결 가져 오기 및 정의 ## 
 
 
 [Click Here.](302-IntegrationsLab.md) 
 
-## 303 : 통합 완료 - 오케스트레이션 통합 흐름 ## <br>
+## 303 : 통합 완료 - 오케스트레이션 통합 흐름 ## 
 
 
 [Click Here.](303-IntegrationsLab.md) 
 
-## 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링 ## <br>
+## 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링 ## 
 
 
 [Click Here.](304-IntegrationsLab.md) 
