@@ -29,7 +29,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 ![](images/103/02.openfolder.png)
 
 
-2. JEE 소스 코드를 저장할 대상 디렉토리를 선택하십시오 (예 :`D : \ oracle`). 새 폴더를 작성한 후 새 폴더의 이름을 LoyaltyManagement로 지정하십시오. `LoyaltyManagement` 폴더를 선택한 상태에서 &#39;Select Folder` 버튼을 클릭하십시오. 
+2. JEE 소스 코드를 저장할 대상 디렉토리를 선택하십시오 (예 :`D:\oracle`). 새 폴더를 작성한 후 새 폴더의 이름을 LoyaltyManagement로 지정하십시오. `LoyaltyManagement` 폴더를 선택한 상태에서 &#39;Select Folder` 버튼을 클릭하십시오. 
 
 ![](images/103/03.selectfolder.png)
 
@@ -66,7 +66,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 
 #### 코드 변경 사항 적용 및 푸시 
 
-9. 좌측 존속 트리를 확장하고`welcome.jsp` 파일을 엽니 다 (충성도 -> src-> main-> webapp-> jsp). 기본 창에서 welcome.jsp 소스 코드 73 행을 찾으십시오. 
+9. 좌측 존속 트리를 확장하고`welcome.jsp` 파일을 엽니 다 (loyalty-> src-> main-> webapp-> jsp). 기본 창에서 welcome.jsp 소스 코드 73 행을 찾으십시오. 
 
 ![](images/103/10.brackets.change.png)
 
@@ -116,7 +116,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 
 #### CICD (Continuous Integration &amp; Delivery) 
 
-18. 이제 브라우저로 돌아가서 Oracle Developer Cloud Service 프로젝트의 Build 페이지를 확인하십시오. 새로운 빌드 (우리의 경우 :*LoyaltyManagementBuild*)가 Git 변경에 의해 해고되었음을 알 수 있습니다. 
+18. 이제 브라우저로 돌아가서 Oracle Developer Cloud Service 프로젝트의 Build 페이지를 확인하십시오. 새로운 빌드 (우리의 경우 :*LoyaltyManagementBuild*)가 Git 변경을 감지하여 자동으로 실행되었음을 알 수 있습니다. 
 
 ![](images/103/21.png)
 

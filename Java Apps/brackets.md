@@ -3,7 +3,7 @@
 ## 클라우드 테스트 드라이브 용 브래킷 설치 ##
 
 
-대괄호는 현대적인 텍스트 편집기로, 집중적 인 시각 도구 및 전처리 지원을 통해 브라우저에서 쉽게 디자인 할 수 있습니다. 웹 디자이너와 프런트 엔드 개발자를 위해 처음부터 만들어졌습니다. 대괄호는 적극적이고 열정적 인 커뮤니티가 지원하는 오픈 소스 프로젝트입니다. 자세한 내용은 [Brackets.io](http://brackets.io/)을 참조하십시오. 
+brackets는 현대적인 텍스트 편집기로, 집중적 인 시각 도구 및 전처리 지원을 통해 브라우저에서 쉽게 디자인 할 수 있습니다. 웹 디자이너와 프런트 엔드 개발자를 위해 처음부터 만들어졌습니다. brackets는 적극적이고 열정적 인 커뮤니티가 지원하는 오픈 소스 프로젝트입니다. 자세한 내용은 [Brackets.io](http://brackets.io/)을 참조하십시오. 
 
 ![](images/brackets/hero.png)
 
@@ -24,7 +24,7 @@
 ![](images/brackets/01.brackets.save.png)
 
 
-3. `Brackets.Release.1.10.msi`가 저장된 곳의 하드 디스크 디렉토리에서 열고 설치 프로그램을 실행하십시오. 대상 대괄호 대상 폴더를 선택하고 &#39;다음&#39;버튼을 클릭하십시오. 
+3. `Brackets.Release.1.10.msi`가 저장된 곳의 하드 디스크 디렉토리에서 열고 설치 프로그램을 실행하십시오. 대상 brackets 대상 폴더를 선택하고 &#39;다음&#39;버튼을 클릭하십시오. 
 
 ![](images/brackets/02.brackets.install.png)
 
@@ -64,7 +64,7 @@
 ![](images/brackets/09.brackets.git.png)
 
 
-11. &#39;OK&#39;버튼을 클릭하여 다시 시작하면 대괄호가 단독으로 다시 시작됩니다. 
+11. &#39;OK&#39;버튼을 클릭하여 다시 시작하면 brackets가 단독으로 다시 시작됩니다. 
 
 ![](images/brackets/10.brackets.restart.png)
 
@@ -74,7 +74,7 @@
 ![](images/brackets/11.brackets.restart1.png)
 
 
-12. Git 교환 기능으로 대괄호를 성공적으로 설치했습니다. 
+12. Git 교환 기능으로 brackets를 성공적으로 설치했습니다. 
 
 ![](images/brackets/12.brackets.done.png)
 
