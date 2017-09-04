@@ -1,6 +1,6 @@
 # 오라클 클라우드 테스트 드라이브 #
 -----
-## 103 : CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 괄호 사용, 코드 변경 및 푸시 코드 변경 ##
+## 103 : CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 Brackets 사용, 코드 변경 및 푸시 코드 변경 ##
 
 
 ### 소개 ###
@@ -66,7 +66,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 
 #### 코드 변경 사항 적용 및 푸시 
 
-9. 좌측 존속 트리를 확장하고`welcome.jsp` 파일을 엽니 다 (loyalty-> src-> main-> webapp-> jsp). 기본 창에서 welcome.jsp 소스 코드 73 행을 찾으십시오. 
+9. 좌측 네비게이션 트리를 확장하고 `welcome.jsp` 파일을 엽니다 (loyalty-> src-> main-> webapp-> jsp). 기본 창에서 welcome.jsp 소스 코드 73 행을 찾으십시오. 
 
 ![](images/103/10.brackets.change.png)
 

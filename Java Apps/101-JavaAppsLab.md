@@ -9,44 +9,44 @@
 
 ### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
-- 로열티 관리 시스템을위한 새로운 개발자 클라우드 서비스 프로젝트 만들기 
+- 로열티 관리 시스템을 위한 새로운 개발자 클라우드 서비스 프로젝트 만들기 
 로열티 관리 Java 응용 프로그램 소스 코드를 저장할 새로운 Developer Cloud Service Git 저장소 만들기 
 - Gitub에 저장된 외부 Git 저장소를 위에서 작성한 Developer Cloud Service Git 저장소에 복제합니다. 
 
 ### 선수 과목 ###
 
-- 개발자 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사와 확인) 
+- 개발자 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사에게 확인) 
 
 ----
 
 
 #### Oracle Cloud에 로그인하십시오. 
 
-1. 브라우저를 열고 [cloud.oracle.com](https://cloud.oracle.com)으로 이동하십시오.**로그인**을 클릭하십시오. 
+1. 브라우저를 열고 [cloud.oracle.com](https://cloud.oracle.com)으로 이동하십시오. **로그인**을 클릭하십시오. 
 
 ![cloud.oracle.com](images/sign-in/sign.01.cloud.oracle.com.png)
 
 
-2. 기존 클라우드 계정을 선택한 다음 환경의 데이터 센터에 따라 `Public Cloud Service - EMEA` 또는`Public Cloud Servce - US `를 선택하십시오.**내 서비스**버튼을 클릭하십시오. 
+2. 기존 클라우드 계정을 선택한 다음 환경의 데이터 센터에 따라 `Public Cloud Service - EMEA` 또는`Public Cloud Servce - US `를 선택하십시오. **내 서비스**버튼을 클릭하십시오. 
 ![](images/sign-in/sign.02.select.datacenter1.png)
 
 
-3. **Developer Cloud Service \ (DevCS \)**ID 도메인을 입력하고**Go**를 클릭하십시오. ID 도메인 및 관련 자격 증명은 강사가 제공해야합니다. 
+3. **Developer Cloud Service\(DevCS\)**ID 도메인을 입력하고 **Go**를 클릭하십시오. ID 도메인 및 관련 자격 증명은 강사가 제공해야합니다. 
 ![](images/sign-in/sign.03.identity.domain.png)
 
 
-4. 서비스 관리자 역할이있는 사용자의 DevCS 사용자 이름과 암호를 입력하십시오.**로그인**을 클릭하십시오. 
+4. 서비스 관리자 역할이있는 사용자의 DevCS 사용자 이름과 암호를 입력하십시오. **로그인**을 클릭하십시오. 
 ![](images/sign-in/sign.04.credentials.png)
 
 
-5. 로그인이 성공하면 대시 보드가 표시됩니다. 대시 보드에는 서비스별로 미리 정의 된 타일이 있습니다.**개발자 클라우드 서비스**타일이 표시되지 않으면**대시 보드 사용자 정의**를 클릭하고**개발자**서비스를 표시하여 대시 보드에 표시하십시오. 
+5. 로그인이 성공하면 대시 보드가 표시됩니다. 대시 보드에는 서비스별로 미리 정의 된 타일이 있습니다. **개발자 클라우드 서비스**타일이 표시되지 않으면 **대시 보드 사용자 정의**를 클릭하고 **개발자**서비스를 표시하여 대시 보드에 표시하십시오. 
 ![](images/sign-in/sign.05.dashboard.new.png)
 ![](images/sign-in/sign.06.customize.png)
 
 
 #### Oracle Developer Cloud Service 프로젝트 생성 
 
-6. 이제 개발자 서비스 타일을 찾아 햄버거 아이콘을 클릭하십시오. 드롭 다운 메뉴에서**서비스 콘솔 열기**를 클릭하십시오. 
+6. 이제 개발자 서비스 타일을 찾아 햄버거 아이콘을 클릭하십시오. 드롭 다운 메뉴에서 **서비스 콘솔 열기**를 클릭하십시오. 
 
 ![](images/101/01.dashboard.new.png)
 
@@ -65,12 +65,12 @@
 ![](images/101/02.new.project.detail.png)
 
 
-9. 템플릿으로*빈 프로젝트*를 선택하고**다음을 클릭하십시오**
+9. 템플릿으로*빈 프로젝트*를 선택하고 **다음을 클릭하십시오**
 
 ![](images/101/03.emptyproject.png)
 
 
-10. Wiki Markup으로 MARKDOWN을 선택하고**Finish**를 클릭하십시오. 
+10. Wiki Markup으로 MARKDOWN을 선택하고 **Finish**를 클릭하십시오. 
 
 ![](images/101/04.finish.png)
 
