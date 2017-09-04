@@ -23,7 +23,7 @@
 ![](images/00.ics.png)
 
 
-Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud 등과 같은 SaaS (Service as a Service) 응용 프로그램과 Oracle 소프트웨어의 고유 연결을 제공합니다. Oracle Integration Cloud Service 어댑터는 업계 최고의 모범 사례를 사용하여 애플리케이션에 연결하는 기본 복잡성을 처리함으로써 연결을 단순화합니다. 각 시스템에 대한 최소 연결 정보를 제공하는 연결 만 작성하면됩니다. 마지막으로, 시각적 데이터 맵퍼를 사용하면 맵퍼에서 트리거 및 호출 데이터 구조 사이에 직접 맵핑을 신속하게 작성할 수 있습니다. 응용 프로그램을 통합하고 런타임 환경에 대한 통합을 활성화하면 대시 보드는 실행중인 통합에 대한 정보를 표시하므로 각 통합에 대한 상태 및 처리 통계를 모니터 할 수 있습니다. 대시 보드는 주요 정보를 캡처 및보고하여 거래 실적을 측정하고 추적합니다. 통합, 연결 또는 특정 통합 인스턴스로 메시지의 필드를 추적하고 오류를 관리하는 비즈니스 식별자를 관리 할 수 ​​있습니다. Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다.****Connect**
+Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud 등과 같은 SaaS (Service as a Service) 응용 프로그램과 Oracle 소프트웨어의 고유 연결을 제공합니다. Oracle Integration Cloud Service 어댑터는 업계 최고의 모범 사례를 사용하여 애플리케이션에 연결하는 기본 복잡성을 처리함으로써 연결을 단순화합니다. 각 시스템에 대한 최소 연결 정보를 제공하는 연결 만 작성하면됩니다. 마지막으로, 시각적 데이터 맵퍼를 사용하면 맵퍼에서 트리거 및 호출 데이터 구조 사이에 직접 맵핑을 신속하게 작성할 수 있습니다. 응용 프로그램을 통합하고 런타임 환경에 대한 통합을 활성화하면 대시 보드는 실행중인 통합에 대한 정보를 표시하므로 각 통합에 대한 상태 및 처리 통계를 모니터 할 수 있습니다. 대시 보드는 주요 정보를 캡처 및보고하여 거래 실적을 측정하고 추적합니다. 통합, 연결 또는 특정 통합 인스턴스로 메시지의 필드를 추적하고 오류를 관리하는 비즈니스 식별자를 관리 할 수 ​​있습니다. Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다. **Connect**
 - 자동 연결 SaaS 연결	- Native SaaS Adaptors
 	- Secure On-Premises Integration
 	- Open Adapter SDK

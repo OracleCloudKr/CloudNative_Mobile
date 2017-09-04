@@ -89,7 +89,7 @@ Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각
 인증서 경고가 표시되면**`이 JCS 인스턴스에 연결할 때이 인증서 수락`을 선택하고 [**확인**]을 클릭하십시오. 
 
 ![alt text](images/102/13.cluster.png "deploy to cluster")   
-****ctdCluster`를 확인하고 [**OK**]를 클릭하여 Java Cloud Service 클러스터에 응용 프로그램을 배포하십시오 
+**ctdCluster`를 확인하고 [**OK**]를 클릭하여 Java Cloud Service 클러스터에 응용 프로그램을 배포하십시오 
 
 11. **저장**을 클릭하십시오. 
 

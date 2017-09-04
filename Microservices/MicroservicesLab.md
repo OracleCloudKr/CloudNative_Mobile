@@ -620,9 +620,9 @@
 ![](images/183.createdeploy.png)
 
 
-****Offer REST API Microservice에서 배포를 만들었으므로 동일한 대상**을 다시 사용할 수 있습니다. 
+**Offer REST API Microservice에서 배포를 만들었으므로 동일한 대상**을 다시 사용할 수 있습니다. 
 
-**배포 대상**에서**위에서 만든****동일**을 선택하십시오. 그것은`Application Container Cloud`와 비슷한 것이어야합니다.**em2 / your-identity-domain / your-user-name**
+**배포 대상**에서 **위에서 만든 **동일**을 선택하십시오. 그것은`Application Container Cloud`와 비슷한 것이어야 합니다. **em2/your-identity-domain/your-user-name**
 
 ![](images/184.dc.png)
 
@@ -637,7 +637,7 @@
 ![](images/185.test.png)
 
 
-6. 테스트가 성공하면**연결 사용**을 클릭하십시오. 
+6. 테스트가 성공하면 **연결 사용**을 클릭하십시오. 
 
 ![](images/186.testgood.png)
 

@@ -52,7 +52,7 @@
 ![](images/303/06.integration_start.png)
 
 
-7. **Oracle REST Endpoint 구성**대화 상자 창이 표시됩니다. 다음 정보를 제공하십시오.****종점을 어떻게 호출 하시겠습니까?**ProcessOffer를 입력하십시오. 
+7. **Oracle REST Endpoint 구성**대화 상자 창이 표시됩니다. 다음 정보를 제공하십시오.**종점을 어떻게 호출 하시겠습니까?**ProcessOffer를 입력하십시오. 
 	* **What is the endpoint's relative resource URI?** Enter `/processoffer`
 	* **What action does the endpoint perform?** Select `POST`
 	* Check to select **Configure a request payload for this endpoint**
@@ -103,7 +103,7 @@
 ![](images/303/13.integration_half.png)
 
 
-14. 다음으로**Invoke**종점 서비스 - CRM 고객 서비스에 서비스 콜 아웃을 정의합니다. 이제 오른쪽 사이드 바에서`Invokes`를 클릭하면 오른쪽 팔레트 제목이**Invokes**로 변경됩니다. `SOAP`을 선택하면 사용 가능한*SOAP Invoke Connection*목록이 표시됩니다. 새로 생성 된*Invoke Connection*(여기서는 `KD_CRM_CustomerService`)을 통합 흐름의 중간에**ProcessOffer**와**Map to ProcessOffer**활동 사이에 끌어다 놓습니다. 
+14. 다음으로 **Invoke** 종점 서비스 - CRM 고객 서비스에 서비스 콜 아웃을 정의합니다. 이제 오른쪽 사이드 바에서`Invokes`를 클릭하면 오른쪽 팔레트 제목이**Invokes**로 변경됩니다. `SOAP`을 선택하면 사용 가능한*SOAP Invoke Connection*목록이 표시됩니다. 새로 생성 된*Invoke Connection*(여기서는 `KD_CRM_CustomerService`)을 통합 흐름의 중간에**ProcessOffer**와**Map to ProcessOffer**활동 사이에 끌어다 놓습니다. 
 
 ![](images/303/14.integration.invoke.png)
 
