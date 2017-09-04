@@ -65,9 +65,8 @@
 
 탐색 창은 Oracle Integration Cloud Service의 모든 개발 기능에 대한 액세스를 제공합니다. 
 
-[Back to Integrations Lab Home](README.md) 
+[Procced to Next - 302: Import and Define Connections for CRM Customer Activity Service and REST Service Exposure](302-IntegrationsLab.md)
 
-또는 
+or
 
-AAAA0 
-
+[Back to Integrations Lab Home](README.md)

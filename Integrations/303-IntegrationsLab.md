@@ -17,7 +17,7 @@
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 
 - 이미 구성된 ICS의 SOAP 및 REST 연결 (302- 통합 라이브러리 .md) 
 
-#### &#39;오케스트레이션&#39;통합 완료 
+#### Complete an 'Orchestration' 통합 ####
 
 1. 탐색 창을 사용하여 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭하여 탐색 창을 표시 한 다음 &#39;통합&#39;을 클릭하십시오. 
 
@@ -49,7 +49,7 @@
 ![](images/303/05.integration.rest.response.payload.png)
 
 
-7. **Response Sample Json Payload**의 형식이 표시됩니다. &#39;{ &quot;activityid&quot;: &quot;elit aliqua aliquip&quot;, &quot;imgurl&quot;: &quot;minimum ipsum&quot;}`아래에있는&#39;Cancel &#39;버튼을 클릭하면 돌아갑니다. 
+7. **Response Sample Json Payload**의 형식이 표시됩니다.`{"activityid": "elit aliqua aliquip", "imgurl": "minim ipsum"}` 아래에있는 `Cancel`버튼을 클릭하면 돌아갑니다. 
 
 ![](images/303/05.integration.rest.response.payload1.png)
 
@@ -74,7 +74,7 @@
 ![](images/303/06.integration.map.png)
 
 
-12. **CustomerServiceActivity**맵 페이지가 표시됩니다. 왼쪽에있는**Source**트리의 일부 필드와 오른쪽에있는**Target**트리의 일부 필드에는 녹색 틱 라디오 버튼이 있습니다. 이는 매핑이 구성되어 이러한 원본에서 대상 필드 엔터티 사이에서 사용됨을 의미합니다. (이미 가져 오기 중에 완료) 예를 들어**Target**트리 아래의 CustomerId는**Source**트리에서 같은 이름 필드 엔터티`customerId`로 매핑되었습니다. 이제**Target**아래의 두 번째 필드 인`activityName`을 살펴보고 아래의**Mapping**열 아래에서 &#39;f (x), offerid, acceptance, accepted&#39;라는 텍스트를 클릭하겠습니다. 
+12. **CustomerServiceActivity**맵 페이지가 표시됩니다. 왼쪽에있는 **Source**트리의 일부 필드와 오른쪽에있는 **Target**트리의 일부 필드에는 녹색 틱 라디오 버튼이 있습니다. 이는 매핑이 구성되어 이러한 원본에서 대상 필드 엔터티 사이에서 사용됨을 의미합니다. (이미 가져 오기 중에 완료) 예를 들어**Target**트리 아래의 CustomerId는**Source**트리에서 같은 이름 필드 엔터티`customerId`로 매핑되었습니다. 이제**Target**아래의 두 번째 필드 인`activityName`을 살펴보고 아래의**Mapping**열 아래에서 &#39;f (x), offerid, acceptance, accepted&#39;라는 텍스트를 클릭하겠습니다. 
 
 ![](images/303/06.integration.map1.png)
 <html>
@@ -152,7 +152,7 @@
 ![](images/303/37.integration.if.map1.png)
 
 
-27. `string1`을 클릭하고, &#39;&#39;sign, ie`https : // qrcodegenerator- &#39;를 포함하는 쿠폰 ID없이 QR 코드 URL을 입력하십시오. <Your Application Container Cloud Identity Domain Hostname> / ctdqr / v1 / offer / &#39;&#39;를 사용하면 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. ( &#39;Microservices&#39;랩에서 얻은 호스트 이름) 다음으로, 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2`에 놓습니다. 문자열이 자동으로 삽입됩니다. \ ( &#39;offerid&#39;\의 XSLT 변수 표현입니다.) 
+27. `string1`을 클릭하고, &#39;&#39;sign, ie`'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'` 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. ( &#39;Microservices&#39;랩에서 얻은 호스트 이름) 다음으로, 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2`에 놓습니다. 문자열이 자동으로 삽입됩니다. \ ( &#39;offerid&#39;\의 XSLT 변수 표현입니다.) 
 	Click `Save`, and then click `Close` button at the bottom to return previous screen.
 
 

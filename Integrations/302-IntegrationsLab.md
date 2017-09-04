@@ -148,9 +148,8 @@
 
 23. 두 개의*연결*이 준비됩니다.**SOAP 연결 - \*CRM 고객 서비스로의***및**REST 연결 - \*트리거**에서 프로세스 제안**에 대한 ICS로 각각 연결됩니다. 
 
-[Back to Integrations Lab Home](README.md) 
+[Procced to Next - 303: Complete an Integration - An Orchestration Integration Flow](303-IntegrationsLab.md)
 
-또는 
+or
 
-AAAA0 
-
+[Back to Integrations Lab Home](README.md)

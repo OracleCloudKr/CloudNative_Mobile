@@ -131,9 +131,8 @@
 
 17. 2 개의 연결*이 준비됩니다.**SOAP 연결 - \*CRM 고객 서비스**에 대한**및**REST 연결 - \*Trigger \*는 Process Offer**에 대한 ICS로 각각 연결됩니다. 
 
-AAAA0 
+[Procced to Next - 303: Create an Integration - An Orchestration Integration Flow](L303-IntegrationsLab.md)
 
-또는 
+or
 
-AAAA0 
-
+[Back to Integrations Lab Home](README.md)
