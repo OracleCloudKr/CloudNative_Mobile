@@ -17,7 +17,7 @@
 
 **Lab 가정**
 + '충성도 관리' 응용 프로그램은 마케팅 관리자가 선택한 고객 그룹을 기반으로 캠페인 제안을 작성하는 데 사용됩니다 
-+ 당신은 최근에 사소한 코드 수정안을 작성하고 변경을 제공 한이 응용 프로그램을 소유 한 '응용 프로그램 설계자'입니다. 
++ 당신은 최근에 사소한 코드 수정안을 작성하고 변경을 제공 한 이 응용 프로그램을 소유 한 '응용 프로그램 설계자'입니다. 
 + 로열티 관리 데이터베이스, 테이블 및 데이터는 응용 프로그램에서 연결하고 사용할 준비가되었습니다. 
 + WebLogic Server 인스턴스가 Java Cloud Service에 프로비저닝 됨 
 
@@ -26,16 +26,16 @@
 ![](images/business.value.png)
 
 
-**Oracle Developer Cloud Service (DevCS)**는 이러한 최신 개발 및 운영 기술 구현을 단순화하는 통합 클라우드 기반 플랫폼을 제공합니다. DevCS는 클라우드 기반 소프트웨어 개발 플랫폼 (PaaS)이며 응용 프로그램 개발 인프라를위한 호스팅 환경입니다. Hudson, Git, Maven, 문제점 및 위키와의 통합을 통해 애플리케이션 개발 라이프 사이클을 효과적으로 관리하기위한 오픈 소스 표준 기반 솔루션을 제공합니다. Oracle Developer Cloud Service를 사용하면 애플리케이션 소스 코드를 Oracle Cloud의 Git 저장소에 커밋하고, 할당 된 문제와 온라인 결함을 추적하고, wiki 페이지를 사용하여 정보를 공유하고, 소스 코드를 검토하고 프로젝트 빌드를 모니터링 할 수 있습니다. 테스트를 성공적으로 마친 후에는 Oracle Java Cloud Service - SaaS 확장, 공개 된 Oracle Java Cloud Service 인스턴스, Oracle Application Container Cloud Service 인스턴스 또는 사내 구축 환경에 프로젝트를 배포 할 수 있습니다. 
+**Oracle Developer Cloud Service (DevCS)**는 이러한 최신 개발 및 운영 기술 구현을 단순화하는 통합 클라우드 기반 플랫폼을 제공합니다. DevCS는 클라우드 기반 소프트웨어 개발 플랫폼 (PaaS)이며 응용 프로그램 개발 인프라를위한 호스팅 환경입니다. Hudson, Git, Maven, Issues 및 위키와의 통합을 통해 애플리케이션 개발 라이프 사이클을 효과적으로 관리하기위한 오픈 소스 표준 기반 솔루션을 제공합니다. Oracle Developer Cloud Service를 사용하면 애플리케이션 소스 코드를 Oracle Cloud의 Git 저장소에 커밋하고, 할당 된 문제와 온라인 결함을 추적하고, wiki 페이지를 사용하여 정보를 공유하고, 소스 코드를 검토하고 프로젝트 빌드를 모니터링 할 수 있습니다. 테스트를 성공적으로 마친 후에는 Oracle Java Cloud Service - SaaS 확장, 공개 된 Oracle Java Cloud Service 인스턴스, Oracle Application Container Cloud Service 인스턴스 또는 사내 구축 환경에 프로젝트를 배포 할 수 있습니다. 
 
 ![](images/00.dcs.png)
 
 
 Oracle Developer Cloud Service의 주요 기능은 다음과 같습니다. 
 + 프로젝트 생성, 구성 및 사용자 관리 
-Git으로 버전 관리 및 소스 코드 관리 
++ Git으로 버전 관리 및 소스 코드 관리 
 + Maven으로 응용 프로그램 종속성 및 라이브러리 저장 
-Hudson과의 지속적인 빌드 통합 
++ Hudson과의 지속적인 빌드 통합 
 + 문서 공동 작업을위한 Wiki 
 + 과제 추적 시스템으로 작업, 결함 및 기능 추적 
 + 코드 검토 후 저장소 분기 병합 
