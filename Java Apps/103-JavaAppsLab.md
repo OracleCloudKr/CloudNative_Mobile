@@ -9,7 +9,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 이 자습서에서는 다음 작업을 수행하는 방법을 보여줍니다. 
 - Oracle Developer Cloud Service (대괄호 포함)를 사용하여 간단하게 지속적인 통합 및 전달 수행 
 
-### 오늘 운동에 대하여 ###
+### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
 - Brackets에서 Oracle Developer Cloud Service를 연결하고 프로젝트 소스 코드를 체크 아웃 및 업데이트합니다. 
 - 업데이트 된 소스 코드를 대괄호에서 개발자 클라우드 서비스로 다시 보냅니다. 

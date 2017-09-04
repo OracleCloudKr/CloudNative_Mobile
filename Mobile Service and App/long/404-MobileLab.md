@@ -8,7 +8,7 @@
 ![](../../common/images/mobile/long/mcsgs_dt_006_notifications.png)
 
 
-### 오늘 운동에 대하여 ###
+### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
 - 알림 프로필을 만들고 Cafe Supremo 앱을 등록하십시오. 
 - Cafe Supremo 응용 프로그램에서 알림 수신 준비 

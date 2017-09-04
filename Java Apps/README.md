@@ -6,7 +6,7 @@
 ### 소개 ###
 이 랩은 APAC 클라우드 테스트 드라이브의 일부로 애자일 프로젝트 수명주기 동안 JEE 응용 프로그램을 작성, 구축 및 배포하는 첫 번째 Lab입니다. 이 절에서는 WebLogic Server 관리 콘솔을 사용하여 Oracle Java Cloud Service 인스턴스에 응용 프로그램을 배포 및 배포 취소하는 방법에 대해 설명합니다. 
 
-#### 오늘 운동에 관하여 
+#### 오늘 Practice에 관하여 
 
 ![](images/jcs.scope.png)
 

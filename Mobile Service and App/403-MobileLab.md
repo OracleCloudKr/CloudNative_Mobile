@@ -8,7 +8,7 @@
 ![](../common/images/mobile/mcsgs_dt_006_notifications.png)
 
 
-### 오늘 운동에 대하여 ###
+### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
 - 알림 프로필 만들기 
 - 모바일 백엔드에서 작동하도록 모바일 앱 구성 

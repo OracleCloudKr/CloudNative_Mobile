@@ -7,7 +7,7 @@
 이 자습서에서는 다음 작업을 수행하는 방법을 보여줍니다. 
 - 기존 외부 Git 저장소를 사용하여 Oracle Developer Cloud Service 프로젝트 생성 - GitHub 
 
-### 오늘 운동에 대하여 ###
+### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
 - 로열티 관리 시스템을위한 새로운 개발자 클라우드 서비스 프로젝트 만들기 
 충성도 관리 Java 응용 프로그램 소스 코드를 저장할 새로운 Developer Cloud Service Git 저장소 만들기 

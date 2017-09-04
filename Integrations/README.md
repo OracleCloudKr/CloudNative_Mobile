@@ -8,7 +8,7 @@
 ### 소개 ### <br>
 이 랩은 APAC 클라우드 테스트 드라이브의 일부로 CRM 응용 프로그램을 빠르게 연결하고 통합하는 세 번째 연구소입니다. 이 섹션에서는 웹 기반 대시 보드를 사용하여 Oracle Integration Cloud Service를 통한 애플리케이션 통합에 대해 설명합니다. 
 
-#### 오늘 운동에 관하여 
+#### 오늘 Practice에 관하여 
 
 ![](images/ics.scope.png)
 

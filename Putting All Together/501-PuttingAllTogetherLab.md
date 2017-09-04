@@ -9,7 +9,7 @@
 ![](images/501/final.scope.work.png)
 
 
-### 오늘 운동에 대하여 ###
+### 오늘 Practice에 대하여 ###
 이 연습에서는 다음을 수행합니다. 
 - &#39;Continuous Integration and Continuous Delivery&#39;의 두 번째 반복 수행, 즉 다른 코드 변경 세트 제공 
 - JEE 응용 프로그램에서 모바일 장치로 푸시 알림을 보내려면 MCS API를 호출하십시오. 
