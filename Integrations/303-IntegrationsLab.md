@@ -44,7 +44,7 @@
 ![](images/303/05.integration.rest.summary.png)
 
 
-6. 이 페이지는 응답 페이로드 세부 사항을 요약하여 변경하지 않고이 페이지의 세부 사항을 자유롭게 탐색 할 수 있습니다. 중간에`&lt;&lt;&lt; 인라인 >>>`링크를 클릭하십시오. 
+6. 이 페이지는 응답 페이로드 세부 사항을 요약하여 변경하지 않고이 페이지의 세부 사항을 자유롭게 탐색 할 수 있습니다. 중간에 `<<< inline >>>`링크를 클릭하십시오. 
 
 ![](images/303/05.integration.rest.response.payload.png)
 
@@ -59,7 +59,9 @@
 ![](images/303/05.integration.rest.response.png)
 
 
-9. 이 페이지는 요청 페이로드 세부 사항을 요약하여 변경하지 않고이 페이지의 세부 사항을 자유롭게 탐색 할 수 있습니다. `{ &quot;customerid&quot;: 21767684, &quot;offerid&quot;: 49531393, &quot;productid&quot;: 28916305, &quot;accepted&quot;: true}`맨 위의`&lt;뒤로> 버튼을 클릭하십시오. 남은 세부 사항을 검토 할 수 있습니다. 
+9. 이 페이지는 요청 페이로드 세부 사항을 요약하여 변경하지 않고이 페이지의 세부 사항을 자유롭게 탐색 할 수 있습니다. 
+`{"customerid": 21767684, "offerid": 49531393, "productid": 28916305,   "accepted": true}`  
+맨 위의`<뒤로` 버튼을 클릭하십시오. 남은 세부 사항을 검토 할 수 있습니다. 
 
 ![](images/303/05.integration.rest.request.png)
 
@@ -169,24 +171,24 @@
 ![](images/303/40.integration.flow.complete.png)
 
 
-30. 햄버거 아이콘을 클릭 한 다음 오른쪽 상단 모서리에있는 &#39;추적&#39;을 선택하십시오. 
+30. 햄버거 아이콘을 클릭 한 다음 오른쪽 상단 모서리에있는 `Tracking`을 선택하십시오. 
 
 ![](images/303/42.integration.tracking.png)
 
 
-31. **추적 용 비즈니스 식별자**대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 ICS를 통해 실행되는 수십만 개의 메시지가 필요한 경우 필요합니다. `businessid`,`offerid` 및`productid`가 이미 매핑 된 추적 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다. 
+31. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 ICS를 통해 실행되는 수십만 개의 메시지가 필요한 경우 필요합니다. `businessid`,`offerid` 및`productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다. 
 	Click `Cancel` button at the bottom on review completion of tracking setup to close the dialog.
 
 
 ![](images/303/43.integration.tracking.identifier1.png)
 
 
-32. ICS 대시 보드 기본 화면으로 돌아가려면 각각 &#39;저장&#39;및 &#39;닫기&#39;버튼을 클릭하십시오. 
+32. ICS 대시 보드 기본 화면으로 돌아가려면 각각 `저장`및 `닫기`버튼을 클릭하십시오. 
 
 ![](images/303/43.integration.edit.done.png)
 
 
-33. **Integrations**Summary 페이지에서, 새로 생성 된`integration`의**Switch**버튼을 클릭하면,`Activate Integration? &#39;대화 상자가 나타납니다. 프로덕션 트래픽을 처리 할 때 켜는 것은 좋지 않지만 나중에 테스트하기 위해 &#39;Enable tracing&#39;및 &#39;Include payload&#39;를 선택하십시오. 
+33. **Integrations**Summary 페이지에서, 새로 생성 된`integration`의**Switch**버튼을 클릭하면,`Activate Integration? `대화 상자가 나타납니다. 프로덕션 트래픽을 처리 할 때 켜는 것은 좋지 않지만 나중에 테스트하기 위해 `Enable tracing`및 `Include payload`를 선택하십시오. 
 	Click `Activate` button at the bottom.
 
 
@@ -198,7 +200,7 @@
 ![](images/303/45.integration.activate.done.png)
 
 
-브라우저에서 고유 한 URL을 클립 보드로 저장하거나 복사하십시오 :`https : //integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com : 443 / integration / flowapi / rest / XXX_ICS_INTMGT /` 
+35. 브라우저에서 고유 한 URL을 클립 보드로 저장하거나 복사하십시오 :`https://integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com:443/integration/flowapi/rest/XXX_ICS_INTMGT/`
 
 36. 이제 통합 서비스가 테스트 준비가되었습니다. 
 
