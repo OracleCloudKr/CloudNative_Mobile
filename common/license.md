@@ -1,25 +1,13 @@
-Copyright (c) 2016 Oracle and/or its affiliates. All Rights reserved
+Copyright (c) 2016 Oracle 및 / 또는 그 계열사. 판권 소유 
 
-The Universal Permissive License (UPL), Version 1.0
+Universal Permissive License (UPL), 버전 1.0 
 
-Subject to the condition set forth below, permission is hereby granted to any person obtaining a copy of this software,
-associated documentation and/or data (collectively the "Software"), free of charge and under any and all copyright rights in the 
-Software, and any and all patent rights owned or freely licensable by each licensor hereunder covering either (i) the unmodified 
-Software as contributed to or provided by such licensor, or (ii) the Larger Works (as defined below), to deal in both
+아래에 명시된 조건에 따라이 소프트웨어의 사본, 관련 문서 및 / 또는 데이터 (총칭하여 &quot;소프트웨어&quot;)를 무료로 제공하고 소프트웨어의 모든 저작권 권한에 따라 권한을 부여합니다. (i) 해당 라이센스 제공자가 기증하거나 제공 한 수정되지 않은 소프트웨어 또는 (ii) (아래 정의 된 바와 같이) 더 큰 저작물을 모두 포함하여 각 라이센스 제공자가 소유하거나 자유롭게 라이센스 할 수있는 모든 특허권 
 
-(a) the Software, and
-(b) any piece of software and/or hardware listed in the lrgrwrks.txt file if one is included with the Software (each a "Larger
-Work" to which the Software is contributed by such licensors),
+(a) 소프트웨어 및 (b) 소프트웨어에 포함되어있는 경우 lrgrwrks.txt 파일에 나열된 모든 소프트웨어 및 / 또는 하드웨어 (해당 라이센스 제공자가 소프트웨어를 제공하는 각각의 &quot;더 큰 저작물&quot;) 
 
-without restriction, including without limitation the rights to copy, create derivative works of, display, perform, and 
-distribute the Software and make, use, sell, offer for sale, import, export, have made, and have sold the Software and the 
-Larger Work(s), and to sublicense the foregoing rights on either these or other terms.
+소프트웨어의 파생 저작물을 만들고, 표시하고, 수행하고, 배포 할 수있는 권리를 포함하되 이에 국한되지 않고 제한없이 소프트웨어와 그 제품을 제조, 사용, 판매, 판매를위한 제안, 수입, 수출, 위에서 언급 한 권리를이 조항이나 다른 조항에 따라 재 허가 할 수 있습니다. 
 
-This license is subject to the following condition:
-The above copyright notice and either this complete permission notice or at a minimum a reference to the UPL must be included in 
-all copies or substantial portions of the Software.
+이 라이센스는 다음 조건을 준수합니다. 위의 저작권 고지 및이 전체 사용 권한 통지 또는 최소한 UPL에 대한 참조는 소프트웨어의 모든 사본 또는 상당 부분에 포함되어야합니다. 
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
-IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+소프트웨어는 상품성, 특정 목적에의 적합성 및 비 침해에 대한 보증을 포함하여 어떠한 종류의 명시 적 또는 묵시적 보증도없이 &quot;있는 그대로&quot;제공됩니다. 저자 또는 저작권 보유자는 어떠한 경우에도 소프트웨어 또는 사용과 관련하여 발생했거나 발생했거나 발생했거나 계약 위반, 기타로 인해 발생하는 청구 또는 기타 책임에 대해 책임을지지 않습니다. 소프트웨어. 
