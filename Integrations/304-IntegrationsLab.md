@@ -26,9 +26,10 @@
 ![](images/304/00.postman.launch.png)
 
 
-2. 우편 배달부에서 다음 정보를 제공하십시오. 
-- HTTP 메소드 드롭 다운 목록에서**POST**를 선택하십시오. 
-- **요청 URL 입력**텍스트 상자에 URL을 입력하십시오. &quot;https : // integration- <Your ICS Identity Domain> .integration.us2.oraclecloud.com / integration / flowapi / rest / <Your Integration Service Name> / v01 / processoffer` 
+2. PostMan에서 다음 정보를 제공하십시오. 
+- HTTP 메소드 드롭 다운 목록에서 **POST**를 선택하십시오. 
+- **요청 URL 입력**텍스트 상자에 URL을 입력하십시오.
+`https://integration-<Your ICS Identity Domain>.integration.us2.oraclecloud.com/integration/flowapi/rest/<Your Integration Service Name>/v01/processoffer`
 - **인증**탭 : 드롭 다운 목록에서 기본 인증을 선택하고 ICS 사용자 이름과 비밀번호를 각각 입력하십시오. 
 
 ![](images/304/00.postman.basic.png)
@@ -40,8 +41,9 @@
 
 
 4. **Body**tab : body 형식으로 raw, JSON (application / json)을 내용 유형으로 선택하고 본문 텍스트를 다음 중 하나로 입력하십시오 : 
-- 테스트 1 :`{ &quot;customerid&quot;: 30001, &quot;offerid&quot;: 10001, &quot;productid&quot;: 20001, &quot;accepted&quot;: true}` 
-- 테스트 2 :`{ &quot;customerid&quot;: 30002, &quot;offerid&quot;: 10002, &quot;productid&quot;: 20002, &quot;accepted&quot;: false}` 
+- Test 1: `{"customerid": 30001, "offerid": 10001, "productid": 20001, "accepted": true}`
+- Test 2: `{"customerid": 30002, "offerid": 10002, "productid": 20002, "accepted": false}`
+
 
 ![](images/304/00.postman.body.png)
 
