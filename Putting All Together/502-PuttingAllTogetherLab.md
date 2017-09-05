@@ -74,7 +74,7 @@
 ![](images/502/08.offer.qr.png)
 
 
-**어떤 일이 일어 났습니까?**초기 [Microservice Lab](../Microservices/README.md)에서는 개발자 및 응용 프로그램 컨테이너 클라우드 서비스를 각각 활용하는 Offer 및 QR이라는 2 개의 마이크로 서비스를 배포했습니다. 고객이 `수락`제안을하면 결과 제공 상세 및 QR 이미지가 모바일 장치에 표시됩니다. 
+**어떤 일이 일어 났습니까?** 초기 [Microservice Lab](../Microservices/README.md)에서는 개발자 및 응용 프로그램 컨테이너 클라우드 서비스를 각각 활용하는 Offer 및 QR이라는 2 개의 마이크로 서비스를 배포했습니다. 고객이 `수락`제안을하면 결과 제공 상세 및 QR 이미지가 모바일 장치에 표시됩니다. 
 
 ![](images/502/mcs2acc.png)
 
@@ -94,7 +94,7 @@
 ![](images/502/11.offer.flow.png)
 
 
-12. 축하해! 이제이 Lab 섹션과 모든 워크샵 연습을 마쳤습니다. 
+12. 축하합니다! 이제 이 Lab과 모든 워크샵 연습을 마쳤습니다. 
 
 [Back to Putting All Together Lab Home](README.md) 
 
