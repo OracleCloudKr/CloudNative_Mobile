@@ -32,7 +32,7 @@
 ![](images/303/02.integration_edit.png)
 
 
-3. 이전에 가져온 통합 플로우 **XXX_ICS_INTMGT (1.0)**의 통합 조정(Orchestration) 편집기가 표시됩니다. 앞서 임포트 한 것으로 일부가 완성되지 않은 상태입니다.
+3. 이전에 가져온 통합 플로우 **XXX_ICS_INTMGT (1.0)** 의 통합 조정(Orchestration) 편집기가 표시됩니다. 앞서 임포트 한 것으로 일부가 완성되지 않은 상태입니다.
 
 ![](images/303/03.integration_existing.png)
 
