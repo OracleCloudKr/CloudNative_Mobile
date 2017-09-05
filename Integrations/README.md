@@ -17,10 +17,10 @@
 
 **Lab 가정**
 + 귀하는 CRM 시스템을 신속하게 통합하는 `통합 설계자`입니다.
-+ CRM 시스템 및 필수 서비스 엔드 포인트를 연결하고 사용할 준비가되었습니다.
++ CRM 시스템 및 필수 서비스 엔드 포인트를 연결하고 사용할 준비가 되었습니다.
 + QR 코드 서비스는 두 번째 랩 후에 응용 프로그램 컨테이너 클라우드 서비스에서 준비됩니다.
 
-**Oracle Integration Cloud Service (ICS)**는 클라우드에서 응용 프로그램을 연결할 수있는 완벽하고 안전하면서도 가벼운 통합 솔루션입니다. 응용 프로그램 간의 연결을 단순화하고 클라우드에있는 응용 프로그램과 여전히 구내에있는 응용 프로그램을 모두 연결합니다. Oracle Integration Cloud Service는 연결하는 응용 프로그램 또는 해당 응용 프로그램이 상주하는 위치에 관계없이 안전한 엔터프라이즈 급 연결을 제공합니다.
+**Oracle Integration Cloud Service (ICS)** 는 클라우드에서 응용 프로그램을 연결할 수 있는 완벽하고 안전하면서도 가벼운 통합 솔루션입니다. 응용 프로그램 간의 연결을 단순화하고 클라우드에있는 응용 프로그램과 여전히 On-Premise에 있는 응용 프로그램을 모두 연결합니다. Oracle Integration Cloud Service는 연결하는 응용 프로그램 또는 해당 응용 프로그램이 상주하는 위치에 관계없이 안전한 엔터프라이즈 급 연결을 제공합니다.
 
 ![](images/00.ics.png)
 
@@ -28,8 +28,8 @@
 Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud 등과 같은 SaaS (Service as a Service) 응용 프로그램과 Oracle 소프트웨어의 고유 연결을 제공합니다. Oracle Integration Cloud Service 어댑터는 업계 최고의 모범 사례를 사용하여 애플리케이션에 연결하는 기본 복잡성을 처리함으로써 연결을 단순화합니다. 각 시스템에 대한 최소 연결 정보를 제공하는 연결 만 작성하면됩니다. 마지막으로, 시각적 데이터 맵퍼를 사용하면 맵퍼에서 트리거 및 호출 데이터 구조 사이에 직접 맵핑을 신속하게 작성할 수 있습니다. 응용 프로그램을 통합하고 런타임 환경에 대한 통합을 활성화하면 대시 보드는 실행중인 통합에 대한 정보를 표시하므로 각 통합에 대한 상태 및 처리 통계를 모니터 할 수 있습니다. 대시 보드는 주요 정보를 캡처 및보고하여 거래 실적을 측정하고 추적합니다. 통합, 연결 또는 특정 통합 인스턴스로 메시지의 필드를 추적하고 오류를 관리하는 비즈니스 식별자를 관리 할 수 ​​있습니다. Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다.
 1. **Connect**
 - 자동 연결 SaaS 연결	- Native SaaS Adaptors
-	- Secure On-Premises Integration
-	- Open Adapter SDK
+- Secure On-Premises Integration
+- Open Adapter SDK
 2. **디자인**
 - 직관적 인 비주얼 디자이너 및 모바일 지원 - 풍부한 포인트 앤 클릭 브라우저 기반 디자이너로 컴퓨터 또는 원하는 태블릿에서 어디에서나 통합을 구축 할 수 있습니다.
 - Oracle Recommended ™ - Smart Data Mapper는 Oracle Recommends ™를 사용하여 정확한 권장 사항을 제공합니다.
