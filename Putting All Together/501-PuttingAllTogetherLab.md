@@ -24,25 +24,26 @@
 
 #### 푸시 알림을 수신하도록 모바일 장치 준비 
 
-1. 이전 Lab [404: Set up Push Notification and Test Push Notification to mobile app](../Mobile Service and App/404-MobileLab.md), you should be able to receive notification message pop-up from your mobile device upon **Test Notifications** from MCS like below. (Please check with instructor if you cannot complete lab exercise 404)의 끝 부분 
+1. By the end of previous lab [404: Set up Push Notification and Test Push Notification to mobile app](../Mobile Service and App/404-MobileLab.md), you should be able to receive notification message pop-up from your mobile device upon **Test Notifications** from MCS like below. (Please check with instructor if you cannot complete lab exercise 404)
 
 ![](../common/images/mobile/401-MCS_Notification_Result.png)
 ![](../common/images/mobile/401-MobileApp_Notification_Result.png)
 
 
-2. 모바일 앱을 실행하고 강사가 제공 한**사용자 이름**및**비밀번호**를 입력 한 다음 `로그인`버튼을 클릭하십시오. 
+2. 모바일 앱을 실행하고 강사가 제공 한 **사용자 이름**및**비밀번호**를 입력 한 다음 `로그인`버튼을 클릭하십시오. 
 
 ![](images/501/09.mobile.login.png)
 
 
-3. 로그인이 완료되면 시작 페이지가 표시됩니다. 휴대 기기에서 캠페인 쿠폰에 대한 푸시 알림을받을 준비가되었습니다. 
+3. 로그인이 완료되면 시작 페이지가 표시됩니다. 휴대 기기에서 캠페인 쿠폰에 대한 푸시 알림을 받을 준비가 되었습니다. 
 
 ![](images/501/10.mobile.welcome.png)
 
 
 #### Java 앱 푸시 알림 구성 수정 
 
-1. 로열티 관리 응용 프로그램의 홈 페이지로 이동하십시오. 로열티 관리 애플리케이션 URL은 다음 형식이어야합니다. https : //**<JCS WLS instance IP Adress>**/ 로열티 / jsp / 환영합니다 .jsp` 
+1. 로열티 관리 응용 프로그램의 홈 페이지로 이동하십시오. 로열티 관리 애플리케이션 URL은 다음 형식이어야 합니다.
+`https://**<JCS WLS instance IP Adress>**/loyalty/jsp/welcome.jsp`
 
 페이지 하단의 [**푸시 알림 구성**] URL을 클릭하십시오. 
 
@@ -50,12 +51,12 @@
 
 
 2. 환경에 따라 MCS 알림 설정을 업데이트하십시오. 이전에 Lab 404의 2 단계에서 준비한 Mobile_App_Settings_Sample.json에서 값을 사용할 수 있습니다. 
-- MCS 신원 도메인 이름 :`신원 도메인, gse000XXXXX` 
-- 모바일 백엔드 ID :`json 파일의 백엔드 ID` 
-- MCS 익명 키 :`json 파일의 익명 토큰` 
-- 사용자 정의 API 이름 :`json 파일의 API, LoyaltyMAnagementAPIXX` 
+    - MCS Identity Domain Name: `your identity domain, gse000XXXXX`     
+    - Mobile Backend ID: `backendId in the json file`    
+    - MCS Anonymous Key: `anonymousToken in the json file`    
+    - Custom API Name: `API in the json file, LoyaltyMAnagementAPIXX`  
 
-당신의 json 파일은 이것과 비슷하게 보일 것입니다 - **물론 다른 것은 다릅니다**
+당신의 json 파일은 이것과 비슷하게 보일 것입니다 - **물론 값은 다릅니다**
     ```json
     {
           "baseUrl": "https://<Your Mobile Cloud Service Identity Domain Name>.mobileenv.us2.oraclecloud.com:443",
@@ -72,4 +73,19 @@
   Click [ **SAVE** ] button to save your new settings.
 
 ![](images/501/102.settings.png)
+
+3. Once the Push Notification Settings are saved, you can proceed to next lab.
+
 ![](images/501/103.save.png)
+
+
+Your Loyalty Management JEE Application is now ready to create campaign offer and notify customer mobile device.
+
+You have finished this lab section.
+
+[Procced to Next - 502: End-to-End Testing](502-PuttingAllTogetherLab.md)
+
+or
+
+[Back to Putting All Together Lab Home](README.md)
+
