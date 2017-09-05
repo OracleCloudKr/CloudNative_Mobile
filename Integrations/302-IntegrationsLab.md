@@ -48,7 +48,7 @@
 ![](images/302/02.integration_import1.png)
 
 
-4. 통합 목록에 임포트한 통합(Integration)인 **XXX_ICS_INTMGT (1.0)**이 보입니다. 부분적으로 사전 빌드된 아티팩트 세트를 가져 왔습니다. 우리는 이미 만들어 진 것은 그대로 사용하고, 나머지 부분을 완성 할 것입니다.
+4. 통합 목록에 임포트한 통합(Integration)인 XXX_ICS_INTMGT (1.0)이 보입니다. 부분적으로 사전 빌드된 아티팩트 세트를 가져 왔습니다. 우리는 이미 만들어 진 것은 그대로 사용하고, 나머지 부분을 완성 할 것입니다.
 
 ![](images/302/02.integration_import2.png)
 
@@ -146,7 +146,7 @@
 ![](images/302/19.connection_save1.png)
 
 
-7. 두 개의 **연결**이 준비되었습니다. **SOAP 연결(CRM 고객 서비스 호출용)** 및 **REST 연결(모바일 클라이언트 요청 수신용)**이 준비되었습니다.
+7. 두 개의 **연결**이 준비되었습니다. `SOAP 연결(CRM 고객 서비스 호출용)` 및 `REST 연결(모바일 클라이언트 요청 수신용)`이 준비되었습니다.
 
 [Proceed to Next - 303 : 조정(Orchestration) 패턴을 이용하여 통합하기](303-IntegrationsLab.md)
 
