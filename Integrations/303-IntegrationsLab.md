@@ -205,7 +205,7 @@
 
 38. 이제 통합 서비스가 테스트 준비가 되었습니다.
 
-[Proceed to Next - 304: Testing the service and Monitoring with ICS Dashboards](304-IntegrationsLab.md)
+[Proceed to Next - 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링](304-IntegrationsLab.md)
 
 또는
 

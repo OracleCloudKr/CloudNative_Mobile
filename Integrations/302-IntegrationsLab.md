@@ -151,7 +151,7 @@
 
 7. 두 개의 **연결**이 준비되었습니다. **SOAP 연결(*CRM 고객 서비스 호출용)** 및 **REST 연결(모바일 클라이언트 요청 수신용)**이 준비되었습니다.
 
-[Proceed to Next - 303: Complete an Integration - An Orchestration Integration Flow](303-IntegrationsLab.md)
+[Proceed to Next - 303 : 조정(Orchestration) 패턴을 이용하여 통합하기](303-IntegrationsLab.md)
 
 or
 
