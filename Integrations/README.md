@@ -3,7 +3,7 @@
 ## 3. Oracle Integration Cloud Service를 통한 Rapid Connect 애플리케이션 ##
 
 
-**\*길이가 45 ~ 60 분인 단순화 된 Lab 버전입니다. 관심이 있으시면 [HERE](long/README.md) 전체 버전을 살펴보십시오. 
+**\* 길이가 45 ~ 60 분인 단순화 된 Lab 버전입니다. 관심이 있으시면 [HERE](long/README.md) 전체 버전을 살펴보십시오. 
 
 ### 소개 ### 
 이 랩은 APAC 클라우드 테스트 드라이브의 일부로 CRM 응용 프로그램을 빠르게 연결하고 통합하는 세 번째 연구소입니다. 이 섹션에서는 웹 기반 대시 보드를 사용하여 Oracle Integration Cloud Service를 통한 애플리케이션 통합에 대해 설명합니다. 
