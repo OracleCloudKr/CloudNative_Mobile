@@ -1,6 +1,6 @@
 ### 선수 과목 ###
 
-- 안드로이드 폰이 필요합니다.. 
+- 안드로이드 폰이 필요합니다. 
 - 강사로부터 MBE 패키지 파일 &quot;package-LoyaltyMgmt_MBE0X.zip&quot;을 받았는지 확인하십시오. 파일 이름의 &quot;0X&quot;는 액세스 문서에서 사용자에게 지정된 접미사와 일치해야합니다. MBE 패키지 파일이 없거나 파일 이름이 할당 된 접미사와 일치하지 않으면 강사에게 문의하여 올바른 파일을 얻으십시오. 
 -이 실습의 끝에서 직접 만든 MBE로 작동하도록 모바일 애플리케이션을 구성 할 것입니다. &quot;Mobile_App_Settings_Sample.json&quot;파일에서 모든 설정을 수집합니다. [this link](../common/assets/mobile/Mobile_App_Settings_Sample.json) and select "Save link as...". Once you collect all the settings in this file, you will create a QR code to represent the settings by using the [online QR code generator](http://www.qr-code-generator.com/)을 오른쪽 클릭하여이 파일의 예를 다운로드 할 수 있습니다. 
 
