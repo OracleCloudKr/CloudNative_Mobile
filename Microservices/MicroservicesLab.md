@@ -223,6 +223,7 @@
 	  "password": "Welcome_1"
 	}
 	]
+}
 ```
 
 ![](images/024.json.png)
