@@ -53,12 +53,12 @@
 
 #### CRM 고객 활동 서비스를위한 SOAP 연결 정의 
 
-5. 왼쪽 상단 모서리에있는 햄버거 아이콘을 클릭하여 **연결**요약 페이지로 이동하여 `설계자`와 `연결`을 차례로 클릭하십시오. 
+5. 왼쪽 상단 모서리에있는 햄버거 아이콘을 클릭하여 **접속**요약 페이지로 이동하여 `설계자`와 `접속`을 차례로 클릭하십시오. 
 
 ![](images/302/04.home_hamburger_connections.png)
 
 
-6. **Connections**홈 페이지에서**XXX_CRM_CustomerService**및**XXX_ICSINTMGT_ProcessOffer**라는 새로 가져온 연결 엔터티를 각각 찾을 수 있어야 합니다. 
+6. **Connections**홈 페이지에서 **XXX_CRM_CustomerService**및 **XXX_ICSINTMGT_ProcessOffer**라는 새로 가져온 연결 엔터티를 각각 찾을 수 있어야 합니다. 
 
 ![](images/302/05.connection_import.png)
 
@@ -73,12 +73,13 @@
 ![](images/302/07.connection_initial.png)
 
 
-9. 아래로 스크롤하여**연결 속성**섹션을 열고 `연결 구성`버튼을 클릭하십시오. 
+9. 아래로 스크롤하여 **접속 속성**섹션을 열고 `접속 구성`버튼을 클릭하십시오. 
 
 ![](images/302/05.connection_import2.png)
 
 
-10. **연결 등록 정보**대화 상자 창이 표시됩니다.**WSDL URL**에**Property Value**를 다음 형식으로 제공하여 채 웁니다.***http : // \ <Your Java Cloud Service Instance IP Address\> / crm / CustomerServicePort? WSDL**
+10. **연결 등록 정보**대화 상자 창이 표시됩니다.**WSDL URL**에 **Property Value**를 다음 형식으로 제공하여 채웁니다. 
+	* **http://\<Your Java Cloud Service Instance IP Address\>/crm/CustomerServicePort?WSDL** 
 	*\*If you forget your JCS instance IP address, [Click Here!](../../Java%20Apps/java.cloud.md)*  
 	Leave other properties **empty** as they are optional and not required in this lab exercise.
 	
@@ -104,12 +105,12 @@
 ![](images/302/12.connection_save.png)
 
 
-15. **변경 사항을 저장 하시겠습니까?**대화 상자 창이 나타납니다. 대화 상자를 닫으려면 대화 상자를 닫고 `저장`을 클릭하십시오. 
+15. **변경 사항을 저장 하시겠습니까?** 대화 상자 창이 나타납니다. 대화 상자를 닫으려면 대화 상자를 닫고 `저장`을 클릭하십시오. 
 
 ![](images/302/12.connection_save1.png)
 
 
-16. **연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. `닫기`를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
+16. **연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. `닫기`를 클릭하여 종료하고 **연결**요약 페이지로 돌아갑니다. 
 
 ![](images/302/13.connection_saveresult.png)
 
