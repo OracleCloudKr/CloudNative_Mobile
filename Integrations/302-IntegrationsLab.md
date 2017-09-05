@@ -127,17 +127,17 @@
 ![](images/302/14.connection_rest.png)
 
 
-19. 이번에**XXX_ICSINTMGT_ProcessOffer**연결 세부 정보 페이지가 표시되며*REST 트리거*유형 연결로 인해 더 간단합니다. 
+19. **XXX_ICSINTMGT_ProcessOffer** 연결 세부 정보 페이지가 표시되며, 이번에는 *REST 트리거* 유형 연결로 인해 더 간단합니다. 
 
 ![](images/302/16.connection_initial1.png)
 
 
-20. **REST Connection**페이지에서 오른쪽 상단 모서리에있는 `Test`를 클릭하십시오.**연결 테스트가 성공적으로 완료되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. 
+20. **REST Connection** 페이지에서 오른쪽 상단 모서리에있는 `Test`를 클릭하십시오.**연결 테스트가 성공적으로 완료되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. 
 
 ![](images/302/18.connection_test1.png)
 
 
-21. 그런 다음 오른쪽 상단에서 `저장`을 클릭하십시오. 마찬가지로**변경 사항 저장?**대화 상자가 나타나 통합을 다시 활성화하는 방법에 대해 경고하고 `저장`을 클릭하여 확인한 다음 대화 상자를 다시 닫습니다. 
+21. 그런 다음 오른쪽 상단에서 `저장`을 클릭하십시오. 마찬가지로 **변경 사항 저장** 대화 상자가 나타나 통합을 다시 활성화하는 방법에 대해 경고하고 `저장`을 클릭하여 확인한 다음 대화 상자를 다시 닫습니다. 
 
 ![](images/302/20.connection_save2.png)
 
@@ -147,7 +147,7 @@
 ![](images/302/19.connection_save1.png)
 
 
-23. 두 개의*연결*이 준비됩니다.**SOAP 연결 - \*CRM 고객 서비스로의***및**REST 연결 - \*트리거**에서 프로세스 제안**에 대한 ICS로 각각 연결됩니다. 
+23. 두 개의*연결*이 준비됩니다.**SOAP Connection - \*Invoke\* to CRM Customer Service** 및 **REST Connection - \*Trigger\* to ICS for Process Offer**
 
 [Procced to Next - 303: Complete an Integration - An Orchestration Integration Flow](303-IntegrationsLab.md)
 
