@@ -142,12 +142,12 @@
 ![](images/302/20.connection_save2.png)
 
 
-22. **연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. `닫기`를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다. 
+22. **연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. `닫기`를 클릭하여 종료하고 **연결**요약 페이지로 돌아갑니다. 
 
 ![](images/302/19.connection_save1.png)
 
 
-23. 두 개의*연결*이 준비됩니다.**SOAP Connection - \*Invoke\* to CRM Customer Service** 및 **REST Connection - \*Trigger\* to ICS for Process Offer**
+23. 두 개의 *연결*이 준비되었습니다. **SOAP Connection - \*Invoke\* to CRM Customer Service** 및 **REST Connection - \*Trigger\* to ICS for Process Offer**
 
 [Procced to Next - 303: Complete an Integration - An Orchestration Integration Flow](303-IntegrationsLab.md)
 
