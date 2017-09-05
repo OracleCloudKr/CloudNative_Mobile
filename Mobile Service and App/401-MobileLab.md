@@ -64,7 +64,7 @@
 ![](../common/images/mobile/401-Import_Package_Select_GenerateQRCode_Endpoint.png)
 
 
-10. ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https : // qrcodegenerator- <ACCS_DOMAIN_NAME> .apaas. <DATACENTER> .oraclecloud.com`. `저장`을 클릭하십시오. 
+10. ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https : // qrcodegenerator-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com` `저장`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_GenerateQRCode_Endpoint.png)
 
 
