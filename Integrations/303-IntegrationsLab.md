@@ -128,87 +128,84 @@
 ![](images/303/08.integration.if.png)
 
 
-22. IF 조건문 표현식 페이지가 표시됩니다. 텍스트 영역에 `lower-case (accepted) = 'true'라는 논리 결정이 내려졌고 왼쪽의**Source**아래에있는`accepted` 필드 옆에 녹색 체크 표시가 있습니다. 이 함수는 `accepted`의 소문자 문자열 값에 따라 true 또는 false 결과를 반환하도록 평가합니다. 여기서 결과는**IF**또는**ELSE**경로를 향한 메시지 흐름을 결정하는 데 사용됩니다. 검토가 끝나면 오른쪽 상단의 `닫기`를 클릭하십시오.
+22. IF 조건문 표현식 페이지가 표시됩니다. 텍스트 영역에 `lower-case (accepted) = 'true'` 라는 조건이 설정되어 있고 왼쪽의 **Source** 아래에 있는 `accepted` 필드 옆에 녹색 체크 표시가 있습니다. 이 함수는 `accepted`의 소문자 문자열 값에 따라 true 또는 false 결과를 반환하도록 평가합니다. 여기서 결과는 **IF** 또는 **ELSE**경로를 향한 메시지 흐름을 결정하는 데 사용됩니다. 검토가 끝나면 오른쪽 상단의 `닫기`를 클릭하십시오.
 
 ![](images/303/08.integration.logic.png)
 
 
-23. *if*또는*otherwise*조건에서 다른 응답 데이터가 리턴됩니다. 이제 전체 통합 흐름을 완료하기 위해*if*경로에 남아있는 작업 하나가 있습니다.
+23. *If* 또는 *Otherwise* 조건에서 진행 경로가 결정됩니다. 이제 전체 통합 흐름을 완료하기 위해 *If* 경로에 추가해야 할 작업 하나가 있습니다.
 
 ![](images/303/34.integration.if.difference.png)
 
 
-24. 고객이 제안을 수락 할 때 적절한 응답을 처리하기 위해 응답 데이터의 누락 된**맵**을*if*경로에 구성해야합니다. 오른쪽 창에서`Actions`를 클릭하고`Map`을 드래그하여**IF Accept Offer**노드와`+`아이콘과 함께 나타나는 두 개의 스위치 라인의 연결 지점 사이의 통합 흐름으로 드롭하십시오 이하.
+24. 고객이 제안을 수락 할 때, 즉 `lower-case (accepted) = 'true'` 일때 적절한 응답을 처리하기 위해 응답 데이터의 누락 된 **맵**을 *If* 경로에 구성해야 합니다. 오른쪽 창에서`작업(Actions)`를 클릭하고 `맵(Map)`을 드래그하여 **IF Accept Offer** 노드 다음의 `+` 위치에 드롭합니다.
 
 ![](images/303/35.integration.if.add1.png)
-
 
 ![](images/303/35.integration.if.add2.png)
 
 
-25. `Map`이 제대로 삭제되면**Data Mapping**대화 상자 창이 열립니다. 왼쪽 창에서**Source**를 확장하고`$ CustomerServiceActivity` ->`addCustomerActivityResponse` 아래에`return` 필드를 드래그하고 오른쪽 창에있는`activityid`에 놓습니다.
-	Click `imgurl` to proceed advance data mapping.
+25. `맵(Map)` 작업이 드랍되면, **Data Mapping** 대화 상자 창이 열립니다. 왼쪽 창에서**Source**를 확장하고`$ CustomerServiceActivity` ->`addCustomerActivityResponse` 아래에 `return` 필드를 드래그하여 오른쪽 창에있는`activityid`에 놓습니다.
 
 ![](images/303/36.integration.if.map.png)
 
+26. 우측 대상 필드 중 `imgurl`을 클릭합니다.
 
-26. **Build Mappings**대화 상자가 나타납니다. 왼쪽 된 창에서**Source**아래의**Mapping Components**를 확장 한 다음,`Functions` ->`String`을 확장하십시오.
-	Drag the function `fx concat` and drop it onto `- Drag and Drop or Type value here...` under **Mapping** in right pane.  
+27. 매핑 대화 상자가 나타납니다. 왼쪽 된 창에서 **Source**아래의 **매핑 구성요소(Mapping Components)**를 확장 한 다음,`함수(Functions)` ->`문자열(String)`을 확장하십시오. `concat` 함수를 드래그 하여 `끌어 놓기 또는 여기에 값 입력(Drag and Drop or Type value here...)`로 드랍합니다.
 
 ![](images/303/37.integration.if.map1.png)
 
 
-27. `string1`을 클릭하고, ``sign, ie`'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'` 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. ( `Microservices`랩에서 얻은 호스트 이름) 다음으로, 왼쪽 창에서`Source`를 확장하고`offerid` 필드를 드래그하여`string2`에 놓습니다. 문자열이 자동으로 삽입됩니다. \ ( `offerid`\의 XSLT 변수 표현입니다.)
-	Click `Save`, and then click `Close` button at the bottom to return previous screen.
+28. concat 함수의 두 파라미터를 입력합니다.
+  + string1: `string1`을 클릭하고, `'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'`을 입력합니다. 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. (<Your Application Container Cloud Identity Domain Hostname>는 `Microservices`랩에서 얻은 호스트 이름입니다.)
+	+ string2: 왼쪽 창에서 `Source`를 확장하고 `offerid` 필드를 드래그하여 `string2`에 놓습니다. 자동으로 XPath 형식으로 변경됩니다.
+
+29. 저장후 닫기 버튼을 클릭합니다.
 
 
 ![](images/303/38.integration.if.map2.png)
 
 
-28. *데이터 맵핑*은 아래와 같아야합니다. `확인`을 클릭 한 다음 `닫기`를 클릭하십시오.
+30. 데이터 맵핑은 아래와 같아야합니다. `확인`을 클릭 한 다음 `닫기`를 클릭하십시오.
 
 ![](images/303/39.integration.if.map3.png)
 
 
-29. *프로세스 제안*통합 플로우 개발이 완료되었습니다.
+31. 조정(Orchestration) 프로세스 개발이 완료되었습니다.
 
 ![](images/303/40.integration.flow.complete.png)
 
 
-30. 햄버거 아이콘을 클릭 한 다음 오른쪽 상단 모서리에있는 `Tracking`을 선택하십시오.
+32. 햄버거 아이콘을 클릭 한 다음 오른쪽 상단 모서리에 있는 `추적(Tracking)`을 선택하십시오.
 
 ![](images/303/42.integration.tracking.png)
 
 
-31. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 ICS를 통해 실행되는 수십만 개의 메시지가 필요한 경우 필요합니다. `businessid`,`offerid` 및`productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다.
-	Click `Cancel` button at the bottom on review completion of tracking setup to close the dialog.
-
+33. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 ICS를 통해 실행되는 수십만 개의 메시지가 필요한 경우 필요합니다. `businessid`,`offerid` 및 `productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다.
 
 ![](images/303/43.integration.tracking.identifier1.png)
 
 
-32. ICS 대시 보드 기본 화면으로 돌아가려면 각각 `저장`및 `닫기`버튼을 클릭하십시오.
+34. ICS 대시 보드 기본 화면으로 돌아가려면 각각 `저장`및 `닫기`버튼을 클릭하십시오.
 
 ![](images/303/43.integration.edit.done.png)
 
 
-33. **Integrations**Summary 페이지에서, 새로 생성 된`integration`의**Switch**버튼을 클릭하면,`Activate Integration? `대화 상자가 나타납니다. 프로덕션 트래픽을 처리 할 때 켜는 것은 좋지 않지만 나중에 테스트하기 위해 `Enable tracing`및 `Include payload`를 선택하십시오.
-	Click `Activate` button at the bottom.
-
+35. **통합(Integrations)** 페이지에서, 새로 생성 된 `integration`의 **Switch**버튼을 클릭하면,`통합을 활성화하시겠습니까?(Activate Integration?)` 대화 상자가 나타납니다. 운영환경에서는 체크하는 것이 좋지 않지만 나중에 테스트하기 위해 `Enable tracing` 및 `Include payload`를 선택하십시오.
 
 ![](images/303/44.integration.activate.png)
 
 
-34. 통합 활성화를 위해 2 분 정도 기다리십시오. 완료되면 통합을 알리는 녹색 배너가 성공적으로 활성화되었으며 그 결과는 다음과 같습니다.
+36. 통합 활성화를 위해 2 분 정도 기다리십시오. 완료되면 통합을 알리는 녹색 배너가 성공적으로 활성화되었으며 그 결과는 다음과 같습니다.
 
 ![](images/303/45.integration.activate.done.png)
 
 
-35. 브라우저에서 고유 한 URL을 클립 보드로 저장하거나 복사하십시오 :`https://integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com:443/integration/flowapi/rest/XXX_ICS_INTMGT/`
+37. 브라우저에서 고유한 URL을 클립 보드로 저장하거나 복사하십시오 :`https://integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com:443/integration/flowapi/rest/XXX_ICS_INTMGT/`
 
-36. 이제 통합 서비스가 테스트 준비가되었습니다.
+38. 이제 통합 서비스가 테스트 준비가 되었습니다.
 
-[Procced to Next - 304: Testing the service and Monitoring with ICS Dashboards](304-IntegrationsLab.md)
+[Proceed to Next - 304: Testing the service and Monitoring with ICS Dashboards](304-IntegrationsLab.md)
 
 또는
 

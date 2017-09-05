@@ -124,35 +124,34 @@
 
 1. 이제 우리는 **XXX_ICSINTMGT_ProcessOffer** 연결을 업데이트 할 것입니다. 그러나 이번에 *Connection*은 타 시스템을 **호출(invoke)**하는 것이 아니라 대신 클라이언트, 즉 모바일 클라이언트에 의해 호출되는 연결 서비스입니다. 즉 **트리거** 되는 연결입니다.
 
-	Make sure you are still on **Connections** Summary Page. If not, follow step 1 previously.  
-	On the row of **XXX_ICSINTMGT_ProcessOffer** Connection, click the hamburger menu icon at the right side and select `Edit` like below.
+2. **XXX_ICSINTMGT_ProcessOffer** Connection 행에서 오른쪽에 있는 햄버거 메뉴 아이콘을 클릭하고 아래의 `편집(Edit)`을 선택하십시오.
 
 ![](images/302/14.connection_rest.png)
 
 
-19. 이번에**XXX_ICSINTMGT_ProcessOffer**연결 세부 정보 페이지가 표시되며*REST 트리거*유형 연결로 인해 더 간단합니다.
+3. 이번에 **XXX_ICSINTMGT_ProcessOffer** 연결 세부 정보 페이지가 표시되며 **REST 트리거** 유형 연결로 인해 더 간단합니다.
 
 ![](images/302/16.connection_initial1.png)
 
 
-20. **REST Connection**페이지에서 오른쪽 상단 모서리에있는 `Test`를 클릭하십시오.**연결 테스트가 성공적으로 완료되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다.
+4. **REST Connection** 페이지에서 오른쪽 상단 모서리에있는 `Test`를 클릭하십시오. **연결 테스트가 성공적으로 완료되었습니다**는 상단의 메시지를 확인합니다.
 
 ![](images/302/18.connection_test1.png)
 
 
-21. 그런 다음 오른쪽 상단에서 `저장`을 클릭하십시오. 마찬가지로**변경 사항 저장?**대화 상자가 나타나 통합을 다시 활성화하는 방법에 대해 경고하고 `저장`을 클릭하여 확인한 다음 대화 상자를 다시 닫습니다.
+5. 그런 다음 오른쪽 상단에서 `저장`을 클릭하십시오. 마찬가지로 **변경 사항 저장?** 대화 상자가 뜨면 `저장`을 클릭하여 확인한 다음 대화 상자를 다시 닫습니다.
 
 ![](images/302/20.connection_save2.png)
 
 
-22. **연결이 성공적으로 저장되었습니다**에 대한 녹색 대화 상자 텍스트 영역을 찾아야합니다. `닫기`를 클릭하여 종료하고**연결**요약 페이지로 돌아갑니다.
+6. **연결 테스트가 성공적으로 완료되었습니다**는 상단의 메시지를 확인합니다. `닫기`를 클릭하여 종료하고 **연결** 요약 페이지로 돌아갑니다.
 
 ![](images/302/19.connection_save1.png)
 
 
-23. 두 개의*연결*이 준비됩니다.**SOAP 연결 - \*CRM 고객 서비스로의***및**REST 연결 - \*트리거**에서 프로세스 제안**에 대한 ICS로 각각 연결됩니다.
+7. 두 개의 **연결**이 준비되었습니다. **SOAP 연결(*CRM 고객 서비스 호출용)** 및 **REST 연결(모바일 클라이언트 요청 수신용)**이 준비되었습니다.
 
-[Procced to Next - 303: Complete an Integration - An Orchestration Integration Flow](303-IntegrationsLab.md)
+[Proceed to Next - 303: Complete an Integration - An Orchestration Integration Flow](303-IntegrationsLab.md)
 
 or
 
