@@ -614,7 +614,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/168.npm.png)
 
 
-9. **Post Build**탭을 클릭하십시오.**이슈 보관**을 ​​선택하십시오. 아카이브 할 파일에`**/ target /*`을 입력하고 압축 유형으로**GZIP**가 선택되어 있는지 확인하십시오. 
+9. **Post Build**탭을 클릭하십시오.**이슈 보관**을 ​​선택하십시오. 아카이브 할 파일에`**/target/*`을 입력하고 압축 유형으로**GZIP**가 선택되어 있는지 확인하십시오. 
 
 ![](images/169.pb1.png)
 
