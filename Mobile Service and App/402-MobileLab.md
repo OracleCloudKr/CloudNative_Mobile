@@ -55,7 +55,7 @@
     
 6. 사용자 W 역할이이 API에 액세스 할 수 있도록 보안 정책을 정의 할 수 있습니다. 이 실습에서는이 API에 대한 익명 액세스를 허용합니다. `보안`탭으로 전환하여 `로그인 필요`옵션이 해제되어 API에서 익명 액세스를 허용하는지 확인하십시오. 
 
-! [](../common/images/mobile/402-API_Verify_Security.png) 
+![](../common/images/mobile/402-API_Verify_Security.png) 
 
 7. 맞춤 API가 정의 된 후 서비스 개발자가 서비스 구현을 완료하기를 기다리지 않고 모바일 개발자가 API 사용을 시작할 수 있도록 모의 서비스가 자동으로 생성됩니다. 이 실습에서는 API 구현을 MBE 패키지와 함께 가져 왔습니다. &quot;구현&quot;탭으로 전환하여 &quot;LoyaltyMgmt0X에 대한 종속성&quot;을 클릭하여 확장하십시오. &quot;LoyaltyMgmt0X&quot;라는 구현이 `Default`로 설정되어 있는지 확인하고 의존성 목록 ( &quot;0X&quot;가 할당 된 접미사 임)에서 &quot;GenerateQRCode0X&quot;, &quot;QueryOffers0X&quot;및 &quot;ProcessOffer0X&quot;커넥터를 찾을 수 있습니다. 
 
