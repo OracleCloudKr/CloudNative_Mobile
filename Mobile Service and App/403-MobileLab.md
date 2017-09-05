@@ -41,7 +41,7 @@
 ![](../common/images/mobile/403-Begin_New_Profile.png)
 
 
-&quot;. 이름`AAAA14t0nbs를 붙여 넣습니다 APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX`을로&quot;(사용자에게 할당 된 접미사, 예를 변화`0X` 03)`FCM0X`를 입력 6. 같은 API 키 &quot;와 `925757644219`을 발신자 ID로 사용하고`Google 메시징 (GCM 또는 FCM) `을`알림 서비스 `로,`XMPP `를`전송 방법 `으로 유지하고`생성 `을 클릭합니다 (생성 된 키입니다. Google의 
+6. Enter `FCM0X` (change `0X` to the postfix assigned to you, e.g: 03) as the "Name. Paste `AAAA14t0nbs:APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX` as the "API Key" and `925757644219` as the Sender ID. Keep `Google Messaging (GCM or FCM)` as the "Notification Service" and `XMPP` as the "Send Method", and click on “Create”. (These are the keys that are generated from Google.)
 
 ![](../common/images/mobile/403-Create_New_Profile.png) 
 
