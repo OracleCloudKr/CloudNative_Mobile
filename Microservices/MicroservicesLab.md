@@ -709,18 +709,49 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 {
 	"memory":"1G",
 	"instances":"1"
+}
 ```
 
 ![](images/024.json.11.png)
+
+10. After fill in the above information, click **Save** button.
+
 ![](images/189.depsave.png)
+
+11. In your deployment job, click the gear drop down and select **Start**
+
 ![](images/190.start.png)
+
+12. The deployment job will be put into a queue for process. Wait until the message **Starting application** changes to **Last deployment succeeded**. Ask for help from your instructor if the deployment fails.
+
 ![](images/191.deployed.png)
-## 2.4 Oracle Application Container Cloud 서비스에 로그인
+
+## 2.4 Login to Oracle Application Container Cloud Service
+
+1. Navigate back to the Oracle Public Cloud tab. Click **Dashboard** to return back to main Cloud Service Dashboard.
+
+2. On the Application Container Cloud Service (ACCS) click the humburger button and select **Open Service Console**
+
 ![](images/192.accs.png)
+
+3. On the ACCS Service Console you can view all the deployed applications including our newly create **qrcodegenerator**.
+
 ![](images/193.accsqr.png)
+
+4. Copy the URL and paste it into the address bar of a new tab to bring up the application.
+
+  Be reminded that you will need the REST endpoint and the **offer id** in order to generate a QR code.
+
+  The final URL should looks like this
+
 	https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ctdqr/v1/offer/10001
+
 ![](images/194.qrurl.png)		
+
+5. the QR Code in the browser will look like this
+
 ![](images/195.codepic.png)
+
 ```diff
 + you might want to copy your OWN URLs for QR Code API
 +   https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ctdqr/v1/offer/
@@ -729,10 +760,10 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 +   You will need to use it later, e.g. Lab 304 Step 27.
 ```
 
-
-**선택 단계 :** QR 코드 판독기 (예 : 모바일 앱)를 사용하는 경우 QR 코드를 디코딩 할 수 있습니다 
+**OPTIONAL STEP:** if you use a QR Code reader (e.g. Mobile App), you can decode the QR Code
 
 ![](images/196.reader.png)
+
 
 
 # 축하! Microservice Lab을 완료했습니다.
