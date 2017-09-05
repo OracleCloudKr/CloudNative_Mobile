@@ -123,7 +123,7 @@
 
 6. `예`를 클릭하여 저장하십시오. 
 
-! [](../common/images/mobile/401-Test_Connector_ProcessOffer_Save.png) 
+![](../common/images/mobile/401-Test_Connector_ProcessOffer_Save.png) 
 
 7. `Test`단계에서 HTTP 메소드로 `POST`를 선택하고 HTTP Body로 `{ &quot;customerid&quot;: 66890169, &quot;offerid&quot;: 10001, &quot;productid&quot;: 20001, &quot;accepted&quot;: false} &quot;. 
 
