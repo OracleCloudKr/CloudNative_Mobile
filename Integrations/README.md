@@ -63,7 +63,7 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 
 [Click Here.](301-IntegrationsLab.md)
 
-## 302 : CRM 연동을 위한 선 통합(Pre-Built) 자산 임포트 및 연결 정보(Connection) 수정하기 ##
+## 302 : CRM 연동을 위한 선 통합(Pre-Built) 자산 임포트 및 연결 정보 수정하기 ##
 
 
 [Click Here.](302-IntegrationsLab.md)
@@ -73,7 +73,7 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 
 [Click Here.](303-IntegrationsLab.md)
 
-## 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링 ## 
+## 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링 ##
 
 
 [Click Here.](304-IntegrationsLab.md)

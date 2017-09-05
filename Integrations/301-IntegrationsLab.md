@@ -69,7 +69,7 @@
 
 
 
-[Proceed to Next - 302 : CRM 연동을 위한 선 통합(Pre-Built) 자산 임포트 및 연결 정보(Connection) 수정하기](302-IntegrationsLab.md)
+[Proceed to Next - 302 : CRM 연동을 위한 선 통합(Pre-Built) 자산 임포트 및 연결 정보 수정하기](302-IntegrationsLab.md)
 
 or
 
