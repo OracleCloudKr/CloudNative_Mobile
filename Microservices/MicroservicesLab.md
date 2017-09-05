@@ -227,20 +227,64 @@
 ```
 
 ![](images/024.json.png)
+
+10. After fill in the above information, click **Save** button.
+
 ![](images/025.deploysave.png)
+
+11. In your deployment job, click the gear drop down and select **Start**
+
 ![](images/026.deploystart.png)
+
+12. The deployment job will be put into a queue for process. Wait until the message **Starting application** changes to **Last deployment succeeded**. Ask for help from your instructor if the deployment fails.
+
 ![](images/027.deploysuccess.png)
-## 1.3 Oracle Application Container Cloud Service에 로그인하십시오.
+
+## 1.3 Login to Oracle Application Container Cloud Service
+
+1. Navigate back to the Oracle Public Cloud MyService. Click **Dashboard** to return back to main Cloud Service Dashboard.
+
 ![](images/028.dashboard.png)
+
+2. On the Application Container Cloud Service (ACCS) click the humburger button and select **Open Service Console**
+
 ![](images/029.accsgoto.png)
+
+3. On the ACCS Service Console you can view all the deployed applications including our newly create **Offer**.
+
 ![](images/030.accsconsole.png)
-## 1.4 DBCS에 바인드 ACCS 서비스 바인딩 확인
+
+## 1.4 CHECK ACCS Service Binding to DBCS
+
+1. Click the **[ Offer ]** to see the ACCS application Details
+
 ![](images/031.accsoffer.png)
+
+2. Check the 2nd Tab, **Deployments**
+
 ![](images/032.bindings.png)
+
+3. In the **Service Bindings** section, you SHOULD see the database binding. **You do NOT need to change anything.**
+
 ![](images/033.addbinding.png)
-## 1.5 워킹 서비스 확인
+
+
+## 1.5 Verify the Working Service
+
+1. In you application panel, you should see the base URL of your application. Something like https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com
+
 ![](images/037.url.png)
+
+2. Copy and paste the URL into the address bar of a new tab to bring up the application.
+
+  Be reminded that you will need the REST endpoint and the **offer id** in order to generate a QR code.
+
+  The final URL should looks like this
+
+https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ptmgt/v1/offers/10001
+
 ![](images/038.browser.png)
+
 ```diff
 + you might want to copy your OWN URLs for Offer API, e.g.
 +   https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ptmgt/v1/offers/
