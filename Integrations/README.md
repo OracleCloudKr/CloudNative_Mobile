@@ -68,7 +68,7 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 
 [Click Here.](302-IntegrationsLab.md)
 
-## 조정(Orchestration) 패턴을 이용하여 통합하기 ##
+## 303 : 조정(Orchestration) 패턴을 이용하여 통합하기 ##
 
 
 [Click Here.](303-IntegrationsLab.md)
