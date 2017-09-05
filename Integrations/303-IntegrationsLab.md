@@ -74,21 +74,21 @@
 ![](images/303/05.integration.rest.endpoint.png)
 
 
-11. **매핑 대상 CustomerService...** 이란 이름의 두 번째 노드를 클릭 한 다음, 팝업 메뉴에서 `편집` `펜`단추를 더블클릭하십시오.
+11. **매핑 대상 CustomerService...** 이란 이름의 두 번째 노드를 클릭 한 다음, 팝업 메뉴에서 `편집` `펜`단추를 더블클릭합니다.
 
 ![](images/303/06.integration.map.png)
 
 
-12. **CustomerServiceActivity** 매핑 페이지가 표시됩니다. 왼쪽에 있는 **Source**트리의 일부 필드와 오른쪽에있는 **Target**트리의 일부 필드에는 녹색 동그라미가 있습니다. 이는 매핑이 구성되어 이러한 소스에서 대상 필드사이에서 매핑되었음을 의미합니다. (이미 가져 오기 중에 완료) 예를 들어 **Target**트리 아래의 customerId는 **Source**트리에서 같은 이름 필드 `customerId`로 매핑되었습니다. 이제 **Target** 아래의 두 번째 필드 인 `activityName`을 살펴보고 아래의 **Mapping** 열 아래에서 `f (x), offerid, acceptance, accepted`라는 텍스트를 클릭하겠습니다.
+12. **CustomerServiceActivity** 매핑 페이지가 표시됩니다. 왼쪽에 있는 **Source**트리의 일부 필드와 오른쪽에있는 **Target**트리의 일부 필드에는 녹색 동그라미가 있습니다. 이는 매핑이 구성되어 이러한 소스에서 대상 필드사이에서 매핑되었음을 의미합니다. (이미 가져 오기 중에 완료) 예를 들어 **Target**트리 아래의 customerId는 **Source**트리에서 같은 이름 필드 `customerId`로 매핑되었습니다. 이제 **Target** 아래의 두 번째 필드 인 `activityName`을 살펴보고 아래의 **Mapping** 열 아래에서 `f(x), offerid, acceptance, accepted`라는 텍스트를 클릭하겠습니다.
 
 ![](images/303/06.integration.map1.png)
 
 
-13. **매핑 생성(Build Mappings)**대화 상자 창이 나타납니다. 매핑은 다음 그림 처림 문자열과 변수 값이 concat한 것임을 확인할 수 있습니다. 확인 후 하단 `닫기(Close)`를 클릭합니다.
+13. **매핑 생성(Build Mappings)** 대화 상자 창이 나타납니다. 매핑은 다음 그림 처림 문자열과 변수 값이 concat한 것임을 확인할 수 있습니다. 확인 후 하단 `닫기(Close)`를 클릭합니다.
 `![](images/303/06.integration.map2.png)
 
 
-14. **CustomerServiceActivity** 매핑 페이지로 돌아가서, 화면에서 아래의 **매핑** 열 아래에 있는 `f (x), productid`라는 텍스트를 클릭하십시오.
+14. **CustomerServiceActivity** 매핑 페이지로 돌아가서, 화면에서 아래의 **매핑** 열 아래에 있는 `f(x), productid`라는 텍스트를 클릭하십시오.
 
 ![](images/303/06.integration.map3a.png)
 
@@ -98,12 +98,12 @@
 ![](images/303/06.integration.map3.png)
 
 
-16. **CustomerServiceActivity** 매핑 페이지로 돌아가서, 화면에서 아래의 **매핑** 열 아래에있는 마지막 필드 텍스트 인 f(x)를 클릭하십시오.
+16. **CustomerServiceActivity** 매핑 페이지로 돌아가서, 화면에서 아래의 **매핑** 열 아래에 있는 마지막 필드 텍스트 인 f(x)를 클릭하십시오.
 
 ![](images/303/06.integration.map4a.png)
 
 
-17. **매핑 생성(Build Mappings)** 대화 상자 창이 나타납니다 : <xsl:value-of select = 'fn:current-data()'> `이것은 ICS가 기본 제공하는 함수로써, 왼쪽 하단의 **매핑 구성 요소(Mapping Components)** 트리를 확장하여 많은 함수들을 자유롭게 찾아서 쓸 수 있습니다. 검토가 완료되면 오른쪽 하단에있는 `닫기`버튼을 클릭하십시오.
+17. **매핑 생성(Build Mappings)** 대화 상자 창이 나타납니다 : <xsl:value-of select = 'fn:current-data()'> 이것은 ICS가 기본 제공하는 함수로써, 왼쪽 하단의 **매핑 구성 요소(Mapping Components)** 트리를 확장하여 많은 함수들을 자유롭게 찾아서 쓸 수 있습니다. 검토가 완료되면 오른쪽 하단에있는 `닫기`버튼을 클릭하십시오.
 
 ![](images/303/06.integration.map4.png)
 
@@ -123,12 +123,12 @@
 ![](images/303/07.integration.soap1.png)
 
 
-21. 캔버스 화면으로 돌아가서 **IF Accept Offer**라는 네 번째 노드를 선택하고 팝업 메뉴에서 `편집` `펜` 단추를 더블 클릭하십시오.
+21. 캔버스 화면으로 돌아가서 **IF Accept Offer**라는 네 번째 노드를 선택하고 팝업 메뉴에서 `편집` `펜` 단추를 더블 클릭합니다.
 
 ![](images/303/08.integration.if.png)
 
 
-22. IF 조건문 표현식 페이지가 표시됩니다. 텍스트 영역에 `lower-case (accepted) = 'true'` 라는 조건이 설정되어 있고 왼쪽의 **Source** 아래에 있는 `accepted` 필드 옆에 녹색 체크 표시가 있습니다. 이 함수는 `accepted`의 소문자 문자열 값에 따라 true 또는 false 결과를 반환하도록 평가합니다. 여기서 결과는 **IF** 또는 **ELSE**경로를 향한 메시지 흐름을 결정하는 데 사용됩니다. 검토가 끝나면 오른쪽 상단의 `닫기`를 클릭하십시오.
+22. IF 조건문 표현식 페이지가 표시됩니다. 텍스트 영역에 `lower-case (accepted) = 'true'` 라는 조건이 설정되어 있고 왼쪽의 **Source** 아래에 있는 `accepted` 필드 옆에 녹색 체크 표시가 있습니다. 이 함수는 `accepted`의 소문자 문자열 값에 따라 true 또는 false 결과를 반환하도록 평가합니다. 여기서 결과는 **IF** 또는 **ELSE** 경로를 향한 메시지 흐름을 결정하는 데 사용됩니다. 검토가 끝나면 오른쪽 상단의 `닫기`를 클릭하십시오.
 
 ![](images/303/08.integration.logic.png)
 
@@ -145,20 +145,20 @@
 ![](images/303/35.integration.if.add2.png)
 
 
-25. `맵(Map)` 작업이 드랍되면, **Data Mapping** 대화 상자 창이 열립니다. 왼쪽 창에서**Source**를 확장하고`$ CustomerServiceActivity` ->`addCustomerActivityResponse` 아래에 `return` 필드를 드래그하여 오른쪽 창에있는`activityid`에 놓습니다.
+25. `맵(Map)` 작업이 드랍되면, **Data Mapping** 대화 상자 창이 열립니다. 왼쪽  **Source** 를 확장하고`$ CustomerServiceActivity` ->`addCustomerActivityResponse` 아래에 `return` 필드를 드래그하여 오른쪽 창에있는`activityid`에 놓습니다.
 
 ![](images/303/36.integration.if.map.png)
 
 26. 우측 대상 필드 중 `imgurl`을 클릭합니다.
 
-27. 매핑 대화 상자가 나타납니다. 왼쪽 된 창에서 **Source**아래의 **매핑 구성요소(Mapping Components)**를 확장 한 다음,`함수(Functions)` ->`문자열(String)`을 확장하십시오. `concat` 함수를 드래그 하여 `끌어 놓기 또는 여기에 값 입력(Drag and Drop or Type value here...)`로 드랍합니다.
+27. 매핑 대화 상자가 나타납니다. 왼쪽 된 창에서 **Source**아래의 **매핑 구성요소(Mapping Components)** 를 확장 한 다음,`함수(Functions)` ->`문자열(String)`을 확장하십시오. `concat` 함수를 드래그 하여 `끌어 놓기 또는 여기에 값 입력(Drag and Drop or Type value here...)`로 드랍합니다.
 
 ![](images/303/37.integration.if.map1.png)
 
 
 28. concat 함수의 두 파라미터를 입력합니다.
-  + string1: `string1`을 클릭하고, `'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'`을 입력합니다. 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. (<Your Application Container Cloud Identity Domain Hostname>는 `Microservices`랩에서 얻은 호스트 이름입니다.)
-	+ string2: 왼쪽 창에서 `Source`를 확장하고 `offerid` 필드를 드래그하여 `string2`에 놓습니다. 자동으로 XPath 형식으로 변경됩니다.
+- string1: `string1`을 클릭하고, `'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'`을 입력합니다. 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. (<Your Application Container Cloud Identity Domain Hostname>는 `Microservices`랩에서 얻은 호스트 이름입니다.)
+- string2: 왼쪽 창에서 `Source`를 확장하고 `offerid` 필드를 드래그하여 `string2`에 놓습니다. 자동으로 XPath 형식으로 변경됩니다.
 
 29. 저장후 닫기 버튼을 클릭합니다.
 
@@ -201,7 +201,8 @@
 ![](images/303/45.integration.activate.done.png)
 
 
-37. 브라우저에서 고유한 URL을 클립 보드로 저장하거나 복사하십시오 :`https://integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com:443/integration/flowapi/rest/XXX_ICS_INTMGT/`
+37. 브라우저에서 고유한 URL을 클립 보드로 저장하거나 복사하십시오
+- `https://integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com:443/integration/flowapi/rest/XXX_ICS_INTMGT/`
 
 38. 이제 통합 서비스가 테스트 준비가 되었습니다.
 
