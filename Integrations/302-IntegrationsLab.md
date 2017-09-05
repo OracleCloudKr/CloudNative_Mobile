@@ -48,16 +48,14 @@
 ![](images/302/02.integration_import1.png)
 
 
-4. 통합 목록에**통합이 성공적으로 가져 오기**및 새로 가져온 엔티티**XXX_ICS_INTMGT (1.0)**에 대한 녹색 대화 상자 텍스트 영역이 있어야합니다.
+4. 통합 목록에 임포트한 통합(Integration)인 **XXX_ICS_INTMGT (1.0)**이 보입니다. 부분적으로 사전 빌드된 아티팩트 세트를 가져 왔습니다. 우리는 이미 만들어 진 것은 그대로 사용하고, 나머지 부분을 완성 할 것입니다.
 
 ![](images/302/02.integration_import2.png)
-
-부분적으로 사전 빌드된 아티팩트 세트를 가져 왔습니다. 우리는 이미 만들어 진 것은 그대로 사용하고, 나머지 부분을 완성 할 것입니다.
 
 
 ### SOAP기반 CRM 서비스 호출하기 위한 SOAP 연결 정의 ###
 
-1. 왼쪽 상단 모서리에 있는 햄버거 아이콘을 클릭하여 **연결(Connection)** 페이지로 이동하여 `설계자(Designer)`와 `연결(Connection)`을 차례로 클릭하십시오.
+1. 왼쪽 상단 모서리에 있는 햄버거 아이콘을 클릭하여 **연결(Connection)** 페이지로 이동하여 `설계자(Designer)`와 `연결(Connections)`을 차례로 클릭하십시오.
 
 ![](images/302/04.home_hamburger_connections.png)
 
@@ -84,7 +82,6 @@
 
 6. **연결 등록 정보** 대화 상자 창이 표시됩니다.**WSDL URL**에 **Property Value**를 다음 형식으로 제공하여 채웁니다.
 	+ WSDL URL: **http://\<Your Java Cloud Service Instance IP Address\>/crm/CustomerServicePort?WSDL**
-	*\*If you forget your JCS instance IP address, [Click Here!](../../Java%20Apps/java.cloud.md)*  
 	+ 나머지 항목들은 빈 칸 그대로 둡니다.
 
 ![](images/302/08.connection_properties.png)
@@ -96,7 +93,7 @@
 ![](images/302/10.connection_test.png)
 
 
-9. **연결 테스트가 성공하면 상단에 녹색 대화 상자 텍스트가 나타납니다.**
+9. 연결 테스트가 성공하면 상단에 녹색 대화 상자 텍스트가 나타납니다.
 
 ![](images/302/11.connection_testresult.png)
 
@@ -117,12 +114,12 @@
 ![](images/302/13.connection_saveresult.png)
 
 
-13. CRM 고객 서비스에 대한 **SOAP 연결이 업데이트되었고** 이제 호출 할 준비가되었습니다.
+13. CRM 고객 서비스에 대한 **SOAP 연결이 업데이트** 되었고 이제 호출 할 준비가되었습니다.
 
 
 ### ICS 서비스 노출을 위한 REST 연결 정의 ###
 
-1. 이제 우리는 **XXX_ICSINTMGT_ProcessOffer** 연결을 업데이트 할 것입니다. 그러나 이번에 *Connection*은 타 시스템을 **호출(invoke)**하는 것이 아니라 대신 클라이언트, 즉 모바일 클라이언트에 의해 호출되는 연결 서비스입니다. 즉 **트리거** 되는 연결입니다.
+1. 그 다음으로 **XXX_ICSINTMGT_ProcessOffer** 연결을 업데이트 할 것입니다. 그러나 이번 Connection은 타 시스템을 **호출(invoke)** 하는 것이 아니라 대신 클라이언트, 즉 모바일 클라이언트에 의해 호출되는 연결 서비스입니다. 즉 **트리거** 되는 연결입니다.
 
 2. **XXX_ICSINTMGT_ProcessOffer** Connection 행에서 오른쪽에 있는 햄버거 메뉴 아이콘을 클릭하고 아래의 `편집(Edit)`을 선택하십시오.
 
@@ -149,7 +146,7 @@
 ![](images/302/19.connection_save1.png)
 
 
-7. 두 개의 **연결**이 준비되었습니다. **SOAP 연결(*CRM 고객 서비스 호출용)** 및 **REST 연결(모바일 클라이언트 요청 수신용)**이 준비되었습니다.
+7. 두 개의 **연결**이 준비되었습니다. **SOAP 연결(CRM 고객 서비스 호출용)** 및 **REST 연결(모바일 클라이언트 요청 수신용)**이 준비되었습니다.
 
 [Proceed to Next - 303 : 조정(Orchestration) 패턴을 이용하여 통합하기](303-IntegrationsLab.md)
 
