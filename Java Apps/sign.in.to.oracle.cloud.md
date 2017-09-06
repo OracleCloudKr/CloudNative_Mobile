@@ -1,4 +1,4 @@
-# 오라클 클라우드 - 네이티브 개발 작업반 #
+# ORACLE Cloud-Native DevOps workshop #
 -----
 ## Oracle Cloud ##에 로그인하십시오.
 
