@@ -56,7 +56,7 @@
     - MCS Anonymous Key: `anonymousToken in the json file`    
     - Custom API Name: `API in the json file, LoyaltyMAnagementAPIXX`  
 
-당신의 json 파일은 이것과 비슷하게 보일 것입니다 - **물론 값은 다릅니다**
+    당신의 json 파일은 이것과 비슷하게 보일 것입니다 - **물론 값은 다릅니다**
     ```json
     {
           "baseUrl": "https://<Your Mobile Cloud Service Identity Domain Name>.mobileenv.us2.oraclecloud.com:443",
