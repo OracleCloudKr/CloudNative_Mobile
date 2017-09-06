@@ -56,8 +56,8 @@
     - MCS Anonymous Key: `anonymousToken in the json file`    
     - Custom API Name: `API in the json file, LoyaltyMAnagementAPIXX`  
 
-당신의 json 파일은 이것과 비슷하게 보일 것입니다 - **물론 값은 다릅니다**
-```json
+    당신의 json 파일은 이것과 비슷하게 보일 것입니다 - **물론 값은 다릅니다**
+    ```json
     {
           "baseUrl": "https://<Your Mobile Cloud Service Identity Domain Name>.mobileenv.us2.oraclecloud.com:443",
           "applicationKey": "9722de7f-4ecf-443f-8e0e-714b2f6e0f9c",
@@ -65,6 +65,7 @@
           "anonymousToken":  "R1NFMDAwMTE2NzhfTUNTX01PQklMRV9BTk9OWU1PVVNfQVBQSUQ6Smk3cXBld3lrczlfbmI=",
           "API":"LoyaltyManagementAPI0X",
           "senderID":"925757644219"
+    }
     ```
 
     When Copy-n-Paste to the web form, be careful
