@@ -36,7 +36,8 @@
 **Offer Name** : `Summer Festival Offer`  
 **Offer Period** : `01-08-2017` To `31-08-2017`  
 **Offer Message** : `Hot Summer means Hot Offer. Enjoy our discount today on Festival Blend. Valid from 1st to 31st Aug 2017, terms and conditions apply.`
-Create Offer`버튼을 클릭하십시오. 
+
+`Create Offer`버튼을 클릭하십시오. 
 
 ![](images/502/03.offer.create.png)
 
