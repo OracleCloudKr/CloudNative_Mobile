@@ -26,11 +26,11 @@
 ![](images/304/00.postman.launch.png)
 
 2. Postman에서 다음 정보를 입력합니다.
-  - HTTP 메소드 드롭 다운 목록에서 **POST**를 선택하십시오.
-  - **요청 URL 입력**텍스트 상자에 URL을 입력하십시오.
-  `https://integration-<Your ICS Identity Domain>.integration.us2.oraclecloud.com/integration/flowapi/rest/<Your Integration Service Name>/v01/processoffer`
-  - **Authorization** 탭 : 드롭 다운 목록에서 기본 인증을 선택하고 ICS 사용자 이름과 비밀번호를 각각 입력하십시오.
-  ![](images/304/00.postman.basic.png)
+    - HTTP 메소드 드롭 다운 목록에서 **POST**를 선택하십시오.
+    - **요청 URL 입력**텍스트 상자에 URL을 입력하십시오.
+    `https://integration-<Your ICS Identity Domain>.integration.us2.oraclecloud.com/integration/flowapi/rest/<Your Integration Service Name>/v01/processoffer`
+    - **Authorization** 탭 : 드롭 다운 목록에서 기본 인증을 선택하고 ICS 사용자 이름과 비밀번호를 각각 입력하십시오.
+![](images/304/00.postman.basic.png)
 
 3. **헤더** 탭으로 이동하십시오. **Key**아래에 `Content-Type`을 입력하고 **Value** 아래에는`application/json`을 입력하십시오.
 
@@ -38,9 +38,9 @@
 
 
 4. **Body** 탭: body 형식으로 raw, JSON (application/json)을 유형으로 선택하고 본문 텍스트를 다음 중 하나로 입력하십시오 :
-  - Test 1: `{"customerid": 30001, "offerid": 10001, "productid": 20001, "accepted": true}`
-  - Test 2: `{"customerid": 30002, "offerid": 10002, "productid": 20002, "accepted": false}`
-  - (\*주의 : 위의 테스트는 실제 데이터를 사용하지 않고 단지 ICS에서 API의 가용성을 테스트하는 것을 목표로합니다)
+    - Test 1: `{"customerid": 30001, "offerid": 10001, "productid": 20001, "accepted": true}`
+    - Test 2: `{"customerid": 30002, "offerid": 10002, "productid": 20002, "accepted": false}`
+    - (\*주의 : 위의 테스트는 실제 데이터를 사용하지 않고 단지 ICS에서 API의 가용성을 테스트하는 것을 목표로합니다)
 
 ![](images/304/00.postman.body.png)
 
