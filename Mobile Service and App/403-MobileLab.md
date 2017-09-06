@@ -14,7 +14,7 @@
 - 모바일 백엔드에서 작동하도록 모바일 앱 구성 
 - 시험 알림 
 
-### 선수 과목 ###
+### Prerequisites ###
 
 - Android Supremo 앱을 Android 기기에 설치했습니다. 
 
@@ -41,7 +41,7 @@
 ![](../common/images/mobile/403-Begin_New_Profile.png)
 
 
-6. Enter `FCM0X` (change `0X` to the postfix assigned to you, e.g: 03) as the "Name. Paste `AAAA14t0nbs:APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX` as the "API Key" and `925757644219` as the Sender ID. Keep `Google Messaging (GCM or FCM)` as the "Notification Service" and `XMPP` as the "Send Method", and click on “Create”. (These are the keys that are generated from Google.)
+6. 이름으로 에는 `FCM0X` (0X가 사용자에게 지정된 접미사, e.g: 03)를 넣으세요. "API Key"로 `AAAA14t0nbs:APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX`을 붙여넣고, "Sender ID"로  `925757644219`를 넣으세요. "Notification Service"로 `Google Messaging (GCM or FCM)`을 설정하고 "Send Method"는 `XMPP`, “Create”를 누르세요. (이것은 Google로 부터 받은 key 입니다.)
 
 ![](../common/images/mobile/403-Create_New_Profile.png) 
 

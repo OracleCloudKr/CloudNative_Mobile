@@ -64,7 +64,7 @@
 ![](../common/images/mobile/401-Import_Package_Select_GenerateQRCode_Endpoint.png)
 
 
-10. ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https : // qrcodegenerator-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com` `Save`을 클릭하십시오. 
+10. ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://qrcodegenerator-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com` `Save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_GenerateQRCode_Endpoint.png)
 
 
@@ -72,7 +72,7 @@
 ![](../common/images/mobile/401-Import_Package_Select_QueryOffers_Endpoint.png)
 
 
-12. ACCS에 배포 된 오퍼 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https : // offer- <ACCS_DOMAIN_NAME> .apaas. <DATACENTER> .oraclecloud.com`. `Save`을 클릭하십시오. 
+12. ACCS에 배포 된 오퍼 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://offer-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER> .oraclecloud.com`. `Save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_QueryOffers_Endpoint.png)
 
 
@@ -80,7 +80,7 @@
 ![](../common/images/mobile/401-Import_Package_Select_ProcessOffer_Endpoint.png)
 
 
-14. ICS에 배포 된 `Process Offer`서비스의 전체 서비스 URL로 사용자 정의 값을 설정하십시오 (예 :`https : // integration- <ICS_DOMAIN_NAME> .완성. <DATACENTER> .oraclecloud.com / integration / flowapi / rest / C0X_ICS_INTMGT / v01 / processoffer`를 참조하십시오. `save`을 클릭하십시오. 
+14. ICS에 배포 된 `Process Offer`서비스의 전체 서비스 URL로 사용자 정의 값을 설정하십시오 (예 :`https://integration-<ICS_DOMAIN_NAME>.integration.<DATACENTER>.oraclecloud.com/integration/flowapi/rest/C0X_ICS_INTMGT/v01/processofferr`를 참조하십시오. `save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_ProcessOffer_Endpoint.png)
 
 
