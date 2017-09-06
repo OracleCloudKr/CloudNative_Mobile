@@ -112,7 +112,7 @@ ICS에 배포 된 `Process Offer`서비스는 `Integrations`Lab에서 `Basic Aut
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_General.png)
 
 
-3. `Descriptor`단계에서 `Remote URL`이 ICS의 `Process Offer`서비스의 전체 서비스 URL로 설정되어 있는지 확인하십시오 (예 :`https : // integration- <ICS_DOMAIN_NAME> .integration.us2.oraclecloud.com / integration / flowapi / rest / C0X_ICS_INTMGT / v01 / processoffer`를 참조하십시오. `다음`을 클릭하십시오. 
+3. `Descriptor`단계에서 `Remote URL`이 ICS의 `Process Offer`서비스의 전체 서비스 URL로 설정되어 있는지 확인하십시오 (예 : `https://integration-<ICS_DOMAIN_NAME>.integration.us2.oraclecloud.com/integration/flowapi/rest/C0X_ICS_INTMGT/v01/processoffer`를 참조하십시오. `다음`을 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Descriptor.png)
 
 
