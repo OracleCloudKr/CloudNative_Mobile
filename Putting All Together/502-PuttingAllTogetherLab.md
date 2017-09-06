@@ -32,7 +32,7 @@
 ![](images/502/02.offer.target.png)
 
 
-3. 다음과 같은 예를 통해이 새로운 제안에 대한 세부 정보를 제공하십시오. 
+3. 다음과 같은 예를 통해 새로운 제안에 대한 세부 정보를 제공하십시오. 
 **Offer Name** : `Summer Festival Offer`  
 **Offer Period** : `01-08-2017` To `31-08-2017`  
 **Offer Message** : `Hot Summer means Hot Offer. Enjoy our discount today on Festival Blend. Valid from 1st to 31st Aug 2017, terms and conditions apply.`
