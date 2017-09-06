@@ -34,7 +34,7 @@
 
   **또는 귀하는 강사가 제공한 액세스 문서 - 통합 실습 섹션을 통해 접근할 수 있습니다.**
 
-  (**\*Notice**:이 Integration 실습의 ID 도메인 및 자격 증명은 이전에 JavaApps 실습 및 Microservices 실습에서 사용했던 **다른** 강사가 제공한 세부 정보를 주의 깊게 확인하십시오)
+  (**\*Notice**:이 Integration 실습의 도메인 ID 및 사용자 정보는 이전에 JavaApps 실습 및 Microservices 실습에서 사용했던 **다른 강사가 제공한 세부 정보를 다르므주의 깊게 확인하십시오**)
 
   로그인이 성공하면 대시 보드가 표시됩니다. **통합(Integration)** 서비스 타일을 찾아 햄버거 아이콘을 클릭하십시오. 드롭 다운 메뉴에서 `서비스 콘솔 열기(Open Service Console)`를 클릭하십시오.
 
@@ -61,7 +61,7 @@
   ![](images/301/05.ics_designer_portal.png)
 
 
-7. 탐색 창을 사용하여 왼쪽 상단 모서리의! [](images/301/06.main_hamburger.png)을 클릭하여 탐색 창을 표시합니다.
+7. 탐색 창을 사용하여 왼쪽 상단 모서리의 ![](images/301/06.main_hamburger.png)을 클릭하여 탐색 창을 표시합니다.
   탐색 창은 Oracle Integration Cloud Service의 모든 개발 기능에 대한 메뉴를 제공합니다.
 
   ![](images/301/07.navigation_pane.png)
