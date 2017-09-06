@@ -65,6 +65,7 @@
           "anonymousToken":  "R1NFMDAwMTE2NzhfTUNTX01PQklMRV9BTk9OWU1PVVNfQVBQSUQ6Smk3cXBld3lrczlfbmI=",
           "API":"LoyaltyManagementAPI0X",
           "senderID":"925757644219"
+    }
     ```
 
     When Copy-n-Paste to the web form, be careful
