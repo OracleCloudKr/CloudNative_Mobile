@@ -116,7 +116,7 @@ Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각
 ![alt text](images/102/17.jcs.console.png)"WebLogic Console")
 
 
-16. 로그온 한 후 왼쪽 탐색 메뉴에서 **Deployments**를 클릭하십시오. 귀하는 배치 요약 목록에서 귀하의 로열티 관리 응용 프로그램 **loyalty**를보아야합니다. 
+16. 로그온 한 후 왼쪽 탐색 메뉴에서 **Deployments**를 클릭하십시오. 귀하는 배치 요약 목록에서 귀하의 로열티 관리 응용 프로그램 **loyalty**를 가 보이게 됩니다. 
 
 ![alt text](images/102/17.deployment.png "Deployments")
 
