@@ -766,7 +766,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 
 
 
-# 축하! Microservice Lab을 완료했습니다.
+# 축하합니다.! Microservice Lab을 완료했습니다.
 
 
 [go back to the Cloud Test Drive Main Page](../README.md) 
