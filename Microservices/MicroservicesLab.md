@@ -15,7 +15,7 @@
 
 
 - 다음 실습에서는 귀하가 직접 신청하거나 강사가 제공한 Oracle Public Cloud 계정이 필요합니다. 
-- **이전 Lab**에서 로컬 컴퓨터의 IDE 환경 및 GIT 클라이언트. 지침에서는 로컬 호스트 컴퓨터에서 Brackets 편집기를 사용한다고 가정합니다.**Brackets Editor 설치에 대한 자세한 내용은 이전 Lab**에서 다루었으며 [here](../Java%20Apps/brackets.md)을 찾을 수도 있습니다. 
+- **이전 Lab**에서 로컬 컴퓨터의 IDE 환경 및 GIT 클라이언트. 이 Lab에서는 로컬 호스트 컴퓨터에서 Brackets 편집기를 사용한다고 가정합니다. **Brackets Editor 설치에 대한 자세한 내용은 이전 Lab**에서 다루었으며 [here](../Java%20Apps/brackets.md)을 찾을 수도 있습니다. 
 
 ## 0.4 특별주의 사항
 
@@ -36,14 +36,14 @@
 ![](images/001.landing.png)
 
 
-3. 이미 개발자 클라우드 서비스에 가입되어있는 경우 왼쪽 탐색 패널의 `프로젝트`를 클릭하여 프로젝트 기본 페이지로 이동할 수 있습니다**
+3. 이미 개발자 클라우드 서비스에 가입되어있는 경우 왼쪽 탐색 패널의 `Project`를 클릭하여 프로젝트 기본 페이지로 이동할 수 있습니다**
 
 ![](images/002.createrepo.png)
 
 
-4. **REPOSITORIES**섹션의 오른쪽에서**New Repository**를 클릭하여 새로운 Git 저장소를 만듭니다. 
+4. **REPOSITORIES**섹션의 오른쪽에서 **New Repository**를 클릭하여 새로운 Git 저장소를 만듭니다. 
 
-5. 새 저장소 마법사에서 다음 정보를 입력하고**작성**을 클릭합니다. 
+5. 새 저장소 마법사에서 다음 정보를 입력하고 **Create**을 클릭합니다. 
 
 	- **Name:** `OfferMicroservice`
 	- **Description:** `Microservice to provide REST API of Offer Details`
@@ -66,7 +66,7 @@
 
 ## 1.2 기본 빌드 및 배포 프로세스 만들기 - REST API 제공
 
-개발자 클라우드 서비스에서 관리하는 Git Repository에 소스 코드가 있으므로 마스터 분기를 커밋 할 때마다 트리거되는 빌드 프로세스를 만들어야합니다. 이 섹션에서는 **쉘 스크립트**빌드 프로세스를 설정합니다. 
+개발자 클라우드 서비스에서 관리하는 Git Repository에 소스 코드가 있으므로 마스터 분기를 커밋 할 때마다 트리거되는 빌드 프로세스를 만들어야합니다. 이 섹션에서는 **shell script** 빌드 프로세스를 설정합니다. 
 
 ### 1.2.1 기본 빌드 프로세스 만들기 - REST API 제공
 
@@ -76,7 +76,7 @@
 ![](images/005.navibuild.png)
 
 
-2. New Job (새 작업) 팝업 창에서 Job Name에 대해 Offer REST API Build를 입력하고**Save**를 클릭하십시오. 
+2. New Job (새 작업) 팝업 창에서 Job Name에 대해 Offer REST API Build를 입력하고 **Save**를 클릭하십시오. 
 
 ```diff
 - 복사해서 붙여넣기를 할 때 불필요한 스페이스가 들어갈 수 도 있으니 주의하시기 바랍니다.
@@ -91,8 +91,8 @@
 ![](images/007.newjob.png)
 
 
-4. **소스 제어**탭을 클릭하십시오.
-**Git**라디오 버튼을 선택하십시오. 
+4. **Source Control**탭을 클릭하십시오.
+**Git** 라디오 버튼을 선택하십시오. 
 리포지토리 섹션의 URL 드롭 다운에서 **OfferMicroservice.git**를 선택하십시오. 
 
 ![](images/008.srcctrl.png)
@@ -100,12 +100,12 @@
 
 **참고 :** Offer REST API Microservice의 Git 저장소를 선택해야합니다. 
 
-5. **트리거**탭을 클릭하십시오. **SCM 폴링 일정에 따라**를 클릭하십시오.
+5. **Triggers**탭을 클릭하십시오. **Based on SCM polling schedule**를 클릭하십시오.
 
 ![](images/009.trigger.png)
 
 
-6. **빌드 단계**탭을 클릭하고**빌드 단계 추가**를 클릭 한 다음**셸 실행**을 선택합니다. 
+6. **Build Steps**탭을 클릭하고**Add Build Step**를 클릭 한 다음 **Execute shell**을 선택합니다. 
 
 ![](images/010.steps.png)
 
@@ -115,12 +115,12 @@
 ![](images/011.npm.png)
 
 
-8. **Post Build**탭을 클릭하십시오.**이슈 보관**을 ​​선택하십시오. 아카이브 할 파일에`**/target/*`을 입력하고 압축 유형으로**GZIP**가 선택되어 있는지 확인하십시오. 
+8. **Post Build**탭을 클릭하십시오. **Archive the artifacts**을 ​​선택하십시오. 아카이브 할 파일에`**/target/*`을 입력하고 압축 유형으로 **GZIP**가 선택되어 있는지 확인하십시오. 
 
 ![](images/012.post.png)
 
 
-9. **저장**을 클릭하여 구성을 완료하십시오. 
+9. **Save**을 클릭하여 구성을 완료하십시오. 
 
 ![](images/013.save.png)
 
@@ -148,7 +148,7 @@
 ### 1.2.2 기본 배포 프로세스 만들기 - REST API 제공
 
 
-1. **배포**를 클릭하여 배포 페이지에 액세스하고 **[+ 새 구성]**버튼을 클릭하십시오. 
+1. **Deploy**를 클릭하여 배포 페이지에 액세스하고 **[+ New Configuration]**버튼을 클릭하십시오. 
 
 ![](images/018.navideploy.png)
 
@@ -172,7 +172,7 @@
 ![](images/020.deployaccs.png)
 
 
-4. 다음 정보를 입력하고 **연결 테스트**를 클릭하십시오. 
+4. 다음 정보를 입력하고 **Test Connection**를 클릭하십시오. 
 
 	- **Data Center:** `your datacenter, e.g. em2, em3, etc`
 	- **Identity Domain:** `your identity domain`, e.g. gse00012345, etc
@@ -183,7 +183,7 @@
 ![](images/021.accsconn.png)
 
 
-5. 성공하면 **[연결 사용]**버튼을 클릭하십시오. 
+5. 성공하면 **[Use Connection]**버튼을 클릭하십시오. 
 
 ![](images/022.useconn.png)
 
@@ -192,10 +192,10 @@
 
 	- **Runtime** to `Node`
 	- **Subscription** to `Hourly`
-	- Set **Type** to `Automatic` and **CHECK** Deploy stable build only
+	- **Type**에서 `Automatic`으로 설정하고 Deploy stable build only **체크**
 
 
-**런타임이 Node 인지 다시한번 확인**
+**런타임이 Node 인지 다시 한번 확인**
 
 ![](images/023.deploynodejs.png)
 
@@ -227,7 +227,7 @@
 
 ![](images/024.json.png)
 
-10. 위의 사항을 확인하고  **Save** 버튼을 클릭합니다.
+10. 위의 사항을 확인하고 **Save** 버튼을 클릭합니다.
 
 ![](images/025.deploysave.png)
 
@@ -241,7 +241,7 @@
 
 ## 1.3 Login to Oracle Application Container Cloud Service
 
-1. 퍼블릭 클라우드의 MyService로 다시 돌아가기 위해 **Dashboard** 를 눌러 데쉬보드로 돌아가십시오..
+1. 클라우드의 MyService로 다시 돌아가기 위해 **Dashboard** 를 눌러 대쉬보드로 돌아가십시오..
 
 ![](images/028.dashboard.png)
 
@@ -249,7 +249,7 @@
 
 ![](images/029.accsgoto.png)
 
-3. ACCS Service Console 이 보여질 것입니다. 그리고  **Offer** 라는 새로운 애플리케이션이 배포된 것을 볼 수 있습니다.
+3. ACCS Service Console 이 보여질 것입니다. 그리고 **Offer** 라는 새로운 애플리케이션이 배포된 것을 볼 수 있습니다.
 
 ![](images/030.accsconsole.png)
 
@@ -298,7 +298,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/039.result.png)
 
 
-4. 구성! 프리스트 마이크로 서비스가 완료되었습니다. 실제로이 Part 1과 매우 유사한 QR 코드 마이크로 서비스로 이동합시다. 
+4. 축하합니다. 첫번째 마이크로 서비스가 완성되었습니다. 지금까지 하신 Part 1과 매우 유사한 QR 코드 마이크로 서비스 Lab으로 이동합시다. 
 
 # 2. QR 코드 생성기 마이크로 서비스 생성
 
@@ -306,17 +306,18 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ## 2.1 초기 Git 저장소 생성 - QR 코드 생성기
 
 
-1. 아직 수행하지 않았다면 개발자 클라우드 서비스에 로그인하십시오. 2. 왼쪽 탐색 패널에서**프로젝트**를 클릭하십시오. 
+1. 아직 수행하지 않았다면 개발자 클라우드 서비스에 로그인하십시오. 
+2. 왼쪽 탐색 패널에서 **Project**를 클릭하십시오. 
 
 ![](images/101.project.png)
 
 
-3. **REPOSITORIES**섹션의 오른쪽에서**New Repository**를 클릭하여 새로운 Git 저장소를 만듭니다. 
+3. **REPOSITORIES**섹션의 오른쪽에서 **New Repository** 를 클릭하여 새로운 Git 저장소를 만듭니다. 
 
 ![](images/102.newrepo.png)
 
 
-4. 새 저장소 마법사에서 다음 정보를 입력하고**작성**을 클릭합니다. 
+4. 새 저장소 마법사에서 다음 정보를 입력하고 **Create**을 클릭합니다. 
 
 - **이름 :** `QRCodeMicroservice` 
 - **설명 :** `제안 QR 코드를 생성하는 마이크로 서비스. QR 코드에는 실제 제공되는 URL이 포함됩니다 .` 
@@ -324,7 +325,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 - **URL을 입력하십시오 :** `https://github.com/APACTestDrive/QRCodeMicroservice.git` 
 
 ```diff
--Please BE CAREFUL that you have not added extra white space before or after the information when copy-n-paste
+-복사시에 공백을 넣지 않도록 주의하세요.
 ```
 
 
@@ -342,19 +343,19 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ### 2.2.1 Bracket Text Editor에 프로젝트 복제
 
 
-본 실습실에서는 귀하가 공공 인터넷에 직접 연결되어 있다고 가정합니다 (예 : 프록시 사용 불가**). 
+본 Lab에서는 귀하가 공공 인터넷에 직접 연결되어 있다고 가정합니다 (예 : 프록시 사용 불가**). 
 
 1. Brackets 텍스트 편집기를 시작하려면 **Brackets**바탕 화면 아이콘, [시작] 메뉴 단추 또는 해당 컴퓨터의 바로 가기를 두 번 클릭하십시오. 
 
 ![](images/110.startbrackets.png)
 
 
-2. **파일**풀다운 메뉴에서**폴더 열기**를 선택하십시오. 
+2. **File** 풀다운 메뉴에서 **Open Folder**를 선택하십시오. 
 
 ![](images/111.open.png)
 
 
-3. 로컬 하드 디스크에 소스 코드를 저장할 폴더를 선택하십시오. 예를 들어 왼쪽에 **d:\oracle**을 입력하고 오른쪽 상단에 **[폴더 만들기]**를 클릭하십시오. - `this will 선택한 폴더 아래에 새 폴더를 만듭니다. 
+3. 로컬 하드 디스크에 소스 코드를 저장할 폴더를 선택하십시오. 예를 들어 왼쪽에 **d:\oracle**을 입력하고 오른쪽 상단에 **[Create Folder]**를 클릭하십시오. - `선택한 폴더 아래에 새 폴더가 생성되게 됩니다.`
 
 ![](images/112.createfolder.png)
 
@@ -364,29 +365,29 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/113.gotofolder.png)
 
 
-5. **[열기]** 버튼을 클릭하여 새로 생성 된 프로젝트 폴더를 엽니 다. 
+5. **[ Open ]** 버튼을 클릭하여 새로 생성 된 프로젝트 폴더를 엽니 다. 
 
 ![](images/114.opennew.png)
 
 
-6. **QRCodeMicroservice Git Repository**에서 **Developer Cloud Service**로 돌아가세요.**HTTP**를 클릭하여 Git HTTP URL을 표시한 후 **복사**버튼을 클릭하여 URL을 복사하십시오. 
+6. **QRCodeMicroservice Git Repository**에서 **Developer Cloud Service**로 돌아가세요.**HTTP**를 클릭하여 Git HTTP URL을 표시한 후 **Copy** 버튼을 클릭하여 URL을 복사하십시오. 
 
 ![](images/115.copyurl.png)
 
 
-7. 브라켓 편집기로 돌아가서 편집기의 오른쪽에 있는 **GIT**아이콘을 클릭하십시오. 
+7. 브라켓 편집기로 돌아가서 편집기의 오른쪽에 있는 **GIT** 아이콘을 클릭하십시오. 
 
 ![](images/116.gitbutton.png)
 
 
-8. Git 패널에서**[Clone]**을 클릭하십시오. 
+8. Git 패널에서 **[ Clone ]**을 클릭하십시오. 
 
 ![](images/117.gitclone.png)
 
 
-9. Developer Cloud Service에서 복사 한 GIT URL을 붙여 넣습니다. 사용자 이름은 자동으로 채워 져야합니다. 비밀번호를 입력하고 **원격 URL에 자격 증명 저장**을 선택하십시오. 
+9. Developer Cloud Service에서 복사 한 GIT URL을 붙여 넣습니다. 사용자 이름은 자동으로 채워 져야합니다. 비밀번호를 입력하고 **Save credentials to remote url**을 선택하십시오. 
 
-10. **[확인]**버튼을 클릭하십시오. 
+10. **[OK]** 버튼을 클릭하십시오. 
 
 ![](images/118.gitlogin.png)
 
@@ -404,17 +405,17 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ### 2.2.2 환경에 맞게 소스 코드 편집
 
 
-1. Brackets로 server.js 파일을 엽니 다 (더블 클릭). 
+1. Brackets로 server.js 파일을 엽니다 (더블 클릭). 
 
 ![](images/121.openjs.png)
 
 
-2. 12 행에서 ID 도메인으로 URL을 변경하십시오. 예를 들어,**1.5 절**에서 사용한 내용을 변경하십시오. 보시다시피,**제공되는 REST API 마이크로 서비스**의 URL입니다. 
+2. 12 행에서 ID 도메인으로 URL을 변경하십시오. 예를 들어, **1.5 절**에서 사용한 내용을 변경하십시오. 보시다시피, **제공되는 REST API 마이크로 서비스**의 URL입니다. 
 
 ![](images/122.line12.png)
 
 
-3. 파일을 저장하십시오. (**Ctrl-S**또는 풀다운 메뉴**파일> 저장**중에서 선택하십시오.) 
+3. 파일을 저장하십시오. (**Ctrl-S**또는 풀다운 메뉴 **File > Save**중에서 선택하십시오.) 
 
 ![](images/123.save.png)
 
@@ -442,7 +443,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/127.commit.png)
 
 
-5. 팝업에서 **주석**`올바른 URL을 사용하도록 소스 코드 수정 `을 입력하고 **확인**을 클릭하십시오. 이것은 귀하의 LOCAL GIT REPOSITORY에 변경 사항을 적용합니다. (코드 검사 문제는 무시할 수 있습니다. 확인하기 전에 코드 변경 사항을 검토 할 수 있습니다) 
+5. 팝업에서 **주석**` 올바른 URL을 사용하도록 소스 코드 수정 `을 입력하고 **확인**을 클릭하십시오. 이것은 귀하의 LOCAL GIT REPOSITORY에 변경 사항을 적용합니다. (코드 검사 문제는 무시할 수 있습니다. 확인하기 전에 코드 변경 사항을 검토 할 수 있습니다) 
 
 ![](images/128.commitmsg.png)
 
@@ -452,7 +453,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/129.push.png)
 
 
-7. 팝업 창에서 모든 기본값을 그대로 두고 **확인**을 클릭하십시오. 
+7. 팝업 창에서 모든 기본값을 그대로 두고 **Ok**을 클릭하십시오. 
 
 ![](images/130.pushok.png)
 
@@ -485,17 +486,17 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/143.changes.png)
 
 
-4. 이제 병합 요청을 작성하여 코드를 병합하십시오 - **병합 요청**을 클릭하여 병합 요청 패널로 이동하십시오. 
+4. 이제 병합 요청을 작성하여 코드를 병합하십시오 - **Merge Requests**을 클릭하여 병합 요청 패널로 이동하십시오. 
 
 ![](images/144.mergereq.png)
 
 
-5. **새 병합 요청**버튼을 클릭하십시오. 
+5. **New Merge Request**버튼을 클릭하십시오. 
 
 ![](images/145.newmerge.png)
 
 
-6. 새 병합 요청에 다음 정보를 입력하고 **다음**을 클릭하십시오.
+6. 새 병합 요청에 다음 정보를 입력하고 **Next**을 클릭하십시오.
 
   - **Repository:** `QRCodeMicroservice.git`
   - **Target Branch:** `master`
@@ -623,7 +624,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/170.pbsave.png)
 
 
-11. 빌드는 1-2 분 내에 자동으로 시작됩니다. 자동으로 시작되지 않으면**[Build Now]**버튼을 클릭하십시오. 
+11. 빌드는 1-2 분 내에 자동으로 시작됩니다. 자동으로 시작되지 않으면 **[Build Now]**버튼을 클릭하십시오. 
 
 ![](images/171.now.png)
 
@@ -651,7 +652,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/181.navideploy.png)
 
 
-2. **[+ New Configuration]**버튼을 클릭하십시오. 
+2. **[+ New Configuration]** 버튼을 클릭하십시오. 
 
 ![](images/182.newdeploy.png)
 
@@ -671,7 +672,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/184.dc.png)
 
 
-5. **Deploy to Application Container Cloud** 창이 나타나고 정보를 확인하고 **암호를 입력**한 다음**[Test Connection]** 버튼을 클릭하십시오. 
+5. **Deploy to Application Container Cloud** 창이 나타나고 정보를 확인하고 **암호를 입력**한 다음 **[Test Connection]** 버튼을 클릭하십시오. 
 
   - **Data Center:** `your datacenter, e.g. em2, em3, etc`
   - **Identity Domain:** `your identity domain, e.g. gse00012345, etc`
@@ -690,7 +691,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 
   - **Runtime** to `Node`
   - **Subscription** to `Hourly`
-  - Set **Type** to `Automatic` and **CHECK** `Deploy stable build only` 
+  - **Type**을 `Automatic`으로 설정하고 `Deploy stable build only` **확인**
 
 **런타임으로 노드를 선택하십시오**
 
