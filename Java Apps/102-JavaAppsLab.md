@@ -71,13 +71,14 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 
 10. 다음 등록 정보를 설정하십시오. 
 
-- **구성 이름**: 배포 구성을 식별하는 모든 이름 - 우리는 **loyalty**를 사용합니다. 
+- **구성 이름**: 배포 구성을 식별하는 모든 이름 - 여기서는 **loyalty**를 사용합니다. 
 - **응용 프로그램 이름**: JCS의 응용 프로그램 이름입니다. 애플리케이션의 URL 컨텍스트 경로가 결정되므로**loyalty**를 사용합니다. 
-- **Deployment Target**:** New**를 클릭하고 Java Cloud Service를 선택하고**Version**,**Protocol**,**Host**,**HTTPS Port**및**신임장**. [(Find out the Java Cloud Service Host and HTTPS Port.)](java.cloud.md). 
+- **Deployment Target**: **New**를 클릭하고 Java Cloud Service를 선택하고 **Version**,**Protocol**,**Host**,**HTTPS Port** 및 **암호** 입력 
+[(Find out the Java Cloud Service Host and HTTPS Port.)](java.cloud.md). 
 Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각각 `weblogic`및 `Welcome_1`) 또는 강사가 별도로 제공합니다. 
-- **유형**:** 자동**을 선택합니다. 이는 빌드 작업의 성공적인 실행 후 자동 배치를 의미합니다. 이전에 작성한 작업 및 이슈를 선택하여 배치하십시오. 
-- **Job**:** LoyaltyManagementBuild**빌드 단계는이 랩의 초기 단계에서 정의됩니다. 
-- **Arifact**:** loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수있는 유일한 옵션입니다. 
+- **유형**: **자동**을 선택합니다. 이는 빌드 작업의 성공적인 실행 후 자동 배치를 의미합니다. 이전에 작성한 작업 및 이슈를 선택하여 배치하십시오. 
+- **Job**: **LoyaltyManagementBuild** 빌드 단계는이 랩의 초기 단계에서 정의됩니다. 
+- **Arifact**: **loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수있는 유일한 옵션입니다. 
 
 ![alt text](images/102/12.deploy.config.png "Deployment Configuration")
 
@@ -86,21 +87,21 @@ Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각
 
 
 ![alt text](images/102/13.cert.png "Certificate Warning")   
-인증서 경고가 표시되면**`이 JCS 인스턴스에 연결할 때이 인증서 수락`을 선택하고 [**확인**]을 클릭하십시오. 
+인증서 경고가 표시되면** `이 JCS 인스턴스에 연결할 때이 인증서 수락`을 선택하고 [**확인**]을 클릭하십시오. 
 
 ![alt text](images/102/13.cluster.png "deploy to cluster")   
-**ctdCluster`를 확인하고 [**OK**]를 클릭하여 Java Cloud Service 클러스터에 응용 프로그램을 배포하십시오 
+`ctdCluster`를 확인하고 [**OK**]를 클릭하여 Java Cloud Service 클러스터에 응용 프로그램을 배포하십시오 
 
 11. **저장**을 클릭하십시오. 
 
 #### 로열티 관리 응용 프로그램 빌드 및 배포 
 
-12. 이제 Java Cloud Service에 대한 배치를 시작하려면 두 가지 옵션이 있습니다. 새로 생성 된 배포 구성을 사용하여 배포 프로세스를 시작할 수 있습니다. 톱니 바퀴 아이콘을 클릭하고**시작**을 선택합니다. 
+12. 이제 Java Cloud Service에 대한 배치를 시작하려면 두 가지 옵션이 있습니다. 새로 생성 된 배포 구성을 사용하여 배포 프로세스를 시작할 수 있습니다. 톱니 바퀴 아이콘을 클릭하고 **시작**을 선택합니다. 
 
 ![alt text](images/102/14.deploy.start.png "Deployment Start")
 
 
-13. 다른 옵션은 성공적인 빌드 후에 이슈를 배포 할 새로운 빌드 작업 실행을 시작하는 것입니다.**빌드**페이지로 돌아가서 렌치 아이콘을 클릭하면 로열티 관리 애플리케이션 빌드 작업에 속하게됩니다. 
+13. 다른 옵션은 성공적인 빌드 후에 이슈를 배포 할 새로운 빌드 작업 실행을 시작하는 것입니다. **빌드**페이지로 돌아가서 렌치 아이콘을 클릭하면 로열티 관리 애플리케이션 빌드 작업에 속하게됩니다. 
 
 ![alt text](images/102/15.build.now.png "Build Now") 
 
@@ -115,12 +116,12 @@ Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각
 ![alt text](images/102/17.jcs.console.png)"WebLogic Console")
 
 
-16. 로그온 한 후 왼쪽 탐색 메뉴에서**Deployments**를 클릭하십시오. 귀하는 배치 요약 목록에서 귀하의 로열티 관리 응용 프로그램**loyalty**를보아야합니다. 
+16. 로그온 한 후 왼쪽 탐색 메뉴에서 **Deployments**를 클릭하십시오. 귀하는 배치 요약 목록에서 귀하의 로열티 관리 응용 프로그램 **loyalty**를보아야합니다. 
 
 ![alt text](images/102/17.deployment.png "Deployments")
 
 
-17. 로열티 관리 응용 프로그램 URL은 다음 형식이어야합니다.`https://**<JCS WLS instance IP Address>**/loyalty/jsp/welcome.jsp`, JCS WLS 인스턴스 IP 주소는 12 단계에서 DevCS의**Deploy to JCS**target과 동일합니다. 
+17. 로열티 관리 응용 프로그램 URL은 다음 형식이어야합니다.`https://**<JCS WLS instance IP Address>**/loyalty/jsp/welcome.jsp`, JCS WLS 인스턴스 IP 주소는 12 단계에서 DevCS의 **Deploy to JCS** target과 동일합니다. 
 
 ![alt text](images/102/18.sample.app.png "Loyalty Management Application")
 
