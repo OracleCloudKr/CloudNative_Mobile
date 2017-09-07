@@ -523,27 +523,27 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ### 2.2.5 Branch 합병
 
 
-1. **병합 요청**을 클릭하십시오. 방금 생성 한 요청을 선택하면 요청을 검토 할 수 있습니다. 
+1. **Merge Request**을 클릭하십시오. 방금 생성 한 요청을 선택하면 요청을 검토 할 수 있습니다. 
 
 ![](images/151.requestdetails.png)
 
 
-2. 요청이 로드되면 **파일 변경** 탭을 선택하십시오. 변경 사항을 검토하십시오. 요청을 승인하기 전에 의견을 추가 할 수 있습니다. 
+2. 요청이 로드되면 **Change Files** 탭을 선택하십시오. 변경 사항을 검토하십시오. 요청을 승인하기 전에 의견을 추가 할 수 있습니다. 
 
 ![](images/152.changedfiles.png)
 
 
-3. 원하는 경우 **[승인]**버튼을 클릭하여 의견을 추가 할 수 있습니다 
+3. 원하는 경우 **[Approve]** 버튼을 클릭하여 의견을 추가 할 수 있습니다 
 
 ![](images/153.approve.png)
 
 
-4. `승인 됨` 과 같은 몇 가지 설명을 입력하고 **확인**을 클릭하십시오. 
+4. `승인 됨` 과 같은 몇 가지 설명을 입력하고 **OK**을 클릭하십시오. 
 
 ![](images/154.approvmsg.png)
 
 
-5. 요청이 검토 자에게 승인되었음을 알 수 있습니다. 병합을 진행하려면 **병합**버튼을 클릭하십시오. 
+5. 요청이 검토 자에게 승인되었음을 알 수 있습니다. 병합을 진행하려면 **Merge** 버튼을 클릭하십시오. 
 
 ![](images/155.clickmerge.png)
 
@@ -561,7 +561,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ## 2.3 기본 빌드 및 배포 프로세스 만들기 - QR 코드 생성기
 
 
-개발자 클라우드 서비스에서 관리하는 Git Repository에 소스 코드가 있으므로 마스터 분기를 커밋 할 때마다 트리거되는 빌드 프로세스를 만들어야합니다. 이 섹션에서는 **쉘 스크립트**빌드 프로세스를 설정합니다. 
+개발자 클라우드 서비스에서 관리하는 Git Repository에 소스 코드가 있으므로 마스터 분기를 커밋 할 때마다 트리거되는 빌드 프로세스를 만들어야 합니다. 이 섹션에서는 **쉘 스크립트**빌드 프로세스를 설정합니다. 
 
 ### 2.3.1 기본 빌드 프로세스 생성 - QR 코드 생성기
 
@@ -571,12 +571,12 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/161.navibuild.png)
 
 
-2. **[+ 새 작업]** 을 클릭하십시오.
+2. **[+ New Job]** 을 클릭하십시오.
 
 ![](images/162.createnewbuild.png)
 
 
-3. New Job 팝업 창에서 작업 이름에 대해 `QR Code Generator Build`를 입력하고**저장**을 클릭하십시오. 
+3. New Job 팝업 창에서 작업 이름에 대해 `QR Code Generator Build`를 입력하고 **Save**을 클릭하십시오. 
 
 ```diff
 -Please BE CAREFUL that you have not added extra white space before or after the information when copy-n-paste
@@ -591,7 +591,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/164.buildscreen.png)
 
 
-5. **소스 제어**탭을 클릭하십시오. **Git**라디오 버튼을 선택하십시오. 리포지토리 섹션의 URL 드롭 다운에서 **QRCodeMicroservice.git**를 선택하십시오. 
+5. **소스 제어**탭을 클릭하십시오. **Git** 라디오 버튼을 선택하십시오. 리포지토리 섹션의 URL 드롭 다운에서 **QRCodeMicroservice.git**를 선택하십시오. 
 
 	**Note:** Make sure you select the Git repository for the QR Code Microservice.
 
