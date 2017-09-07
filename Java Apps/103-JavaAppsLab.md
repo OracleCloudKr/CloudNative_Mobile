@@ -126,7 +126,7 @@ Oracle Developer Cloud Service 프로젝트는 IDE (Integrated Development Envir
 ![](images/103/22.png)
 
 
-20. 이제 로열티 관리 응용 프로그램의 홈 페이지 변경 사항을 확인하십시오. 응용 프로그램의 홈 페이지에서 변경 사항 (빨간색 텍스트)을 확인해야 합니다. 로열티 관리 애플리케이션 URL은 다음 형식이어야 합니다. 
+20. 이제 '로열티 관리' 응용 프로그램의 변경 사항을 확인하십시오. 응용 프로그램의 페이지에서 변경 사항 (빨간색 텍스트)을 확인해야 합니다. 로열티 관리 애플리케이션 URL은 다음 형식이어야 합니다. 
 	`https://**<JCS WLS instance IP Adress>**/loyalty/jsp/welcome.jsp`, the JCS WLS instance IP address is the same as **Deploy to JCS** target in DevCS.
 
 
