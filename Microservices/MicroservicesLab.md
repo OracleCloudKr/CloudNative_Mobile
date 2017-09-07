@@ -20,7 +20,7 @@
 ## 0.4 특별주의 사항
 
 
-- 복사하여 붙여 넣을 때주의하십시오. 추가**WHITE SPACE***이전*또는**복사 한 정보로 인해 오류가 발생할 수 있습니다. 
+- 복사하여 붙여 넣을 때주의하십시오. 추가 **WHITE SPACE** *이전* 또는 *복사* 한 정보로 인해 오류가 발생할 수 있습니다. 
 
 # 1. 제안 REST API 마이크로 서비스 만들기
 
@@ -54,7 +54,7 @@
 
 
 ```diff
--Please BE CAREFUL that you have not added extra white space before or after the information when copy-n-paste
+- 복사해서 붙여넣기를 할 때 불필요한 스페이스가 들어갈 수 도 있으니 주의하시기 바랍니다.
 ```
 
 
@@ -73,7 +73,7 @@
 ### 1.2.1 기본 빌드 프로세스 만들기 - REST API 제공
 
 
-1. 탐색 패널에서 **Build**를 클릭하여 빌드 페이지에 액세스하고 **[+ 새 작업]**을 클릭하십시오. 
+1. 탐색 패널에서 **Build**를 클릭하여 빌드 페이지에 액세스하고 **[+ New Job]**을 클릭하십시오. 
 
 ![](images/005.navibuild.png)
 
@@ -81,7 +81,7 @@
 2. New Job (새 작업) 팝업 창에서 Job Name에 대해 Offer REST API Build를 입력하고**Save**를 클릭하십시오. 
 
 ```diff
--Please BE CAREFUL that you have not added extra white space before or after the information
+- 복사해서 붙여넣기를 할 때 불필요한 스페이스가 들어갈 수 도 있으니 주의하시기 바랍니다.
 ```
 
 
@@ -93,14 +93,16 @@
 ![](images/007.newjob.png)
 
 
-4. **소스 제어**탭을 클릭하십시오.**Git**라디오 버튼을 선택하십시오. 리포지토리 섹션의 URL 드롭 다운에서**OfferMicroservice.git**를 선택하십시오. 
+4. **소스 제어**탭을 클릭하십시오.
+**Git**라디오 버튼을 선택하십시오. 
+리포지토리 섹션의 URL 드롭 다운에서 **OfferMicroservice.git**를 선택하십시오. 
 
 ![](images/008.srcctrl.png)
 
 
 **참고 :** Offer REST API Microservice의 Git 저장소를 선택해야합니다. 
 
-5. **트리거**탭을 클릭하십시오. 확인**SCM 폴링 일정에 따라**. 
+5. **트리거**탭을 클릭하십시오. **SCM 폴링 일정에 따라**를 클릭하십시오.
 
 ![](images/009.trigger.png)
 
@@ -125,7 +127,7 @@
 ![](images/013.save.png)
 
 
-10. 빌드는 1-2 분 내에 자동으로 시작됩니다. 자동으로 시작되지 않으면 **[지금 빌드하십시오]**버튼을 클릭하십시오. 
+10. 빌드는 1-2 분 내에 자동으로 시작됩니다. 자동으로 시작되지 않으면 **[Build Now]**버튼을 클릭하십시오. 
 
 ![](images/014.buildnow.png)
 
@@ -160,7 +162,7 @@
 
 
 ```diff
--Please BE CAREFUL that you have not added extra white space before or after the information when copy-n-paste
+- 복사해서 붙여넣기를 할 때 불필요한 스페이스가 들어갈 수 도 있으니 주의하시기 바랍니다.
 ```
 
 
@@ -195,19 +197,19 @@
 	- Set **Type** to `Automatic` and **CHECK** Deploy stable build only
 
 
-**DOUBLE 런타임이 노드인지 확인**
+**런타임이 Node 인지 다시한번 확인**
 
 ![](images/023.deploynodejs.png)
 
 
 7. **Job**에서 선택하십시오.이 이름은 위의 빌드 작업과 일치해야합니다 (예 :`Offer REST API Build`). 
 
-8. **Artifact**에서 선택하십시오.이 이름은 위의 아카이브 아티펙트와 소스 코드의 package.json과 일치해야합니다 (예 :`target / offer.zip`). 
+8. **Artifact**에서 선택하십시오.이 이름은 위의 아카이브 아티펙트와 소스 코드의 package.json과 일치해야합니다 (예 :`target/offer.zip`). 
 
 ![](images/024.deployjobname.png)
 
 
-9. **Include ACCS Deployment 상자를 체크하고 다음 json을 추가하십시오. 
+9. **Include ACCS Deployment**상자를 체크하고 다음 json을 추가하십시오. 
 
 ```json
 {
@@ -227,69 +229,69 @@
 
 ![](images/024.json.png)
 
-10. After fill in the above information, click **Save** button.
+10. 위의 사항을 확인하고  **Save** 버튼을 클릭합니다.
 
 ![](images/025.deploysave.png)
 
-11. In your deployment job, click the gear drop down and select **Start**
+11. 기어 마크가 있는 아이콘을 클릭한 다음 **Start** 를 누릅니다.
 
 ![](images/026.deploystart.png)
 
-12. The deployment job will be put into a queue for process. Wait until the message **Starting application** changes to **Last deployment succeeded**. Ask for help from your instructor if the deployment fails.
+12. 배포하는 작업이 큐에 들어갈 것입니다. 조금 기다리면 **Starting application** 메시지가 **Last deployment succeeded**로 바뀔 것입니다. 만약 배포작업이 실패하면 도움을 요청하십시오.
 
 ![](images/027.deploysuccess.png)
 
 ## 1.3 Login to Oracle Application Container Cloud Service
 
-1. Navigate back to the Oracle Public Cloud MyService. Click **Dashboard** to return back to main Cloud Service Dashboard.
+1. 퍼블릭 클라우드의 MyService로 다시 돌아가기 위해 **Dashboard** 를 눌러 데쉬보드로 돌아가십시오..
 
 ![](images/028.dashboard.png)
 
-2. On the Application Container Cloud Service (ACCS) click the humburger button and select **Open Service Console**
+2. Application Container Cloud Service (ACCS) 의 햄버거 버튼을 누르고 **Open Service Console** 를 선택하십시오.
 
 ![](images/029.accsgoto.png)
 
-3. On the ACCS Service Console you can view all the deployed applications including our newly create **Offer**.
+3. ACCS Service Console 이 보여질 것입니다. 그리고  **Offer** 라는 새로운 애플리케이션이 배포된 것을 볼 수 있습니다.
 
 ![](images/030.accsconsole.png)
 
 ## 1.4 CHECK ACCS Service Binding to DBCS
 
-1. Click the **[ Offer ]** to see the ACCS application Details
+1. **[ Offer ]** 를 눌러 세부사항을 보십시오.
 
 ![](images/031.accsoffer.png)
 
-2. Check the 2nd Tab, **Deployments**
+2. 두번째 탭, **Deployments**
 
 ![](images/032.bindings.png)
 
-3. In the **Service Bindings** section, you SHOULD see the database binding. **You do NOT need to change anything.**
+3. **Service Bindings** 섹션에서, 데이터베이스에 바인딩 된 것을 볼 수 있습니다.. **여기선 아무것도 하지 않아도 됩니다.**
 
 ![](images/033.addbinding.png)
 
 
 ## 1.5 Verify the Working Service
 
-1. In you application panel, you should see the base URL of your application. Something like https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com
+1. 애플리케이션 패널에서 애플리케이션에 대한 URL을 볼 수 있습니다. 예를들면 https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com
 
 ![](images/037.url.png)
 
-2. Copy and paste the URL into the address bar of a new tab to bring up the application.
+2. 브라우저에서 새로운 탭을 연 다음 위의 주소를 복사하고 붙여넣기 identiy-domain을 부여받은 것으로 채웁니다.
 
-  Be reminded that you will need the REST endpoint and the **offer id** in order to generate a QR code.
+   **offer id** 를 사용하여 QR코드를 성해야 합니다.
 
-  The final URL should looks like this
+  최종 URL을 다음과 같이 되어야 합니다.
 
 https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ptmgt/v1/offers/10001
 
 ![](images/038.browser.png)
 
 ```diff
-+ you might want to copy your OWN URLs for Offer API, e.g.
++ 이 부분을 카피하여 자신의 URL로 채워넣으면 됩니다.
 +   https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ptmgt/v1/offers/
 +   https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/
-+ and put it in, e.g. Notepad
-+   You will need to use it later, e.g. Lab 401.
++ 노트패드에 기록하십시오.
++ 나중에 사용 될 것입니다., e.g. Lab 401.
 ```
 
 
@@ -666,7 +668,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 
 **Offer REST API Microservice에서 배포를 만들었으므로 동일한 대상**을 다시 사용할 수 있습니다. 
 
-**배포 대상**에서 **위에서 만든 **동일**을 선택하십시오. 그것은`Application Container Cloud`와 비슷한 것이어야 합니다. **em2/your-identity-domain/your-user-name**
+**배포 대상**에서 위에서 만든 **동일한 것**을 선택하십시오. 그것은`Application Container Cloud`와 비슷한 것이어야 합니다. **em2/your-identity-domain/your-user-name**
 
 ![](images/184.dc.png)
 
@@ -697,7 +699,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/187.choosenode.png)
 
 
-8. **Job**에서 선택하십시오.이 이름은 위의 빌드 작업과 일치해야합니다 (예 :`QR Code Generator Build`).**이슈**에서 선택하십시오.이 이름은 위의 아카이브 아티펙트와 소스 코드의 package.json과 일치해야합니다 (예 :`target / qrcodegenerator.zip`). 
+8. **Job**에서 선택하십시오.이 이름은 위의 빌드 작업과 일치해야합니다 (예 :`QR Code Generator Build`).**이슈**에서 선택하십시오.이 이름은 위의 아카이브 아티펙트와 소스 코드의 package.json과 일치해야합니다 (예 :`target/qrcodegenerator.zip`). 
 
 ![](images/188.choosejob.png)
 
@@ -713,53 +715,53 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 
 ![](images/024.json.11.png)
 
-10. After fill in the above information, click **Save** button.
+10. 위의 정보를 확인하고  **Save** 버튼을 누릅니다.
 
 ![](images/189.depsave.png)
 
-11. In your deployment job, click the gear drop down and select **Start**
+11. 배포 작업에서 기어박스를 누르고 **Start**을 선택합니다.
 
 ![](images/190.start.png)
 
-12. The deployment job will be put into a queue for process. Wait until the message **Starting application** changes to **Last deployment succeeded**. Ask for help from your instructor if the deployment fails.
+12. 배포작업은 큐에 들어 갈 것이고 곧 이어  **Starting application** 메시지가  **Last deployment succeeded**로 바뀔 것입니다. 실패하면 질문하십시오.
 
 ![](images/191.deployed.png)
 
 ## 2.4 Login to Oracle Application Container Cloud Service
 
-1. Navigate back to the Oracle Public Cloud tab. Click **Dashboard** to return back to main Cloud Service Dashboard.
+1. Oracle Public Cloud 탭의  **Dashboard**을 눌러서 클라우드 데시보드로 갑니다.
 
-2. On the Application Container Cloud Service (ACCS) click the humburger button and select **Open Service Console**
+2. Application Container Cloud Service (ACCS) 의 햄버거 버튼을 클릭하고  **Open Service Console** 를 선택합니다.
 
 ![](images/192.accs.png)
 
-3. On the ACCS Service Console you can view all the deployed applications including our newly create **qrcodegenerator**.
+3. ACCS Service Console에서 방금 생성된 **qrcodegenerator** 를 확인할 수 있습니다.
 
 ![](images/193.accsqr.png)
 
-4. Copy the URL and paste it into the address bar of a new tab to bring up the application.
+4. 애플리케이션을 접근하기 위하여 브라우저 탭을 열어 URL을 복사하여 붙여 넣습니다.
 
-  Be reminded that you will need the REST endpoint and the **offer id** in order to generate a QR code.
+  REST endpoint와  **offer id** 그 나중에 QR Code를 생성하기 위하여 필요할 겁니다.
 
-  The final URL should looks like this
+  결국은 다음과 같은 URL이 될 것입니다.
 
 	https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ctdqr/v1/offer/10001
 
 ![](images/194.qrurl.png)		
 
-5. the QR Code in the browser will look like this
+5. 브라우저에 QR 코드가 보일 것입니다.
 
 ![](images/195.codepic.png)
 
 ```diff
-+ you might want to copy your OWN URLs for QR Code API
++ 다음의 URL을 카피하십시오.
 +   https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ctdqr/v1/offer/
 +   https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com
-+ and put it in, e.g. Notepad
-+   You will need to use it later, e.g. Lab 304 Step 27.
++ 그리고 노트패드에 붙여 넣어 놓습니다.
++ 나중에 Lab 304 Step 27에서 사용될 것입니다.
 ```
 
-**OPTIONAL STEP:** if you use a QR Code reader (e.g. Mobile App), you can decode the QR Code
+**OPTIONAL STEP:** 만약 QR Code 리더가 있으면 QR Code를 디코딩 할 수 있습니다.
 
 ![](images/196.reader.png)
 
