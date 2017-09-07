@@ -45,8 +45,8 @@
 
 ![](images/502/04.offer.sent.png)
 
-
-**이전 Lab에서 : [501: Update Source Code for Sending Push Notification from JEE Application to Mobile Cloud Service](501-PuttingAllTogetherLab.md)에서 개발자와 Java Cloud Service를 활용 한 로열티 관리 JEE 애플리케이션에서 *confirm.jsp*의 일부 코드를 수정하여 애플리케이션이 모바일 클라우드 서비스 푸시 알림 REST API를 호출 할 수 있도록 했습니다. 이어서 MCS가 Google Firebase와 교환하여 등록된 Android 기기에 푸시 알림을 전달합니다. 
+**어떤 일이 일어 났습니까?** 
+이전 Lab에서 : [501: Update Source Code for Sending Push Notification from JEE Application to Mobile Cloud Service](501-PuttingAllTogetherLab.md)에서 개발자와 Java Cloud Service를 활용 한 로열티 관리 JEE 애플리케이션에서 *confirm.jsp*의 일부 코드를 수정하여 애플리케이션이 모바일 클라우드 서비스 푸시 알림 REST API를 호출 할 수 있도록 했습니다. 이어서 MCS가 Google Firebase와 교환하여 등록된 Android 기기에 푸시 알림을 전달합니다. 
 
 ![](images/502/jcs2mcs.png)
 
@@ -67,8 +67,8 @@
 
 ![](images/502/07.offer.accept.png)
 
-
-**초기 통합 Lab : [3. Rapid Connect Applications by Oracle Integration Cloud Service](../Integrations/README.md)에서 CRM 고객 활동 로그 SOAP API를 연결하고 통합 클라우드 서비스에 REST API로 공개되는 통합 흐름을 설정하여 모바일 사용자 작업을 기록 할 수 있습니다. 
+**어떤 일이 일어 났습니까?** 
+이전 Lab : [3. Rapid Connect Applications by Oracle Integration Cloud Service](../Integrations/README.md)에서 CRM 고객 활동 로그 SOAP API를 연결하고 통합 클라우드 서비스에 REST API로 공개되는 통합 흐름을 설정하여 모바일 사용자 작업을 기록 할 수 있습니다. 
 
 ![](images/502/mcs2ics.png)
 
@@ -78,7 +78,8 @@
 ![](images/502/08.offer.qr.png)
 
 
-**어떤 일이 일어 났습니까?** 초기 [Microservice Lab](../Microservices/README.md)에서는 개발자 및 응용 프로그램 컨테이너 클라우드 서비스를 각각 활용하는 Offer 및 QR이라는 2 개의 마이크로 서비스를 배포했습니다. 고객이 `수락`을 하면 결과 제공 상세 및 QR 이미지가 모바일 장치에 표시됩니다. 
+**어떤 일이 일어 났습니까?** 
+이전 랩 [Microservice Lab](../Microservices/README.md)에서는 개발자 및 응용 프로그램 컨테이너 클라우드 서비스를 각각 활용하는 Offer 및 QR이라는 2 개의 마이크로 서비스를 배포했습니다. 고객이 `수락`을 하면 결과 제공 상세 및 QR 이미지가 모바일 장치에 표시됩니다. 
 
 ![](images/502/mcs2acc.png)
 

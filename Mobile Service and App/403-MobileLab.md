@@ -115,7 +115,8 @@
 ![](../common/images/mobile/10.mobile.welcome.png) 
 
 ---
-#### 테스트 알림 1. 모바일 백엔드에서 &quot;알림&quot;탭으로 전환하고 &quot;4 테스트&quot;아래의 아이콘을 클릭하십시오. 
+#### 테스트 알림 
+1. 모바일 백엔드에서 &quot;알림&quot;탭으로 전환하고 &quot;4 테스트&quot;아래의 아이콘을 클릭하십시오. 
 
 ![](../common/images/mobile/403-Navigate_To_Notification.png) 
 
