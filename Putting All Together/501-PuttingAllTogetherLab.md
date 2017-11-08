@@ -25,7 +25,7 @@
 
 #### 푸시 알림을 수신하도록 모바일 장치 준비 
 
-1. 이전 랩의 끝에서 By the end of previous lab [404: Set up Push Notification and Test Push Notification to mobile app](../Mobile Service and App/404-MobileLab.md), 아래처럼 MCS의 **Test Notifications** 을 통해 모바일 장치에서 알림 메시지 팝업을 수신 할 수 있어야 합니다. (lab exercise 404를 끝내지 못했는지 강사와 함께 확인 하십시오)
+1. 이전 랩의 끝에서 By the end of previous lab [404: Set up Push Notification and Test Push Notification to mobile app](../Mobile Service and App/404-MobileLab.md), 아래처럼 MCS의 **Test Notifications** 을 통해 모바일 장치에서 알림 메시지 팝업을 수신 할 수 있어야 합니다.
 
 ![](../common/images/mobile/401-MCS_Notification_Result.png)
 ![](../common/images/mobile/401-MobileApp_Notification_Result.png)
