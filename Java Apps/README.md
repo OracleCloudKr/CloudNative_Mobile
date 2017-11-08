@@ -4,20 +4,20 @@
 
 
 ### 소개 ###
-이 랩은 APAC 클라우드 테스트 드라이브의 일부로 애자일 프로젝트 수명주기 동안 JEE 응용 프로그램을 작성, 구축 및 배포하는 첫 번째 Lab입니다. 이 절에서는 WebLogic Server 관리 콘솔을 사용하여 Oracle Java Cloud Service 인스턴스에 응용 프로그램을 배포 및 배포 취소하는 방법에 대해 설명합니다. 
+이 랩은 APAC 클라우드 테스트 드라이브의 일부로 애자일 프로젝트 라이프사이클 안에서 JEE 응용 프로그램을 작성, 구축 및 배포하는 첫 번째 Lab입니다. 이 절에서는 WebLogic Server 관리 콘솔을 사용하여 Oracle Java Cloud Service 인스턴스에 응용 프로그램을 배포 및 배포 취소하는 방법에 대해 설명합니다. 
 
 #### 오늘 Practice에 관하여 
 
 ![](images/jcs.scope.png)
 
 
-이 연습에서는 향후 1 시간 내에 Developer Cloud Service를 사용하여 다음 작업을 수행합니다. 
-+ JEE 애플리케이션 소스 코드를 얻고 Java Cloud Service에서 WebLogic Server에 배포 
-+ 코드 변경에서부터 시작되는 간단한 '지속적인 통합 및 전달'
+이 Lab에서는 1 시간 정도 Developer Cloud Service를 사용하여 다음 작업을 수행합니다. 
++ JEE 애플리케이션 소스 코드를 얻고 Java Cloud Service의 WebLogic Server에 배포 
++ 코드 변경에서부터 시작되는 간단한 '지속적인 CI/CD(통합 및 전달)'
 
-**Lab 가정**
+**Lab 가정 상황**
 + '로열티 관리' 응용 프로그램은 마케팅 관리자가 선택한 고객 그룹을 기반으로 캠페인 제안을 작성하는 데 사용됩니다 
-+ 당신은 최근에 사소한 코드 수정안을 작성하고 변경을 제공한 이 응용 프로그램을 소유한 '응용 프로그램 설계자'입니다. 
++ 당신은 최근에 사소한 코드 수정을 했고, 변경을 제공한 이 응용 프로그램을 소유한 '응용 프로그램 설계자'입니다. 
 + 로열티 관리 데이터베이스, 테이블 및 데이터는 응용 프로그램에서 연결하고 사용할 준비가 되었습니다. 
 + WebLogic Server 인스턴스가 Java Cloud Service에 프로비저닝 됨 
 
@@ -41,7 +41,7 @@ Oracle Developer Cloud Service의 주요 기능은 다음과 같습니다.
 + 코드 검토 후 저장소 분기 병합 
 + Oracle Java Cloud Service 로의 배포 - SaaS 확장, Oracle Java Cloud Service 및 Oracle Application Container Cloud Service 
 
-Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Oracle Enterprise Pack (OEPE), Oracle JDeveloper 및 NetBeans IDE와 같은 통합 개발 환경 (IDE)에서 액세스 할 수있는 웹 인터페이스로 사용할 수 있습니다. DevCS는 Git, Hudson, Maven, 브라우저 기반 IDE, 이슈 트래커, 위키, 스니펫, 코드 리뷰 등 다양한 구성 요소로 구성됩니다. 모든 구성 요소는 Oracle Developer Cloud Service에서 제공하는 기능 및 서비스 모음인 프로젝트에서 사용할 수 있습니다. 
+Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Oracle Enterprise Pack (OEPE), Oracle JDeveloper 및 NetBeans IDE와 같은 통합 개발 환경 (IDE)에서 액세스 할 수 있는 웹 인터페이스로 사용할 수 있습니다. DevCS는 Git, Hudson, Maven, 브라우저 기반 IDE, 이슈 트래커, 위키, 스니펫, 코드 리뷰 등 다양한 구성 요소로 구성됩니다. 모든 구성 요소는 Oracle Developer Cloud Service에서 제공하는 기능 및 서비스 모음인 프로젝트에서 사용할 수 있습니다. 
 
 ### 이 튜토리얼에서는 다음을 수행하는 방법을 보여줍니다. ###
 
@@ -49,13 +49,13 @@ Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Ora
 
 - Oracle Developer Cloud Service의 `Build`및 `Deploy`구성의 지속적인 통합 정의 
 
-- CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 Brackets 사용, 코드 변경 및 푸시 코드 변경 
+- CI/CD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 Brackets 사용, 코드 변경 및 푸시 코드 변경 
 
 ### 선수 과목 ### 
 
 
 - 다음 실습에서는 강사가 제공 할 Oracle Public Cloud 계정이 필요합니다. 
-- 경량 IDE - [Brackets](http://brackets.io/). Brackets installer 는 강사에 의해 전달될 것입니다. 직접다운로드 하셔도 됩니다. [GitHub HERE](https://github.com/adobe/brackets/releases)도 설치해야 합니다. 
+- 가벼운 IDE 툴 - [Brackets](http://brackets.io/). Brackets installer 는 강사에 의해 전달될 것입니다. 직접 다운로드 하셔도 됩니다. [GitHub HERE](https://github.com/adobe/brackets/releases)도 설치해야 합니다. 
 
 - Git 클라이언트가 있어야 합니다. 이미 Github Desktop, Eclipse 또는 다른 IDE를 사용하고 있다면, 이미 Git을 사용하고 있을 것입니다. Git 설치 관리자는 강사가 제공하거나 [here](https://git-scm.com/downloads)에서 다운로드 할 수 있습니다. 
 
@@ -76,7 +76,7 @@ Oracle Developer Cloud Service는 웹 브라우저 및 Brackets, Eclipse 용 Ora
 
 [Click Here.](102-JavaAppsLab.md) 
 
-## 103 : CICD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 Brackets 사용, 코드 변경 및 푸시 코드 변경 ## 
+## 103 : CI/CD (Continuous Integration &amp; Delivery) : Oracle Developer Cloud Service에 Brackets 사용, 코드 변경 및 푸시 코드 변경 ## 
 
 
 [Click Here.](103-JavaAppsLab.md) 
