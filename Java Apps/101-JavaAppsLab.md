@@ -7,15 +7,15 @@
 이 튜토리얼에서는 다음 작업을 수행하는 방법을 보여줍니다. 
 - 기존 외부 Git 저장소를 사용하여 Oracle Developer Cloud Service 프로젝트 생성 - GitHub 
 
-### 오늘 Practice에 대하여 ###
-이 연습에서는 다음을 수행합니다. 
+### Practice 설명 ###
+이 Lab에서는 다음을 수행합니다. 
 - 로열티 관리 시스템을 위한 새로운 개발자 클라우드 서비스 프로젝트 만들기 
-로열티 관리 Java 응용 프로그램 소스 코드를 저장할 새로운 Developer Cloud Service Git 저장소 만들기 
+- 로열티 관리 Java 응용 프로그램 소스 코드를 저장할 새로운 Developer Cloud Service Git 저장소 만들기 
 - Gitub에 저장된 외부 Git 저장소를 위에서 작성한 Developer Cloud Service Git 저장소에 복제합니다. 
 
-### 선수 과목 ###
+### 준비사항 ###
 
-- 개발자 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사에게 확인) 
+- Developer 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사에게 확인) 
 
 ----
 
@@ -75,12 +75,12 @@
 ![](images/101/04.finish.png)
 
 
-11. **개발자 클라우드 서비스 프로젝트 준비가 대기 중입니다**. 
+11. 개발자 클라우드 서비스 프로젝트 준비가 대기 중입니다.
 
 ![](images/101/05.wait.png)
 
 
-12. 프로젝트가 준비되면 프로젝트 기본 화면이 나타납니다. 오른쪽 창에서`저장소`탭에 있는지 확인하십시오. [**+ New Repository**] 버튼을 클릭하여 새로운 Git 저장소를 만듭니다. 
+12. 프로젝트가 준비 되면 프로젝트 기본 화면이 나타납니다. 오른쪽 창에서`저장소`탭에 있는지 확인하십시오. [**+ New Repository**] 버튼을 클릭하여 새로운 Git 저장소를 만듭니다. 
 
 ![](images/101/06.newrepo.png)
 
@@ -92,7 +92,7 @@
 ![](images/101/07.repoinfo.png)
 
 
-14. 이제 기존 저장소를 기반으로하는 개발자 클라우드 서비스에 저장된 소스 코드로 새로운 Git 저장소를 만들었습니다. 
+14. 이제 기존 저장소를 기반으로 하는 개발자 클라우드 서비스에 저장된 소스 코드로 새로운 Git 저장소를 만들었습니다. 
 
 ![](images/101/08.repocreated.png)
 
