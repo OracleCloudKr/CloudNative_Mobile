@@ -20,7 +20,7 @@
 - 이미 구성된 ICS의 SOAP 및 REST 연결
 
 
-#### Complete an 'Orchestration' 통합 ####
+#### 'Orchestration' 통합 ####
 
 1. 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭하여 탐색 메뉴을 표시 한 다음 `통합(Integrations)`을 클릭하십시오.
 
@@ -70,7 +70,7 @@
 
 
 11. concat 함수의 두 파라미터를 입력합니다.
-- string1: `string1`을 클릭하고, `'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'`을 입력합니다. 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. (<Your Application Container Cloud Identity Domain Hostname>는 `Microservices`랩에서 얻은 호스트 이름입니다.)
+- string1: `string1`을 클릭하고, `'https://qrcodegenerator-<Your Application Container Cloud Identity Domain Hostname>/ctdqr/v1/offer/'`을 입력합니다. 작은 따옴표를 URL의 앞과 뒤에 넣어야합니다. (`<Your Application Container Cloud Identity Domain Hostname>`는 `Microservices`랩에서 얻은 호스트 이름입니다.)
 - string2: 왼쪽 창에서 `Source`를 확장하고 `offerid` 필드를 드래그하여 `string2`에 놓습니다. 자동으로 XPath 형식으로 변경됩니다.
 
 12. 저장후 닫기 버튼을 클릭합니다.
@@ -93,7 +93,7 @@
 ![](images/303/42.integration.tracking.png)
 
 
-16. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 ICS를 통해 실행되는 수십만 개의 메시지가 필요한 경우 필요합니다. `businessid`,`offerid` 및 `productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다.
+16. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 ICS를 통해 실행되는 수많은 요청 메시지 중에 특정 메시지를 구분하기 위해 필요합니다. `businessid`,`offerid` 및 `productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다.
 
 ![](images/303/43.integration.tracking.identifier1.png)
 
