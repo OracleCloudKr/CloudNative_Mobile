@@ -1,14 +1,11 @@
 # 오라클 클라우드 테스트 드라이브 #
 -----
-## 3. Oracle Integration Cloud Service를 통한 빠른 시스템 통합 ##
+## 3. Integration Hands-on Labs ##
 
-
-**\* 길이가 45 ~ 60 분인 단순화 된 Lab 버전입니다. 관심이 있으시면 [HERE](long/README.md) 전체 버전을 살펴보십시오.
 
 ### 소개 ###
-이 랩은 APAC 클라우드 테스트 드라이브의 일부로 CRM 응용 프로그램을 빠르게 연결하고 통합하는 세 번째 실습입니다. 이 섹션에서는 웹 기반 대시 보드를 사용하여 Oracle Integration Cloud Service를 통한 애플리케이션 통합에 대해 설명합니다.
+이 핸즈온 랩은 APAC 클라우드 테스트 드라이브의 일부로 SaaS CRM 응용 프로그램을 빠르게 연결하고 통합하는 세 번째 실습입니다. 이번 실습을 통해 Oracle Integration Cloud Service(ICS)의 웹 기반 콘솔을 사용하여 애플리케이션을 통합하는 방법에 대해 알아봅니다.
 
-#### 본 Practice에 관하여
 
 ![](images/ics.scope.png)
 
@@ -25,15 +22,16 @@
 ![](images/00.ics.png)
 
 
-Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud 등과 같은 오라클 SaaS(Software as a Service) 응용 프로그램과 고유한 연결을 제공합니다. Oracle Integration Cloud Service 어댑터는 업계 최고의 모범 사례를 사용하여 애플리케이션에 연결하는 복잡성을 내부적으로 처리함으로써 사용자 입장에서는 연결을 단순화시킵니다. 여러분들안 각 시스템에 대한 최소 연결 정보를 제공하면 바로 연결됩니다. 마지막으로, 비주얼한 데이터 맵퍼를 제공하여 소스 데이터와 타겟 데이터를 UI 상에서 직접 매핑하여 맵핑을 신속하게 작성할 수 있습니다.
-응용 프로그램을 통합하여 통합을 활성화하면 대시 보드는 실행중인 통합에 대한 정보를 표시하므로 각 통합에 대한 상태 및 처리 통계를 모니터 할 수 있습니다. 대시 보드는 주요 정보를 캡처 및 보고하여 거래 실적에 성능을 측정하고 추적할 수 있습니다. 거래를 추적하기 위해 메시지상의 주요 비즈니스 식별자를 관리하거나, 각 통합, 각 연결 또는 특정 거래에 대한 오류를 관리 할 수 ​​있습니다.
+Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud 등과 같은 오라클 SaaS(Software as a Service) 응용 프로그램과 고유한 연결을 제공합니다. Oracle Integration Cloud Service 어댑터는 업계 최고의 모범 사례를 사용하여 애플리케이션에 연결하는 복잡성을 내부적으로 처리함으로써 사용자 입장에서는 연결을 단순화시킵니다. 여러분들은 각 시스템 연결에 필요한 최소 연결 정보만 제공하면 됩니다. 마지막으로, 비주얼한 데이터 맵퍼를 제공하여 소스 데이터와 타겟 데이터를 UI 상에서 직접 데이터 매핑 및 변환하는 기능을 제공합니다.
+응용 프로그램에 대한 통합을 완료하여, 활성화하면 대시 보드는 실행 중인 Integration에 대한 정보를 표시하여, 각 Integration에 대한 상태 및 처리 통계를 모니터 할 수 있습니다. 대시 보드는 주요 정보를 수집 및 보고하여 거래 실적에 성능을 측정하고 추적할 수 있습니다. 거래를 추적하기 위해 메시지 상의 주요 비즈니스 식별자를 관리하거나, 활성화된 Integration, 사용 중인 Connection 또는 특정 거래에 대한 오류를 관리 할 수 ​​있습니다.
 Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다.
 
 1. **Connect**
     - 함께 구매한 SaaS와 자동 연결
-    - Native SaaS Adaptors
+    - Native SaaS Adapters
     - Secure On-Premises Integration
     - Open Adapter SDK
+
 2. **디자인**
     - 직관적인 비주얼 디자이너 및 모바일 지원 - 풍부한 포인트 앤 클릭 브라우저 기반 디자이너로 컴퓨터 또는 원하는 태블릿에서 어디에서나 통합을 구축 가능
     - Oracle Recommended ™ - Smart Data Mapper는 Oracle Recommends ™를 사용하여 정확한 추천 매핑 항목을 제공합니다.
@@ -59,7 +57,7 @@ Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다.
 
 + 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정
 
-# Lab 연습 : #
+# Hands-on Labs: #
 
 ## 301 : Oracle Integration Cloud Service 둘러보기 ##
 
