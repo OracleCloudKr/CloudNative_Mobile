@@ -55,7 +55,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 ![alt text](images/102/09.job.post.png "Post build")
 
 
-8. **저장**을 클릭하여 새 작업 구성을 업데이트하십시오. 빌드 작업을 확인하려면 작업 세부 정보 페이지에서 **지금 빌드**를 클릭하십시오. 작업이 완료되면 아카이브 된 아티팩트를 확인하십시오. 그것은 다음과 같아야 합니다. :`loyalty.war` 
+8. **저장**을 클릭하여 새 작업 구성을 업데이트하십시오. 빌드 작업을 확인하려면 작업 세부 정보 페이지에서 **지금 빌드**를 클릭하십시오. 작업이 완료되면 아카이브 된 아티팩트를 확인하십시오. 아래 그림 처럼 `loyalty.war` 가 생성되어야 합니다. :
 
 ![alt text](images/102/10.build.artifacts.png "Build artifacts")
 
@@ -78,7 +78,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각각 `weblogic`및 `Welcome_1`) 또는 강사가 별도로 제공합니다. 
 - **유형**: **자동**을 선택합니다. 이는 빌드 작업의 성공적인 실행 후 자동 배치를 의미합니다. 이전에 작성한 작업 및 이슈를 선택하여 배치하십시오. 
 - **Job**: **LoyaltyManagementBuild** 빌드 단계는이 랩의 초기 단계에서 정의됩니다. 
-- **Arifact**: **loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수있는 유일한 옵션입니다. 
+- **Artifact**: **loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수있는 유일한 옵션입니다. 
 
 ![alt text](images/102/12.deploy.config.png "Deployment Configuration")
 
