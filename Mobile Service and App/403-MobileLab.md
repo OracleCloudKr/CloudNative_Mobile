@@ -82,15 +82,15 @@
 ![](../common/images/mobile/01.qr.site.png)
 
 
-6. **&quot;Mobile_App_Settings_Sample.json&quot;파일의 설정을 복사하여**자유 텍스트**텍스트 영역에 붙여넣고 QR 코드 만들기 버튼을 클릭하십시오. 창의 오른쪽에 QR 코드 이미지가 생성됩니다. 
+6. &quot;Mobile_App_Settings_Sample.json&quot;파일의 설정을 복사하여 **free text** 영역에 붙여넣고 QR 코드 만들기 버튼을 클릭하십시오. 창의 오른쪽에 QR 코드 이미지가 생성됩니다. 
 ![](../common/images/mobile/02.qr.result.png)
 
 
-7. 휴대 기기에서 `Cafe Supremo`앱을 엽니 다. 
+7. 휴대 기기에서 `Cafe Supremo`앱을 엽니다. 
 
 ![](../common/images/mobile/03.mobile.app.png) 
 
-8. **로그인하지 마십시오.**왼쪽 상단 모서리에있는 햄버거 메뉴를 클릭하고 &quot;설정&quot;을 클릭하십시오. 
+8. **로그인하지 마십시오.** 왼쪽 상단 모서리에있는 햄버거 메뉴를 클릭하고 &quot;설정&quot;을 클릭하십시오. 
 
 ![](../common/images/mobile/05.mobile.settings.png) 
 
@@ -130,7 +130,7 @@
 
 4. 알림을 보내기 전에 Android 스마트 폰의 **배경 화면**에서 &quot;Cafe Supremo&quot;모바일 앱이 실행되고 있는지 확인하십시오. 
 
-5. 알림을 입력하십시오. `포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`을 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
+5. `포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`로 알림 내용을 입력하세요. 보내기 옵션을 'Now'로 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
 
 ![](../common/images/mobile/403-Notification_Test_Screen.png) 
 
