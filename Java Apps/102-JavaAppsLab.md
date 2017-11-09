@@ -35,7 +35,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 ![alt text](images/102/06.job.main.png "Configure job")
 
 
-4. **소스 제어**탭으로 변경하고 **Git**를 선택하십시오. git의 속성 섹션에서 목록에 제공된 유일한 Git 저장소를 선택하십시오. 분기 섹션에서 목록에 **마스터**옵션을 추가하고 선택하십시오. 이것은 **master**지점 버전 만 사용되도록하는 것입니다. 고급 설정 기본값을 그대로 둡니다. 
+4. **소스 제어**탭으로 변경하고 **Git**를 선택하십시오. git의 속성 섹션에서 목록에 제공된 유일한 Git 저장소를 선택하십시오. 고급 설정 기본값을 그대로 둡니다. 
 
 ![alt text](images/102/07.job.scm.png "Configure source control")
 
