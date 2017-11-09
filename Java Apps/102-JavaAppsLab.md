@@ -45,7 +45,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 ![alt text](images/102/07.scm.trigger.png "Configure source control")
 
 
-6. **빌드 단계**탭으로 변경하고 **Maven 3**빌드 단계를 추가하십시오. **클린 설치**를 목표로, **loyalty/pom.xml**을 POM 파일 입력란에 입력하십시오. (Build Steps 탭에 **Loading ...**이 표시되는 경우 오랜 시간 동안 Build 구성을 저장 한 다음 다시 열고 계속하십시오.) 
+6. **빌드 단계**탭으로 변경하고 **Maven 3**빌드 단계를 추가하십시오. **클린 설치**를 목표로, **loyalty/pom.xml**을 POM 파일 입력란에 입력하십시오. (Build Steps 탭에 **Loading ...** 이 표시되는 경우 오랜 시간 동안 Build 구성을 저장 한 다음 다시 열고 계속하십시오.) 
 
 ![alt text](images/102/08.job.maven.png "Add build step")
 
@@ -55,7 +55,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 ![alt text](images/102/09.job.post.png "Post build")
 
 
-8. **저장**을 클릭하여 새 작업 구성을 업데이트하십시오. 빌드 작업을 확인하려면 작업 세부 정보 페이지에서 **지금 빌드**를 클릭하십시오. 작업이 완료되면 아카이브 된 아티팩트를 확인하십시오. 그것은 다음과 같아야한다 :`loyalty.war` 
+8. **저장**을 클릭하여 새 작업 구성을 업데이트하십시오. 빌드 작업을 확인하려면 작업 세부 정보 페이지에서 **지금 빌드**를 클릭하십시오. 작업이 완료되면 아카이브 된 아티팩트를 확인하십시오. 그것은 다음과 같아야 합니다. :`loyalty.war` 
 
 ![alt text](images/102/10.build.artifacts.png "Build artifacts")
 
