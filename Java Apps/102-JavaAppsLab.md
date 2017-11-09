@@ -64,7 +64,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 
 #### Java Cloud 서비스 배치 구성 
 
-9. 이제 성공적인 빌드 작업 후에 Java Cloud Service에 직접 배치 할 수있는 배치 구성을 작성하십시오. DevCS에서 **Deploy**페이지로 변경하고**새 구성**을 작성하십시오. 
+9. 이제 성공적인 빌드 작업 후에 Java Cloud Service에 직접 배치 할 수있는 배치 구성을 작성하십시오. DevCS에서 **Deploy**페이지로 변경하고 **새 구성**을 작성하십시오. 
 
 ![alt text](images/102/11.new.deploy.png "New deploy configuration")
 
@@ -72,7 +72,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 10. 다음 등록 정보를 설정하십시오. 
 
 - **구성 이름**: 배포 구성을 식별하는 모든 이름 - 여기서는 **loyalty**를 사용합니다. 
-- **응용 프로그램 이름**: JCS의 응용 프로그램 이름입니다. 애플리케이션의 URL 컨텍스트 경로가 결정되므로**loyalty**를 사용합니다. 
+- **응용 프로그램 이름**: JCS의 응용 프로그램 이름입니다. 애플리케이션의 URL 컨텍스트 경로가 결정되므로 **loyalty**를 사용합니다. 
 - **Deployment Target**: **New**를 클릭하고 Java Cloud Service를 선택하고 **Version**,**Protocol**,**Host**,**HTTPS Port** 및 **암호** 입력 
 [(Find out the Java Cloud Service Host and HTTPS Port.)](java.cloud.md). 
 Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각각 `weblogic`및 `Welcome_1`) 또는 강사가 별도로 제공합니다. 
