@@ -30,7 +30,7 @@
 
 #### MBE 패키지 가져 오기 
 
-1. 액세스 문서의**모바일 클라우드 서비스 \ (MCS \)**ID 도메인 ID 및 자격 증명을 사용하여 모바일 클라우드 서비스에 로그인합니다.**관리자**를 사용하여 모바일 클라우드 서비스에 로그인하고**모바일 사용자**를 사용하여 Cafe Supremo 모바일 앱에 로그인해야합니다. 
+1. 액세스 문서의 **모바일 클라우드 서비스 \ (MCS \)** ID 도메인 ID 및 자격 증명을 사용하여 모바일 클라우드 서비스에 로그인합니다.**관리자**를 사용하여 모바일 클라우드 서비스에 로그인하고 **모바일 사용자**를 사용하여 Cafe Supremo 모바일 앱에 로그인해야합니다. 
 
 2. 대시 보드 화면에서 &quot;Mobile Environment Service&quot;를 클릭하십시오. 
 ![](../common/images/mobile/400-MobileEnvService.png)
@@ -52,7 +52,7 @@
 ![](../common/images/mobile/401-Import_Package_File_Validated.png)
 
 
-7. `confirm`단계에서 패키지 내용이 표시됩니다. 패키지에는 모바일 백엔드 `LoyaltyMgmt_MBE0X`, 클라이언트 `MyAndroidClient0X`, API `LoyaltyMgmt0X`, API 구현체 `LoyaltyMgmt03`와 세개의 커넥터 `GenerateQRCode0X`, `ProcessOffer0X`, `QueryOffers03`가 포함되어야합니다. 가져올 각 개체에서 접미사가 올바른지 확인하십시오. `다음`을 클릭하십시오. 
+7. `confirm` 단계에서 패키지 내용이 표시 됩니다. 패키지에는 모바일 백엔드 `LoyaltyMgmt_MBE0X`, 클라이언트 `MyAndroidClient0X`, API `LoyaltyMgmt0X`, API 구현체 `LoyaltyMgmt03`와 세개의 커넥터 `GenerateQRCode0X`, `ProcessOffer0X`, `QueryOffers03`가 포함되어야 합니다. 가져올 각 개체에서 접미사가 올바른지 확인하십시오. `다음`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Confirm.png)
 
 
@@ -60,7 +60,7 @@
 ![](../common/images/mobile/401-Import_Package_Results.png)
 
 
-9. `Policies`단계에서 `*.connector / GenerateQRCode0X (1.0) .Connector_Endpoint`정책을 선택하고 `Edit`을 클릭하십시오. 
+9. `Policies`단계에서 `*.connector/GenerateQRCode0X (1.0).Connector_Endpoint`정책을 선택하고 `Edit`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_GenerateQRCode_Endpoint.png)
 
 
@@ -68,15 +68,15 @@
 ![](../common/images/mobile/401-Import_Package_Update_GenerateQRCode_Endpoint.png)
 
 
-11. `Policies`단계로 돌아가서 `*.connector / QueryOffers0X (1.0) .Connector_Endpoint`정책을 선택하고 `Edit`를 클릭하십시오. 
+11. `Policies`단계로 돌아가서 `*.connector/QueryOffers0X (1.0).Connector_Endpoint`정책을 선택하고 `Edit`를 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_QueryOffers_Endpoint.png)
 
 
-12. ACCS에 배포 된 오퍼 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://offer-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER> .oraclecloud.com`. `Save`을 클릭하십시오. 
+12. ACCS에 배포 된 오퍼 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://offer-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com`. `Save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_QueryOffers_Endpoint.png)
 
 
-13. `Policies`단계로 돌아가서 `*.connector / ProcessOffer0X (1.0) .Connector_Endpoint`정책을 선택하고 `편집`을 클릭하십시오. 
+13. `Policies`단계로 돌아가서 `*.connector/ProcessOffer0X (1.0).Connector_Endpoint`정책을 선택하고 `편집`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_ProcessOffer_Endpoint.png)
 
 
