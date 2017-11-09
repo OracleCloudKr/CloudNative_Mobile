@@ -31,7 +31,7 @@
 ![](images/sign-in/sign.02.select.datacenter1.png)
 
 
-3. **Developer Cloud Service\(DevCS\)**ID 도메인을 입력하고 **Go**를 클릭하십시오. ID 도메인 및 관련 자격 증명은 강사가 제공해야합니다. 
+3. **Developer Cloud Service\(DevCS\)** Identity 도메인을 입력하고 **Go**를 클릭하십시오. ID 도메인 및 관련 자격 증명은 강사가 제공해야합니다. 
 ![](images/sign-in/sign.03.identity.domain.png)
 
 
