@@ -21,36 +21,36 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 ----
 
 
-#### 로열티 관리 응용 프로그램 빌드 작업 구성 ### 
+#### "로열티 관리 응용 프로그램" 빌드 작업 구성 ### 
 
 1. 이전 Lab 101에서 프로젝트 준비가 완료되면 로열티 관리 - JEE 응용 프로그램을 Java 클라우드 서비스에 필요한 형식으로 컴파일하고 패키징하기위한 빌드 작업을 만들어 보겠습니다. 
 
-2. 왼쪽 메뉴에서**Build**항목을 선택하고**New Job**버튼을 클릭하십시오. 
+2. 왼쪽 메뉴에서 **Build** 항목을 선택하고 **New Job** 버튼을 클릭하십시오. 
 
 ![alt text](images/102/05.new.job.png "Create new build job")
 
 
-3. 새 작업에 대한 이름 *LoyaltyManagementBuild*를 입력하십시오.*자유 스타일 작업 만들기*옵션을 선택하고 저장하십시오. 새로 생성 된 작업의 주 구성 페이지에서 **Default (실행 환경의 기본 Java 버전)**가 선택된 JDK인지 확인하십시오. 
+3. 새 작업에 대한 이름 *LoyaltyManagementBuild*를 입력하십시오. *Free Style 작업 만들기* 옵션을 선택하고 저장하십시오. 새로 생성 된 작업의 주 구성 페이지에서 **Default (실행 환경의 기본 Java 버전)** 가 선택된 JDK인지 확인하십시오. 
 
 ![alt text](images/102/06.job.main.png "Configure job")
 
 
-4. **소스 제어**탭으로 변경하고 **Git**를 선택하십시오. git의 속성 섹션에서 목록에 제공된 유일한 Git 저장소를 선택하십시오. 분기 섹션에서 목록에**마스터**옵션을 추가하고 선택하십시오. 이것은 **master**지점 버전 만 사용되도록하는 것입니다. 고급 설정 기본값을 그대로 둡니다. 
+4. **소스 제어**탭으로 변경하고 **Git**를 선택하십시오. git의 속성 섹션에서 목록에 제공된 유일한 Git 저장소를 선택하십시오. 분기 섹션에서 목록에 **마스터**옵션을 추가하고 선택하십시오. 이것은 **master**지점 버전 만 사용되도록하는 것입니다. 고급 설정 기본값을 그대로 둡니다. 
 
 ![alt text](images/102/07.job.scm.png "Configure source control")
 
 
-5. **트리거**탭을 클릭하여*SCM 폴링*을 구성하십시오.**SCM 폴링 일정에 따라**선택하십시오. 이렇게하면 소스 코드 저장소의 파일이 변경된 후 빌드가 시작됩니다. 
+5. **트리거**탭을 클릭하여 *SCM 폴링*을 구성하십시오. **SCM 폴링 일정에 따라** 선택하십시오. 이렇게하면 소스 코드 저장소의 파일이 변경된 후 빌드가 시작됩니다. 
 
 ![alt text](images/102/07.scm.trigger.png "Configure source control")
 
 
-6. **빌드 단계**탭으로 변경하고**Maven 3**빌드 단계를 추가하십시오.**클린 설치**를 목표로,**loyalty/pom.xml**을 POM 파일 입력란에 입력하십시오. (Build Steps 탭에**Loading ...**이 표시되는 경우 오랜 시간 동안 Build 구성을 저장 한 다음 다시 열고 계속하십시오.) 
+6. **빌드 단계**탭으로 변경하고 **Maven 3**빌드 단계를 추가하십시오. **클린 설치**를 목표로, **loyalty/pom.xml**을 POM 파일 입력란에 입력하십시오. (Build Steps 탭에 **Loading ...**이 표시되는 경우 오랜 시간 동안 Build 구성을 저장 한 다음 다시 열고 계속하십시오.) 
 
 ![alt text](images/102/08.job.maven.png "Add build step")
 
 
-7. 마지막으로 게시 빌드 탭으로 변경하고**이슈 보관**옵션을 선택하십시오.**loyalty/target/*.war**을 **아카이브 할 파일** 필드에 입력하십시오. 
+7. 마지막으로 게시 빌드 탭으로 변경하고 **이슈 보관**옵션을 선택하십시오. **loyalty/target/*.war**을 **아카이브 할 파일** 필드에 입력하십시오. 
 
 ![alt text](images/102/09.job.post.png "Post build")
 
@@ -64,7 +64,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 
 #### Java Cloud 서비스 배치 구성 
 
-9. 이제 성공적인 빌드 작업 후에 Java Cloud Service에 직접 배치 할 수있는 배치 구성을 작성하십시오. DevCS에서**Deploy**페이지로 변경하고**새 구성**을 작성하십시오. 
+9. 이제 성공적인 빌드 작업 후에 Java Cloud Service에 직접 배치 할 수있는 배치 구성을 작성하십시오. DevCS에서 **Deploy**페이지로 변경하고**새 구성**을 작성하십시오. 
 
 ![alt text](images/102/11.new.deploy.png "New deploy configuration")
 
@@ -106,7 +106,7 @@ Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각
 ![alt text](images/102/15.build.now.png "Build Now") 
 
 
-14. JUST 응용 프로그램을 Java Cloud Service에 배포합니다.**배포**페이지에서 배포 결과를 확인할 수 있습니다. 배포가 준비되면 (다소 시간이 걸릴 수 있습니다)**Deploy to JCS**링크를 클릭하십시오. 
+14. JUST 응용 프로그램을 Java Cloud Service에 배포합니다. **배포**페이지에서 배포 결과를 확인할 수 있습니다. 배포가 준비되면 (다소 시간이 걸릴 수 있습니다) **Deploy to JCS**링크를 클릭하십시오. 
 
 ![alt text](images/102/16.deploy.ready.png "Deploy ready")
 
