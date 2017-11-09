@@ -78,7 +78,7 @@
 
 4. Cafe Supremo 모바일 앱을 사용하면 QR 코드를 스캔하여 새로운 설정을 읽을 수 있습니다. &quot;Mobile_App_Settings_Sample.json&quot;파일의 설정으로 QR 코드를 생성하고 모바일 앱에서 QR 코드를 스캔합니다. 
 
-5. 웹 브라우저에서`http : // www.qr-code-generator.com /`로 가서 `텍스트`버튼을 클릭하면**자유 텍스트**텍스트 영역이 나타납니다. 
+5. 웹 브라우저에서`http://www.qr-code-generator.com/`로 가서 `텍스트`버튼을 클릭하면 **자유 텍스트** 텍스트 영역이 나타납니다. 
 ![](../common/images/mobile/01.qr.site.png)
 
 
@@ -128,7 +128,7 @@
 
 ![](../common/images/mobile/403-Manage_Devices.png) 
 
-4. 알림을 보내기 전에 Android 스마트 폰의**배경 화면**에서 &quot;Cafe Supremo&quot;모바일 앱이 실행되고 있는지 확인하십시오. 
+4. 알림을 보내기 전에 Android 스마트 폰의 **배경 화면**에서 &quot;Cafe Supremo&quot;모바일 앱이 실행되고 있는지 확인하십시오. 
 
 5. 알림을 입력하십시오. `포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`을 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
 
