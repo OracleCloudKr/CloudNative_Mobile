@@ -45,7 +45,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 ![alt text](images/102/07.scm.trigger.png "Configure source control")
 
 
-6. **빌드 단계**탭으로 변경하고 **Maven 3**빌드 단계를 추가하십시오. **클린 설치**를 목표로, **loyalty/pom.xml**을 POM 파일 입력란에 입력하십시오. (Build Steps 탭에 **Loading ...** 이 표시되는 경우 오랜 시간 동안 Build 구성을 저장 한 다음 다시 열고 계속하십시오.) 
+6. **Build Steps**탭으로 이동해서, Add Build Step 을 눌러 **Invoke Maven 3**을 추가하십시오. . Goals에 **clean install**로 입력하시고, **loyalty/pom.xml**을 POM 파일 입력란에 입력하십시오. (Build Steps 탭에 **Loading ...** 이 표시되는 경우 오랜 시간 동안 Build 구성을 저장 한 다음 다시 열고 계속하십시오.) 
 
 ![alt text](images/102/08.job.maven.png "Add build step")
 
