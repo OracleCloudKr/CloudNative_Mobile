@@ -26,7 +26,7 @@
 ![](images/business.value.png)
 
 
-**Oracle Developer Cloud Service (DevCS)**는 이러한 최신 개발 및 운영 기술 구현을 단순화하는 통합 클라우드 기반 플랫폼을 제공합니다. DevCS는 클라우드 기반 소프트웨어 개발 플랫폼 (PaaS)이며 응용 프로그램 개발 인프라를 위한 호스팅 환경입니다. Hudson, Git, Maven, Issues 및 위키와의 통합을 통해 애플리케이션 개발 라이프 사이클을 효과적으로 관리하기 위한 오픈 소스 표준 기반 솔루션을 제공합니다. Oracle Developer Cloud Service를 사용하면 애플리케이션 소스 코드를 Oracle Cloud의 Git 저장소에 커밋하고, 할당된 이슈와  결함을 온라인에서 추적하고, wiki 페이지를 사용하여 정보를 공유하고, 소스 코드를 검토하고 프로젝트 빌드를 모니터링 할 수 있습니다. 테스트를 성공적으로 마친 후에는 Oracle Java Cloud Service(Saas확장), Oracle Java Cloud Service 인스턴스, Oracle Application Container Cloud Service 인스턴스 또는 사내의 구축 환경에 프로젝트를 배포 할 수 있습니다. 
+**Oracle Developer Cloud Service (DevCS)** 는 이러한 최신 개발 및 운영 기술 구현을 단순화하는 통합 클라우드 기반 플랫폼을 제공합니다. DevCS는 클라우드 기반 소프트웨어 개발 플랫폼 (PaaS)이며 응용 프로그램 개발 인프라를 위한 호스팅 환경입니다. Hudson, Git, Maven, Issues 및 위키와의 통합을 통해 애플리케이션 개발 라이프 사이클을 효과적으로 관리하기 위한 오픈 소스 표준 기반 솔루션을 제공합니다. Oracle Developer Cloud Service를 사용하면 애플리케이션 소스 코드를 Oracle Cloud의 Git 저장소에 커밋하고, 할당된 이슈와  결함을 온라인에서 추적하고, wiki 페이지를 사용하여 정보를 공유하고, 소스 코드를 검토하고 프로젝트 빌드를 모니터링 할 수 있습니다. 테스트를 성공적으로 마친 후에는 Oracle Java Cloud Service(Saas확장), Oracle Java Cloud Service 인스턴스, Oracle Application Container Cloud Service 인스턴스 또는 사내의 구축 환경에 프로젝트를 배포 할 수 있습니다. 
 
 ![](images/00.dcs.png)
 
