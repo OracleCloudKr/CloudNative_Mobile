@@ -50,12 +50,12 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 ![alt text](images/102/08.job.maven.png "Add build step")
 
 
-7. 마지막으로 게시 빌드 탭으로 변경하고 **이슈 보관**옵션을 선택하십시오. **loyalty/target/*.war**을 **아카이브 할 파일** 필드에 입력하십시오. 
+7. 마지막으로 Post Build 탭으로 변경하고 **Archive the artifacts** 옵션을 선택하십시오. **loyalty/target/*.war**을 **Files to Archive** 필드에 입력하십시오. 
 
 ![alt text](images/102/09.job.post.png "Post build")
 
 
-8. **저장**을 클릭하여 새 작업 구성을 업데이트하십시오. 빌드 작업을 확인하려면 작업 세부 정보 페이지에서 **지금 빌드**를 클릭하십시오. 작업이 완료되면 아카이브 된 아티팩트를 확인하십시오. 아래 그림 처럼 `loyalty.war` 가 생성되어야 합니다. :
+8. **Save**를 클릭하여 새 작업 구성을 업데이트하십시오. 빌드 작업을 확인하려면 작업 세부 정보 페이지에서 **Build Now**를 클릭하십시오. 작업이 완료되면 아카이브 된 아티팩트를 확인하십시오. 아래 그림 처럼 `loyalty.war` 가 생성되어야 합니다. :
 
 ![alt text](images/102/10.build.artifacts.png "Build artifacts")
 
@@ -64,7 +64,7 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 
 #### Java Cloud 서비스 배치 구성 
 
-9. 이제 성공적인 빌드 작업 후에 Java Cloud Service에 직접 배치 할 수있는 배치 구성을 작성하십시오. DevCS에서 **Deploy**페이지로 변경하고 **새 구성**을 작성하십시오. 
+9. 이제 성공적인 빌드 작업 후에 Java Cloud Service에 직접 배치 할 수있는 배치 구성을 작성하십시오. DevCS에서 **Deploy** 페이지로 변경하고 **New Configuration**을 작성하십시오. 
 
 ![alt text](images/102/11.new.deploy.png "New deploy configuration")
 
@@ -77,8 +77,8 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 [(Find out the Java Cloud Service Host and HTTPS Port.)](java.cloud.md). 
 Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각각 `weblogic`및 `Welcome_1`) 또는 강사가 별도로 제공합니다. 
 - **유형**: **자동**을 선택합니다. 이는 빌드 작업의 성공적인 실행 후 자동 배치를 의미합니다. 이전에 작성한 작업 및 이슈를 선택하여 배치하십시오. 
-- **Job**: **LoyaltyManagementBuild** 빌드 단계는이 랩의 초기 단계에서 정의됩니다. 
-- **Artifact**: **loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수있는 유일한 옵션입니다. 
+- **Job**: **LoyaltyManagementBuild** 빌드 단계는 이 랩의 초기 단계에서 정의됩니다. 
+- **Artifact**: **loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수 있는 유일한 옵션입니다. 
 
 ![alt text](images/102/12.deploy.config.png "Deployment Configuration")
 
