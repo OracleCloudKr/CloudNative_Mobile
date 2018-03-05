@@ -8,7 +8,7 @@
 
 이 Oracle Cloud 프로젝트에는 다양한 위치에 구성된 Cloud Native Apps 및 Mobile 용 Oracle Cloud Test Drive 이벤트 용 Lab 자료가 포함되어 있습니다. 참가자들은 JCS (자바 클라우드 서비스), DevCS (개발자 클라우드 서비스), ACCS (애플리케이션 컨테이너 클라우드 서비스), ICS (통합 클라우드 서비스) 및 MCS (모바일 클라우드 서비스)와 같은 일련의 Oracle 클라우드 서비스로이 랩을 Lab 할 수 있습니다. 이 클라우드 기본 및 모바일 테스트 드라이브를 통해 참가자는 클라우드 네이티브 앱, 마이크로 서비스, 통합 및 모바일 서비스를 구현하는 데 Oracle Cloud Services를 어떻게 사용할 수 있는지 알 수 있습니다. 기업이 언제 어떻게 Oracle Cloud Services를 사용할 수 있는지 더 잘 이해하기 위해 &quot;[loyalty management](https://github.com/APACTestDrive/CloudNative_Mobile/blob/master/common/scenario/README.md)&quot;이라는 서비스 시나리오 (비즈니스 사례)를 사용할 것입니다.
 
-보다 구체적으로이 프로젝트에는 현재 다음 주제가 포함되어 있습니다.
+보다 구체적으로 이 프로젝트에는 현재 다음 주제가 포함되어 있습니다.
 
 ## Java Apps Lab ##
 [Java Apps lab](./Java%20Apps)는 다음으로 구성됩니다.
