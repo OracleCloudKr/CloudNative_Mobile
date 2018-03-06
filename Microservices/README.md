@@ -71,7 +71,7 @@ Oracle Application Container Cloud Service에는 다음과 같은 주요 기능�
 ![](images/000.devcs.png)
 
 
-## 오늘 Practice에 관해서
+## 이 Practice에 관해서
 
 
 개발자 클라우드 서비스를 사용하여 다음 1 시간 동안 Application Container Cloud에 2 개의 마이크로 서비스를 만들고 배포합니다 :smile:. 
