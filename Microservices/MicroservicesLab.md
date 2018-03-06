@@ -14,14 +14,14 @@
 ## 0.3 필수 준비물
 
 
-- 다음 실습에서는 귀하가 직접 신청하거나 강사가 제공한 Oracle Public Cloud 계정이 필요합니다. 
+- 다음 실습에서는 여러분이 직접 신청하거나 강사가 제공한 Oracle Public Cloud 계정이 필요합니다. 
 - **이전 Lab**에서 로컬 컴퓨터의 IDE 환경 및 GIT 클라이언트. 이 Lab에서는 로컬 호스트 컴퓨터에서 Brackets 편집기를 사용한다고 가정합니다. **Brackets Editor 설치에 대한 자세한 내용은 이전 Lab**에서 다루었으며 [here](../Java%20Apps/brackets.md)을 찾을 수도 있습니다. 
 
 ## 0.4 특별주의 사항
 
 - 복사하여 붙여 넣을 때 주의하십시오. 복사한 내용의 *이전*이나 *이후*에 **공백**을 넣게 되면 오류가 발생할 수 있습니다. 
 
-# 1. 제안 REST API 마이크로 서비스 만들기
+# 1. Offer REST API 마이크로 서비스 만들기
 
 ## 1.1 초기 Git 저장소 생성 - REST API 제공
 
@@ -110,7 +110,7 @@
 ![](images/010.steps.png)
 
 
-7. Command textarea에 다음을 입력하십시오 :`npm install` 
+7. Command 텍스트 영역에 다음을 입력하십시오 :`npm install` 
 
 ![](images/011.npm.png)
 
@@ -148,7 +148,7 @@
 ### 1.2.2 기본 배포 프로세스 만들기 - REST API 제공
 
 
-1. **Deploy**를 클릭하여 배포 페이지에 액세스하고 **[+ New Configuration]**버튼을 클릭하십시오. 
+1. **Deploy**를 클릭하여 배포 페이지에 액세스하고 **[+ New Configuration]** 버튼을 클릭하십시오. 
 
 ![](images/018.navideploy.png)
 
@@ -167,7 +167,7 @@
 ![](images/019.deployname.png)
 
 
-3. **Deployment Target**의 오른쪽 옆에있는 **[New]**버튼을 클릭하고 **Application Container Cloud ...를 선택하십시오.**
+3. **Deployment Target**의 오른쪽 옆에 있는 **[New]** 버튼을 클릭하고 **Application Container Cloud ...를 선택하십시오.**
 
 ![](images/020.deployaccs.png)
 
@@ -183,7 +183,7 @@
 ![](images/021.accsconn.png)
 
 
-5. 성공하면 **[Use Connection]**버튼을 클릭하십시오. 
+5. 성공하면 **[Use Connection]** 버튼을 클릭하십시오. 
 
 ![](images/022.useconn.png)
 
@@ -320,7 +320,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 4. 새 저장소 마법사에서 다음 정보를 입력하고 **Create**을 클릭합니다. 
 
 - **이름 :** `QRCodeMicroservice` 
-- **설명 :** `제안 QR 코드를 생성하는 마이크로 서비스. QR 코드에는 실제 제공되는 URL이 포함됩니다 .` 
+- **설명 :** `Offer QR 코드를 생성하는 마이크로 서비스. QR 코드에는 실제 제공되는 URL이 포함됩니다 .` 
 - **초기 내용 :** `기존 저장소 가져 오기` 
 - **URL을 입력하십시오 :** `https://github.com/APACTestDrive/QRCodeMicroservice.git` 
 
@@ -343,7 +343,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ### 2.2.1 Bracket Text Editor에 프로젝트 복제
 
 
-본 Lab에서는 귀하가 공공 인터넷에 직접 연결되어 있다고 가정합니다 (예 : 프록시 사용 불가**). 
+본 Lab에서는 여러분이 Public 인터넷에 직접 연결되어 있다고 가정합니다 (예 : **프록시 사용 불가**). 
 
 1. Brackets 텍스트 편집기를 시작하려면 **Brackets**바탕 화면 아이콘, [시작] 메뉴 단추 또는 해당 컴퓨터의 바로 가기를 두 번 클릭하십시오. 
 
@@ -355,7 +355,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/111.open.png)
 
 
-3. 로컬 하드 디스크에 소스 코드를 저장할 폴더를 선택하십시오. 예를 들어 왼쪽에 **d:\oracle**을 입력하고 오른쪽 상단에 **[Create Folder]**를 클릭하십시오. - `선택한 폴더 아래에 새 폴더가 생성되게 됩니다.`
+3. 로컬 하드 디스크에 소스 코드를 저장할 폴더를 선택하십시오. 예를 들어 왼쪽에 **d:\oracle**을 입력하고 오른쪽 상단에 **[Create Folder]** 를 클릭하십시오. - `선택한 폴더 아래에 새 폴더가 생성되게 됩니다.`
 
 ![](images/112.createfolder.png)
 
@@ -423,7 +423,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ### 2.2.3 새 분기 만들기 및 커밋
 
 
-1. 왼쪽 탐색 패널에서 **master**를 선택하고 **Create new branch...**를 클릭하십시오.
+1. 왼쪽 탐색 패널에서 **master**를 선택하고 **Create new branch...** 를 클릭하십시오.
 
 ![](images/124.branch.png)
 
@@ -513,7 +513,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/147.req2.png)
 
 
-8. 요청을 검토하고**[+ Create]**버튼을 클릭하십시오. 
+8. 요청을 검토하고**[+ Create]** 버튼을 클릭하십시오. 
 
 ![](images/148.reqcreate.png)
 
@@ -624,7 +624,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/170.pbsave.png)
 
 
-11. 빌드는 1-2 분 내에 자동으로 시작됩니다. 자동으로 시작되지 않으면 **[Build Now]**버튼을 클릭하십시오. 
+11. 빌드는 1-2 분 내에 자동으로 시작됩니다. 자동으로 시작되지 않으면 **[Build Now]** 버튼을 클릭하십시오. 
 
 ![](images/171.now.png)
 
