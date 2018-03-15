@@ -27,75 +27,71 @@
 ![cloud.oracle.com](images/sign-in/sign.01.cloud.oracle.com.png)
 
 
-2. 기존 클라우드 계정을 선택한 다음 환경의 데이터 센터에 따라 `Public Cloud Service - EMEA` 또는`Public Cloud Servce - US `를 선택하십시오. **내 서비스**버튼을 클릭하십시오. 
-![](images/sign-in/sign.02.select.datacenter1.png)
+2. 강사가 제공하는 랩 문서를 따라하시기 바랍니다. Lab 섹션별로 다음과 같이 해당 데이터 센터 정보를 다르게 사용해야 합니다.
+![](images/sign-in/sign.01.cloud.account.png)  
+or  
+![](images/sign-in/sign.01.cloud.account1.png)  
 
+첫번째 Lab 1xx - Java App에서는 DevCS에 Login을 해야 합니다. 
+`Traditional Cloud Account`,를 선택한 후   
+    `US Commercial 2 (us2)` 를 선택하세요.  
+여러분의 데이터센터의 환경에 따라서 선택하시면 됩니다.  **My Services** 버튼을 클릭하세요..
+![](images/sign-in/sign.02.select.datacenter.png)
 
-3. **Developer Cloud Service\(DevCS\)** Identity 도메인을 입력하고 **Go**를 클릭하십시오. ID 도메인 및 관련 자격 증명은 강사가 제공해야합니다. 
+3. **Developer Cloud Service \(DevCS\)** 의 identity domain 정보를 입력하고 **Go** 를 클릭합니다.. Identity domain 과 비밀번호는 강사에게 문의하시기 바랍니다.
 ![](images/sign-in/sign.03.identity.domain.png)
 
-
-4. 서비스 관리자 역할이있는 사용자의 DevCS 사용자 이름과 암호를 입력하십시오. **로그인**을 클릭하십시오. 
+4. Service Administrator을 갖고 있는 DevCS username 과 password 를 입력하고  **Sign In** 을 클릭하세요.
 ![](images/sign-in/sign.04.credentials.png)
 
-
-5. 로그인이 성공하면 대시 보드가 표시됩니다. 대시 보드에는 서비스별로 미리 정의 된 타일이 있습니다. **개발자 클라우드 서비스**타일이 표시되지 않으면 **대시 보드 사용자 정의**를 클릭하고 **개발자**서비스를 표시하여 대시 보드에 표시하십시오. 
+5. 성공적으로 로그인을 하고 난 후에는 아래와 같은 대쉬보드를 볼 수 있습니다.
+대시 보드에는 다양한 서비스에 대해 미리 정의 된 타일이 있습니다. ** Developer Cloud Service ** 타일이 나타나지 않으면 ** Customize Dashboard **를 클릭하고 ** developer xxx ** 서비스를 표시하여 대시 보드에 표시하십시오.
 ![](images/sign-in/sign.05.dashboard.new.png)
 ![](images/sign-in/sign.06.customize.png)
 
+#### Oracle Developer Cloud Service project 생성####
 
-#### Oracle Developer Cloud Service 프로젝트 생성 
-
-6. 이제 개발자 서비스 타일을 찾아 햄버거 아이콘을 클릭하십시오. 드롭 다운 메뉴에서 **서비스 콘솔 열기**를 클릭하십시오. 
+6. 이제, Developer Service 제목을 찾고 햄버거 모양의 아이콘을 클릭하십시오.dropdown 메뉴에서 **Open Service Console** 를 선택하십시오.
 
 ![](images/101/01.dashboard.new.png)
 
-
-7. Oracle Developer Cloud Service에 로그인하고 새 프로젝트를 작성하십시오. 
+7. Oracle Developer Cloud Service에 로그인을 한 후 new project를 생성 합니다.
 
 ![alt text](images/101/02.new.project.png)
 
-
-8. 프로젝트의 이름을 입력하고 원하는 속성을 설정하십시오. 
-	**Name:** `APAC Cloud Test Drive`   
-	**Description:** `APAC Cloud Test Drive project hub`   
+8. 프로젝트 이름과 설명을 입력하세요.
+	**Name:** `APAC Cloud Test Drive XX` (XX - Use your assigned ID, e.g. 01)  
+	**Description:** `APAC Cloud Test Drive project hub XX` (XX - Use your assigned ID, e.g. 01)  
 	and click **Next**
-
 
 ![](images/101/02.new.project.detail.png)
 
-
-9. 템플릿으로*빈 프로젝트*를 선택하고 **다음을 클릭하십시오**
+9. 템플릿에서 *Empty Project* 선택하고 **Next** 를 클릭하세요.
 
 ![](images/101/03.emptyproject.png)
 
-
-10. Wiki Markup으로 MARKDOWN을 선택하고 **Finish**를 클릭하십시오. 
+10. Wiki Markup 으로 `MARKDOWN` 선택하고 **Finish** 를 클릭하세요.
 
 ![](images/101/04.finish.png)
 
-
-11. 개발자 클라우드 서비스 프로젝트 준비가 대기 중입니다.
+11. Developer Cloud Service Project가 생성될 때 까지 잠시 대기하십시오.
 
 ![](images/101/05.wait.png)
 
+12. 프로젝트가 준비 되면 프로젝트 기본 화면이 나타납니다. 오른쪽 창에서저장소탭에 있는지 확인하십시오. [+ ** New Repository ** ] 버튼을 클릭하여 새로운 Git 저장소를 만듭니다.
 
-12. 프로젝트가 준비 되면 프로젝트 기본 화면이 나타납니다. 오른쪽 창에서`저장소`탭에 있는지 확인하십시오. [**+ New Repository**] 버튼을 클릭하여 새로운 Git 저장소를 만듭니다. 
 
 ![](images/101/06.newrepo.png)
 
-
-13. 새 저장소 이름에 대해 다음 정보를 입력하십시오 :`LoyaltyManagement` 
-	 Initial content: select `Import existing repository`   
-`https://github.com/APACTestDrive/LoyaltyManagement.git`를 저장소 주소로 입력하거나 복사하십시오. [**만들기**] 버튼을 클릭하십시오. 
+13. New Repository 에 다음 정보를 입력하세요.
+   Name: `LoyaltyManagement`   
+	 Initial content: `Import existing repository` 선택
+    repository 주소로 `https://github.com/APACTestDrive/LoyaltyManagement.git` 를 복사해서 넣으세요.
+[ **Create** ] 버튼을 클릭하세요.
 
 ![](images/101/07.repoinfo.png)
 
-
-14. 이제 기존 저장소를 기반으로 하는 개발자 클라우드 서비스에 저장된 소스 코드로 새로운 Git 저장소를 만들었습니다. 
-
-![](images/101/08.repocreated.png)
-
+14. 이제 기존 저장소를 기반으로 하는 개발자 클라우드 서비스에 저장된 소스 코드로 새로운 Git 저장소를 만들었습니다.
 
 
 이 Lab 섹션을 마쳤습니다. 
