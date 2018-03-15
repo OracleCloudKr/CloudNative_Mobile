@@ -385,22 +385,25 @@
 
 ![](images/183.createdeploy.png)
 
+4. **Deployment Target**의 오른편에 있는 , **[New]** 버튼을 누르고 **Application Container Cloud...** 를 선택합니다.
 
-**Offer REST API Microservice에서 배포를 만들었으므로 동일한 대상**을 다시 사용할 수 있습니다. 
+![](images/020.deployaccs-reuse.png)
 
-**Deployment Target**에서 위에서 만든 **동일한 것**을 선택하십시오. 그것은`Application Container Cloud`와 비슷한 것이어야 합니다. **em2/your-identity-domain/your-user-name**
-
-![](images/184.dc.png)
-
-
-5. **Deploy to Application Container Cloud** 창이 나타나고 정보를 확인하고 **암호를 입력**한 다음 **[Test Connection]** 버튼을 클릭하십시오. 
-
-  - **Data Center:** `your datacenter, e.g. em2, em3, etc`
-  - **Identity Domain:** `your identity domain, e.g. gse00012345, etc`
-  - **Username:** `username to login to MyService, e.g. cloud.admin, etc`
-  - **Password:** `password of the cloud user`
+5. **Deploy to Application Container Cloud** 창이 열리면 정보를 확인하고 **password를 입력** 한 후에 **[Test Connection]** 버튼을 누릅니다.
 
 ![](images/185.test.png)
+
+  - **Data Center:** `your datacenter, e.g. us2, em3, etc`
+  - **Identity Domain:** 아래 화면의 Application Container Cloud Service Dashboard 에서 `Identity Service Id` 를 복사
+	
+    ![](images/185.test.accs.png)  
+	
+    ACCS dashboard의 `Identity Service Id` 를 복사한 후, 위의 **Identity Domain** 에 붙여넣기 합니다.
+	
+    ![](images/185.test.accs1.png)  
+	
+  - **Username:** `username to login to MyService, e.g. cloud.admin, etc`
+  - **Password:** `cloud user의 password`
 
 
 6. 테스트가 성공하면 **Use Connection**을 클릭하십시오. 
