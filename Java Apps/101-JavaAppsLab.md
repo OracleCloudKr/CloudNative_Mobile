@@ -49,7 +49,7 @@ or
 ![](images/sign-in/sign.05.dashboard.new.png)
 ![](images/sign-in/sign.06.customize.png)
 
-#### Oracle Developer Cloud Service project 생성####
+#### Oracle Developer Cloud Service project 생성 ####
 
 6. 이제, Developer Service 제목을 찾고 햄버거 모양의 아이콘을 클릭하십시오.dropdown 메뉴에서 **Open Service Console** 를 선택하십시오.
 
@@ -78,7 +78,7 @@ or
 
 ![](images/101/05.wait.png)
 
-12. 프로젝트가 준비 되면 프로젝트 기본 화면이 나타납니다. 오른쪽 창에서저장소탭에 있는지 확인하십시오. [+ ** New Repository ** ] 버튼을 클릭하여 새로운 Git 저장소를 만듭니다.
+12. 프로젝트가 준비 되면 프로젝트 기본 화면이 나타납니다. 오른쪽 창에서저장소탭에 있는지 확인하십시오. [+ **New Repository** ] 버튼을 클릭하여 새로운 Git 저장소를 만듭니다.
 
 
 ![](images/101/06.newrepo.png)
