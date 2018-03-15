@@ -84,9 +84,12 @@ or
 ![](images/101/06.newrepo.png)
 
 13. New Repository 에 다음 정보를 입력하세요.
-   Name: `LoyaltyManagement`   
-	 Initial content: `Import existing repository` 선택
-    repository 주소로 `https://github.com/APACTestDrive/LoyaltyManagement.git` 를 복사해서 넣으세요.
+   Name: `LoyaltyManagement`
+
+   Initial content: `Import existing repository` 선택
+
+   repository 주소로 `https://github.com/APACTestDrive/LoyaltyManagement.git` 를 복사해서 넣으세요.
+   
 [ **Create** ] 버튼을 클릭하세요.
 
 ![](images/101/07.repoinfo.png)
