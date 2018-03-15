@@ -399,7 +399,7 @@
   Dashboard에서 **내 프로파일** 선택
 ![](images/200.identity.01.png)  
 	
-	이동된 URL에서 앞 부분이 Identity Service Id 입니다. xxxxx.identity.oraclecloud.com 의 앞 부분을 복사합니다. 
+	이동된 페이지의 URL에서 앞 부분이 Identity Service Id 입니다. xxxxx.identity.oraclecloud.com 에서 xxxxx 부분을 복사합니다. 
 ![](images/200.identity.02.png)  
 	
   - **Username:** `username to login to MyService, e.g. cloud.admin, etc`
