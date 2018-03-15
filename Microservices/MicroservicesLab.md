@@ -394,13 +394,13 @@
 ![](images/185.test.png)
 
   - **Data Center:** `your datacenter, e.g. us2, em3, etc`
-  - **Identity Domain:** 아래 화면의 Application Container Cloud Service Dashboard 에서 `Identity Service Id` 를 복사
+  - **Identity Domain:** 아래 화면의 Dashboard 의 내 프로파일 에서 `Identity Service Id` 를 복사
 	
-    ![](images/185.test.accs.png)  
+  Dashboard에서 **내 프로파일** 선택
+    ![](images/200.identity.01.png)  
 	
-    ACCS dashboard의 `Identity Service Id` 를 복사한 후, 위의 **Identity Domain** 에 붙여넣기 합니다.
-	
-    ![](images/185.test.accs1.png)  
+	이동된 URL에서 앞 부분이 Identity Service Id 입니다. xxxxx.identity.oraclecloud.com 의 앞 부분을 복사합니다. 
+    ![](images/200.identity.02.png)  
 	
   - **Username:** `username to login to MyService, e.g. cloud.admin, etc`
   - **Password:** `cloud user의 password`
