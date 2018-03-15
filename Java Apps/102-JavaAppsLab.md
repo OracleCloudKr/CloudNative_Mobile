@@ -118,7 +118,7 @@ or
 
 15. 그러면 WebLogic Server 관리 콘솔이 열립니다. 제공된 WebLogic Admin 사용자 이름과 암호 (예 : 각각`weblogic` 및`Welcome_1`)로 로그인하십시오. 
 
-![alt text](images/102/17.jcs.console.png)"WebLogic Console")
+![alt text](images/102/17.jcs.console.png "WebLogic Console")
 
 
 16. 로그온 한 후 왼쪽 탐색 메뉴에서 **Deployments**를 클릭하십시오. 귀하는 배치 요약 목록에서 귀하의 로열티 관리 응용 프로그램 **loyalty**를 가 보이게 됩니다. 
