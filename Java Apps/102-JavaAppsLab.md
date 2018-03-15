@@ -71,26 +71,31 @@ Developer Cloud Service 및 Java Cloud Service를 포함한 Oracle Public Cloud 
 
 10. 다음 등록 정보를 설정하십시오. 
 
-- **구성 이름**: 배포 구성을 식별하는 모든 이름 - 여기서는 **loyalty**를 사용합니다. 
-- **응용 프로그램 이름**: JCS의 응용 프로그램 이름입니다. 애플리케이션의 URL 컨텍스트 경로가 결정되므로 **loyalty**를 사용합니다. 
-- **Deployment Target**: **New**를 클릭하고 Java Cloud Service를 선택하고 **Version**,**Protocol**,**Host**,**HTTPS Port** 및 **암호** 입력 
-[(Find out the Java Cloud Service Host and HTTPS Port.)](java.cloud.md). 
-Java Cloud Service - WebLogic Admin 사용자 이름 및 비밀번호 (예 : 각각 `weblogic`및 `Welcome_1`) 또는 강사가 별도로 제공합니다. 
-- **유형**: **자동**을 선택합니다. 이는 빌드 작업의 성공적인 실행 후 자동 배치를 의미합니다. 이전에 작성한 작업 및 이슈를 선택하여 배치하십시오. 
-- **Job**: **LoyaltyManagementBuild** 빌드 단계는 이 랩의 초기 단계에서 정의됩니다. 
-- **Artifact**: **loyalty/target/loyalty.war**, **Job**을 선택한 후에 사용할 수 있는 유일한 옵션입니다. 
+- **Configuration Name**: identify deployment configuration 이름으로 아무 이름이나 입력. 여기서는 **loyalty** 를 사용함.
+- **Application Name**: JCS의 application name. application의 URL context path를 결정함. - 여기서는 **loyalty**.
+- **Deployment Target**: **New** 를 클릭하고 **Java Cloud Service** 를 선택
+--**Version: Oracle Weblogic Server 12c (12.2.x or higher)**  
+--**Protocol: SSH Tunnel**  
+--**Host: [\(Java Cloud Service Host와 HTTPS Port를 찾는 법\)](java.cloud.md)**  
+--**HTTPS Port: 7002 (Default)**  
+--**Administration Port: 9001 (Default)**  
+--**credentials**  
+  Java Cloud Service - WebLogic Admin Username 과 Password, i.e. `weblogic` and `Welcome_1`. 각각 강사에 의해 제공받으세요.
+- **Type**:으로 **Automatic** 을 선택하세요. Job이 성공적으로 실행되면 자동으로 deploy하도록 하는 것을 의미. 이전에 생성한 Job을 선택하고 deploy할 결과물을 선택하세요.
+- **Job**: 이전 단계에서 정의한 **LoyaltyManagementBuild** Build Step 
+- **Arifact**: **loyalty/target/loyalty.war**, Job을 선택한 후에 build 결과물인 파일만 선택이 가능함.
 
 ![alt text](images/102/12.deploy.config.png "Deployment Configuration")
 
-
 ![alt text](images/102/13.jcs.config.png "JCS Configuration")
 
-
 ![alt text](images/102/13.cert.png "Certificate Warning")   
-인증서 경고가 표시되면** `이 JCS 인스턴스에 연결할 때이 인증서 수락`을 선택하고 [**확인**]을 클릭하십시오. 
+  만약 certificate warning 화면이 보이면, `Accept this certificate when connecting to this JCS instance`를 **체크** 하고 [**OK**]를 클릭하세요.
 
-![alt text](images/102/13.cluster.png "deploy to cluster")   
-`ctdCluster`를 확인하고 [**OK**]를 클릭하여 Java Cloud Service 클러스터에 응용 프로그램을 배포하십시오 
+![alt text](images/102/13.cluster.png "deploy to cluster")  
+or   
+![alt text](images/102/13.server.png "deploy to server")  
+  `ctdCluster` 나 `apacctdj_server_1` 를 **체크**하고 [**OK**]를 클릭하면, Java Cloud Service cluster에 deploy가 됩니다.
 
 11. **저장**을 클릭하십시오. 
 
