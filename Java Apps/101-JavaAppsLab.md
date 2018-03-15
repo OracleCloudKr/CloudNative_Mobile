@@ -45,7 +45,7 @@ or
 ![](images/sign-in/sign.04.credentials.png)
 
 5. 성공적으로 로그인을 하고 난 후에는 아래와 같은 대쉬보드를 볼 수 있습니다.
-대시 보드에는 다양한 서비스에 대해 미리 정의 된 타일이 있습니다. ** Developer Cloud Service ** 타일이 나타나지 않으면 ** Customize Dashboard **를 클릭하고 ** developer xxx ** 서비스를 표시하여 대시 보드에 표시하십시오.
+대시 보드에는 다양한 서비스에 대해 미리 정의 된 타일이 있습니다. **Developer Cloud Service** 타일이 나타나지 않으면 **Customize Dashboard **를 클릭하고 **developer xxx** 서비스를 표시하여 대시 보드에 표시하십시오.
 ![](images/sign-in/sign.05.dashboard.new.png)
 ![](images/sign-in/sign.06.customize.png)
 
