@@ -21,289 +21,10 @@
 
 - 복사하여 붙여 넣을 때 주의하십시오. 복사한 내용의 *이전*이나 *이후*에 **공백**을 넣게 되면 오류가 발생할 수 있습니다. 
 
-# 1. Offer REST API 마이크로 서비스 만들기
+# 1. QR 코드 생성기 마이크로 서비스 생성
 
-## 1.1 초기 Git 저장소 생성 - REST API 제공
 
-
-1. 아직 수행하지 않았다면 개발자 클라우드 서비스에 로그인하십시오. Cloud Dashboard에 있는 경우 개발자 클라우드 서비스 햄버거 메뉴를 사용하여 DevCS로 이동할 수 있습니다. 
-
-![](images/001.dashboard.png)
-
-
-2. 개발자 클라우드 서비스 방문 페이지에는 이전 Lab에서 생성 한 프로젝트가 표시되어야합니다. 프로젝트 이름을 클릭하고 프로젝트 기본 페이지로 이동하십시오. 
-
-![](images/001.landing.png)
-
-
-3. 이미 개발자 클라우드 서비스에 가입되어있는 경우 왼쪽 탐색 패널의 `Project`를 클릭하여 프로젝트 기본 페이지로 이동할 수 있습니다.
-
-![](images/002.createrepo.png)
-
-
-4. **REPOSITORIES**섹션의 오른쪽에서 **New Repository**를 클릭하여 새로운 Git 저장소를 만듭니다. 
-
-5. 새 저장소 마법사에서 다음 정보를 입력하고 **Create**을 클릭합니다. 
-
-	- **Name:** `OfferMicroservice`
-	- **Description:** `Microservice to provide REST API of Offer Details`
-	- **Initial content:** `Import existing repository`
-	- **Enter the URL:** `https://github.com/APACTestDrive/OfferMicroservice.git`
-
-
-```diff
-- 복사해서 붙여넣기를 할 때 불필요한 스페이스가 들어갈 수 도 있으니 주의하시기 바랍니다.
-```
-
-
-![](images/003.newrepo.png)
-
-
-6. 기존 저장소를 기반으로하는 개발자 클라우드 서비스 내에 저장된 새로운 Git 저장소를 만들었습니다 
-
-![](images/004.repo.png)
-
-
-## 1.2 기본 빌드 및 배포 프로세스 만들기 - REST API 제공
-
-개발자 클라우드 서비스에서 관리하는 Git Repository에 소스 코드가 있으므로 마스터 분기를 커밋 할 때마다 트리거되는 빌드 프로세스를 만들어야합니다. 이 섹션에서는 **shell script** 빌드 프로세스를 설정합니다. 
-
-### 1.2.1 기본 빌드 프로세스 만들기 - REST API 제공
-
-
-1. 탐색 패널에서 **Build**를 클릭하여 빌드 페이지에 액세스하고 **[+ New Job]** 을 클릭하십시오. 
-
-![](images/005.navibuild.png)
-
-
-2. New Job (새 작업) 팝업 창에서 Job Name에 대해 Offer REST API Build를 입력하고 **Save**를 클릭하십시오. 
-
-```diff
-- 복사해서 붙여넣기를 할 때 불필요한 스페이스가 들어갈 수 도 있으니 주의하시기 바랍니다.
-```
-
-
-![](images/006.newbuildjob.png)
-
-
-3. 이제 작업 구성 화면에 배치됩니다. 
-
-![](images/007.newjob.png)
-
-
-4. **Source Control**탭을 클릭하십시오.
-**Git** 라디오 버튼을 선택하십시오. 
-리포지토리 섹션의 URL 드롭 다운에서 **OfferMicroservice.git**를 선택하십시오. 
-
-![](images/008.srcctrl.png)
-
-
-**참고 :** Offer REST API Microservice의 Git 저장소를 선택해야합니다. 
-
-5. **Triggers**탭을 클릭하십시오. **Based on SCM polling schedule**를 클릭하십시오.
-
-![](images/009.trigger.png)
-
-
-6. **Build Steps**탭을 클릭하고**Add Build Step**를 클릭 한 다음 **Execute shell**을 선택합니다. 
-
-![](images/010.steps.png)
-
-
-7. Command 텍스트 영역에 다음을 입력하십시오 :`npm install` 
-
-![](images/011.npm.png)
-
-
-8. **Post Build**탭을 클릭하십시오. **Archive the artifacts**을 ​​선택하십시오. 아카이브 할 파일에`**/target/*`을 입력하고 압축 유형으로 **GZIP**가 선택되어 있는지 확인하십시오. 
-
-![](images/012.post.png)
-
-
-9. **Save**을 클릭하여 구성을 완료하십시오. 
-
-![](images/013.save.png)
-
-
-10. 빌드는 1-2 분 내에 자동으로 시작됩니다. 자동으로 시작되지 않으면 **[Build Now]**버튼을 클릭하십시오. 
-
-![](images/014.buildnow.png)
-
-
-11. 상태는 다음 다이어그램과 유사하게 바뀝니다. 
-
-![](images/015.queue.png)
-
-
-빌드 작업을 시작하려면 몇 분 정도 기다려야합니다. 
-
-![](images/016.running.png)
-
-
-12. 빌드가 완료 될 때까지 몇 분이 소요됩니다. 다음 단계로 진행하기 전에 빌드가 완료 될 때까지 기다리십시오 - **배포 구성을 생성하기 위해 빌드 아티팩트가 필요하므로**. 
-
-![](images/017.complete.png)
-
-
-### 1.2.2 기본 배포 프로세스 만들기 - REST API 제공
-
-
-1. **Deploy**를 클릭하여 배포 페이지에 액세스하고 **[+ New Configuration]** 버튼을 클릭하십시오. 
-
-![](images/018.navideploy.png)
-
-
-2. 다음 데이터를 입력하십시오. 
-
-	- **Configuration Name:** OfferAPIDeploy
-	- **Application Name:** offer
-
-
-```diff
-- 복사해서 붙여넣기를 할 때 불필요한 스페이스가 들어갈 수 도 있으니 주의하시기 바랍니다.
-```
-
-
-![](images/019.deployname.png)
-
-
-3. **Deployment Target**의 오른쪽 옆에 있는 **[New]** 버튼을 클릭하고 **Application Container Cloud ...를 선택하십시오.**
-
-![](images/020.deployaccs.png)
-
-
-4. 다음 정보를 입력하고 **Test Connection**를 클릭하십시오. 
-
-	- **Data Center:** `your datacenter, e.g. em2, em3, etc`
-	- **Identity Domain:** `your identity domain`, e.g. gse00012345, etc
-	- **Username:** `username to login to MyService`, e.g. lisa.jones, etc - that is the username you are using.
-	- **Password:** `password of the cloud user`, that is the password you are using
-
-
-![](images/021.accsconn.png)
-
-
-5. 성공하면 **[Use Connection]** 버튼을 클릭하십시오. 
-
-![](images/022.useconn.png)
-
-
-6. ACCS 속성에서 다음을 설정합니다. 
-
-	- **Runtime** to `Node`
-	- **Subscription** to `Hourly`
-	- **Type**에서 `Automatic`으로 설정하고 Deploy stable build only **체크**
-
-
-**런타임이 Node 인지 다시 한번 확인**
-
-![](images/023.deploynodejs.png)
-
-
-7. **Job**에서 선택하십시오.이 이름은 위의 빌드 작업과 일치해야합니다 (예 :`Offer REST API Build`). 
-
-8. **Artifact**에서 선택하십시오.이 이름은 위의 아카이브 아티펙트와 소스 코드의 package.json과 일치해야합니다 (예 :`target/offer.zip`). 
-
-![](images/024.deployjobname.png)
-
-
-9. **Include ACCS Deployment**상자를 체크하고 다음 json을 추가하십시오. 
-
-```json
-{
-	"memory":"1G",
-	"instances":"1",
-	"services": [
-	{
-	  "identifier": "DBService",
-	  "type": "DBAAS",
-	  "name": "apacctddb",
-	  "username": "loyalty",
-	  "password": "Welcome_1"
-	}
-	]
-}
-```
-
-![](images/024.json.png)
-
-10. 위의 사항을 확인하고 **Save** 버튼을 클릭합니다.
-
-![](images/025.deploysave.png)
-
-11. 기어 마크가 있는 아이콘을 클릭한 다음 **Start** 를 누릅니다.
-
-![](images/026.deploystart.png)
-
-12. 배포하는 작업이 큐에 들어갈 것입니다. 조금 기다리면 **Starting application** 메시지가 **Last deployment succeeded**로 바뀔 것입니다. 만약 배포작업이 실패하면 도움을 요청하십시오.
-
-![](images/027.deploysuccess.png)
-
-## 1.3 Login to Oracle Application Container Cloud Service
-
-1. 클라우드의 MyService로 다시 돌아가기 위해 **Dashboard** 를 눌러 대쉬보드로 돌아가십시오..
-
-![](images/028.dashboard.png)
-
-2. Application Container Cloud Service (ACCS) 의 햄버거 버튼을 누르고 **Open Service Console** 를 선택하십시오.
-
-![](images/029.accsgoto.png)
-
-3. ACCS Service Console 이 보여질 것입니다. 그리고 **Offer** 라는 새로운 애플리케이션이 배포된 것을 볼 수 있습니다.
-
-![](images/030.accsconsole.png)
-
-## 1.4 CHECK ACCS Service Binding to DBCS
-
-1. **[ Offer ]** 를 눌러 세부사항을 보십시오.
-
-![](images/031.accsoffer.png)
-
-2. 두번째 탭, **Deployments**
-
-![](images/032.bindings.png)
-
-3. **Service Bindings** 섹션에서, 데이터베이스에 바인딩 된 것을 볼 수 있습니다.. **여기선 아무것도 하지 않아도 됩니다.**
-
-![](images/033.addbinding.png)
-
-
-## 1.5 Verify the Working Service
-
-1. 애플리케이션 패널에서 애플리케이션에 대한 URL을 볼 수 있습니다. 예를들면 https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com
-
-![](images/037.url.png)
-
-2. 브라우저에서 새로운 탭을 연 다음 위의 주소를 복사하고 붙여넣기 identiy-domain을 부여받은 것으로 채웁니다.
-
-   **offer id** 를 사용하여 QR코드를 성해야 합니다.
-
-  최종 URL을 다음과 같이 되어야 합니다.
-
-https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ptmgt/v1/offers/10001
-
-![](images/038.browser.png)
-
-```diff
-+ 이 부분을 카피하여 자신의 URL로 채워넣으면 됩니다.
-+   https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ptmgt/v1/offers/
-+   https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/
-+ 노트패드에 기록하십시오.
-+ 나중에 사용 될 것입니다., e.g. Lab 401.
-```
-
-
-3. Microservice에서 제공하는 세부 정보를 얻을 수 있어야합니다. 
-
-![](images/039.result.png)
-
-
-4. 축하합니다. 첫번째 마이크로 서비스가 완성되었습니다. 지금까지 하신 Part 1과 매우 유사한 QR 코드 마이크로 서비스 Lab으로 이동합시다. 
-
-# 2. QR 코드 생성기 마이크로 서비스 생성
-
-
-## 2.1 초기 Git 저장소 생성 - QR 코드 생성기
+## 1.1 초기 Git 저장소 생성 - QR 코드 생성기
 
 
 1. 아직 수행하지 않았다면 개발자 클라우드 서비스에 로그인하십시오. 
@@ -337,10 +58,10 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/104.repocreated.png)
 
 
-## 2.2 자신의 환경을 반영하도록 샘플 프로그램 코드 수정
+## 1.2 자신의 환경을 반영하도록 샘플 프로그램 코드 수정
 
 
-### 2.2.1 Bracket Text Editor에 프로젝트 복제
+### 1.2.1 Bracket Text Editor에 프로젝트 복제
 
 
 본 Lab에서는 여러분이 Public 인터넷에 직접 연결되어 있다고 가정합니다 (예 : **프록시 사용 불가**). 
@@ -402,7 +123,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/120.cloned.png)
 
 
-### 2.2.2 환경에 맞게 소스 코드 편집
+### 1.2.2 환경에 맞게 소스 코드 편집
 
 
 1. Brackets로 server.js 파일을 엽니다 (더블 클릭). 
@@ -410,7 +131,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/121.openjs.png)
 
 
-2. 12 행에서 ID 도메인으로 URL을 변경하십시오. 예를 들어, **1.5 절**에서 사용한 내용을 변경하십시오. 보시다시피, **제공되는 REST API 마이크로 서비스**의 URL입니다. 
+2. 12 행에서 URL을 Java Lab에서 사용한 IP로 변경하십시오. 예를 들어 **http://<Lab #1 JavaApp Lab에서 사용한 Ip 주소>/ptmgt/v1/offer/** 입니다. 이 주소는 **Offer용 REST API 마이크로 서비스**의 URL입니다. 
 
 ![](images/122.line12.png)
 
@@ -420,7 +141,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/123.save.png)
 
 
-### 2.2.3 새 분기 만들기 및 커밋
+### 1.2.3 새 분기 만들기 및 커밋
 
 
 1. 왼쪽 탐색 패널에서 **master**를 선택하고 **Create new branch...** 를 클릭하십시오.
@@ -468,7 +189,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/132.newbranch.png)
 
 
-### 2.2.4 개발자 클라우드 서비스에서 병합 요청을 작성하여 코드 이해하기
+### 1.2.4 개발자 클라우드 서비스에서 병합 요청을 작성하여 코드 이해하기
 
 
 1. 개발자 클라우드 서비스에서 **코드**탭을 클릭하십시오. QRCodeMicroservice Repo가 보이지 않으면 QRCode Repo로 변경하십시오. 
@@ -520,7 +241,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 
 9. 이제 병합 요청이 생성되었습니다. 우리는 다음 섹션에서 요청을 승인 할 것입니다. 
 
-### 2.2.5 Branch 합병
+### 1.2.5 Branch 합병
 
 
 1. **Merge Request**을 클릭하십시오. 방금 생성 한 요청을 선택하면 요청을 검토 할 수 있습니다. 
@@ -558,12 +279,12 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/157.merged.png)
 
 
-## 2.3 기본 빌드 및 배포 프로세스 만들기 - QR 코드 생성기
+## 1.3 기본 빌드 및 배포 프로세스 만들기 - QR 코드 생성기
 
 
 개발자 클라우드 서비스에서 관리하는 Git Repository에 소스 코드가 있으므로 마스터 분기를 커밋 할 때마다 트리거되는 빌드 프로세스를 만들어야 합니다. 이 섹션에서는 **쉘 스크립트**빌드 프로세스를 설정합니다. 
 
-### 2.3.1 기본 빌드 프로세스 생성 - QR 코드 생성기
+### 1.3.1 기본 빌드 프로세스 생성 - QR 코드 생성기
 
 
 1. 탐색 패널에서 **Build**를 클릭하여 빌드 페이지에 액세스하십시오. 
@@ -644,7 +365,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 ![](images/174.buildsuccess.png)
 
 
-### 2.3.2 기본 배포 프로세스 만들기 - QR 코드 생성기
+### 1.3.2 기본 배포 프로세스 만들기 - QR 코드 생성기
 
 
 1. **Deploy**를 클릭하여 배포 페이지에 액세스합니다. 
@@ -726,7 +447,7 @@ https://offer-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/pt
 
 ![](images/191.deployed.png)
 
-## 2.4 Login to Oracle Application Container Cloud Service
+## 1.4 Login to Oracle Application Container Cloud Service
 
 1. Oracle Public Cloud 탭의  **Dashboard**을 눌러서 클라우드 데시보드로 갑니다.
 
