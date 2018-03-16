@@ -65,7 +65,7 @@
 ![](../common/images/mobile/401-Import_Package_File_Validated.png)
 
 
-7. `confirm` 단계에서 패키지 내용이 표시 됩니다. 패키지에는 모바일 백엔드 `LoyaltyMgmt_MBE0X`, 클라이언트 `MyAndroidClient0X`, API `LoyaltyMgmt0X`, API 구현체 `LoyaltyMgmt03`와 세개의 커넥터 `GenerateQRCode0X`, `ProcessOffer0X`, `QueryOffers03`가 포함되어야 합니다. 가져올 각 개체에서 접미사가 올바른지 확인하십시오. `다음`을 클릭하십시오. 
+7. `confirm` 단계에서 패키지 내용이 표시 됩니다. 패키지에는 모바일 백엔드 `LoyaltyMgmt_MBE0X`, 클라이언트 `MyAndroidClient0X`, API `LoyaltyMgmt0X`, API 구현체 `LoyaltyMgmt0X`와 세개의 커넥터 `GenerateQRCode0X`, `ProcessOffer0X`, `QueryOffers0X`가 포함되어야 합니다. 가져올 각 개체에서 접미사가 올바른지 확인하십시오. `다음`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Confirm.png)
 
 
@@ -73,7 +73,7 @@
 ![](../common/images/mobile/401-Import_Package_Results.png)
 
 
-9. `Policies`단계에서 `*.connector/GenerateQRCode0X (1.0).Connector_Endpoint`정책을 선택하고 `Edit`을 클릭하십시오. 
+9. `Policies`단계에서 `*.connector/GenerateQRCode0X (1.0).Connector_Endpoint`정책을 선택하고 `편집(Edit)`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_GenerateQRCode_Endpoint.png)
 
 
