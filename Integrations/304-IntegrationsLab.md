@@ -28,6 +28,7 @@
 2. Postman에서 다음 정보를 입력합니다.
     - HTTP 메소드 드롭 다운 목록에서 **POST**를 선택하십시오.
     - **요청 URL 입력**텍스트 상자에 URL을 입력하십시오.
+    
 `https://<OIC Instance Name>-<Your OIC Identity Domain>.<Your OIC Datacenter Location>.oraclecloud.com/ic/api/integration/v1/flows/rest/<Your Integration Service Name>/1.0/processoffer`
     - **Authorization** 탭 : 드롭 다운 목록에서 기본 인증을 선택하고 ICS 사용자 이름과 비밀번호를 각각 입력하십시오.
 ![](images/304/00.postman.basic.png)
