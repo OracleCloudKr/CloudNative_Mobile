@@ -103,8 +103,8 @@
 
 
 
-#### 'ICS에서 `Process Offer`서비스에 액세스하기위한 자격 증명 구성 
-ICS에 배포 된 `Process Offer`서비스는 `Integrations`Lab에서 `Basic Authentication`을 사용하도록 구성됩니다. `Process Offer`서비스와 통합하려면 OMCe의 커넥터가 ICS의 `Process Offer`에 액세스 할 수 있도록 OMCe의 ICS 자격 증명을 구성해야합니다. 
+#### 'OIC에서 `Process Offer`서비스에 액세스하기위한 자격 증명 구성 
+OIC에 배포 된 `Process Offer`서비스는 `Integrations`Lab에서 `Basic Authentication`을 사용하도록 구성됩니다. `Process Offer`서비스와 통합하려면 OMCe의 커넥터가 OIC의 `Process Offer`에 액세스 할 수 있도록 OMCe의 ICS 자격 증명을 구성해야합니다. 
 
 1. 탐색 창에서 &quot;관리&quot;를 클릭하여 &quot;관리&quot;페이지를 엽니 다. 아래로 스크롤하여 &quot;키 및 인증서&quot;를 클릭하여 &quot;CSF 키 및 인증서&quot;상자를 엽니 다. 
 ![](../common/images/mobile/401-CSF_Navigate_To_CSF.png)
@@ -134,7 +134,7 @@ ICS에 배포 된 `Process Offer`서비스는 `Integrations`Lab에서 `Basic Aut
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_General.png)
 
 
-3. `Descriptor`단계에서 `Remote URL`이 ICS의 `Process Offer`서비스의 전체 서비스 URL로 설정되어 있는지 확인하십시오 (예 : `https://integration-<ICS_DOMAIN_NAME>.integration.us2.oraclecloud.com/integration/flowapi/rest/C0X_ICS_INTMGT/v01/processoffer`를 참조하십시오. `다음`을 클릭하십시오. 
+3. `Descriptor`단계에서 `Remote URL`이 ICS의 `Process Offer`서비스의 전체 서비스 URL로 설정되어 있는지 확인하십시오 (예 : `https://<OIC_INSTANCE_NAME>-<OIC_DOMAIN_NAME>.<DATACENTER_LOCATION>.oraclecloud.com/ic/api/integration/v1/flows/rest/CXX_ICS_INTMGT/1.0/processoffer` 를 참조하십시오. `다음`을 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Descriptor.png)
 
 
