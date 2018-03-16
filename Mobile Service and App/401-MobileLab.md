@@ -69,7 +69,7 @@
 ![](../common/images/mobile/401-Import_Package_Confirm.png)
 
 
-8. `Import Results`단계에서 이미 존재하는 사용자 영역 `Default`을 제외한 모든 객체가 성공적으로 가져 오기되었는지 확인하십시오. `Next`을 클릭하십시오. 
+8. `Import Results`단계에서 이미 존재하는 사용자 영역 `Default`을 제외한 모든 객체가 성공적으로 가져 오기가 되었는지 확인하십시오. `Next`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Results.png)
 
 
@@ -77,7 +77,7 @@
 ![](../common/images/mobile/401-Import_Package_Select_GenerateQRCode_Endpoint.png)
 
 
-10. ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://qrcodegenerator-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com` `Save`을 클릭하십시오. 
+10. Tab키를 눌러 TextEdit 박스로 Focus를 이동한 후, ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://qrcodegenerator-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com` `Save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_GenerateQRCode_Endpoint.png)
 
 
@@ -85,15 +85,16 @@
 ![](../common/images/mobile/401-Import_Package_Select_QueryOffers_Endpoint.png)
 
 
-12. ACCS에 배포 된 오퍼 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://offer-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com`. `Save`을 클릭하십시오. 
+12. Tab키를 눌러 TextEdit 박스로 Focus를 이동한 후, JCS에 deploy된 offer 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://<IP Address of LoyaltyMgmt in #1 JavaApp Lab>`. `Save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_QueryOffers_Endpoint.png)
 
 
 13. `Policies`단계로 돌아가서 `*.connector/ProcessOffer0X (1.0).Connector_Endpoint`정책을 선택하고 `편집`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_ProcessOffer_Endpoint.png)
 
-
-14. ICS에 배포 된 `Process Offer`서비스의 전체 서비스 URL로 사용자 정의 값을 설정하십시오 (예 :`https://integration-<ICS_DOMAIN_NAME>.integration.<DATACENTER>.oraclecloud.com/integration/flowapi/rest/C0X_ICS_INTMGT/v01/processofferr`를 참조하십시오. `save`을 클릭하십시오. 
+14. OIC에 배포 된 `Process Offer`서비스의 전체 서비스 URL로 사용자 정의 값을 설정하십시오 (예 
+`https://<OIC_INSTANCE_NAME>-<OIC_DOMAIN_NAME>.<DATACENTER_LOCATION>.oraclecloud.com/ic/api/integration/v1/flows/rest/CXX_ICS_INTMGT/1.0/processoffer`
+ `save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_ProcessOffer_Endpoint.png)
 
 
