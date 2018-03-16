@@ -4,7 +4,8 @@
 
 
 ### 소개 ###
-이 핸즈온 랩은 APAC 클라우드 테스트 드라이브의 일부로 SaaS CRM 응용 프로그램을 빠르게 연결하고 통합하는 세 번째 실습입니다. 이번 실습을 통해 Oracle Integration Cloud Service(ICS)의 웹 기반 콘솔을 사용하여 애플리케이션을 통합하는 방법에 대해 알아봅니다.
+이 랩은 APAC 클라우드 테스트 드라이브의 일부로 CRM 응용 프로그램을 빠르게 연결하고 통합하는 세 번째 Lab입니다.
+이 섹션에서는 웹 기반 대시 보드를 사용하여 Oracle Integration Cloud Service를 통한 애플리케이션 통합에 대해 설명합니다.
 
 
 ![](images/ics.scope.png)
@@ -17,7 +18,7 @@
 + CRM 시스템 및 필수 서비스 엔드 포인트를 연결하고 사용할 준비가 되었습니다.
 + QR 코드 서비스는 두 번째 실습 후에 응용 프로그램 컨테이너 클라우드 서비스에서 준비됩니다.
 
-**Oracle Integration Cloud Service (ICS)** 는 클라우드에서 응용 프로그램을 연결할 수 있는 완벽하고 안전하면서도 가벼운 통합 솔루션입니다. 응용 프로그램 간의 연결을 단순화하고 클라우드에 있는 응용 프로그램(SaaS)과 여전히 On-Premise에 있는 응용 프로그램을 모두 연결합니다. Oracle Integration Cloud Service는 연결하는 응용 프로그램 또는 해당 응용 프로그램이 상주하는 위치에 관계없이 안전한 엔터프라이즈 급 연결성을 제공합니다.
+**Oracle Integration Cloud Service (OIC)** 는 클라우드에서 응용 프로그램을 연결할 수 있는 완벽하고 안전하면서도 가벼운 통합 솔루션입니다. 응용 프로그램 간의 연결을 단순화하고 클라우드에 있는 응용 프로그램(SaaS)과 여전히 On-Premise에 있는 응용 프로그램을 모두 연결합니다. Oracle Integration Cloud Service는 연결하는 응용 프로그램 또는 해당 응용 프로그램이 상주하는 위치에 관계없이 안전한 엔터프라이즈 급 연결성을 제공합니다.
 
 ![](images/00.ics.png)
 
@@ -26,13 +27,13 @@ Oracle Integration Cloud Service는 Oracle Sales Cloud, Oracle RightNow Cloud �
 응용 프로그램에 대한 통합을 완료하여, 활성화하면 대시 보드는 실행 중인 Integration에 대한 정보를 표시하여, 각 Integration에 대한 상태 및 처리 통계를 모니터 할 수 있습니다. 대시 보드는 주요 정보를 수집 및 보고하여 거래 실적에 성능을 측정하고 추적할 수 있습니다. 거래를 추적하기 위해 메시지 상의 주요 비즈니스 식별자를 관리하거나, 활성화된 Integration, 사용 중인 Connection 또는 특정 거래에 대한 오류를 관리 할 수 ​​있습니다.
 Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다.
 
-1. **Connect**
+1. **Connect (연결관리)**
     - 함께 구매한 SaaS와 자동 연결
     - Native SaaS Adapters
     - Secure On-Premises Integration
     - Open Adapter SDK
 
-2. **디자인**
+2. **Design (설계)**
     - 직관적인 비주얼 디자이너 및 모바일 지원 - 풍부한 포인트 앤 클릭 브라우저 기반 디자이너로 컴퓨터 또는 원하는 태블릿에서 어디에서나 통합을 구축 가능
     - Oracle Recommended ™ - Smart Data Mapper는 Oracle Recommends ™를 사용하여 정확한 추천 매핑 항목을 제공합니다.
     - 비즈니스 사용자 친화적 - 사용하기 쉬운 비디오 및 튜토리얼와 결합 된 비즈니스 친화적 용어
@@ -44,7 +45,7 @@ Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다.
     - 강력한 오류 관리 - 오류를 신속하게 감지하고 진단합니다.
 
 4. **가속화**
-    - 사전 구축 된 통합(Pre_built Integrations) - 즉시 사용 가능하며, 비즈니스 요구 사항에 따라 커스터마이징이 가능한 통합 포트폴리오
+    - 미리 내장된 통합기능(Pre_built Integrations) - 즉시 사용 가능하며, 비즈니스 요구 사항에 따라 커스터마이징이 가능한 통합 포트폴리오
     - Cloud Marketplace - Oracle 및 Oracle 파트너가 게시한 사전 구축된 어댑터 및 통합
 
 ### 이 튜토리얼에서는 다음을 수행하는 방법을 보여줍니다. ###
@@ -67,11 +68,11 @@ Oracle Integration Cloud Service의 주요 기능은 다음과 같습니다.
 
 [Click Here.](302-IntegrationsLab.md)
 
-## 303 : 조정(Orchestration) 패턴을 이용하여 통합하기 ##
+## 303 : Integration 완료하기 - 통합 플로우 Orchestration(조합) ##
 
 [Click Here.](303-IntegrationsLab.md)
 
-## 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링 ##
+## 304 : 서비스 테스트 및 OIC 대시 보드로 모니터링 ##
 
 [Click Here.](304-IntegrationsLab.md)
 

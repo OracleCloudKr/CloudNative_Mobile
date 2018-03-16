@@ -1,21 +1,21 @@
 # 오라클 클라우드 테스트 드라이브 #
 -----
-## 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링 ##
+## 304 : 서비스 테스트 및 OIC 대시 보드로 모니터링 ##
 
 
 ### 소개 ###
 이번 실습에서는 다음 작업을 수행해 보는 과정입니다.
-- ICS (통합 클라우드 서비스)가 제공하는 서비스 사용하기 및 모니터링
+- OIC (통합 클라우드 서비스)가 제공하는 서비스 사용하기 및 모니터링
 
 ### 본 실습은... ###
 이번 실습에서는 다음을 수행합니다.
 - 이전 실습에서 생성한 조정(Orchestration) 서비스를 REST 서비스로 호출 테스트
-- 테스트 결과를 ICS 모니터링에서 확인합니다.
+- 테스트 결과를 OIC 모니터링에서 확인합니다.
 
 ### 준비사항 ###
 
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사와 확인)
-- 이미 구성된 ICS의 SOAP 및 REST 연결
+- 이미 구성된 OIC의 SOAP 및 REST 연결
 - 이전 실습에서 완료한 조정(Orchestration)
 
 
@@ -27,9 +27,9 @@
 
 2. Postman에서 다음 정보를 입력합니다.
     - HTTP 메소드 드롭 다운 목록에서 **POST**를 선택하십시오.
-    - **요청 URL 입력**텍스트 상자에 URL을 입력하십시오.
+    - **요청 URL 입력** : 이전 Lab에서 복사한 URL을 텍스트 상자에 입력하십시오.
 `https://<OIC Instance Name>-<Your OIC Identity Domain>.<Your OIC Datacenter Location>.oraclecloud.com/ic/api/integration/v1/flows/rest/<Your Integration Service Name>/1.0/processoffer`
-    - **Authorization** 탭 : 드롭 다운 목록에서 기본 인증을 선택하고 ICS 사용자 이름과 비밀번호를 각각 입력하십시오.
+    - **Authorization** 탭 : 드롭 다운 목록에서 기본 인증을 선택하고 OIC 사용자 이름과 비밀번호를 각각 입력하십시오.
 ![](images/304/00.postman.basic.png)
 
 3. **헤더** 탭으로 이동하십시오. **Key**아래에 `Content-Type`을 입력하고 **Value** 아래에는`application/json`을 입력하십시오.
@@ -40,7 +40,7 @@
 4. **Body** 탭: body 형식으로 raw, JSON (application/json)을 유형으로 선택하고 본문 텍스트를 다음 중 하나로 입력하십시오 :
     - Test 1: `{"customerid": 30001, "offerid": 10001, "productid": 20001, "accepted": true}`
     - Test 2: `{"customerid": 30002, "offerid": 10002, "productid": 20002, "accepted": false}`
-    - (\*주의 : 위의 테스트는 실제 데이터를 사용하지 않고 단지 ICS에서 API의 가용성을 테스트하는 것을 목표로합니다)
+    - (\*주의 : 위의 테스트는 실제 데이터를 사용하지 않고 단지 OIC에서 API의 가용성을 테스트하는 것을 목표로합니다)
 
 ![](images/304/00.postman.body.png)
 
@@ -50,17 +50,17 @@
 ![](images/304/00.postman.response.png)
 
 
-6. ICS로 돌아가서 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭 한 다음 `모니터링`을 클릭하십시오.
+6. OIC로 돌아가서 왼쪽 상단에있는 햄버거 메뉴 아이콘을 클릭 한 다음 `모니터링`을 클릭하십시오.
 
 ![](images/304/03.monitoring.home.png)
 
 
-7. 기본적으로 ICS 모니터링 **대시 보드**가 표시됩니다. 대시 보드는 통합 모니터링에 중요한 ICS 트래픽 상태 / 연결, 통합, 성공, 실패 및 기타 정보를 요약합니다.
+7. 기본적으로 OIC 모니터링 **대시 보드**가 표시됩니다. 대시 보드는 통합 모니터링에 중요한 OIC 트래픽 상태 / 연결, 통합, 성공, 실패 및 기타 정보를 요약합니다.
 
 ![](images/304/04.monitoring.dashboard.png)
 
 
-8. `MONITORING` 아래에서 `Integrations`를 클릭하면, 이전에 실행된 최근 테스트 메시지를 볼 수 있습니다. 이제 오른쪽에 있는 `메시지 보기(View Messages)` 아이콘을 클릭하십시오.
+8. `MONITORING` 아래에서 `통합(Integrations)`을 클릭하면, 이전에 실행된 최근 테스트 메시지를 볼 수 있습니다. 이제 오른쪽에 있는 `메시지 보기(View Messages)` 아이콘을 클릭하십시오.
 
 ![](images/304/05.monitoring.integration.png)
 
