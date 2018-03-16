@@ -75,12 +75,12 @@
 ![](images/302/07.connection_initial.png)
 
 
-5. 아래로 스크롤하여 **연결 속성** 섹션을 열고 `연결 구성(Configure Connectivity)`버튼을 클릭하십시오.
+5. 아래로 스크롤하여 **접속 속성** 섹션을 열고 `접속 구성(Configure Connectivity)`버튼을 클릭하십시오.
 
 ![](images/302/05.connection_import2.png)
 
 
-6. **연결 등록 정보** 대화 상자 창이 표시됩니다.**WSDL URL**에 **Property Value**를 다음 형식으로 제공하여 채웁니다.
+6. **접속 속성** 대화 상자 창이 표시됩니다.**WSDL URL**에 **Property Value**를 다음 형식으로 제공하여 채웁니다.
 	+ WSDL URL: **http://\<Your Java Cloud Service Instance IP Address\>/crm/CustomerServicePort?WSDL**
 	+ 나머지 항목들은 빈 칸 그대로 둡니다.
 
@@ -88,7 +88,7 @@
 
 7. 다른 속성 설정은 변경하지 마십시오. 변경 사항을 저장하려면 `확인`버튼을 클릭하십시오. 대상 서비스가 보안을 요구하지 않기 때문에 `보안 정책: No Security Policy`을 선택됩니다.
 
-8. **SOAP Connection** 페이지의 맨 위에서 오른쪽 상단의 `테스트`를 클릭하면 테스트 **확인** 대화 상자 창이 표시됩니다. `Validate and Test`을 클릭합니다.
+8. **SOAP Connection** 페이지의 맨 위에서 오른쪽 상단의 `테스트`를 클릭하면 테스트 **확인** 대화 상자 창이 표시됩니다. `검증 및 테스트(Validate and Test)`을 클릭합니다.
 
 ![](images/302/10.connection_test.png)
 
