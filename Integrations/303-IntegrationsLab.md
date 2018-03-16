@@ -119,6 +119,9 @@
 21. 이 페이지는 endpoint에 대한 설명 페이지로서 Endpoint URL을 여기에서 확인할 수 있습니다. 다음 Lab에서 사용할 주소이므로 가장 위에 나오는 Endoint URL 주소를 복사해 놓으시기 바랍니다.
 ![](images/303/46.endpoint.description.png)
 
+Endpoint URL
+- https://xxxxxxxx.uscom-central-1.oraclecloud.com:443/ic/api/integration/v1/flows/rest/xxxxxxxxxx/1.0/processoffer
+
 22. 이제 통합 서비스가 테스트 준비가 되었습니다.
 
 [Proceed to Next - 304 : 서비스 테스트 및 OIC 대시 보드로 모니터링](304-IntegrationsLab.md)
