@@ -1,6 +1,6 @@
 # 오라클 클라우드 테스트 드라이브 #
 -----
-## 303 : 통합 완료하기 - Orchestration Integration Flow##
+## 303 : 통합 완료하기 - Orchestration Integration Flow
 
 
 ### 소개 ###
