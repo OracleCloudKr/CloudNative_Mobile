@@ -20,41 +20,39 @@
 
 ### Oracle Integration Cloud Service 탐색 ###
 
-1. Sign in to Cloud from [https://cloud.oracle.com/sign-in](https://cloud.oracle.com/sign-in), first select your datacenter then provide the identity domain and credential of **Integration Cloud \(OIC\)**.  
+1. [https://cloud.oracle.com/sign-in](https://cloud.oracle.com/sign-in)에 로그인을 하고, 데이터 센터를 선택하고, identity domain을 입력한후 비밀번호를 입력합니다.
 
-**Alternatively  you can access thru the Access Document - Integrations Lab section provided by instructor.**  
-
-After a successful login you will see your Dashboard. Find the **Integration Cloud** services tile and click the hamburger icon. In the dropdown menu click `Open Service Console`.
+성공적으로 로그인을 한 후에 서비스 제목에서 **Integration Cloud** 를 찾은 후 옆에 있는 햄버거 아이콘을 클릭합니다. 드랍다운 메뉴중에 `Open Service Console`를 선택합니다.
 
 ![](images/301/01.dashboard.png)
 
-2. If you cannot find the **Integration Cloud** service tile, click `Customize Dashboard` button at top right corner of browser, and then click `Show` button at the integration section of the **Customize Dashboard** dialog window.
+2. **Integration Cloud** 가 보이지 않는다면, 브라우저의 오른쪽 코너에 있는 `Customize Dashboard` 버튼을 클릭하면 나타나는  **Customize Dashboard** 다이얼로그 화면에서 Integration 부분에 `Show`를 선택하시면 됩니다.
 
 ![](images/301/02.dashboard.png)
 
-3. From the Integration Cloud dashboard, click on the hamburger icon on the right of OIC instance listed, then select `Open Integration Cloud Home Page`.
+3. Integration Cloud 대쉬보드 화면이 보이면, hamburger icon을 클릭한 후 `Open Integration Cloud Home Page`을 선택합니다.
 
 ![](images/301/02.oic.png)
 
-3. On Service Console opened, the OIC home page is displayed as following:
+3. 서비스 콘솔이 열리면 OIC home page 가 아래와 같이 보이게 됩니다.
 
 ![](images/301/03.home.png)
 
-4. Click `Integrations` from the left pane to enter the main Integrations page
+4. 메인 화면의 왼쪽에 있는 `Integrations` 을 클릭합니다.
 
-  \*Close the **Guide Me** Quick Tour if running by click `Got it!` button at the bottom, we don't need it during the lab exercise.
+  \*화면 아래에 있는 `Got it!`를 클릭하여 **Guide Me** Quick Tour 를 없앱니다. 랩도중에는 필요가 없습니다.
 
 ![](images/301/04.ics_overlays.png)
 
-5. The home page provides links to the primary development features of Oracle Integration Cloud Service: Integrations, Connections, Lookups, Packages, Agents, Adapters and Libraries.
+5. 이 페이지에서는 Oracle Integration Cloud Service: Integrations, Connections, Lookups, Packages, Agents, Adapters and Libraries 를 사용할 수 있는 Link를 제공합니다.
 
 ![](images/301/05.ics_designer_portal.png)
 
-6. Using the Navigation Pane, click ![](images/301/06.main_hamburger.png) in the upper left corner to show the navigation pane.
+6. 네비게이션 판넬을 사용하기 위해, 왼쪽 위에 있는 ![](images/301/06.main_hamburger.png)를 클릭하세요.
 
 ![](images/301/07.navigation_pane.png)
 
-The navigation pane provides you with access to all the development features in the Oracle Integration Cloud.
+Navigation 판넬 은 Oracle Integration Cloud의 모든 개발기능에 접근 가능하게 해줍니다.
 
 
 
