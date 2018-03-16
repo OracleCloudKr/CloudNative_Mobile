@@ -381,7 +381,7 @@
 3. 다음 데이터를 입력하십시오. 
 
   - **Configuration Name:** QRCodeGeneratorDeploy
-  - **Application Name:** qrcodegenerator 
+  - **Application Name:** qrcodegenerator**번호** (번호는 강사로부터 부여받은 번호를 입력합니다.) 
 
 ![](images/183.createdeploy.png)
 
