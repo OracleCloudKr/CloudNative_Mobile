@@ -9,7 +9,7 @@
 ![](../common/images/mobile/402-Connectors_Overview.png)
 
 
-커넥터를 사용하면 백엔드 시스템 (예 : 엔터프라이즈 미들웨어) 및 웹 서비스에 대한 액세스 단순화 및 표준화한 API를 작성할 수 있습니다. Oracle MCS는 다양한 유형의 커넥터를 제공하여 REST 커넥터, SOAP 커넥터, ICS (Oracle Integration Cloud Service) 커넥터 및 Oracle Fusion Application 커넥터를 비롯한 여러 유형의 백엔드 시스템과의 통합을 단순화합니다. 이 실습에서는 REST 커넥터를 사용하여 마이크로 서비스와 integration labs에서 생성 한 세 가지의 REST service와 통합합니다. 
+커넥터를 사용하면 백엔드 시스템 (예 : 엔터프라이즈 미들웨어) 및 웹 서비스에 대한 액세스 단순화 및 표준화한 API를 작성할 수 있습니다. Oracle OMCe는 다양한 유형의 커넥터를 제공하여 REST 커넥터, SOAP 커넥터, ICS (Oracle Integration Cloud Service) 커넥터 및 Oracle Fusion Application 커넥터를 비롯한 여러 유형의 백엔드 시스템과의 통합을 단순화합니다. 이 실습에서는 REST 커넥터를 사용하여 마이크로 서비스와 integration labs에서 생성 한 세 가지의 REST service와 통합합니다. 
 
 일단 커넥터가 생성되면 Custom API (예 : 나중에 작성할 Loyalty Mgmt APi)에서 사용할 수 있으며 모바일 응용 프로그램에서 사용할 수 있습니다. 
 
@@ -30,17 +30,30 @@
 
 #### MBE 패키지 가져 오기 
 
-1. 액세스 문서의 **모바일 클라우드 서비스 \ (MCS \)** ID 도메인 ID 및 자격 증명을 사용하여 모바일 클라우드 서비스에 로그인합니다.**관리자**를 사용하여 모바일 클라우드 서비스에 로그인하고 **모바일 사용자**를 사용하여 Cafe Supremo 모바일 앱에 로그인해야합니다. 
+또는 강사가 제공 한 액세스 문서에서 제공되는 모바일 클라우드 URL에 액세스하여 1-6 단계를 무시할 수 있습니다
 
-2. 대시 보드 화면에서 &quot;Mobile Environment Service&quot;를 클릭하십시오. 
+액세스 문서에 제공된 ID 클라우드 서비스 도메인 ID 및 자격증 명 클라우드 계정을 사용하여 모바일 클라우드에 로그인합니다.
+
+
+1. 액세스 문서에 제공된 **Cloud Account with Identity Cloud Service** 도메인 ID 및 자격증 명 클라우드 계정을 사용하여 모바일 클라우드에 로그인합니다.
+
+2. 대시 보드 화면에서 **Mobile** 타이틀 아래의 &quot;Open Service Console&quot;를 클릭하십시오. 
 ![](../common/images/mobile/400-MobileEnvService.png)
 
-
-3. 서비스 세부 정보 화면에서 &quot;Service Instance URL&quot;링크를 클릭하여 MCS 포털에 액세스합니다. 
+3. Oracle Cloud Stack 서비스 세부 사항 화면에서 Mobile Cloud의 이름을 클릭하십시오.
 ![](../common/images/mobile/400-MCS_ServiceInstanceURL.png)
 
+4. 선택된 모바일 클라우드의 `Stack Overview`목록에서 `CORE`로 이름이 끝나는 것을 클릭하십시오.
+![](../common/images/mobile/400-OMC-Core.png)
 
-4. MCS Portal에서 서비스 소개 페이지의 왼쪽 상단 모서리에있는 햄버거 아이콘을 클릭하십시오. 탐색 창에서 &quot;Applications&quot;-> &quot;Packages&quot;를 선택하고 &quot;New Import&quot;녹색 버튼을 클릭하십시오. 
+5. `xxxxxCORE` 세부 정보 페이지에서 `Load Balancer` 섹션을 찾아서 확장하고 URL을 복사하십시오.
+![](../common/images/mobile/400-OMC-LB.png)
+
+6. OMCe 포털 URL 형식은 다음과 같습니다. https://<위의 `Load Balancer` URL>/mobileui
+![](../common/images/mobile/400-OMC-Home.png)
+
+
+4. OMCe Portal에서 서비스 소개 페이지의 왼쪽 상단 모서리에있는 햄버거 아이콘을 클릭하십시오. 탐색 창에서 &quot;Applications&quot;-> &quot;Packages&quot;를 선택하고 &quot;New Import&quot;녹색 버튼을 클릭하십시오. 
 ![](../common/images/mobile/401-New_Import_Package.png)
 
 
@@ -90,15 +103,23 @@
 
 
 #### 'ICS에서 `Process Offer`서비스에 액세스하기위한 자격 증명 구성 
-ICS에 배포 된 `Process Offer`서비스는 `Integrations`Lab에서 `Basic Authentication`을 사용하도록 구성됩니다. `Process Offer`서비스와 통합하려면 MCS의 커넥터가 ICS의 `Process Offer`에 액세스 할 수 있도록 MCS의 ICS 자격 증명을 구성해야합니다. 
+ICS에 배포 된 `Process Offer`서비스는 `Integrations`Lab에서 `Basic Authentication`을 사용하도록 구성됩니다. `Process Offer`서비스와 통합하려면 OMCe의 커넥터가 ICS의 `Process Offer`에 액세스 할 수 있도록 OMCe의 ICS 자격 증명을 구성해야합니다. 
 
 1. 탐색 창에서 &quot;관리&quot;를 클릭하여 &quot;관리&quot;페이지를 엽니 다. 아래로 스크롤하여 &quot;키 및 인증서&quot;를 클릭하여 &quot;CSF 키 및 인증서&quot;상자를 엽니 다. 
 ![](../common/images/mobile/401-CSF_Navigate_To_CSF.png)
 
 
-2. &quot;CSF 키&quot;탭에서 &quot;CSF Keys & Certificates&quot;상자의 &quot;ICS0X&quot;키 (0X가 사용자에게 지정된 접미사)를 선택하고 &quot;Short Description&quot;을 &quot;ICS0X&quot;(0X는 당신에게 할당된 접미사)로 설정하십시오.  할당 된 사용자 이름과 암호를 &quot;integrations&quot;Lab에서 사용하는 ICS 도메인의 자격 증명으로 설정하십시오. &quot;Save and Close&quot;버튼을 클릭하십시오. 
+2. **New CSF Key** 영역에서 다음과 같이 입력하십시오:  
+- **Key Name**: ICSXX (XX 는 사용자에게 지정된 접미사)
+- **Short Description**: ICSXX (Same as above or meaningful description)
+- **User Name**: username used for Integration Cloud
+- **Password**: password used for Integration Cloud
+- **Confirmed Password**: Same as above
 ![](../common/images/mobile/401-CSF_Update_CSF.png)
+`Save` 버튼을 클릭하십시오.
 
+3. 지정된 이름의 새 CSF 키가 자격 증명 목록에 표시됩니다.
+![](../common/images/mobile/401-CSF_Done.png)
 
 #### 커넥터 `Process Offer`테스트 
 
