@@ -1,23 +1,23 @@
 # 오라클 클라우드 테스트 드라이브 #
 -----
-## 303 : 조정(Orchestration) 패턴을 이용하여 통합하기 ##
+## 303 : 통합 완료하기 - Orchestration Integration Flow##
 
 
 ### 소개 ###
 이번 실습에서는 다음 작업을 수행해 보는 과정입니다.
-- ICS (Integration Cloud Service)에 대한 통합 플로우 완성
+- Oracle Integration Cloud (OIC)에서 통합 플로우 완성하기
 
 
-### 본 실습은... ###
+### 개요 ###
 이번 실습에서는 다음을 수행합니다.
-- REST 및 SOAP 끝점을 사용하여 ICS 통합 흐름을 탐색하고 통합 흐름에 따라 나머지 데이터 매핑을 완료합니다.
-- 웹 기반 클릭을 사용하여 통합 리소스 세부 정보를 탐색하고 ICS 대시 보드에서 데이터 매핑을 정의하는 기술을 구성, 끌어서 놓기
+- REST 및 SOAP endpoint를 사용하여 OIC 통합 flow를 사용해보고, 통합 흐름에 따라 나머지 데이터 매핑을 완료합니다.
+- 웹 기반 클릭을 사용하여 통합 리소스 세부 정보를 탐색하고 OIC 대시 보드에서 데이터 매핑을 정의하는 기술을 구성, 끌어서 놓기
 
 
 ### 준비사항 ###
 
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사와 확인)
-- 이미 구성된 ICS의 SOAP 및 REST 연결
+- 이미 구성된 OIC의 SOAP 및 REST 연결
 
 
 #### 'Orchestration' 통합 ####
@@ -27,12 +27,12 @@
 ![](images/303/01.home_hamburger_integrations.png)
 
 
-2. **통합** 페이지가 표시됩니다. 목록에서 **XXX_ICS_INTMGT (1.0)** 항목을 찾은 다음 오른쪽에있는 햄버거 메뉴 아이콘을 클릭하고 `편집(Edit)`을 선택하십시오.
+2. **통합** 페이지가 표시됩니다. 목록에서 **XXX_OIC_INTMGT (1.0)** 항목을 찾은 다음 오른쪽에있는 햄버거 메뉴 아이콘을 클릭하고 `편집(Edit)`을 선택하십시오.
 
 ![](images/303/02.integration_edit.png)
 
 
-3. 이전에 가져온 통합 플로우 **XXX_ICS_INTMGT (1.0)** 의 통합 조정(Orchestration) 편집기가 표시됩니다. 앞서 임포트 한 것으로 일부가 완성되지 않은 상태입니다.
+3. 이전에 가져온 통합 플로우 **XXX_OIC_INTMGT (1.0)** 의 통합 조정(Orchestration) 편집기가 표시됩니다. 앞서 임포트 한 것으로 일부가 완성되지 않은 상태입니다.
 
 ![](images/303/03.integration_existing.png)
 
@@ -93,12 +93,12 @@
 ![](images/303/42.integration.tracking.png)
 
 
-16. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 ICS를 통해 실행되는 수많은 요청 메시지 중에 특정 메시지를 구분하기 위해 필요합니다. `businessid`,`offerid` 및 `productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다.
+16. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 OIC를 통해 실행되는 수많은 요청 메시지 중에 특정 메시지를 구분하기 위해 필요합니다. `businessid`,`offerid` 및 `productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다.
 
 ![](images/303/43.integration.tracking.identifier1.png)
 
 
-17. ICS 대시 보드 기본 화면으로 돌아가려면 각각 `저장`및 `닫기`버튼을 클릭하십시오.
+17. OIC 대시 보드 기본 화면으로 돌아가려면 각각 `저장`및 `닫기`버튼을 클릭하십시오.
 
 ![](images/303/43.integration.edit.done.png)
 
@@ -114,11 +114,11 @@
 
 
 20. 브라우저에서 고유한 URL을 클립 보드로 저장하거나 복사하십시오
-- `https://integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com:443/integration/flowapi/rest/XXX_ICS_INTMGT/`
+- `https://integration-xxxxxxxxxxx.integration.xxx.oraclecloud.com:443/integration/flowapi/rest/XXX_OIC_INTMGT/`
 
 21. 이제 통합 서비스가 테스트 준비가 되었습니다.
 
-[Proceed to Next - 304 : 서비스 테스트 및 ICS 대시 보드로 모니터링](304-IntegrationsLab.md)
+[Proceed to Next - 304 : 서비스 테스트 및 OIC 대시 보드로 모니터링](304-IntegrationsLab.md)
 
 또는
 
