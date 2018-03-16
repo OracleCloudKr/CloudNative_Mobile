@@ -64,7 +64,7 @@
 
 9. 우측 대상 필드 중 `imgurl`을 클릭합니다.
 
-10. 매핑 대화 상자가 나타납니다. 왼쪽 된 창에서 **Source**아래의 **매핑 구성요소(Mapping Components)** 를 확장 한 다음,`함수(Functions)` ->`문자열(String)`을 확장하십시오. `concat` 함수를 드래그 하여 `끌어 놓기 또는 여기에 값 입력(Drag and Drop or Type value here...)`로 드랍합니다.
+10. 매핑 대화 상자가 나타납니다. 왼쪽 창에서 **Source** 아래의 **매핑 구성요소(Mapping Components)** 를 확장 한 다음,`함수(Functions)` ->`문자열(String)`을 확장하십시오. `concat` 함수를 드래그 하여 `끌어 놓기 또는 여기에 값 입력(Drag and Drop or Type value here...)`로 드랍합니다.
 
 ![](images/303/37.integration.if.map1.png)
 
@@ -105,7 +105,7 @@
 
 18. **통합(Integrations)** 페이지에서, 새로 생성 된 `integration`의 **Switch**버튼을 클릭하면,`통합을 활성화하시겠습니까?(Activate Integration?)` 대화 상자가 나타납니다. 운영환경에서는 체크하는 것이 좋지 않지만 나중에 테스트하기 위해 `Enable tracing` 및 `Include payload`를 선택하십시오.
 
-![](images/303/44.integration.activate.png)
+![](images/303/44.integration.activate_ko.png)
 
 
 19. 통합 활성화를 위해 2 분 정도 기다리십시오. 완료되면 통합을 알리는 녹색 배너가 성공적으로 활성화되었으며 그 결과는 다음과 같습니다.
