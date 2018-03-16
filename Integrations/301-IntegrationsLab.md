@@ -40,7 +40,7 @@
 
 4. 메인 화면의 왼쪽에 있는 `Integrations` 을 클릭합니다.
 
-  \*화면 아래에 있는 `Got it!`를 클릭하여 **Guide Me** Quick Tour 를 없앱니다. 랩도중에는 필요가 없습니다.
+  \*화면 아래에 있는 `그만보기(Got it!)`를 클릭하여 **Guide Me** Quick Tour 를 없앱니다. 랩도중에는 필요가 없습니다.
 
 ![](images/301/04.ics_overlays.png)
 
