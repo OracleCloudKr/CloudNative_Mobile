@@ -103,7 +103,7 @@
 ![](images/303/43.integration.edit.done.png)
 
 
-18. **통합(Integrations)** 페이지에서, 새로 생성 된 `integration`의 **Switch**버튼을 클릭하면,`통합을 활성화하시겠습니까?(Activate Integration?)` 대화 상자가 나타납니다. 운영환경에서는 체크하는 것이 좋지 않지만 나중에 테스트하기 위해 `Enable tracing` 및 `Include payload`를 선택하십시오.
+18. **통합(Integrations)** 페이지에서, 새로 생성 된 `integration`의 **Switch**버튼을 클릭하면,`통합을 활성화하시겠습니까?(Activate Integration?)` 대화 상자가 나타납니다.
 
 ![](images/303/44.integration.activate_ko.png)
 
