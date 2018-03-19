@@ -22,7 +22,7 @@
 
 1. 로열티 관리 응용 프로그램의 홈 페이지로 이동하십시오. 로열티 관리 애플리케이션 URL은 다음 형식이어야 합니다. 
 https://**<JCS WLS instance IP Adress>**/loyalty/jsp/welcome.jsp
-**Input Offer Criteria**에 정수 값으로, 이 예제에서 10000 포인트 이상의 고객을 나타내는 `10000`을 입력하십시오. **대상 제품(Target Product)**을 선택하십시오. 이 예에서는 `Festival Blend`이 선택됩니다. 그런 다음 `검색`버튼을 클릭하십시오. 
+**Input Offer Criteria**에 정수 값으로, 이 예제에서 10000 포인트 이상의 고객을 나타내는 `10000`을 입력하십시오. **대상 제품(Target Product)**을 선택하십시오. 이 예에서는 `Festival Blend`이 선택합니다. 그런 다음 `검색`버튼을 클릭하십시오. 
 
 ![](images/502/01.offer.search.png)
 
