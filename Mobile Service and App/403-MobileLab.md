@@ -4,7 +4,7 @@
 
 
 ### 소개 ###
-알림 서비스 (MCS 플랫폼 API의 일부)를 사용하여 모바일 백엔드에 등록 된 앱 사용자에게 알림을 보낼 수 있습니다. 모바일 백엔드에서 알림을 설정하면 iOS, Android 및 Windows 앱에서 알림을 보내는 프로세스가 동일합니다. 적절한 공급 업체 인증서를 획득하고 앱의 모바일 백엔드에 등록하여 알림을 설정합니다. 또한 모바일 앱에 자체 코드를 작성하여 푸시 알림을 처리 할 수 ​​있습니다. MCS는 푸시 알림 서비스를 다른 응용 프로그램에 노출하여 캠페인 관리 용 Java 응용 프로그램과 같은 응용 프로그램이 MCS가 제공하는 푸시 알림 서비스를 호출하여 최종 사용자에게 푸시 알림을 보낼 수 있습니다. 
+알림 서비스 (OMCe 플랫폼 API의 일부)를 사용하여 모바일 백엔드에 등록 된 앱 사용자에게 알림을 보낼 수 있습니다. 모바일 백엔드에서 알림을 설정하면 iOS, Android 및 Windows 앱에서 알림을 보내는 프로세스가 동일합니다. 적절한 공급 업체 인증서를 획득하고 앱의 모바일 백엔드에 등록하여 알림을 설정합니다. 또한 모바일 앱에 자체 코드를 작성하여 푸시 알림을 처리 할 수 ​​있습니다. OMCe는 푸시 알림 서비스를 다른 응용 프로그램에 노출하여 캠페인 관리 용 Java 응용 프로그램과 같은 응용 프로그램이 OMCe가 제공하는 푸시 알림 서비스를 호출하여 최종 사용자에게 푸시 알림을 보낼 수 있습니다. 
 ![](../common/images/mobile/mcsgs_dt_006_notifications.png)
 
 
@@ -19,9 +19,10 @@
 - Android Supremo 앱을 Android 기기에 설치했습니다. 
 
 ----
-#### 알림 프로필 만들기 알림 프로필은 밀어 넣기 알림 공급자가 밀어 넣기 알림을 보내는 데 필요한 인증서를 정의합니다. 이 실습에서는 알림 프로필을 만들어이를 클라이언트 애플리케이션 (Cafe Supremo 모바일 애플리케이션)과 연결하여 MCS가 Cafe Supremo 모바일 애플리케이션에 푸시 알림을 보낼 수있게합니다. 
+#### 알림 프로필 만들기 
+알림 프로필은 push notification 공급자가 push notification을 보내는 데 필요한 인증서를 정의합니다. 이 실습에서는 알림 프로필을 만들어 이를 클라이언트 애플리케이션 (Cafe Supremo 모바일 애플리케이션)과 연결하여 OMCe가 Cafe Supremo 모바일 애플리케이션에 푸시 알림을 보낼 수있게 합니다. 
 
-1. 탐색 창에서 &quot;응용 프로그램&quot;-> &quot;모바일 백엔드&quot;를 선택하십시오. 귀하가 가져온 모바일 백엔드를 검색하려면 &quot;0X&quot;(0X가 귀하에게 할당 된 접미사 임)를 입력하십시오. &quot;LoyaltyMgmt_MBE0X&quot;(0X가 귀하에게 지정된 접미사 임)를 선택하고 &quot;열기&quot;를 클릭하십시오. 
+1. 탐색 창에서 &quot;응용 프로그램&quot;-> &quot;모바일 백엔드&quot;를 선택하십시오. import한 모바일 백엔드를 검색하려면 &quot;0X&quot;(0X가 귀하에게 할당 된 접미사 임)를 입력하십시오. &quot;LoyaltyMgmt_MBE0X&quot;(0X가 귀하에게 지정된 접미사 임)를 선택하고 &quot;열기&quot;를 클릭하십시오. 
 ![](../common/images/mobile/403-Navigate_To_MBE.png)
 
 
@@ -33,7 +34,7 @@
 ![](../common/images/mobile/403-Client_Settings.png)
 
 
-4. **&quot;응용 프로그램 키&quot;값을 복사하고 &quot;Mobile_App_Settings_Sample.json&quot;파일에서 &quot;applicationKey&quot;속성 값을 바꿉니다.**나중에 사용할 수 있도록 파일을 저장하십시오. 
+4. **응용 프로그램 키** 값을 복사하고 &quot;Mobile_App_Settings_Sample.json&quot;파일에서 &quot;applicationKey&quot;속성 값을 바꿉니다. 나중에 사용할 수 있도록 파일을 저장하십시오. 
 ![](../common/images/mobile/403-Copy_ApplicationKey_To_Json.png)
 
 
@@ -41,7 +42,7 @@
 ![](../common/images/mobile/403-Begin_New_Profile.png)
 
 
-6. 이름으로 에는 `FCM0X` (0X가 사용자에게 지정된 접미사, e.g: 03)를 넣으세요. "API Key"로 `AAAA14t0nbs:APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX`을 붙여넣고, "Sender ID"로  `925757644219`를 넣으세요. "Notification Service"로 `Google Messaging (GCM or FCM)`을 설정하고 "Send Method"는 `XMPP`, “Create”를 누르세요. (이것은 Google로 부터 받은 key 입니다.)
+6. 이름으로 `FCM0X` (0X가 사용자에게 지정된 접미사, e.g: 03)를 넣으세요. "API Key"로 `AAAA14t0nbs:APA91bHtR-V_lZEcMgaEFIJd_UrybuBjNyPG4N0ZoA33UqbZ9CywL_e2FnIfoS9lvPV5gut3Mm_ZMoex7PE1-YL-7ACaP3CnrDYpl8Qq3_jfsO3HMJYS-Mzr_X-xWpgdqWswVHsSUgDX`을 붙여넣고, "발신자 ID(Sender ID)"로  `925757644219`를 넣으세요. "Notification Service"로 `Google Messaging (GCM or FCM)`을 설정하고 "Send Method"는 `XMPP`, “Create”를 누르세요. (이것은 Google로 부터 받은 key 입니다.)
 
 ![](../common/images/mobile/403-Create_New_Profile.png) 
 
