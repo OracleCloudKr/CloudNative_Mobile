@@ -73,11 +73,11 @@
 | Base URL                      | baseUrl                  |
 
 
-3. &quot;Mobile_App_Settings_Sample.json&quot;파일의 &quot;LoginUser&quot;및 &quot;LoginPassword&quot;등록 정보 값을 대체하려면 모바일 사용자 이름 및 암호의 값을 복사하십시오. 이를 통해 Cafe Supremo 모바일 앱은 모바일 앱의 로그인 양식에 기본 사용자 이름과 비밀번호로 &quot;LoginUser&quot;및 &quot;LoginPassword&quot;를 설정합니다. 마지막으로 &quot;Mobile_App_Settings_Sample.json&quot;파일이 이와 같아야합니다. 
+3. &quot;Mobile_App_Settings_Sample.json&quot;파일의 &quot;LoginUser&quot;및 &quot;LoginPassword&quot;등록 정보 값을 대체하려면 모바일 사용자 이름 및 암호의 값을 복사하십시오. 이를 통해 Cafe Supremo 모바일 앱은 모바일 앱의 로그인 양식에 기본 사용자 이름과 비밀번호로 &quot;LoginUser&quot;및 &quot;LoginPassword&quot;를 설정합니다. 마지막으로 &quot;Mobile_App_Settings_Sample.json&quot;파일이 이와 같아야 합니다. 
 ![](../common/images/mobile/403-Final_JSON.png)
 
 
-4. Cafe Supremo 모바일 앱을 사용하면 QR 코드를 스캔하여 새로운 설정을 읽을 수 있습니다. &quot;Mobile_App_Settings_Sample.json&quot;파일의 설정으로 QR 코드를 생성하고 모바일 앱에서 QR 코드를 스캔합니다. 
+4. Cafe Supremo 모바일 앱을 사용하면 QR 코드를 스캔하여 새로운 설정을 읽을 수 있습니다. &quot;Mobile_App_Settings_Sample.json&quot;파일의 내용을 바탕으로 QR 코드를 생성하고 모바일 앱에서 QR 코드를 스캔합니다. 
 
 5. 웹 브라우저에서`http://www.qr-code-generator.com/`로 가서 `텍스트`버튼을 클릭하면 **자유 텍스트** 텍스트 영역이 나타납니다. 
 ![](../common/images/mobile/01.qr.site.png)
@@ -91,7 +91,7 @@
 
 ![](../common/images/mobile/03.mobile.app.png) 
 
-8. **로그인하지 마십시오.** 왼쪽 상단 모서리에있는 햄버거 메뉴를 클릭하고 &quot;설정&quot;을 클릭하십시오. 
+8. **로그인하지 마십시오.** 왼쪽 상단 모서리에 있는 햄버거 메뉴를 클릭하고 &quot;설정&quot;을 클릭하십시오. 
 
 ![](../common/images/mobile/05.mobile.settings.png) 
 
@@ -99,7 +99,7 @@
 
 ![](../common/images/mobile/06.mobile.qr.png) 
 
-10. QR 스캐너가 실행 중일 때 6 단계에서 작성한 QR 코드 이미지를 향해 모바일 장치를 향하게하십시오. 스캐너 카메라가 QR 이미지를 인식 할 때까지 모바일 장치와 화면 사이의 거리를 조정해야 할 수 있습니다. 
+10. QR 스캐너가 실행 중일 때 6 단계에서 작성한 QR 코드 이미지를 향해 모바일 장치를 향하게 하십시오. 스캐너 카메라가 QR 이미지를 인식 할 때까지 모바일 장치와 화면 사이의 거리를 조정해야 할 수 있습니다. 
 
 ![](../common/images/mobile/07.mobile.cam.png) 
 
