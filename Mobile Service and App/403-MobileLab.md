@@ -95,7 +95,7 @@
 
 ![](../common/images/mobile/05.mobile.settings.png) 
 
-9. 설정 페이지가 열리면 가운데에있는 QRCode에서 설정 읽기 버튼을 클릭하십시오. 
+9. 설정 페이지가 열리면 가운데에 있는 QRCode에서 설정 읽기 버튼을 클릭하십시오. 
 
 ![](../common/images/mobile/06.mobile.qr.png) 
 
@@ -111,7 +111,7 @@
 
 ![](../common/images/mobile/09.mobile.login.png) 
 
-13. 로그인이 완료되면 시작 페이지가 표시됩니다. 휴대 기기에서 캠페인 쿠폰에 대한 푸시 알림을받을 준비가되었습니다. 
+13. 로그인이 완료되면 시작 페이지가 표시됩니다. 휴대 기기에서 캠페인 쿠폰에 대한 푸시 알림을받을 준비가 되었습니다. 
 
 ![](../common/images/mobile/10.mobile.welcome.png) 
 
@@ -131,7 +131,7 @@
 
 4. 알림을 보내기 전에 Android 스마트 폰의 **배경 화면**에서 &quot;Cafe Supremo&quot;모바일 앱이 실행되고 있는지 확인하십시오. 
 
-5. `포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`로 알림 내용을 입력하세요. 보내기 옵션을 'Now'로 선택하고 &quot;보내기&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
+5. `포인트를 사용하여 제품을 구입할 수 있습니다! - 10001`로 알림 내용을 입력하세요. 전송 옵션을 '지금(Now)'로 선택하고 &quot;전송&quot;를 클릭하십시오. 아직 등록 된 기기가 없으면 오류가 발생합니다. 
 
 ![](../common/images/mobile/403-Notification_Test_Screen.png) 
 
@@ -141,9 +141,7 @@
 
 ![](../common/images/mobile/401-MobileApp_Notification_Result.png) 
 
-[Procced to Next - 404: Track customer behaviors (Optional)](404-MobileLab.md) 
 
-또는 
-
+축하합니다!. 이번 Lab을 성공적으로 끝내셨습니다.
 [Back to Mobile Service and Application Home](README.md) 
 
