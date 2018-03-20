@@ -54,12 +54,5 @@
 
 [Click Here.](403-MobileLab.md) 
 
-## 404 : 고객 행동 수집하기 [선택 사항] ## 
-
-
-[Click Here.](404-MobileLab.md) 
-
-또는 
-
 [Back to Cloud Test Drive Home](../README.md) 
 
