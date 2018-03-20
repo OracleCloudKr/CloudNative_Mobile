@@ -77,7 +77,7 @@
 ![](../common/images/mobile/403-Final_JSON.png)
 
 
-4. Cafe Supremo 모바일 앱을 사용하면 QR 코드를 스캔하여 새로운 설정을 읽을 수 있습니다. &quot;Mobile_App_Settings_Sample.json&quot;파일의 내용을 바탕으로 QR 코드를 생성하고 모바일 앱에서 QR 코드를 스캔합니다. 
+4. 여러분들이 만든 Mobile 서비스를 Cafe Supremo 모바일 앱에서 접속하기 위해서는 이 정보를 모바일 앱에 설정해야 합니다. 이를 위해 QR 코드에 정보를 담아 QR코드를 생성한 후 Cafe Supremo 앱에서 이 QR코드를 스캔하여 새로운 설정을 읽도록 하겠습니다. 먼저 &quot;Mobile_App_Settings_Sample.json&quot;파일의 내용을 바탕으로 QR 코드를 생성하고 모바일 앱에서 QR 코드를 스캔합니다. 
 
 5. 웹 브라우저에서`http://www.qr-code-generator.com/`로 가서 `텍스트`버튼을 클릭하면 **자유 텍스트** 텍스트 영역이 나타납니다. 
 ![](../common/images/mobile/01.qr.site.png)
