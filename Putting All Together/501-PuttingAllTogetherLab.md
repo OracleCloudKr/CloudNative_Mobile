@@ -52,7 +52,7 @@
 
 
 2. 환경에 따라 MCS 알림 설정을 업데이트 하십시오. 이전에 Lab 404의 2 단계에서 준비한 Mobile_App_Settings_Sample.json에서 값을 사용할 수 있습니다. 
-    - MCS Base URL: `your MCS baseUrl, https://{your-mcs-instance}.mobileenv.us2.oraclecloud.com:443`
+    - MCS Base URL: `your MCS baseUrl, https://{Mobile Cloud Service Identity Domain URL}.{datacenter}.oraclecloud.com:443`
     - Mobile Backend ID: `backendId in the json file`    
     - MCS Anonymous Key: `anonymousToken in the json file`    
     - Custom API Name: `API in the json file, LoyaltyMAnagementAPIXX`  
@@ -60,7 +60,7 @@
     json 파일은 이것과 비슷하게 보일 것입니다 - **물론 값은 다릅니다**
     ```json
     {
-          "baseUrl": "https://<Mobile Cloud Service Identity Domain URL>.<Ientity Server>.oraclecloud.com:443",
+          "baseUrl": "https://<Mobile Cloud Service Identity Domain URL>.<datacenter>.oraclecloud.com:443",
           "applicationKey": "9722de7f-4ecf-443f-8e0e-714b2f6e0f9c",
           "backendId": "4a9d0d32-8aad-48fb-b803-5315459dce9f",
           "anonymousToken":  "R1NFMDAwMTE2NzhfTUNTX01PQklMRV9BTk9OWU1PVVNfQVBQSUQ6Smk3cXBld3lrczlfbmI=",
