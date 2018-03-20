@@ -76,7 +76,6 @@
 9. `Policies`단계에서 `*.connector/GenerateQRCode0X (1.0).Connector_Endpoint`정책을 선택하고 `편집(Edit)`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Select_GenerateQRCode_Endpoint.png)
 
-
 10. Tab키를 눌러 TextEdit 박스로 Focus를 이동한 후, ACCS에 배포 된 QR 코드 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`https://qrcodegenerator-<ACCS_DOMAIN_NAME>.apaas.<DATACENTER>.oraclecloud.com` `Save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_GenerateQRCode_Endpoint.png)
 
@@ -93,7 +92,6 @@
 
 14. Tab키를 눌러 TextEdit 박스로 Focus를 이동한 후, JCS에 deploy된 offer 서비스의 호스트 URL로 사용자 정의 값을 설정합니다 (예 :`http://<IP Address of LoyaltyMgmt in #1 JavaApp Lab>`. `Save`을 클릭하십시오. 
 ![](../common/images/mobile/401-Import_Package_Update_QueryOffers_Endpoint.png)
-
 
 15. `Policies`단계로 돌아가서 세 가지 커넥터 끝점 정책에 대한 새 값을 성공적으로 설정했는지 확인하고 `update`를 클릭하여 패키지 가져 오기를 완료합니다. 
 ![](../common/images/mobile/401-Import_Package_Complete_Update_Policies.png)
