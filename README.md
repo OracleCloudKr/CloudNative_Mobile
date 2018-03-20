@@ -1,4 +1,4 @@
-![](common/images/CTD_introduction_Kr_Seoul.png)
+![](common/images/CTD_introduction_TBD.png)
 ---
 # 오라클 클라우드 테스트 드라이브 #
 
