@@ -51,7 +51,7 @@
 ![](images/501/101.javaapp.png)
 
 
-2. 환경에 따라 MCS 알림 설정을 업데이트 하십시오. 이전에 Lab 404의 2 단계에서 준비한 Mobile_App_Settings_Sample.json에서 값을 사용할 수 있습니다. 
+2. 환경에 따라 OMCe 알림 설정을 업데이트 하십시오. 이전에 Lab 404의 2 단계에서 준비한 Mobile_App_Settings_Sample.json에서 값을 사용할 수 있습니다. 
     - MCS Base URL: `your MCS baseUrl, https://{Mobile Cloud Service Identity Domain URL}.{datacenter}.oraclecloud.com:443`
     - Mobile Backend ID: `backendId in the json file`    
     - MCS Anonymous Key: `anonymousToken in the json file`    

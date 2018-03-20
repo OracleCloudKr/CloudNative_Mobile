@@ -46,24 +46,24 @@ https://**<JCS WLS instance IP Adress>**/loyalty/jsp/welcome.jsp
 ![](images/502/04.offer.sent.png)
 
 **어떤 일이 일어 났습니까?** 
-이전 Lab에서 : [501: Update Source Code for Sending Push Notification from JEE Application to Mobile Cloud Service](501-PuttingAllTogetherLab.md)에서 개발자와 Java Cloud Service를 활용 한 로열티 관리 JEE 애플리케이션에서 *confirm.jsp*의 일부 코드를 수정하여 애플리케이션이 모바일 클라우드 서비스 푸시 알림 REST API를 호출 할 수 있도록 했습니다. 이어서 MCS가 Google Firebase와 교환하여 등록된 Android 기기에 푸시 알림을 전달합니다. 
+이전 Lab에서 : [501: Update Source Code for Sending Push Notification from JEE Application to Mobile Cloud Service](501-PuttingAllTogetherLab.md) 로열티 관리 JEE 애플리케이션의 *confirm.jsp* 화면에서 OMCe의 호출 주소를 세팅하여, 모바일 클라우드 서비스 푸시 알림 REST API를 호출 할 수 있도록 했습니다. 이어서 OMCe가 Google Firebase와 교환하여 등록된 Android 기기에 푸시 알림을 전달합니다. 
 
 ![](images/502/jcs2mcs.png)
 
 
 #### 모바일 앱에서 쿠폰에 응답 
 
-5. 몇 초 안에 이전에 제공 한 쿠폰 메시지와 함께 앱 푸시 알림이 Android 기기에 도착해야합니다. 
+5. 몇 초 안에 이전에 제공 한 쿠폰 메시지와 함께 앱 푸시 알림이 Android 기기에 도착할 겁니다. 
 
 ![](images/502/05.offer.receive.png)
 
 
-6. Swipe/Click 하면 알림 메시지가 열리고 쿠폰 목록이있는 `Cafe Supremo`모바일 앱이 열립니다. 기존 쿠폰 목록에서 최신 또는 음료를 제공하려면 클릭하십시오. 
+6. Swipe/Click 하면 알림 메시지가 열리고 쿠폰 목록이 있는 `Cafe Supremo`모바일 앱이 열립니다. 기존 쿠폰 목록에서 최신 또는 음료 제공 offer를 클릭하십시오. 
 
 ![](images/502/06.offer.open.png)
 
 
-7. 음료 제품 이미지, 설명 및 제안 응답에 대한 오퍼 세부 사항이 표시됩니다. `수락`또는 `거절`버튼을 클릭하여 처리합니다. 
+7. 음료 제품 이미지, 설명 및 제안 응답에 대한 Offer 세부 사항이 표시됩니다. `수락(Accept)`또는 `거절(Decline)`버튼을 클릭하여 처리합니다. 
 
 ![](images/502/07.offer.accept.png)
 
@@ -84,17 +84,17 @@ https://**<JCS WLS instance IP Adress>**/loyalty/jsp/welcome.jsp
 ![](images/502/mcs2acc.png)
 
 
-9. MCS 대시 보드에서 `Applications` ->`Mobile Backends` ->`Your Loyalty Management API`로 이동하면 모바일 및 평균 응답 시간으로부터 최근 API 호출을 찾을 수 있습니다. MCS 모니터링에 대한 자세한 내용은 [404: Track customer behaviors](../Mobile%20Service%20and%20App/404-MobileLab.md)을 참조하십시오. 
+9. OMCe 대시 보드에서 `Applications` ->`Mobile Backends` ->`Your Loyalty Management API`로 이동하면 모바일 및 평균 응답 시간으로부터 최근 API 호출을 찾을 수 있습니다. OMCe 모니터링에 대한 자세한 내용은 [404: Track customer behaviors](../Mobile%20Service%20and%20App/404-MobileLab.md)을 참조하십시오. 
 
 ![](images/502/09.offer.mcs.png)
 
 
-10. ICS 대시 보드에서 `Monitoring` ->`Tracking`으로 가면 최근 제안 응답 액션 메시지 트랙을 찾을 수 있습니다. ICS 모니터링에 대한 자세한 내용은 [304: Testing the service and Monitoring with ICS Dashboards](../Integrations/304-IntegrationsLab.md)을 참조하십시오. 
+10. OIC 대시 보드에서 `Monitoring` ->`Tracking`으로 가면 최근 제안 응답 액션 메시지 트랙을 찾을 수 있습니다. OIC 모니터링에 대한 자세한 내용은 [304: Testing the service and Monitoring with OIC Dashboards](../Integrations/304-IntegrationsLab.md)을 참조하십시오. 
 
 ![](images/502/10.offer.ics.png)
 
 
-11. 트랙 인스턴스 플로우에서 메시지 플로우의 승인 또는 거부 된 if-then 실행 경로를 찾을 수 있습니다. `활동 스트림`에서 허용 또는 거부 된 쿠폰의 QR 코드 이미지 URL을 찾을 수 있습니다. 
+11. 트랙 인스턴스 플로우에서 메시지 플로우의 승인 또는 거부에 대한 if-then 실행 플로우를 찾을 수 있습니다. `Activity Stream(활동 스트림)`에서는 허용 또는 거부 된 쿠폰의 QR 코드 이미지 URL을 찾을 수 있습니다. 
 
 ![](images/502/11.offer.flow.png)
 
