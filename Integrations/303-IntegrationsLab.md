@@ -93,7 +93,7 @@
 ![](images/303/42.integration.tracking.png)
 
 
-16. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 OIC를 통해 실행되는 수많은 요청 메시지 중에 특정 메시지를 구분하기 위해 필요합니다. `businessid`,`offerid` 및 `productid`가 이미 매핑 된 Tracking 비즈니스 식별자에 주목하십시오. 화면은 다음과 같습니다.
+16. **Business Identifiers for Tracking** 대화 상자 창이 표시됩니다. 비즈니스 식별자는 메시지에 대한 런타임 트랜잭션 추적, 특히 OIC를 통해 실행되는 수많은 요청 메시지 중에 특정 메시지를 구분하기 위해 필요합니다. `businessid`,`offerid` 가 이미 매핑 된 Tracking 비즈니스 식별자에 들어 있습니다. 화면은 다음과 같습니다.
 
 ![](images/303/43.integration.tracking.identifier1_1.png)
 
