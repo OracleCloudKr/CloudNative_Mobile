@@ -18,7 +18,7 @@
 
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사와 확인)
 - 강사가 배포 한 `XXX_ICS_INTMGT_01_lab.iar`의 통합 아카이브 파일 (IAR) 이름
-- 위 파일을 다운로드 할 수 있는 곳은 [여기](/tree/master/Integrations/binary) 입니다. 
+- 위 파일을 다운로드 할 수 있는 곳은 [여기](../binary/) 입니다. 
 
 
 ### 선 통합(Pre-Built) 자산 임포트 ###
