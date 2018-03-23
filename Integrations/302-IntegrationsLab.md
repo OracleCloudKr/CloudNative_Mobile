@@ -20,7 +20,6 @@
 - 강사가 배포 한 `XXX_ICS_INTMGT_01_lab.iar`의 통합 아카이브 파일 (IAR) 이름
 - 위 파일을 다운로드 할 수 있는 곳은 [여기](../Integrations/binary/) 입니다. 
 
-
 ### 선 통합(Pre-Built) 자산 임포트 ###
 
 1. `통합(Integrations)` 파란색 아이콘을 클릭하여 **통합(Integrations)** 페이지로 이동합니다.
