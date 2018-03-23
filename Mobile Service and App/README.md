@@ -1,3 +1,46 @@
+
+# ORACLE Cloud Test Drive #
+
+## Introduction ##
+우리는 일상 생활에서 모바일 서비스에 크게 의존하고 있습니다. 이러한 추세로 인해 기업은 더 나은 고객 경험, 탁월한 운영 및 비즈니스 가치 향상을 위해 더 많은 모바일 애플리케이션을 구축하고자 합니다. 따라서 모바일은 디지털 전환의 핵심이라고 말할 수 있습니다. 비즈니스에서의 모바일 애플리케이션 개발은 훨씬 더 현실적입니다. 비즈니스 및 기술적 관점에서 모바일 애플리케이션 개발의 문제점을 파악해 봅시다.
+
+### Technical Challenges in Mobile ###
+비즈니스 과제뿐만 아니라 기업은 모바일 애플리케이션 개발에 어려움을 겪고 있습니다. 모바일 응용 프로그램을 개발하려면 전문 지식이 필요합니다.
++ 여러 플랫폼 (Android, iOS, Windows 등) 개발 및 지원
+개발, 테스트 및 생산 환경 준비
++ 모바일 서비스 모니터링 및 분석 방법
++ 다양한 백엔드에 대한 보안 및 신원 프로토콜 및 정책
++ 다양한 백엔드와의 통합
++ 그들을 만들기 위해 어떤 도구를 사용합니까?
+![](../common/images/mobile/Technical_Challenges_in_Mobile.PNG)
+
+## Oracle Mobile Solution Strategy ##
+위의 과제를 극복하기 위해 오라클은 개발자가 iOS, Android를 사용한 기본 개발, Ionic, Angular, Sencha 및 Xamarin과 같은 타사 및 개방형 프레임 워크에 대해 널리 사용되는 도구를 사용할 것을 권장합니다. 우리는 이것을 "모바일 클라이언트 불가지론 자"라고 부릅니다. 오라클은 데이터 동기화, 스토리지, 위치 서비스, 메시징, 카메라, 연락처, GPS 등과 같은 로컬 서비스에 대한 액세스를 제공하는 모바일 서비스를 통합합니다. 코드가 낮고 코드 개발이 필요하지 않은 추세가 있습니다 - 오라클은 MAX (모바일 Application Accelerator)를 Oracle Mobile Cloud, Enterprise (OMCe)의 일부로 포함합니다.
+![](../common/images/mobile/Oracle_Mobile_Solution_Strategy.PNG)
+
+요약하면 Oracle은 귀사의 비즈니스 및 기술적 과제를 극복 할 수있는 엔드 투 엔드 솔루션을 제공합니다.
+
+### Oracle Mobile Services ###
+다음과 같이 OMCe (Oracle Mobile Cloud, Enterprise)에 액세스하여 어떤 모바일 서비스가 준비되어 있는지 확인할 수 있습니다.
++ 모바일 서비스 (플랫폼 API) : Google은 분석, 푸시 알림, 오프라인 데이터 동기화, 위치, 개체 저장소, 데이터베이스, 앱 정책, API 관리, 통합 관리, 보안 및 보안 기능과 같은 사전 구축되고 테스트되고 최적화 된 모바일 서비스를 제공합니다. 사용자 관리 및 인텔리전트 봇과 같은 더 많은 기능이 제공됩니다.
++ 플랫폼 API 외에도 사용자 정의 API 및 코드를 개발하여 모바일 서비스를 확장 할 수 있습니다. (예 : SNS 통합, Google지도 통합, 외부 시스템 통합 등) 즉, 모바일 애플리케이션은 맞춤 API를 플랫폼 API로 호출하여 다양한 데이터 소스를 상호 작용할 수 있습니다.
++ 모바일 IDE 개발을위한 클라이언트 IDE의 경우 Oracle MAX (Low code development), JET (JavaScript 기반 Hybrid App Dev.) 및 MAF (Java 기반 Hybrid App Dev)와 같은 모바일 프레임 워크뿐 아니라 모든 IDE를 지원할 수 있습니다.
+
+![](../common/images/mobile/Oracle_Mobile_Services.PNG)
+
+위의 모바일 서비스에 대한 자세한 내용은 다음을 참조하십시오.[the following link](https://docs.oracle.com/en/cloud/paas/mobile-cloud/index.html).
+
+### About the Exercise Today ###
+모바일 개발의 어려운 부분은 모든 서버 측 서비스를 통합하고 관리하는 것입니다. 이 연습에서는 OMCe (Oracle Mobile Cloud, Enterprise)를 사용하여 충성도 관리를 위해 "Cafe Supremo"라는 모바일 응용 프로그램을 구현하기 위해 푸시 알림, API 작성 및 외부 서비스와의 통합과 같은 모바일 서비스를 얼마나 쉽게 활성화 / 개발할 수 있는지 보여줍니다.
+
+로열티 관리 모바일 애플리케이션의 경우이 랩을 통해 아래 작업을 수행하여 플랫폼 API (외부 모바일 서비스) 및 외부 통합을위한 사용자 정의 API를 사용하여 모든 작업을 원활하게 진행할 수 있습니다.
+- MBE (Mobile BackEnd) 패키지를 가져오고 커넥터를 구성하여 ACS의 마이크로 서비스를 비롯하여 QR 코드를 생성하는 외부 서비스와 ICS의 서비스를 수락 또는 거부하여 기존 CRM을 업데이트합니다.
+- 엔드 포인트 W 사용자 정의 API의 구현을 검증하십시오. 사용자 지정 API는 MBE 패키지로 가져오고 커넥터를 활용하여 외부 서비스와 상호 작용합니다.
+- 푸시 알림을 설정하고 가져온 MBE에서 작동하도록 Cafe Supremo 모바일 앱을 구성합니다.
+- 맞춤 분석 보고서를 사용하여 '사용자가 승인 한 쿠폰'과 같은 고객 행동을 추적합니다. **[참고]**이 섹션은 선택 사항입니다. 먼저이 섹션을 건너 뛸 수 있으며 다른 모든 섹션을 완료 한 후에 다시 돌아올 수 있습니다.
+
+![](../common/images/mobile/CTD_About_Lab_Mobile.PNG)
+
 ### Prerequsite ###
 
 - 안드로이드 폰이 필요합니다. 

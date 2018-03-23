@@ -129,7 +129,7 @@ OIC에 배포 된 `Process Offer`서비스는 `Integrations`Lab에서 `Basic Aut
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_General.png)
 
 
-3. `Descriptor`단계에서 `Remote URL`이 ICS의 `Process Offer`서비스의 전체 서비스 URL로 설정되어 있는지 확인하십시오 (예 : `https://<OIC_INSTANCE_NAME>-<OIC_DOMAIN_NAME>.<DATACENTER_LOCATION>.oraclecloud.com/ic/api/integration/v1/flows/rest/CXX_ICS_INTMGT/1.0/processoffer` 를 참조하십시오. `다음`을 클릭하십시오. 
+3. `Descriptor`단계에서 `Remote URL`이 OIC의 `Process Offer`서비스의 전체 서비스 URL로 설정되어 있는지 확인하십시오 (예 : `https://<OIC_INSTANCE_NAME>-<OIC_DOMAIN_NAME>.<DATACENTER_LOCATION>.oraclecloud.com/ic/api/integration/v1/flows/rest/CXX_ICS_INTMGT/1.0/processoffer` 를 참조하십시오. `다음`을 클릭하십시오. 
 ![](../common/images/mobile/401-Test_Connector_ProcessOffer_Descriptor.png)
 
 
