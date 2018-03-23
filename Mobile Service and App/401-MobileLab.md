@@ -9,7 +9,7 @@
 ![](../common/images/mobile/402-Connectors_Overview.png)
 
 
-커넥터를 사용하면 백엔드 시스템 (예 : 엔터프라이즈 미들웨어) 및 웹 서비스에 대한 액세스 단순화 및 표준화한 API를 작성할 수 있습니다. Oracle OMCe는 다양한 유형의 커넥터를 제공하여 REST 커넥터, SOAP 커넥터, ICS (Oracle Integration Cloud Service) 커넥터 및 Oracle Fusion Application 커넥터를 비롯한 여러 유형의 백엔드 시스템과의 통합을 단순화합니다. 이 실습에서는 REST 커넥터를 사용하여 마이크로 서비스와 integration labs에서 생성 한 세 가지의 REST service와 통합합니다. 
+커넥터를 사용하면 백엔드 시스템 (예 : 엔터프라이즈 미들웨어) 및 웹 서비스에 대한 액세스 단순화 및 표준화한 API를 작성할 수 있습니다. Oracle OMCe는 다양한 유형의 커넥터를 제공하여 REST 커넥터, SOAP 커넥터, OIC (Oracle Integration Cloud Service) 커넥터 및 Oracle Fusion Application 커넥터를 비롯한 여러 유형의 백엔드 시스템과의 통합을 단순화합니다. 이 실습에서는 REST 커넥터를 사용하여 마이크로 서비스와 integration labs에서 생성 한 세 가지의 REST service와 통합합니다. 
 
 일단 커넥터가 생성되면 Custom API (예 : 나중에 작성할 Loyalty Mgmt APi)에서 사용할 수 있으며 모바일 응용 프로그램에서 사용할 수 있습니다. 
 
