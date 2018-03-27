@@ -381,9 +381,9 @@
 3. 다음 데이터를 입력하십시오. 
 
   - **Configuration Name:** QRCodeGeneratorDeploy
-  - **Application Name:** qrcodegenerator**번호** (번호는 강사로부터 부여받은 번호를 입력합니다.) 
+  - **Application Name:** qrcodegenerator**XX** (XX는 강사로부터 부여받은 번호를 입력합니다.) 
 
-![](images/183.createdeploy.png)
+![](images/183.createdeploy1.png)
 
 4. **Deployment Target**의 오른편에 있는 , **[New]** 버튼을 누르고 **Application Container Cloud...** 를 선택합니다.
 
@@ -423,7 +423,7 @@
 
 8. **Job**에서 선택하십시오.이 이름은 위의 빌드 작업과 일치해야 합니다 (예 :`QR Code Generator Build`).**Artifact**에서 선택하십시오.이 이름은 위의 아카이브 아티펙트와 소스 코드의 package.json과 일치해야합니다 (예 :`target/qrcodegenerator.zip`). 
 
-![](images/188.choosejob.png)
+![](images/187.choosenode1.png)
 
 
 9. `Include ACCS Deployment` 박스를 체크하고 다음 json을 입력하십시오 
@@ -443,11 +443,11 @@
 
 11. 배포 작업에서 기어박스를 누르고 **Start**을 선택합니다.
 
-![](images/190.start.png)
+![](images/190.start1.png)
 
 12. 배포작업은 큐에 들어 갈 것이고 곧 이어  **Starting application** 메시지가  **Last deployment succeeded**로 바뀔 것입니다. 실패하면 질문하십시오.
 
-![](images/191.deployed.png)
+![](images/191.deployed1.png)
 
 ## 1.4 Login to Oracle Application Container Cloud Service
 
@@ -459,7 +459,7 @@
 
 3. ACCS Service Console에서 방금 생성된 **qrcodegenerator** 를 확인할 수 있습니다.
 
-![](images/193.accsqr.png)
+![](images/193.accsqr1.png)
 
 4. 애플리케이션을 접근하기 위하여 브라우저 탭을 열어 URL을 복사하여 붙여 넣습니다.
 
@@ -467,9 +467,9 @@
 
   결국은 다음과 같은 URL이 될 것입니다.
 
-	https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ctdqr/v1/offer/10001
+	https://qrcodegeneratorXX-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ctdqr/v1/offer/10001
 
-![](images/194.qrurl.png)		
+![](images/194.qrurl1.png)		
 
 5. 브라우저에 QR 코드가 보일 것입니다.
 
@@ -477,9 +477,9 @@
 
 ```diff
 + 다음의 URL을 카피하십시오.
-+   https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com/ctdqr/v1/offer/
-+   https://qrcodegenerator-{your-identity-domain}.apaas.{your-data-center}.oraclecloud.com
-+ 그리고 노트패드에 붙여 넣어 놓습니다.
++   {ACCS 서비스 콘솔에서 복사한 URL}/ctdqr/v1/offer/
++   {ACCS 서비스 콘솔에서 복사한 URL}
++ 노트패드에 붙여 넣어 놓습니다.
 + 나중에 Lab 304 Step 27에서 사용될 것입니다.
 ```
 
