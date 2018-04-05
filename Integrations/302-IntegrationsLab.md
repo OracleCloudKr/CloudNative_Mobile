@@ -11,13 +11,13 @@
 
 ### 본 실습은... ###
 이번 실습에서는 다음을 수행합니다.
-- 웹 기반 클릭 및 구성 기술을 사용하여 ICS 연결 리소스를 가져오고 정의합니다. **SOAP** Connection 및 **REST** Connection.
+- 웹 기반 클릭 및 구성 기술을 사용하여 OIC 연결 리소스를 가져오고 정의합니다. **SOAP** Connection 및 **REST** Connection.
 
 
 ### 준비사항 ###
 
 - 통합 클라우드 서비스를 포함한 Oracle Public Cloud Service 계정 (없는 경우 강사와 확인)
-- 강사가 배포 한 `XXX_ICS_INTMGT_01_lab.iar`의 통합 아카이브 파일 (IAR) 이름
+- `XXX_ICS_INTMGT_01_lab.iar`의 통합 아카이브 파일 (IAR) 이름 : (XXX는 본인에게 할당된 번호)
 - 위 파일을 다운로드 할 수 있는 곳은 [여기](../Integrations/binary/) 입니다. 
 
 ### 선 통합(Pre-Built) 자산 임포트 ###
