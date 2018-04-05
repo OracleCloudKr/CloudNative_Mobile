@@ -43,7 +43,9 @@
 ![](images/302/02.integration_import.png)
 
 
-3. 컴퓨터 로컬 디렉토리를 찾아서 이전에 강사가 제공 한 *`XXX_ICS_INTMGT_01_lab.iar`의 통합 아카이브 파일 (IAR)* 파일을 선택한 다음 `임포트` 버튼을 클릭하십시오.
+3. 위에서 다운로드 한 *`XXX_ICS_INTMGT_01_lab.iar`의 통합 아카이브 파일 (IAR)* 파일을 선택한 다음 `임포트` 버튼을 클릭하십시오.
+   다운로드 하지 않는 경우 [여기](../Integrations/binary/) 다운로드 하실 수 있습니다.
+
 
 ![](images/302/02.integration_import1.png)
 
